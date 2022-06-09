@@ -6,6 +6,12 @@
  * @since 2020
  */
 
+ // Thay doi logo admin wordpress
+ function login_css() {
+	wp_enqueue_style(THEME_NAME . '-admin-login', ASSETS_URI . '/css/admin/admin.css', false, THEME_VERSION, 'all');
+}
+add_action('login_head', 'login_css');
+
 // add css admin
 function addmin_custom_css() {
     wp_enqueue_style(THEME_NAME . '-main', ASSETS_URI . '/css/main.css', false, THEME_VERSION, 'all');
