@@ -1,0 +1,4 @@
+2022-05-10T07:36:09+00:00 CRITICAL require_once(): Failed opening required 'D:\wamp64\www\job\lth\lth-theme/wp-content/themes/lth_theme/inc/setup.php' (include_path='.;C:\php\pear') in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php on line 21
+
+2022-05-10T07:41:30+00:00 CRITICAL require_once(): Failed opening required 'D:\wamp64\www\job\lth\lth-theme/wp-content/themes/lth_theme/inc/theme-options/theme-options.php' (include_path='.;C:\php\pear') in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\theme-options.php on line 3
+
