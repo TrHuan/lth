@@ -167,6 +167,7 @@ function custom_override_checkout_fields( $fields ) {
         'placeholder' => _x('Số điện thoại', 'placeholder', 'lth'),
         'required' => true,
         'class' => array('form-row-wide'),
+        'maxlength' => '10',
         'clear' => true
     );
 
@@ -177,6 +178,7 @@ function custom_override_checkout_fields( $fields ) {
         'placeholder' => _x('Số điện thoại của người nhận', 'placeholder', 'lth'),
         'required' => true,
         'class' => array('form-row-wide'),
+        'maxlength' => '10',
         'clear' => true
     );
 
