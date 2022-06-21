@@ -23,10 +23,10 @@ if (!function_exists('lth__blogs_output')) :
         <p style="font-size: 12px; padding-top: 10px; padding-left: 35px; margin: 0; display: none;"><strong><?php echo esc_html($attributes['title']); ?></strong></p>
     <?php endif; ?>
 
-    <article class="lth-blogs <?php echo $attributes['class']; ?>">
+    <article class="lth-blogs <?php echo $attributes['class']; ?>" style="max-width: 300px; width: 100%; margin: 0 auto;">
         <div class="module module_blogs">
             <?php if ($attributes['title'] || $attributes['description']) : ?>
-                <div class="module_header title-box" style="display: none;">
+                <div class="module_header title-box" style="display: none">
                     <?php if (isset($attributes['title'])) : ?>
                         <h2 class="title">
                             <?php if ($attributes['title_url']) : ?> 
@@ -81,7 +81,7 @@ if (!function_exists('lth__blogs_output')) :
                     $wp_query = new WP_Query($args);
                     if ($wp_query->have_posts()) { ?>
                         <!-- <div class="swiper swiper-slider swiper-blogs"> -->
-                            <div style="max-width: 300px; margin: 0 auto;">
+                            <div>
                                 <?php $j; while ($wp_query->have_posts()) {
                                     $j++;
                                     $wp_query-> the_post(); ?>

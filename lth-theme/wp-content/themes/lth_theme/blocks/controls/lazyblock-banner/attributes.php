@@ -126,6 +126,7 @@ if (function_exists('lazyblocks')) :
             'help' => '',
             'child_of' => '',
             'placement' => 'inspector',
+            // 'placement' => 'content',
             'width' => '100',
             'hide_if_not_selected' => 'false',
             'save_in_meta' => 'false',

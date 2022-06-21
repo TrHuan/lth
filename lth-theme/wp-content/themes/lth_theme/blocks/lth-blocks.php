@@ -33,7 +33,7 @@ function lth_allowed_block_types( $allowed_blocks ) {
     return array(
         'core/columns',
         'core/freeform', // Classic
-        'core/paragraph',
+        // 'core/paragraph',
         'woocommerce/attribute-filter',
         'woocommerce/price-filter',
 
