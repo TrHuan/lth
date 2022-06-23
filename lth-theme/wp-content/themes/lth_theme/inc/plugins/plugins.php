@@ -194,6 +194,18 @@ function lth_plugin_activation() {
 
                 ),
 
+
+
+                array(
+
+                        'name' => 'Duplicator – WordPress Migration Plugin',
+
+                        'slug' => 'duplicator',
+
+                        'required' => true,
+
+                ),
+
         );
 
  

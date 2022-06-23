@@ -112,9 +112,9 @@
 }
 #wpadminbar #wp-admin-bar-wp-logo .ab-icon:before {
     content: '' !important;
-    width: 36px !important;
+    width: 16px !important;
     height: 14px !important;
-    background-image: url(images/logo-2.png);
+    background-image: url(images/logo.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: block;
@@ -123,6 +123,6 @@
 .login h1 a {
     background-image: url(images/logo.png);
     background-size: 100%;
-    width: 130px;
-    height: 50px;
+    width: 100px;
+    height: 89px;
 }
