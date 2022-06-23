@@ -10,7 +10,7 @@
 	        echo '">';
 	        echo __('Trang chủ');
 	        echo "</a>";
-	        echo "<span> / </span>";
+	        echo '<span style="padding: 0 5px"> / </span>';
 
 	        if (get_post_type() == 'page') {
 	        	if (is_search()) {
@@ -54,7 +54,7 @@
 							echo '<a href="'. $link .'" title="">';
 						    	echo $term->name;
 						    echo '</a>';
-		                	echo "<span> / </span>";
+		                	echo '<span style="padding: 0 5px"> / </span>';
 		                }
 		            }
 
@@ -71,7 +71,7 @@
 			        	echo get_the_title( get_option('woocommerce_shop_page_id') );
 			        	echo '</a>';
 
-		        		echo "<span> / </span>";
+		        		echo '<span style="padding: 0 5px"> / </span>';
 		        	}
 
 		        	echo '<span>';
@@ -82,7 +82,7 @@
 		        	echo get_the_title( get_option('woocommerce_shop_page_id') );
 		        	echo '</a>';
 
-		        	echo "<span> / </span>";
+		        	echo '<span style="padding: 0 5px"> / </span>';
 
 		        	echo '<span>';
 		            	the_title();

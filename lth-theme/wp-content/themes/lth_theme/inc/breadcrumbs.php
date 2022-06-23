@@ -1,8 +1,8 @@
 
-<div class="breadcrumbs">
+<section class="breadcrumbs">
 	<?php require_once(LIBS_DIR . '/breadcrumbs/breadcrumb-image.php'); ?>
-	
-    <section class="container mb-50s">
+    
+    <article class="container">
     	<?php require_once(LIBS_DIR . '/breadcrumbs/breadcrumb-content.php'); ?>        
-    </section>
-</div>
+    </article>
+</section>

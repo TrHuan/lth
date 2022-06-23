@@ -68,38 +68,40 @@
 	}
 ?>
 
-<section class="banner-all__tops ">
+<article class="breadcrumb-image">
     <?php if ($img_url) { ?>
 		<img src="<?php echo $img_url; ?>" alt="Breadcrumb" style= "width: 100%;">
 	<?php } ?>
 
-	<div class="title-box d-none">
-		<?php
-			if (!is_single()) { ?>
-				<h1 class="title">
-					<?php 
-						if (get_post_type() == 'page') {
-							the_title();
-						}
-
-						if (get_post_type() == 'post') {
-							if (is_category()) {
-								single_cat_title();
+	<div class="container">
+		<div class="title-box">
+			<?php
+				if (!is_single()) { ?>
+					<h1 class="title">
+						<?php 
+							if (get_post_type() == 'page') {
+								the_title();
 							}
-						}
 
-						if (get_post_type() == 'product') {
-							woocommerce_page_title();
-						}
-					?>
-				</h1>
-			<?php } else { ?>
-				<h2 class="title">	
-	                <?php 
-		                the_title();
-	                ?>
-	            </h2>
-			<?php }
-		?>	
+							if (get_post_type() == 'post') {
+								if (is_category()) {
+									single_cat_title();
+								}
+							}
+
+							if (get_post_type() == 'product') {
+								woocommerce_page_title();
+							}
+						?>
+					</h1>
+				<?php } else { ?>
+					<h2 class="title">	
+						<?php 
+							the_title();
+						?>
+					</h2>
+				<?php }
+			?>	
+		</div>
 	</div>
-</section>
+</article>
