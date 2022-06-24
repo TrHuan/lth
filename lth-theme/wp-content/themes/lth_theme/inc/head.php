@@ -14,6 +14,7 @@ add_action('login_head', 'login_css');
 
 // add css admin
 function addmin_custom_css() {
+    wp_enqueue_style(THEME_NAME . '-fontawesome', ASSETS_URI . '/css/all.fontawesome.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-main', ASSETS_URI . '/css/main.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-customs', ASSETS_URI . '/css/customs.css', false, THEME_VERSION, 'all');
     // wp_enqueue_style(THEME_NAME . '-reponsives', ASSETS_URI . '/css/reponsives.css', false, THEME_VERSION, 'all');
@@ -34,8 +35,7 @@ add_action('admin_head', 'addmin_custom_css');
 function lth_theme_styles() {
 	// file css
     wp_enqueue_style(THEME_NAME . '-bootstrap', ASSETS_URI . '/css/bootstrap.min.css', false, THEME_VERSION, 'all');
-    wp_enqueue_style(THEME_NAME . '-icofont', ASSETS_URI . '/css/icofont.min.css', false, THEME_VERSION, 'all');
-    wp_enqueue_style(THEME_NAME . '-typo', ASSETS_URI . '/css/typo.css', false, THEME_VERSION, 'all');
+    wp_enqueue_style(THEME_NAME . '-fontawesome', ASSETS_URI . '/css/all.fontawesome.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-slick', ASSETS_URI . '/css/slick.min.css', false, THEME_VERSION, 'all');
 
     wp_enqueue_style(THEME_NAME . '-main', ASSETS_URI . '/css/main.css', false, THEME_VERSION, 'all');
