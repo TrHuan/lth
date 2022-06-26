@@ -1,0 +1,48 @@
+
+#wpadminbar #wp-admin-bar-wp-logo {
+    padding: 0 10px;
+    /* display: none !important; */
+}
+#wpadminbar #wp-admin-bar-wp-logo .ab-item {
+    padding: 0;
+    width: 36px !important;
+    height: 14px !important;
+}
+#wpadminbar #wp-admin-bar-wp-logo .ab-icon:before {
+    content: '' !important;
+    width: 16px !important;
+    height: 14px !important;
+    background-image: url(images/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    top: 6px !important;
+}
+
+#customize-control-text_transform_widget_titles,
+#customize-control-text_transform_section_titles,
+#customize-control-text_transform_navigation,
+#customize-control-text_transform_buttons,
+#customize-control-text_transform_breadcrumbs,
+#customize-control-custom_title_type_transform,
+#customize-control-type_alt,
+#customize-control-custom_title_type_alt,
+#customize-control-type_nav,
+#customize-control-type_size_mobile,
+#customize-control-type_size,
+#customize-control-custom_title_type_nav,
+#customize-control-color_widget_links_hover,
+#customize-control-color_widget_links,
+#customize-control-color_links_hover,
+#customize-control-color_links,
+#customize-control-custom_title_type_links,
+#customize-control-color_divider,
+#customize-control-type_headings_color,
+#customize-control-color_texts,
+#customize-control-custom_title_color_type,
+#customize-control-color_alert,
+#customize-control-color_success,
+#customize-control-color_secondary,
+#wp-admin-bar-flatsome_panel {
+    display: none;
+}
