@@ -31,6 +31,15 @@
 #customize-control-type_size_mobile,
 #customize-control-type_size,
 #customize-control-custom_title_type_nav,
+/* ///// */
+#customize-control-color_sale_price,
+#customize-control-color_regular_price,
+#customize-control-color_review,
+#customize-control-color_new_bubble,
+#customize-control-color_new_bubble_auto,
+#customize-control-color_sale,
+#customize-control-color_checkout,
+#customize-control-custom_title_colors_shop,
 #customize-control-color_widget_links_hover,
 #customize-control-color_widget_links,
 #customize-control-color_links_hover,
@@ -45,4 +54,9 @@
 #customize-control-color_secondary,
 #wp-admin-bar-flatsome_panel {
     display: none;
+}
+
+#accordion-section-cart-checkout,
+#accordion-section-woocommerce_checkout {
+    display: none !important;
 }

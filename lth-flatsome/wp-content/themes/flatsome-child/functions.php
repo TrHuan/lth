@@ -64,21 +64,9 @@ require_once(LTH_PLUGINS_PATH . '/plugins.php');
 <?php }
 add_action('login_head', 'login_css');
 
-// add css editor
-function lth_theme_add_editor_styles() {
-  ?>
-  <style>
-    app-actions {
-      display: none !important;
-    }
-  </style>
-<?php 
-}
-add_action('admin_init', 'lth_theme_add_editor_styles');
-
 // add css admin
 function addmin_custom_css() {
-  wp_enqueue_style(THEME_NAME . '-main', LTH_CHILD_URI . '/assets/css/admin/admin.css', false, THEME_VERSION, 'all');
+  wp_enqueue_style('lth-main', LTH_CHILD_URI . '/assets/css/admin/admin.css', false, THEME_VERSION, 'all');
 }
 add_action('admin_head', 'addmin_custom_css');
 
@@ -92,5 +80,5 @@ add_action( 'customize_controls_print_styles', 'lth_enqueue_customizer_styleshee
 */
 add_action( 'admin_init', 'remove_menu_pages' );
 function remove_menu_pages() {
-    remove_menu_page( 'flatsome-panel' );
+  remove_menu_page( 'flatsome-panel' );
 }

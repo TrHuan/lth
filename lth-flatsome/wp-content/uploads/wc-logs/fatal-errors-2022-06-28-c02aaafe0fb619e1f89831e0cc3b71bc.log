@@ -14,3 +14,7 @@ ine 343
 
 2022-06-28T01:17:29+00:00 CRITICAL Cannot redeclare add_editor_style() (previously declared in D:\wamp64\www\job\lth\lth-flatsome\wp-includes\theme.php:2091) in D:\wamp64\www\job\lth\lth-flatsome\wp-content\themes\flatsome-child\functions.php on line 68
 
+2022-06-28T07:15:58+00:00 CRITICAL Cannot redeclare add_editor_style() (previously declared in D:\wamp64\www\job\lth\lth-flatsome\wp-includes\theme.php:2091) in D:\wamp64\www\job\lth\lth-flatsome\wp-content\themes\flatsome-child\functions.php on line 79
+
+2022-06-28T07:16:06+00:00 CRITICAL Cannot redeclare add_editor_style() (previously declared in D:\wamp64\www\job\lth\lth-flatsome\wp-includes\theme.php:2091) in D:\wamp64\www\job\lth\lth-flatsome\wp-content\themes\flatsome-child\functions.php on line 79
+
