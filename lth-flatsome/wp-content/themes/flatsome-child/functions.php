@@ -64,6 +64,17 @@ require_once(LTH_PLUGINS_PATH . '/plugins.php');
 <?php }
 add_action('login_head', 'login_css');
 
+// add css editor
+function lth_theme_add_editor_styles() {
+  ?>
+  <style>
+    app-actions {
+      display: none !important;
+    }
+  </style>
+<?php 
+}
+add_action('admin_init', 'lth_theme_add_editor_styles');
 
 // add css admin
 function addmin_custom_css() {
@@ -75,3 +86,11 @@ function lth_enqueue_customizer_stylesheet() {
   wp_enqueue_style( 'lth-customizer-admin', LTH_CHILD_URI . '/assets/css/admin/admin.css', false, THEME_VERSION, 'all' );
 }
 add_action( 'customize_controls_print_styles', 'lth_enqueue_customizer_stylesheet' );
+
+/**
+* Remove Item Menu Admin
+*/
+add_action( 'admin_init', 'remove_menu_pages' );
+function remove_menu_pages() {
+    remove_menu_page( 'flatsome-panel' );
+}

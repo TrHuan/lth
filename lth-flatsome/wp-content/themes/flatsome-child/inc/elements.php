@@ -1,7 +1,7 @@
 <?php
 
 /**
- * GCO UX Elements.
+ * LTH UX Elements.
  */
 
 require get_theme_file_path() . '/inc/elements/button.php';
