@@ -1,0 +1,8 @@
+/* color: var(--primary-color); */
+
+.secondary,
+.checkout-button,
+.button.checkout,
+.button.alt {
+    background-color: var(--primary-color) !important;
+}

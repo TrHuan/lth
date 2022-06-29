@@ -19,6 +19,11 @@
     top: 6px !important;
 }
 
+#customize-control-product_header .product_headerfeatured-center,
+#input_product_layout .product_layoutcustom,
+#input_product_layout .product_layoutstacked-right,
+#input_product_layout .product_layoutgallery-wide,
+/* //////// */
 #customize-control-text_transform_widget_titles,
 #customize-control-text_transform_section_titles,
 #customize-control-text_transform_navigation,

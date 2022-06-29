@@ -2,7 +2,14 @@
 	do_action('flatsome_before_blog');
 ?>
 
-<?php if(!is_single() && get_theme_mod('blog_featured', '') == 'top'){ get_template_part('template-parts/posts/featured-posts'); } ?>
+<?php if(!is_single() && get_theme_mod('blog_featured', '') == 'top'){
+	get_template_part('template-parts/posts/featured-posts');
+} ?>
+
+<?php if(is_single()){
+	require_once(LTH_CHILD_PATH . '/inc/breadcrumbs.php');
+} ?>
+
 <div class="row align-center">
 	<div class="large-12 col">
 	<?php if(!is_single() && get_theme_mod('blog_featured', '') == 'content'){ get_template_part('template-parts/posts/featured-posts'); } ?>

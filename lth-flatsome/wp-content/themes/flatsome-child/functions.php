@@ -82,3 +82,31 @@ add_action( 'admin_init', 'remove_menu_pages' );
 function remove_menu_pages() {
   remove_menu_page( 'flatsome-panel' );
 }
+
+//////////////////////////////////
+
+/**
+ * Add css
+ * 
+ * @author LTH
+ * @since 2020
+ */
+function lth_theme_styles() {
+  wp_enqueue_style('css-lth-bootstrap', LTH_CHILD_URI . '/assets/css/bootstrap.min.css', false, 'all');
+  wp_enqueue_style('css-lth-fontawesome', LTH_CHILD_URI . '/assets/css/all.fontawesome.min.css', false, 'all');
+  wp_enqueue_style('css-lth-main', LTH_CHILD_URI . '/assets/css/main.css', false, 'all');
+
+  wp_enqueue_style('css-lth-custom', LTH_CHILD_URI . '/assets/css/custom.css', false, 'all');
+}
+add_action('wp_enqueue_scripts', 'lth_theme_styles');
+
+/**
+* Add js
+* 
+* @author LTH
+* @since 2020
+*/
+function lth_theme_scripts() {  
+  wp_enqueue_script('js-lth-slick', LTH_CHILD_URI .'/assets/js/main.js', false, 'all');
+}
+add_action('wp_enqueue_scripts', 'lth_theme_scripts', 99);
