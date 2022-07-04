@@ -5,16 +5,20 @@
 }
 #wpadminbar #wp-admin-bar-wp-logo .ab-item {
     padding: 0;
-    width: 36px !important;
-    height: 14px !important;
+}
+#wpadminbar #wp-admin-bar-wp-logo .ab-icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
 }
 #wpadminbar #wp-admin-bar-wp-logo .ab-icon:before {
     content: '' !important;
-    width: 16px !important;
-    height: 14px !important;
+    width: 22px !important;
+    height: 20px !important;
     background-image: url(images/logo.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-color: #fff;
     display: block;
     top: 6px !important;
 }
@@ -73,13 +77,20 @@
     display: none;
 }
 
+#wp-admin-bar-options_advanced-default li,
 #of_container #of-nav ul li,
 /* //////// */
 #accordion-section-cart-checkout,
-#accordion-section-woocommerce_checkout {
+#accordion-section-woocommerce_checkout,
+/* //////// */
+#wp-admin-bar-wp-logo .ab-sub-wrapper {
     display: none !important;
 }
 
+#wp-admin-bar-options_advanced-default #wp-admin-bar-options_advanced_backup,
+#wp-admin-bar-options_advanced-default #wp-admin-bar-options_advanced_site_search,
+#wp-admin-bar-options_advanced-default #wp-admin-bar-options_advanced_site_loader,
+#wp-admin-bar-options_advanced-default #wp-admin-bar-options_advanced_custom_scripts,
 #of_container #of-nav ul li.backupandimport,
 #of_container #of-nav ul li.sitesearch,
 #of_container #of-nav ul li.siteloader,
