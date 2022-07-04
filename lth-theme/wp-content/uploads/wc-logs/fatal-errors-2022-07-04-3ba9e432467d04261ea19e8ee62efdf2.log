@@ -6,3 +6,19 @@
 
 2022-07-04T00:59:22+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 32768 bytes) in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\acf\includes\ajax\class-acf-ajax-local-json-diff.php on line 1
 
+2022-07-04T10:13:44+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-04T10:14:20+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
