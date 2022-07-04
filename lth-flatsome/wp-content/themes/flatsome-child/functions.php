@@ -80,7 +80,7 @@ add_action( 'customize_controls_print_styles', 'lth_enqueue_customizer_styleshee
 */
 add_action( 'admin_init', 'remove_menu_pages' );
 function remove_menu_pages() {
-  remove_menu_page( 'flatsome-panel' );
+  // remove_menu_page( 'flatsome-panel' );
 }
 
 //////////////////////////////////

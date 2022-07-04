@@ -1,0 +1,2 @@
+2022-07-04T01:34:51+00:00 CRITICAL Cannot redeclare of_style_only() (previously declared in D:\wamp64\www\job\lth\lth-flatsome\wp-content\themes\flatsome-child\functions.php:79) in D:\wamp64\www\job\lth\lth-flatsome\wp-content\themes\flatsome\inc\admin\advanced\functions\functions.interface.php on line 93
+

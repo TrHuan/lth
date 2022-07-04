@@ -19,6 +19,19 @@
     top: 6px !important;
 }
 
+#section-live_search,
+#section-search_by_product_tag,
+#section-search_by_sku,
+#section-search_products_order_by,
+#section-search_result_latency,
+/* //////// */
+/* #section-jquery_migrate, */
+#section-disable_blockcss,
+#section-disable_emoji,
+#section-flatsome_disable_style_css,
+#section-lazy_load_backgrounds,
+#section-perf_instant_page,
+/* //////// */
 #customize-control-product_header .product_headerfeatured-center,
 #input_product_layout .product_layoutcustom,
 #input_product_layout .product_layoutstacked-right,
@@ -56,12 +69,20 @@
 #customize-control-custom_title_color_type,
 #customize-control-color_alert,
 #customize-control-color_success,
-#customize-control-color_secondary,
-#wp-admin-bar-flatsome_panel {
+#customize-control-color_secondary {
     display: none;
 }
 
+#of_container #of-nav ul li,
+/* //////// */
 #accordion-section-cart-checkout,
 #accordion-section-woocommerce_checkout {
     display: none !important;
+}
+
+#of_container #of-nav ul li.backupandimport,
+#of_container #of-nav ul li.sitesearch,
+#of_container #of-nav ul li.siteloader,
+#of_container #of-nav ul li.globalsettings {
+    display: block !important;
 }

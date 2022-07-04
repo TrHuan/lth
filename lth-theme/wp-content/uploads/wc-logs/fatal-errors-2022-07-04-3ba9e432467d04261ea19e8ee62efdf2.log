@@ -1,0 +1,8 @@
+2022-07-04T00:58:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php on line 318
+
+2022-07-04T00:58:44+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-admin\includes\template.php on line 12
+
+2022-07-04T00:58:44+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-admin\includes\template.php on line 12
+
+2022-07-04T00:59:22+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 32768 bytes) in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\acf\includes\ajax\class-acf-ajax-local-json-diff.php on line 1
+
