@@ -1,0 +1,12 @@
+2022-07-14T00:52:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-banner\editor.php on line 9
+
+line 116
+
+2022-07-14T00:52:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\plugins\lazy-blocks\controls\image\index.php on line 8
+
+2022-07-14T00:52:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\plugins\lazy-blocks\controls\email\index.php on line 8
+
+2022-07-14T00:52:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-banner\frontend.php on line 10
+
+2022-07-14T00:52:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\lth-blocks.php on line 28
+

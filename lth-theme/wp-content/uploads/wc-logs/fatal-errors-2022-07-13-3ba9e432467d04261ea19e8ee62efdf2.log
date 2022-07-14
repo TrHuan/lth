@@ -1,0 +1,180 @@
+2022-07-13T01:39:13+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T01:39:14+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T01:39:34+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T01:40:51+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T01:47:34+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T01:48:05+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T01:48:24+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T02:31:54+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:32:13+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:32:35+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:32:48+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:34:45+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:34:49+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:34:58+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:36:55+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:37:04+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:37:13+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-13T02:50:06+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T03:39:28+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-13T03:39:28+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
