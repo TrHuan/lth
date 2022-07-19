@@ -1,0 +1,960 @@
+2022-07-15T01:03:08+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:03:56+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:03:58+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:04:05+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:04:35+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:05:30+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:05:35+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T01:06:13+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:25:30+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:25:37+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:25:57+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:26:58+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:27:20+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:27:24+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:27:29+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:27:45+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:27:52+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:27:56+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:28:19+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:28:23+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:28:31+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:28:38+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:29:12+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:29:17+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:29:29+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:29:42+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:29:48+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:29:53+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:30:19+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:30:41+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:31:17+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:31:23+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:33:24+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:33:39+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:35:40+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:35:44+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:37:29+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:38:18+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:38:23+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:38:27+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:38:33+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:38:37+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:39:05+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:39:13+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:40:02+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:40:14+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:41:16+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:41:22+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:41:40+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T02:42:13+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T03:03:41+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T03:30:29+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-15T03:31:06+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-15T03:33:06+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-15T03:45:40+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T03:47:48+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T03:49:43+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:05:45+00:00 CRITICAL Uncaught Error: Call to undefined function WPGraphQL\WooCommerce\Functions\setup_minor_integrations() in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:196
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lt in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 196
+
+2022-07-15T04:06:10+00:00 CRITICAL Uncaught Error: Class 'WPGraphQL\WooCommerce\WooCommerce_Filters' not found in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:199
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lth-theme\wp-includes\class- in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 199
+
+2022-07-15T04:06:22+00:00 CRITICAL Uncaught Error: Class 'WPGraphQL\WooCommerce\Core_Schema_Filters' not found in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:202
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lth-theme\wp-includes\class- in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 202
+
+2022-07-15T04:06:28+00:00 CRITICAL Uncaught Error: Class 'WPGraphQL\WooCommerce\ACF_Schema_Filters' not found in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:205
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-w in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 205
+
+2022-07-15T04:06:38+00:00 CRITICAL Uncaught Error: Class 'WPGraphQL\WooCommerce\Type_Registry' not found in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php:211
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php(35): WP_GraphQL_WooCommerce->setup()
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\wp-graphql-woocommerce.php(76): WP_GraphQL_WooCommerce::instance()
+#2 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(307): woographql_init(Object(WPGraphQL))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\wamp64\www\job\lth\lth-theme\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(256): do_action('graphql_init', Object(WPGraphQL))
+#6 D:\wamp64\www\job\lth\lth-theme\wp-includes\class-wp-hoo in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql-woocommerce-develop\includes\class-wp-graphql-woocommerce.php on line 211
+
+2022-07-15T04:28:58+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:29:02+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:29:10+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:29:15+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:29:35+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:29:37+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:10+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:12+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:30+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:32+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:41+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:42+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:30:52+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:31:02+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:31:24+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:31:31+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:31:42+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:32:26+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:32:31+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:32:36+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:33:04+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:33:12+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:33:18+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:33:22+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:36:06+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T04:45:41+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T06:57:54+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:09:33+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:09:41+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:10:18+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:10:56+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:11:00+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:15:24+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:18:04+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:18:29+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:18:49+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:19:34+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:20:55+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:21:25+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:21:31+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:21:39+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:29:12+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:29:27+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:29:56+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:30:20+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:36:16+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:37:44+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T07:43:34+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T08:21:25+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T08:51:22+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T09:02:06+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T09:05:38+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T09:38:45+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T10:05:39+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T10:05:52+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
+2022-07-15T10:29:04+00:00 CRITICAL Uncaught GraphQL\Error\InvariantViolation: Schema must contain unique named types but contains multiple types named "" (see http://webonyx.github.io/graphql-php/type-system/#type-registry). in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php:333
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Type\Schema.php(147): GraphQL\Utils\Utils::invariant(false, 'Schema must con...')
+#1 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPSchema.php(53): GraphQL\Type\Schema->__construct(Object(GraphQL\Type\SchemaConfig))
+#2 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\Registry\SchemaRegistry.php(51): WPGraphQL\WPSchema->__construct(Object(GraphQL\Type\SchemaConfig), Object(WPGraphQL\Registry\TypeRegistry))
+#3 D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\src\WPGraphQL.php(681): WPGraphQL\Registry\SchemaRegistry->get_schema()
+#4 D:\wamp64\www\job\lth\ in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-graphql\vendor\webonyx\graphql-php\src\Utils\Utils.php on line 333
+
