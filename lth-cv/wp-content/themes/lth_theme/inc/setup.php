@@ -248,6 +248,35 @@ add_action( 'pre_get_posts','more_posts_per_search_page' );
 //   }
 // }
 
+// function to display number of posts.
+function getPostViews( $postID ) {
+    $count_key = 'post_views_count';
+    $count     = get_post_meta( $postID, $count_key, true );
+    if ( $count == '' ) {
+        delete_post_meta( $postID, $count_key );
+        add_post_meta( $postID, $count_key, '0' );
+
+        return "0 View";
+    }
+
+    return $count . ' Views';
+}
+// function to count views.
+function setPostViews( $postID ) {
+    $count_key = 'post_views_count';
+    $count     = get_post_meta( $postID, $count_key, true );
+    if ( $count == '' ) {
+        $count = 0;
+        delete_post_meta( $postID, $count_key );
+        add_post_meta( $postID, $count_key, '0' );
+    } else {
+        $count ++;
+        update_post_meta( $postID, $count_key, $count );
+    }
+}
+// get function count views.
+// echo getPostViews(get_the_ID());
+
 /**
 * Remove Item Menu Admin
 */
