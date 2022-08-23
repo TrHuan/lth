@@ -92,8 +92,6 @@ $sidebar = $blog['sidebar']; ?>
             </div>
         </div>
     </section>
-
-    <?php echo comments_template(); ?>
 </main>
 
 <?php get_footer(); ?> 

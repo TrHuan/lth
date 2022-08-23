@@ -6,7 +6,6 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => __('Theme Options'), // Tên menu hiển thị ở khu vực admin
         'menu_slug'     => 'lth-theme-options', // Url hiển thị trên đường dẫn của options page
         'capability'    => 'edit_posts',
-        'show_in_graphql' => true,
         'redirect'  => false
     ));
 }
@@ -1108,10 +1107,5 @@ if( function_exists('acf_add_local_field_group') ):
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
-
-        'show_in_graphql' => 1,
-        'graphql_field_name' => 'options',
-        'map_graphql_types_from_location_rules' => 0,
-        'graphql_types' => '',
     ));
 endif;  
