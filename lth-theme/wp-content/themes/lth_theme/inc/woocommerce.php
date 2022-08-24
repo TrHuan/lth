@@ -72,7 +72,7 @@ function woocommerce_header_add_to_cart_fragment_icon( $fragments_icon ) {
     ob_start();
     // global $woocommerce;
     require_once(WOO_DIR . '/cart/header-cart-ajax.php');
-    $fragments_icon['.carts-content .cart-btn'] = ob_get_clean();
+    $fragments_icon['.cart-header .cart-btn'] = ob_get_clean();
     return $fragments_icon;
 
 }
@@ -83,7 +83,7 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
     ob_start();
     // global $woocommerce;
     require_once(WOO_DIR . '/cart/mini-cart-ajax.php');
-    $fragments['.carts-content .cart-content'] = ob_get_clean();
+    $fragments['.cart-content .cart-list'] = ob_get_clean();
     return $fragments;
 }
 
