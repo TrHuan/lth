@@ -24,7 +24,7 @@ if (!function_exists('lth_products_output_fe')) :
         <?php if ($attributes['title'] || $attributes['description']) : ?>
             <div class="module_header title-box">
                 <?php if (isset($attributes['title'])) : ?>
-                    <h3 class="title">
+                    <h2 class="title">
                         <?php if ($attributes['title_url']) : ?> 
                             <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
                         <?php else : ?>
@@ -36,7 +36,7 @@ if (!function_exists('lth_products_output_fe')) :
                         <?php else : ?>
                             </span>
                         <?php endif; ?>
-                    </h3>
+                    </h2>
                 <?php endif; ?>
 
                 <?php if ($attributes['description']) : ?>
