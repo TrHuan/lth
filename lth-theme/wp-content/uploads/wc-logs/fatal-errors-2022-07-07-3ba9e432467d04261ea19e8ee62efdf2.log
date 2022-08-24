@@ -1,6 +1,0 @@
-2022-07-07T00:54:45+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\plugins\lazy-blocks\vendor\Handlebars\Helpers.php on line 21
-
-2022-07-07T00:54:46+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\plugins\lazy-blocks\vendor\Handlebars\Helper\IfHelper.php on line 19
-
-2022-07-07T00:54:51+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\MiniCart.php on line 2
-

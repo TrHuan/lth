@@ -104,29 +104,3 @@
 .title {
     margin-top: 0;
 }
-
-#wpadminbar #wp-admin-bar-wp-logo {
-    padding: 0 10px;
-    /* display: none !important; */
-}
-#wpadminbar #wp-admin-bar-wp-logo .ab-item {
-    padding: 0;
-    width: 36px !important;
-    height: 14px !important;
-}
-#wpadminbar #wp-admin-bar-wp-logo .ab-icon:before {
-    content: '' !important;
-    width: 16px !important;
-    height: 14px !important;
-    background-image: url(images/logo.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: 6px !important;
-}
-.login h1 a {
-    background-image: url(images/logo.png);
-    background-size: 100%;
-    width: 100px;
-    height: 89px;
-}

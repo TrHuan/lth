@@ -116,39 +116,54 @@ function lth_sidebar_register() {
 }
 add_action('widgets_init', 'lth_sidebar_register');
 
-if ( class_exists( 'ACF' ) ) {
-    // Thay favicon admin wordpress
-    function favicon4admin() {
-    echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_field('favicon', 'option').'" />';
-    }
-    add_action( 'admin_head', 'favicon4admin' );
-
-    // Thay doi logo admin wordpress page login
-    // function custom_admin_logo() {
-    //     echo '<style type="text/css">
-    //     body.login div#login h1 a {
-    //         background-image: url('.get_field('logo', 'option').') !important;
-    //         background-position: 0 !important;
-    //         background-size: 100% 100%;
-    //         width: '.get_field('width_logo', 'option').'px;
-    //         height: '.get_field('height_logo', 'option').'px;
-    //     }
-    //     </style>';
-    // }
-    // add_action( 'login_enqueue_scripts', 'custom_admin_logo' );
-
-    // Thay logo admin wordpress
-    // function remove_logo_and_submenu() {
-    //     global $wp_admin_bar;
-    //     //the following codes is to remove sub menu
-    //     $wp_admin_bar->remove_menu('about');
-    //     $wp_admin_bar->remove_menu('wporg');
-    //     $wp_admin_bar->remove_menu('documentation');
-    //     $wp_admin_bar->remove_menu('support-forums');
-    //     $wp_admin_bar->remove_menu('feedback');
-    // }
-    // add_action( 'wp_before_admin_bar_render', 'remove_logo_and_submenu' );
+// Thay favicon admin wordpress
+function favicon4admin() {
+echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_field('favicon', 'option').'" />';
 }
+add_action( 'admin_head', 'favicon4admin' );
+
+// Thay doi logo admin wordpress page login
+function custom_admin_logo() {
+    echo '<style type="text/css">
+    body.login div#login h1 a {
+        background-image: url('.get_field('logo', 'option').') !important;
+        background-position: 0 !important;
+        background-size: 100% 100%;
+        width: '.get_field('width_logo', 'option').'px;
+        height: '.get_field('height_logo', 'option').'px;
+    }
+    </style>';
+}
+add_action( 'login_enqueue_scripts', 'custom_admin_logo' );
+
+// Thay logo admin wordpress
+function remove_logo_and_submenu() {
+    global $wp_admin_bar;
+    //the following codes is to remove sub menu
+    $wp_admin_bar->remove_menu('about');
+    $wp_admin_bar->remove_menu('wporg');
+    $wp_admin_bar->remove_menu('documentation');
+    $wp_admin_bar->remove_menu('support-forums');
+    $wp_admin_bar->remove_menu('feedback');
+    //and this is to change wordpress logo
+    $wp_admin_bar->add_menu( array(
+        'id' => 'wp-logo',
+        'title' => '<img src="'.get_field('logo', 'option').'" style="height: 15px; position: relative; top: 0; background: #fff; padding: 5px;" />',
+        'href' => __('#'),
+        'meta' => array(
+            'title' => __('LTH - Theme by LTH'),
+            'tabindex' => 1,
+        ),
+    ));
+    //and this is to add new sub menu.
+    $wp_admin_bar->add_menu( array(
+        'parent' => 'wp-logo',
+        'id' => 'sub-menu-id-1',
+        'title' => __('About us'),
+        'href' => __('#'),
+    ));
+}
+add_action( 'wp_before_admin_bar_render', 'remove_logo_and_submenu' );
 
 // Thay doi duong dan logo admin
 function wpc_url_login(){

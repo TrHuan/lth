@@ -1,6 +1,0 @@
-2022-06-28T00:51:45+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\woocommerce\includes\gateways\paypal\includes\class-wc-gateway-paypal-response.php on line 8
-
-2022-06-28T00:51:46+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-includes\functions.php on line 6633
-
-2022-06-28T00:51:46+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-includes\functions.php on line 6633
-

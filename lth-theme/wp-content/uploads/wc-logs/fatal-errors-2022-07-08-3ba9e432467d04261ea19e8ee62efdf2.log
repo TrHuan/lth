@@ -1,6 +1,0 @@
-2022-07-08T00:46:27+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-features\frontend.php on line 9
-
-2022-07-08T00:46:27+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-categories\frontend.php on line 10
-
-2022-07-08T00:46:27+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-features\editor.php on line 9
-
