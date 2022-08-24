@@ -237,6 +237,37 @@ add_action( 'pre_get_posts','more_posts_per_search_page' );
 //   }
 // }
 
+// thêm cột ảnh đại diện cho bàu viết trong admin
+add_filter('manage_post_posts_columns', 'hk_featured_image_column');
+function hk_featured_image_column( $column_array ) {
+
+	$column_array = array_slice( $column_array, 0, 1, true )
+	+ array('featured_image' => 'Ảnh đại diện')
+	+ array_slice( $column_array, 1, NULL, true );
+ 
+	return $column_array;
+}
+
+add_action('manage_posts_custom_column', 'hk_render_the_column', 10, 2);
+function hk_render_the_column( $column_name, $post_id ) {
+
+	if( $column_name == 'featured_image' ) {
+
+		if( has_post_thumbnail( $post_id ) ) {
+			
+			$thumb_id = get_post_thumbnail_id( $post_id );
+			echo '<img data-id="' . $thumb_id . '" src="' . wp_get_attachment_url( $thumb_id ) . '" />';
+			
+		} else {
+			
+			echo '<img data-id="-1" src="' . get_stylesheet_directory_uri() . '/placeholder.png" />';
+			
+		}
+		
+	}
+
+}
+
 /**
 * Remove Item Menu Admin
 */

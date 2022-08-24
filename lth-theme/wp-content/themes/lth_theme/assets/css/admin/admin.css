@@ -86,6 +86,10 @@
 .lzb-gutenberg-url .block-editor-link-control__field {
     margin: 0;
 }
+/* .editor-styles-wrapper .wp-block-column {
+    border: 1px solid #ebebeb !important;
+    padding: 0 10px
+} */
 
 .row-actions,
 .post-state,

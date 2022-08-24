@@ -147,6 +147,7 @@ table, th, td {
 }
 
 .wpcf7-submit, .submit, button, .button, .btn {
+	display:inline-block;
 	padding: {
 		top: 13px;
 		bottom: 13px;
