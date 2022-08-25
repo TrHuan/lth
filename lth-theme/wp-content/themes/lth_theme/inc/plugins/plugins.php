@@ -148,27 +148,15 @@ function lth_plugin_activation() {
 
                 ),
 
-
-
-                array(
-
-                        'name' => 'WP Fastest Cache',
-
-                        'slug' => 'wp-fastest-cache',
-
-                        'required' => true,
-
-                ),
-
                 
 
                 array(
 
-                        'name' => 'PageSpeed Optimizer',
+                        'name' => 'Wp Rocket',
 
-                        'slug' => 'wp2speed',
+                        'slug' => 'wp-rocket',
 
-                        'source'             => get_template_directory() . '/inc/plugins/wp2speed.zip', // The plugin source
+                        'source'             => get_template_directory() . '/inc/plugins/wp-rocket.zip', // The plugin source
 
                         'required'           => true, // If false, the plugin is only 'recommended' instead of required
 
@@ -189,18 +177,6 @@ function lth_plugin_activation() {
                         'name' => 'Duplicate Page and Post',
 
                         'slug' => 'duplicate-wp-page-post',
-
-                        'required' => true,
-
-                ),
-
-
-
-                array(
-
-                        'name' => 'Duplicator – WordPress Migration Plugin',
-
-                        'slug' => 'duplicator',
 
                         'required' => true,
 
