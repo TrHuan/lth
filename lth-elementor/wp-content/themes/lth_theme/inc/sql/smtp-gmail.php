@@ -11,7 +11,7 @@
 //     $smtp_host = 'smtp.gmail.com';
 //     $smtp_port = 465;
 //     $email_shop = 'trhuan177@gmail.com';
-//     $email_pass = 'tgzihtpcadfxqksz';
+//     $email_pass = 'iagzjtpflskmgijh';
 //     // $email_name = 'LTH';
 // }
 
