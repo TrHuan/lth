@@ -182,6 +182,18 @@ function lth_plugin_activation() {
 
                 ),
 
+
+
+                array(
+
+                        'name' => 'Really Simple SSL',
+
+                        'slug' => 'really-simple-ssl',
+
+                        'required' => true,
+
+                ),
+
         );
 
  
