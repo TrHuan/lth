@@ -128,9 +128,9 @@ function lth_plugin_activation() {
 
                 array(
 
-                        'name' => 'Wp Mail Smtp',
+                        'name' => 'WP SMTP',
 
-                        'slug' => 'wp-mail-smtp',
+                        'slug' => 'wp-smtp',
 
                         'required' => true,
 

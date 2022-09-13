@@ -9,7 +9,7 @@
     <html lang="en-US">
         <head>
             <meta charset="UTF-8">
-            <meta name="description" content="<?php bloginfo('description'); ?>">
+            <meta name="description" content="<?php echo get_option('blogname'); ?> - <?php echo get_option('blogdescription'); ?>">
             <meta name="keywords" content="Php, HTML, CSS, JavaScript">
             <meta name="author" content="LTH">
             <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
