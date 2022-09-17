@@ -19,22 +19,8 @@ if (!function_exists('lth__banner_output')) :
         ob_start();
 ?>
     <?php if (isset($attributes['title'])) : ?>
-        <p style="font-size: 12px; padding-top: 10px; padding-left: 35px; margin: 0; display: none;"><strong><?php echo esc_html($attributes['title']); ?></strong></p>
+        <p style="font-size: 12px; padding-top: 10px; padding-left: 35px; margin: 0;"><strong><?php echo esc_html($attributes['title']); ?></strong></p>
     <?php endif; ?>
-
-    <artice class="lth-banners <?php echo $attributes['class']; ?>" style="max-width: 300px; width: 100%; margin: 0 auto;">
-        <div class="module module_banners">
-            <div class="module_content">
-                <div class="content">
-                    <div class="content-image">
-                        <a href="<?php echo esc_url( $attributes['image_url'] ); ?>" title="" class="image">
-                            <img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="Image" width="<?php echo $attributes['image_width']; ?>" height="<?php echo $attributes['image_height']; ?>">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </artice>
 <?php
         return ob_get_clean();
     }

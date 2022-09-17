@@ -20,12 +20,7 @@ if (!function_exists('lth__shopcart_output')) :
 ?>
     
 <?php if ( class_exists( 'WooCommerce' ) ) { ?>
-    <div class="lth-shopcart">
-        <div class="cart-header clearfix">
-            <?php global $woocommerce; ?>
-            <?php require_once(get_template_directory() . '/woocommerce/cart/header-cart-ajax.php'); ?>
-        </div>
-    </div>
+    
 <?php } ?>
 
 <?php
