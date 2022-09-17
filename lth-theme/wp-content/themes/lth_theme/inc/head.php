@@ -15,6 +15,7 @@
 
 function lth_theme_styles() {
 	// file css
+    wp_enqueue_style(THEME_NAME . '-google-sans', ASSETS_URI . '/css/font-google-sans.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-bootstrap', ASSETS_URI . '/css/bootstrap.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-fontawesome', ASSETS_URI . '/css/all.fontawesome.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-slick', ASSETS_URI . '/css/slick.min.css', false, THEME_VERSION, 'all');
