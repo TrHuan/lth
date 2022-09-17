@@ -18,14 +18,20 @@ if (!function_exists('lth_banner_output_fe')) :
      */
     function lth_banner_output_fe($output, $attributes) {
         ob_start();
+        
 ?>
     <artice class="lth-banners <?php echo $attributes['class']; ?>">
         <div class="module module_banners">
             <div class="module_content">
-                <div class="content">
+                <div class="content" style="position: relative;">
                     <div class="content-image">
                         <a href="<?php echo esc_url( $attributes['image_url'] ); ?>" title="" class="image">
                             <img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="Image" width="<?php echo $attributes['image_width']; ?>" height="<?php echo $attributes['image_height']; ?>">
+                        </a>
+                    </div>
+                    <div class="content-text" style="position: absolute; top: <?php echo $attributes['text_top']; ?>; bottom: <?php echo $attributes['text_bottom']; ?>; left: <?php echo $attributes['text_left']; ?>; right: <?php echo $attributes['text_right']; ?>; transform: translate(<?php echo $attributes['text_translate']; ?>);">
+                        <a href="<?php echo esc_url( $attributes['image_url'] ); ?>" title="" class="text">
+                            <?php echo $attributes['text']; ?>
                         </a>
                     </div>
                 </div>

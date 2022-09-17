@@ -150,8 +150,16 @@ if (function_exists('lazyblocks')) :
             'required' => 'false',
             'choices' => array(
                array(
+                  'label' => 'Auto',
+                  'value' => 'auto',
+               ),
+               array(
                   'label' => 'Left Top',
                   'value' => 'left_top',
+               ),
+               array(
+                  'label' => 'Left Center',
+                  'value' => 'left_center',
                ),
                array(
                   'label' => 'Left Bottom',
@@ -160,6 +168,10 @@ if (function_exists('lazyblocks')) :
                array(
                   'label' => 'Right Top',
                   'value' => 'right_top',
+               ),
+               array(
+                  'label' => 'Right Center',
+                  'value' => 'right_center',
                ),
                array(
                   'label' => 'Right Bottom',
@@ -176,14 +188,6 @@ if (function_exists('lazyblocks')) :
                array(
                   'label' => 'Center Bottom',
                   'value' => 'center_bottom',
-               ),
-               array(
-                  'label' => 'Left Center',
-                  'value' => 'left_center',
-               ),
-               array(
-                  'label' => 'Right Center',
-                  'value' => 'right_center',
                ),
             ),
             'allow_null' => 'false',

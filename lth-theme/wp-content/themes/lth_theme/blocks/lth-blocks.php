@@ -34,8 +34,8 @@ function lth_allowed_block_types( $allowed_blocks ) {
         'core/columns',
         'core/freeform', // Classic
         // 'core/paragraph',
-        'woocommerce/attribute-filter',
-        'woocommerce/price-filter',
+        // 'woocommerce/attribute-filter',
+        // 'woocommerce/price-filter',
 
         'lazyblock/lth-section',
         'lazyblock/lth-blocks',

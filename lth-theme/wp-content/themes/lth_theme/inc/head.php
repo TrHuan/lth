@@ -6,6 +6,12 @@
  * @since 2020
  */
 
+// add css admin
+function addmin_custom_css() {
+    wp_enqueue_style(THEME_NAME . '-admin', ASSETS_URI . '/css/admin.css', false, THEME_VERSION, 'all');
+}
+add_action('admin_head', 'addmin_custom_css');
+
 /**
  * Add css
  * 
