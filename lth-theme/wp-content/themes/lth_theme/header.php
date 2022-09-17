@@ -21,8 +21,6 @@
 
             <link rel="icon" href="<?php the_field('favicon', 'option'); ?>" type="image/gif">
 
-            <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
             <?php if (is_tax()) { ?>
                 <link rel = "canonical" href = "<?php echo get_term_link( $term, $taxonomy ); ?>" />
             <?php } elseif (is_category()) { ?>
@@ -53,30 +51,6 @@
                     array(
                         'meta_key' => '_wp_page_template',
                         'meta_value' => 'templates/blogs.php'
-                    )
-                );
-                $archive_id = $archive_page[0]->ID;
-
-                $dat_url = get_permalink( $archive_id );
-            }
-
-            if ($ptp == 'service') {
-                $archive_page = get_pages(
-                    array(
-                        'meta_key' => '_wp_page_template',
-                        'meta_value' => 'templates/services.php'
-                    )
-                );
-                $archive_id = $archive_page[0]->ID;
-
-                $dat_url = get_permalink( $archive_id );
-            }
-
-            if ($ptp == 'project') {
-                $archive_page = get_pages(
-                    array(
-                        'meta_key' => '_wp_page_template',
-                        'meta_value' => 'templates/projects.php'
                     )
                 );
                 $archive_id = $archive_page[0]->ID;

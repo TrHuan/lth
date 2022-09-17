@@ -215,7 +215,7 @@ li {
 	.title {
 		margin-bottom: 15px;
 		cursor: pointer;
-		font-size: $font_sz_title_bottom;
+		font-size: $font_sz_title_2;
 		text-transform: uppercase;
 		color: $col_title;
 		@include display_flex;
@@ -996,7 +996,7 @@ form {
 // sidebars
 .sidebar-box {
 	h3 {
-		font-size: $font_sz_title_bottom;
+		font-size: $font_sz_title_2;
 		margin-bottom: 15px;
 	}
 

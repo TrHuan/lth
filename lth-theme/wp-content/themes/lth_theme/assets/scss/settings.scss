@@ -7,15 +7,16 @@ $border_color: #ebebeb;
 $bg_color: #ebebeb;
 
 $font_sz_body: 15px;
-$font_sz_title: 40px;  // width = 320 -> font_sz_title = 25px
-                                                                            // width = 1920 - 320 -> font_sz_title = 30px - 25px
-                                                                            // width = 1920 -> font_sz_title = 30px
-$font_sz_title_bottom: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+$font_sz_title: 40px; 
+$font_sz_title_2: 20px;
+// $font_sz_title_2: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+// width = 320 -> font_sz_title = 25px
+// width = 1920 - 320 -> font_sz_title = 30px - 25px
+// width = 1920 -> font_sz_title = 30px
 
 $font_family_body: 'Roboto', sans-serif;
 
-$font_family_icon: 'IcoFont';
-$font_family_icon_2: 'typo';
+$font_family_icon: 'FontAwesome';
 
 $max_width: 1200px;
 

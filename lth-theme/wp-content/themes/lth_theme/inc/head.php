@@ -18,6 +18,7 @@ function lth_theme_styles() {
     wp_enqueue_style(THEME_NAME . '-bootstrap', ASSETS_URI . '/css/bootstrap.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-fontawesome', ASSETS_URI . '/css/all.fontawesome.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-slick', ASSETS_URI . '/css/slick.min.css', false, THEME_VERSION, 'all');
+    wp_enqueue_style(THEME_NAME . '-wow-animate', ASSETS_URI . '/css/wow-animate.css', false, THEME_VERSION, 'all');
 
     wp_enqueue_style(THEME_NAME . '-main', ASSETS_URI . '/css/main.css', false, THEME_VERSION, 'all');
 
@@ -47,6 +48,7 @@ function lth_theme_scripts() {
 	// file js (được add vào footer)	
 	// wp_enqueue_script(THEME_NAME.'-bootstrap', ASSETS_URI .'/js/bootstrap.min.js', false, THEME_VERSION, 'all');
 	wp_enqueue_script(THEME_NAME.'-slick', ASSETS_URI .'/js/slick.min.js', false, THEME_VERSION, 'all');
+	wp_enqueue_script(THEME_NAME.'-wow', ASSETS_URI .'/js/wow.min.js', false, THEME_VERSION, 'all');
 	wp_enqueue_script(THEME_NAME.'-countdown', ASSETS_URI .'/js/jquery.countdown.min.js', false, THEME_VERSION, 'all');
 	
 	wp_enqueue_script(THEME_NAME.'-main', ASSETS_URI .'/js/main.js', false, THEME_VERSION, 'all');
