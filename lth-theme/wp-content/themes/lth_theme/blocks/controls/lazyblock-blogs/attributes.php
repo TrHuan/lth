@@ -267,6 +267,43 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
+         'control_select_lth_text_align' => array(
+            'type' => 'select',
+            'name' => 'text_align',
+            'default' => '',
+            'label' => 'Text Align',
+            'help' => '',
+            'child_of' => '',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'choices' => array(
+               array(
+                  'label' => 'Auto',
+                  'value' => 'auto',
+               ),
+               array(
+                  'label' => 'Left',
+                  'value' => 'left',
+               ),
+               array(
+                  'label' => 'Center',
+                  'value' => 'center',
+               ),
+               array(
+                  'label' => 'Right',
+                  'value' => 'right',
+               ),
+            ),
+            'allow_null' => 'false',
+            'multiple' => 'false',
+            'output_format' => '',
+            'placeholder' => '',
+            'characters_limit' => '',
+         ),
          'control_text_lth_slider_item' => array(
             'type' => 'text',
             'name' => 'item',

@@ -62,69 +62,71 @@ if (!function_exists('lth_products_output_fe')) :
             </div>
         <?php endif; ?>
 
-        <?php
-            $i = 0;
-            foreach( $attributes['items'] as $inner ) {
-                $i++;
-                if ($i == '1') {
-                    $cat = $inner['item'];
+        <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
+            <?php
+                $i = 0;
+                foreach( $attributes['items'] as $inner ) {
+                    $i++;
+                    if ($i == '1') {
+                        $cat = $inner['item'];
+                    }
                 }
-            }
 
-            if ($cat) {
-                $args = [
-                    'post_type' => 'product',
-                    'post_status' => 'publish',
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'product_cat',
-                            'field'    => 'id',
-                            'terms'    => $cat,
+                if ($cat) {
+                    $args = [
+                        'post_type' => 'product',
+                        'post_status' => 'publish',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field'    => 'id',
+                                'terms'    => $cat,
+                            ),
                         ),
-                    ),
-                    'posts_per_page' => $attributes['post_number'],
-                    'orderby' => $attributes['orderby'],
-                    'order' => $attributes['order'],
-                ];
-            } else {
-                $args = [
-                    'post_type' => 'product',
-                    'post_status' => 'publish',
-                    'posts_per_page' => $attributes['post_number'],
-                    'orderby' => $attributes['orderby'],
-                    'order' => $attributes['order'],
-                ];
-            }
-            $wp_query = new WP_Query($args);
-            if ($wp_query->have_posts()) { ?>
-                <div class="swiper swiper-slider swiper-blogs"
-                data-item="<?php echo $attributes['item']; ?>" 
-                data-item_lg="<?php echo $attributes['item_lg']; ?>" 
-                data-item_md="<?php echo $attributes['item_md']; ?>" 
-                data-item_sm="<?php echo $attributes['item_sm']; ?>" 
-                data-item_mb="<?php echo $attributes['item_mb']; ?>" 
-                data-row="<?php echo $attributes['item_row']; ?>" 
-                data-dots="<?php echo $attributes['item_dots']; ?>" 
-                data-arrows="<?php echo $attributes['item_arrows']; ?>" 
-                data-vertical="<?php echo $attributes['item_vertical']; ?>"
-                data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
-                    <?php while ($wp_query->have_posts()) {
-                        $wp_query-> the_post(); ?>                            
-                        <?php //load file tương ứng với post format
-                        get_template_part('woocommerce/product-box/product-box', ''); ?>
-                    <?php } ?>
-                </div>
-            <?php } else {
-                get_template_part('template-parts/content', 'none');
-            }
-            // reset post data
-            wp_reset_postdata();
-        ?>
+                        'posts_per_page' => $attributes['post_number'],
+                        'orderby' => $attributes['orderby'],
+                        'order' => $attributes['order'],
+                    ];
+                } else {
+                    $args = [
+                        'post_type' => 'product',
+                        'post_status' => 'publish',
+                        'posts_per_page' => $attributes['post_number'],
+                        'orderby' => $attributes['orderby'],
+                        'order' => $attributes['order'],
+                    ];
+                }
+                $wp_query = new WP_Query($args);
+                if ($wp_query->have_posts()) { ?>
+                    <div class="swiper swiper-slider swiper-products"
+                    data-item="<?php echo $attributes['item']; ?>" 
+                    data-item_lg="<?php echo $attributes['item_lg']; ?>" 
+                    data-item_md="<?php echo $attributes['item_md']; ?>" 
+                    data-item_sm="<?php echo $attributes['item_sm']; ?>" 
+                    data-item_mb="<?php echo $attributes['item_mb']; ?>" 
+                    data-row="<?php echo $attributes['item_row']; ?>" 
+                    data-dots="<?php echo $attributes['item_dots']; ?>" 
+                    data-arrows="<?php echo $attributes['item_arrows']; ?>" 
+                    data-vertical="<?php echo $attributes['item_vertical']; ?>"
+                    data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
+                        <?php while ($wp_query->have_posts()) {
+                            $wp_query-> the_post(); ?>                            
+                            <?php //load file tương ứng với post format
+                            get_template_part('woocommerce/product-box/product-box', ''); ?>
+                        <?php } ?>
+                    </div>
+                <?php } else {
+                    get_template_part('template-parts/content', 'none');
+                }
+                // reset post data
+                wp_reset_postdata();
+            ?>
+        </div>
 
-        <?php if ($attributes['url_text']) : ?>
+        <?php if ($attributes['button_url']) : ?>
             <div class="module_button">
-                <a href="<?php echo esc_url($attributes['url']); ?>">
-                    <?php echo $attributes['url_text']; ?>
+                <a href="<?php echo esc_url($attributes['button_url']); ?>">
+                    <?php echo $attributes['button_text']; ?>
                 </a>
             </div>
         <?php endif; ?>

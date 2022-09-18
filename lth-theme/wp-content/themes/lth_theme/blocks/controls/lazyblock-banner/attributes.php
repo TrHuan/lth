@@ -68,6 +68,22 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
+         'control_url_lth_image_url' => array(
+            'type' => 'url',
+            'name' => 'image_url',
+            'default' => '',
+            'label' => 'Image Url',
+            'help' => '',
+            'child_of' => '',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'placeholder' => '',
+            'characters_limit' => '',
+         ),
          'control_text_lth_text' => array(
             'type' => 'classic_editor',
             'name' => 'text',
@@ -85,7 +101,7 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_inner_blocks_lth_text_top' => array(
+         'control_text_lth_text_top' => array(
             'type' => 'text',
             'name' => 'text_top',
             'default' => '0',
@@ -102,7 +118,7 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_inner_blocks_lth_text_bottom' => array(
+         'control_text_lth_text_bottom' => array(
             'type' => 'text',
             'name' => 'text_bottom',
             'default' => '',
@@ -119,7 +135,7 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_inner_blocks_lth_text_left' => array(
+         'control_text_lth_text_left' => array(
             'type' => 'text',
             'name' => 'text_left',
             'default' => '0',
@@ -136,7 +152,7 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_inner_blocks_lth_text_right' => array(
+         'control_text_lth_text_right' => array(
             'type' => 'text',
             'name' => 'text_right',
             'default' => '',
@@ -153,7 +169,7 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_inner_blocks_lth_text_translate' => array(
+         'control_text_lth_text_translate' => array(
             'type' => 'text',
             'name' => 'text_translate',
             'default' => '0,0',
@@ -167,22 +183,6 @@ if (function_exists('lazyblocks')) :
             'save_in_meta_name' => '',
             'required' => 'false',
             'multiline' => 'false',
-            'placeholder' => '',
-            'characters_limit' => '',
-         ),
-         'control_url_lth_image_url' => array(
-            'type' => 'url',
-            'name' => 'image_url',
-            'default' => '',
-            'label' => 'Image Url',
-            'help' => '',
-            'child_of' => '',
-            'placement' => 'inspector',
-            'width' => '100',
-            'hide_if_not_selected' => 'false',
-            'save_in_meta' => 'false',
-            'save_in_meta_name' => '',
-            'required' => 'false',
             'placeholder' => '',
             'characters_limit' => '',
          ),

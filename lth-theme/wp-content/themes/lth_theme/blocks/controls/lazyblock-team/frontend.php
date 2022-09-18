@@ -70,7 +70,7 @@ if (!function_exists('lth_team_output_fe')) :
                                             </div>
                                         </div>
 
-                                        <div class="content-box">
+                                        <div class="content-box" style="text-align: <?php echo $inner['text_align']; ?>">
                                             <h3 class="content-name">
                                                 <?php echo wpautop($inner['item_title']); ?>
                                             </h3>

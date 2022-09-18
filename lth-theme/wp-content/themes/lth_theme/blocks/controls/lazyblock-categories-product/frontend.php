@@ -69,7 +69,7 @@ if (!function_exists('lth_categories_product_output_fe')) :
                                             </a>
                                         </div>
                                     <?php } ?>
-                                    <div class="content-box">
+                                    <div class="content-box" style="text-align: <?php echo $attributes['text_align']; ?>">
                                         <h3 class="content-name">
                                             <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>">
                                                 <?php echo $term->name; ?>              
@@ -81,7 +81,7 @@ if (!function_exists('lth_categories_product_output_fe')) :
                                     </div>
                                 </div>
 
-                                <div class="content-footer">
+                                <div class="content-footer" style="text-align: <?php echo $attributes['text_align']; ?>">
                                     <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>" title="" class="btn"><?php echo __('Xem thêm'); ?></a>
                                 </div>
                             </div>

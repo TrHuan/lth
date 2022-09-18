@@ -67,7 +67,7 @@ if (!function_exists('lth_testimonials_output_fe')) :
                                 </div>
                             </div>
 
-                            <div class="content-box">
+                            <div class="content-box" style="text-align: <?php echo $inner['text_align']; ?>">
                                 <div class="content-name">
                                     <?php echo wpautop($inner['item_name']); ?>
                                 </div>

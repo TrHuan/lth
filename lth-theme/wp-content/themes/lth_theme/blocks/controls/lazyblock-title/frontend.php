@@ -24,7 +24,7 @@ if (!function_exists('lth_title_output_fe')) :
 ?>
 
     <?php if ($attributes['title'] || $attributes['description']) : ?>
-        <div class="module_header title-box" style="text-align: <?php echo $attributes['title_text_align']; ?>">
+        <div class="module_header title-box" style="text-align: <?php echo $attributes['text_align']; ?>">
             <?php if (isset($attributes['title'])) : ?>
                 <?php if ($attributes['title_tag'] == 'h1') { ?>
                     <h1 class="title" <?php if (!$attributes['title_url'] && $attributes['title_color']) : ?>style="<?php echo $title_color; ?>"<?php endif; ?>>

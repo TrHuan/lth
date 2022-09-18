@@ -55,7 +55,7 @@ if (!function_exists('lth_blogs_output_fe')) :
             </div>
         <?php endif; ?>
 
-        <div class="module_content">
+        <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
             <?php
                 $i = 0;
                 foreach( $attributes['items'] as $inner ) {
@@ -108,6 +108,14 @@ if (!function_exists('lth_blogs_output_fe')) :
                 wp_reset_postdata();
             ?>   
         </div>
+
+        <?php if ($attributes['button_url']) : ?>
+            <div class="module_button">
+                <a href="<?php echo esc_url($attributes['button_url']); ?>">
+                    <?php echo $attributes['button_text']; ?>
+                </a>
+            </div>
+        <?php endif; ?>
     </div>
 </article>
 <?php

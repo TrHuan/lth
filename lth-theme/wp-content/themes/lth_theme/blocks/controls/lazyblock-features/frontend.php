@@ -20,7 +20,7 @@ if (!function_exists('lth_features_output_fe')) :
 ?>  
 <article class="lth-features <?php echo $attributes['class']; ?>">
     <div class="module module_features">
-        <?php if ($attributes['title'] || $attributes['description'] || $attributes['categories']) : ?>
+        <?php if ($attributes['title'] || $attributes['description']) : ?>
             <div class="module_header title-box">
                 <?php if (isset($attributes['title'])) : ?>
                     <h2 class="title">
@@ -67,7 +67,7 @@ if (!function_exists('lth_features_output_fe')) :
                                 </div>
                             </div>
 
-                            <div class="content-box">
+                            <div class="content-box" style="text-align: <?php echo $inner['text_align']; ?>">
                                 <h3 class="content-name">
                                     <?php echo wpautop($inner['item_title']); ?>
                                 </h3>

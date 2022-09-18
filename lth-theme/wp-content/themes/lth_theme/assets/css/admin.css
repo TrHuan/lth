@@ -47,7 +47,9 @@
     border: none;
 }
 .block-editor-block-list__block .block-list-appender.block-list-appender {
-    bottom: -37px;
+    bottom: -34px;
+    display: flex;
+    justify-content: flex-end;
 }
 .wp-block-columns > .wp-block-column {
     border-bottom: 1px solid #ebebeb;
