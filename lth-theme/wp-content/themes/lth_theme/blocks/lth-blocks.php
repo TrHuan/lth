@@ -56,6 +56,7 @@ function lth_allowed_block_types( $allowed_blocks ) {
         'lazyblock/lth-menu',
         'lazyblock/lth-products',
         'lazyblock/lth-search',
+        'lazyblock/lth-skins',
         'lazyblock/lth-slider',
         // 'lazyblock/lth-tab',
         'lazyblock/lth-team',
