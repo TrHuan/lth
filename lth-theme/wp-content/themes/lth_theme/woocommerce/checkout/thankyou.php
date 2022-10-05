@@ -54,12 +54,19 @@ defined( 'ABSPATH' ) || exit;
 										<strong><?php echo wc_format_datetime( $order->get_date_created() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
 									</li>
 
-									<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_phone() ) : ?>
+									<?php //if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_last_name() ) : ?>
+										<li class="woocommerce-order-overview__name name">
+											<?php esc_html_e( 'Name:', 'woocommerce' ); ?>
+											<strong><?php echo $order->get_billing_last_name(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+										</li>
+									<?php //endif; ?>
+
+									<?php //if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_phone() ) : ?>
 										<li class="woocommerce-order-overview__phone phone">
 											<?php esc_html_e( 'Phone:', 'woocommerce' ); ?>
 											<strong><?php echo $order->get_billing_phone(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
 										</li>
-									<?php endif; ?>
+									<?php //endif; ?>
 
 									<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
 										<li class="woocommerce-order-overview__email email">
@@ -67,6 +74,13 @@ defined( 'ABSPATH' ) || exit;
 											<strong><?php echo $order->get_billing_email(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
 										</li>
 									<?php endif; ?>
+
+									<?php //if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_address_1() ) : ?>
+										<li class="woocommerce-order-overview__address address">
+											<?php esc_html_e( 'Address:', 'woocommerce' ); ?>
+											<strong><?php echo esc_html( $order->get_billing_address_1() ); ?></strong>
+										</li>
+									<?php //endif; ?>
 
 									<li class="woocommerce-order-overview__total total">
 										<?php esc_html_e( 'Total:', 'woocommerce' ); ?>
