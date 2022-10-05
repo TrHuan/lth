@@ -54,9 +54,13 @@ if (!function_exists('lth_skins_output_fe')) :
                             <h3 class="content-name">
                                 <?php echo wpautop($inner['item_title']); ?>
                             </h3>
-                            <div class="content-line">
+                            <div class="content-line <?php echo $inner['animate']; ?>" style="overflow-x: hidden; padding-top: 20px;">
                                 <!-- <div class="line-bg" style="width: 100%; height: 3px; background-color: #ebebeb;"></div> -->
-                                <div class="line-number" style="width:<?php echo $inner['item_number']; ?>; height: 3px; background-color: #000; position: relative;">
+                                <?php if ($inner['animate'] == 'yes') { ?>
+                                    <div class="line-number wow slideInLeft" data-wow-duration="<?php echo $inner['animate_duration']; ?>" data-wow-delay="<?php echo $inner['animate_delay']; ?>" style="width:<?php echo $inner['item_number']; ?>; height: 3px; background-color: #000; position: relative;">
+                                <?php } else { ?>
+                                    <div class="line-number" style="width:<?php echo $inner['item_number']; ?>; height: 3px; background-color: #000; position: relative;">
+                                <?php } ?>
                                     <span class="content-number" style="position: absolute; top: 0; right: 0; transform: translateY(-100%);">
                                         <?php echo $inner['item_number']; ?>
                                     </span>
