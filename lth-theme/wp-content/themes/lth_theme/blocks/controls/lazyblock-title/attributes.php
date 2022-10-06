@@ -83,7 +83,7 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_textarea_lth_title_tag' => array(
+         'control_select_lth_title_tag' => array(
             'type' => 'select',
             'name' => 'title_tag',
             'default' => 'h2',
