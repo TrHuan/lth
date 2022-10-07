@@ -64,37 +64,52 @@ if (!function_exists('lth_products_output_fe')) :
 
         <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
             <?php
-                $i = 0;
-                foreach( $attributes['items'] as $inner ) {
-                    $i++;
-                    if ($i == '1') {
-                        $cat = $inner['item'];
-                    }
-                }
+                $kq = array();
+                foreach( $attributes['products'] as $inner ) {
+                    $post = $inner['product'];
+                    $kq[] = $post;
+                }                
 
-                if ($cat) {
+                if ($post) {
                     $args = [
                         'post_type' => 'product',
                         'post_status' => 'publish',
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'product_cat',
-                                'field'    => 'id',
-                                'terms'    => $cat,
-                            ),
-                        ),
-                        'posts_per_page' => $attributes['post_number'],
-                        'orderby' => $attributes['orderby'],
-                        'order' => $attributes['order'],
+                        'post__in' => $kq,
+                        'orderby' => "post__in",
                     ];
                 } else {
-                    $args = [
-                        'post_type' => 'product',
-                        'post_status' => 'publish',
-                        'posts_per_page' => $attributes['post_number'],
-                        'orderby' => $attributes['orderby'],
-                        'order' => $attributes['order'],
-                    ];
+                    $i = 0;
+                    foreach( $attributes['items'] as $inner ) {
+                        $i++;
+                        if ($i == '1') {
+                            $cat = $inner['item'];
+                        }
+                    }
+
+                    if ($cat) {
+                        $args = [
+                            'post_type' => 'product',
+                            'post_status' => 'publish',
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'product_cat',
+                                    'field'    => 'id',
+                                    'terms'    => $cat,
+                                ),
+                            ),
+                            'posts_per_page' => $attributes['post_number'],
+                            'orderby' => $attributes['orderby'],
+                            'order' => $attributes['order'],
+                        ];
+                    } else {
+                        $args = [
+                            'post_type' => 'product',
+                            'post_status' => 'publish',
+                            'posts_per_page' => $attributes['post_number'],
+                            'orderby' => $attributes['orderby'],
+                            'order' => $attributes['order'],
+                        ];
+                    }
                 }
                 $wp_query = new WP_Query($args);
                 if ($wp_query->have_posts()) { ?>

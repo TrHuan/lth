@@ -57,22 +57,37 @@ if (!function_exists('lth_blogs_output_fe')) :
 
         <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
             <?php
-                $i = 0;
-                foreach( $attributes['items'] as $inner ) {
-                    $i++;
-                    if ($i == '1') {
-                        $cat = $inner['item'];
-                    }
-                }
+                $kq = array();
+                foreach( $attributes['posts'] as $inner ) {
+                    $post = $inner['post'];
+                    $kq[] = $post;
+                }                
 
-                $args = [
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'cat' => $cat,
-                    'posts_per_page' => $attributes['post_number'],
-                    'orderby' => $attributes['orderby'],
-                    'order' => $attributes['order'],
-                ];
+                if ($post) {
+                    $args = [
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'post__in' => $kq,
+                        'orderby' => "post__in",
+                    ];
+                } else {
+                    $i = 0;
+                    foreach( $attributes['items'] as $inner ) {
+                        $i++;
+                        if ($i == '1') {
+                            $cat = $inner['item'];
+                        }
+                    }
+
+                    $args = [
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'cat' => $cat,
+                        'posts_per_page' => $attributes['post_number'],
+                        'orderby' => $attributes['orderby'],
+                        'order' => $attributes['order'],
+                    ];
+                }
                 $wp_query = new WP_Query($args);
                 if ($wp_query->have_posts()) { ?>
                     <div class="swiper swiper-slider swiper-blogs"
