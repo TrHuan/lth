@@ -4,66 +4,35 @@ $products = get_field('products','option');
 $products_per_page = $products['products_per_page'];
 $number_products_on_row = $products['number_products_on_row'];
 
-
 // Page shop nhận file archive-product.php
-
 add_theme_support('woocommerce');
 
-
-
 // Hiển thị số lượng sản phẩm trên 1 page: return 2 (2 sản phẩm)
-
 add_filter('loop_shop_per_page', 'cols');
-
 if (!function_exists('cols')) {
-
     function cols($num) {
-
         return $products_per_page;
-
     }
-
 }
-
-
 
 // Hiển thị số lượng sản phẩm trên 1 hàng: return 3 (3 sản phẩm)
-
 add_filter('loop_shop_columns', 'loop_columns');
-
 if (!function_exists('loop_columns')) {
-
     function loop_columns($num) {
-
         return $number_products_on_row;
-
     }
-
 }
 
-
-
 /* Sắp xếp sản phẩm mới nhất trước, hết hàng sau cùng */
-
 add_action( 'pre_get_posts', function ( $q ) {
-
     if (   !is_admin()                // Target only front end
-
          && is_woocommerce()          // Target only WooCommerce
-
          && $q->is_main_query()       // Only target the main query
-
     ) {
-
         $q->set( 'meta_key', '_stock_status' );
-
         $q->set( 'orderby', array('meta_value' => 'ASC', 'date' => 'DESC') );
-
     }
-
 }, PHP_INT_MAX );
-
-
 
 /*Woocommerce minicart*/
 add_filter('woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment_icon');
@@ -74,9 +43,7 @@ function woocommerce_header_add_to_cart_fragment_icon( $fragments_icon ) {
     require_once(WOO_DIR . '/cart/header-cart-ajax.php');
     $fragments_icon['.carts-content .cart-btn'] = ob_get_clean();
     return $fragments_icon;
-
 }
-
 add_filter('woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 function woocommerce_header_add_to_cart_fragment( $fragments ) {
     global $woocommerce;
@@ -87,12 +54,10 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
     return $fragments;
 }
 
-
-
 // xóa bỏ css mặc định của woocommerce
 // add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
-//
+// xoá sản phẩm cùng loại
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 // xóa tab thông tin bổ sung, đánh giá ở chi tiết sản phẩm
@@ -211,19 +176,15 @@ function custom_override_checkout_fields( $fields ) {
 add_filter('woocommerce_bacs_accounts', '__return_false');
  
 add_action( 'woocommerce_email_before_order_table', 'lth_email_instructions', 10, 3 );
-function lth_email_instructions( $order, $sent_to_admin, $plain_text = false ) {
- 
+function lth_email_instructions( $order, $sent_to_admin, $plain_text = false ) { 
     if ( ! $sent_to_admin && 'bacs' === $order->get_payment_method() && $order->has_status( 'on-hold' ) ) {
         lth_bank_details( $order->get_id() );
-    }
- 
-}
- 
+    } 
+} 
 add_action( 'woocommerce_thankyou_bacs', 'lth_thankyou_page' );
 function lth_thankyou_page($order_id){
     lth_bank_details($order_id);
-}
- 
+} 
 function lth_bank_details( $order_id = '' ) {
     $bacs_accounts = get_option('woocommerce_bacs_accounts');
     if ( ! empty( $bacs_accounts ) ) {
@@ -257,18 +218,6 @@ function lth_bank_details( $order_id = '' ) {
     }
 }
 
-// sản phẩm đã xem
-function viewedProduct(){
-    session_start();
-    if(!isset($_SESSION["viewed"])){
-        $_SESSION["viewed"] = array();
-    }
-    if(is_singular('product')){
-        $_SESSION["viewed"][get_the_ID()] = get_the_ID();
-    }
-}
-add_action('wp', 'viewedProduct');
-
 /**
 * Optimize WooCommerce Scripts
 * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
@@ -291,7 +240,6 @@ function conditionally_load_woc_js_css(){
     wp_dequeue_script( 'wcqi-js' );
     wp_dequeue_script( 'jquery-cookie' );
     wp_dequeue_script( 'jquery-blockUI' );
-
     wp_dequeue_style( 'wc-block-style' );
 }
 
@@ -423,8 +371,8 @@ function change_existing_currency_symbol( $currency_symbol, $currency ) {
 }
 
 // Remove product cat base
-add_filter('term_link', 'devvn_no_term_parents', 1000, 3);
-function devvn_no_term_parents($url, $term, $taxonomy) {
+add_filter('term_link', 'lth_no_term_parents', 1000, 3);
+function lth_no_term_parents($url, $term, $taxonomy) {
     if($taxonomy == 'product_cat'){
         $term_nicename = $term->slug;
         $url = trailingslashit(get_option( 'home' )) . user_trailingslashit( $term_nicename, 'category' );
@@ -433,7 +381,7 @@ function devvn_no_term_parents($url, $term, $taxonomy) {
 }
  
 // Add our custom product cat rewrite rules
-function devvn_no_product_cat_parents_rewrite_rules($flash = false) {
+function lth_no_product_cat_parents_rewrite_rules($flash = false) {
     $terms = get_terms( array(
         'taxonomy' => 'product_cat',
         'post_type' => 'product',
@@ -450,12 +398,12 @@ function devvn_no_product_cat_parents_rewrite_rules($flash = false) {
     if ($flash == true)
         flush_rewrite_rules(false);
 }
-add_action('init', 'devvn_no_product_cat_parents_rewrite_rules');
+add_action('init', 'lth_no_product_cat_parents_rewrite_rules');
  
 /*Sửa lỗi khi tạo mới taxomony bị 404*/
-add_action( 'create_term', 'devvn_new_product_cat_edit_success', 10);
-add_action( 'edit_terms', 'devvn_new_product_cat_edit_success', 10);
-add_action( 'delete_term', 'devvn_new_product_cat_edit_success', 10);
-function devvn_new_product_cat_edit_success( ) {
-    devvn_no_product_cat_parents_rewrite_rules(true);
+add_action( 'create_term', 'lth_new_product_cat_edit_success', 10);
+add_action( 'edit_terms', 'lth_new_product_cat_edit_success', 10);
+add_action( 'delete_term', 'lth_new_product_cat_edit_success', 10);
+function lth_new_product_cat_edit_success( ) {
+    lth_no_product_cat_parents_rewrite_rules(true);
 }
