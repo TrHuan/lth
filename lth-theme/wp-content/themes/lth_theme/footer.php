@@ -31,22 +31,30 @@
         <?php wp_footer(); ?>
 
         <!-- button show popup lấy theo id của popup -->
-         <?php if( have_rows('popup', 'option') ): ?>
-            <?php while( have_rows('popup', 'option') ) : the_row();
+         <?php if( have_rows('popups', 'option') ): ?>
+            <?php while( have_rows('popups', 'option') ) : the_row();
                 if (get_sub_field('id')) { ?>
                     <div class="popups popup-<?php echo get_sub_field('id'); ?>">
                         <div class="popups-box">                    
                             <div class="popup-box">
                                 <div class="content-box">
-                                    <div class="module_header title-box">
-                                        <h2 class="title">
-                                            <?php echo get_sub_field('title'); ?>
-                                        </h2>
-                                    </div>  
-
-                                    <div class="popup-content">
-                                        <?php echo do_shortcode(get_sub_field('content')); ?>
-                                    </div>
+                                    <?php $popup_option = get_field('popup', 'option');
+                                    if ($popup_option) {
+                                        $args = [
+                                            'post_type' => 'html-blocks',
+                                            'p' => $popup_option,
+                                        ];
+                                        $lth = new WP_Query($args);
+                                        if ($lth->have_posts()) { ?>
+                                                <?php while ($lth->have_posts()) {
+                                                    $lth-> the_post();
+                                                    //load file tương ứng với post format
+                                                the_content();
+                                                } 
+                                        }
+                                        // reset post data
+                                        wp_reset_postdata();
+                                    } ?>
                                 </div>
                             </div>             
                         </div>
