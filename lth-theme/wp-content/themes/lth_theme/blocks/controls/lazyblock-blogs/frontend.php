@@ -56,14 +56,14 @@ if (!function_exists('lth_blogs_output_fe')) :
         <?php endif; ?>
 
         <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
-            <?php
-                $kq = array();
-                foreach( $attributes['posts'] as $inner ) {
-                    $post = $inner['post'];
-                    $kq[] = $post;
-                }                
+            <?php           
+                if ($attributes['choose_posts']) {
+                    $kq = array();
+                    foreach( $attributes['posts'] as $inner ) {
+                        $post = $inner['post'];
+                        $kq[] = $post;
+                    }     
 
-                if ($post) {
                     $args = [
                         'post_type' => 'post',
                         'post_status' => 'publish',

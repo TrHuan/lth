@@ -63,14 +63,14 @@ if (!function_exists('lth_products_output_fe')) :
         <?php endif; ?>
 
         <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
-            <?php
-                $kq = array();
-                foreach( $attributes['products'] as $inner ) {
-                    $post = $inner['product'];
-                    $kq[] = $post;
-                }                
+            <?php            
+                if ($attributes['choose_products']) {
+                    $kq = array();
+                    foreach( $attributes['products'] as $inner ) {
+                        $post = $inner['product'];
+                        $kq[] = $post;
+                    }   
 
-                if ($post) {
                     $args = [
                         'post_type' => 'product',
                         'post_status' => 'publish',
