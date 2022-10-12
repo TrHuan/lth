@@ -2,7 +2,7 @@
 Contributors: Robert Macchi
 Tags: wp scraper, website migration, content migration, migration, scraper, website scraper, content scraper, content copier, copy, website copier, web scraper, scraping
 Requires at least:
-Tested up to: 5.9
+Tested up to: 6.0
 Stable Tag: trunk
 
 This Wordpress Scraper allows you to move a non-Wordpress
@@ -163,3 +163,12 @@ Select an image from the source page or add your own.
 
 * Tested compatibility with Wordpress 5.8 release
 * Tested compatibility with Wordpress 5.9 release
+
+
+= Version 5.7 =
+
+* Fixed CSS issues
+*PHP crawler will now work with PHP 8
+*Tested for compatibility with WordPress 6.1
+
+

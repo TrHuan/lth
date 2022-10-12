@@ -159,7 +159,7 @@
 	margin-bottom: 10px;
 }
 
-#wpsf-generate h3 {
+#wpsf-generate h3, #wpsf-visual-generate h3 {
     font-size: 14px;
 	margin: 0;
 	padding: 8px;
@@ -170,11 +170,12 @@
     text-decoration: none;
 }
 
-#wpsf-generate .postbox .hndle {
+#wpsf-generate .postbox .hndle, #wpsf-visual-generate .postbox .hndle, .postbox-container .hndle {
     cursor: pointer !important;
+		padding-left: 22px;
 }
 
-#wpsf-generate .handlediv { color: #fff !important; float:right; }
+#wpsf-generate .handlediv, #wpsf-visual-generate .handlediv, .postbox-container .handlediv { color: #fff !important; z-index: 1; position: absolute; }
 
 .wpsf-req {color: #990000;}
 

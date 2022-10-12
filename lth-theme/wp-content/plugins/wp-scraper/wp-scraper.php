@@ -1,12 +1,12 @@
 <?php
 /**
  * @package WP Scraper
- * @version 5.6  */
+ * @version 5.7  */
 /*
 Plugin Name: WP Scraper
 Plugin URI:  http://www.wpscraper.com
 Description: This plugin allows you to copy content from websites directly to your WordPress posts.
-Version: 5.6
+Version: 5.7
 Author: Robert Macchi
 */
 

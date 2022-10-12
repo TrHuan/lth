@@ -14,14 +14,14 @@ class PHPCrawlerUserSendDataCache
    * @var array
    */
   protected $basic_authentications = array();
-  
+
   /**
    * Array containing post-data to send.
    *
    * @var array
    */
   protected $post_data = array();
-  
+
   /**
    * Adds post-data together with an URL-regex to the list of post-data to send with requests.
    *
@@ -33,26 +33,26 @@ class PHPCrawlerUserSendDataCache
   {
     // Check regex
     $regex_okay = PHPCrawlerUtils::checkRegexPattern($url_regex);
-    
+
     if ($regex_okay == true)
     {
       @reset($post_data_array);
-      while (list($key, $value) = @each($post_data_array))
-      {  
+      foreach ($post_data_array as $key => $value)
+      {
         // Add data to post_data-array
         $tmp = array();
         $tmp["url_regex"] = $url_regex;
         $tmp["key"] = $key;
         $tmp["value"] = $value;
-      
+
         $this->post_data[] = $tmp;
       }
-      
+
       return true;
     }
     else return false;
   }
-  
+
   /**
    * Returns the post-data (key and value) that should be send to the given URL.
    *
@@ -63,7 +63,7 @@ class PHPCrawlerUserSendDataCache
   public function getPostDataForUrl($url)
   {
     $post_data_array = array();
-    
+
     $cnt = count($this->post_data);
     for ($x=0; $x<$cnt; $x++)
     {
@@ -72,10 +72,10 @@ class PHPCrawlerUserSendDataCache
         $post_data_array[$this->post_data[$x]["key"]] = $this->post_data[$x]["value"];
       }
     }
-    
+
     return $post_data_array;
   }
-  
+
   /**
    * Adds a basic-authentication (username and password) to the list of authentications that will be send
    * with requests.
@@ -90,7 +90,7 @@ class PHPCrawlerUserSendDataCache
   {
     // Check regex
     $regex_okay = PHPCrawlerUtils::checkRegexPattern($url_regex);
-    
+
     if ($regex_okay == true)
     {
       // Add authentication to basic_authentications-array
@@ -98,13 +98,13 @@ class PHPCrawlerUserSendDataCache
       $tmp["url_regex"] = $url_regex;
       $tmp["username"] = $username;
       $tmp["password"] = $password;
-      
+
       $this->basic_authentications[] = $tmp;
       return true;
     }
     else return false;
   }
-  
+
   /**
    * Returns the basic-authentication (username and password) that should be send to the given URL.
    *
@@ -121,11 +121,11 @@ class PHPCrawlerUserSendDataCache
         $tmp = array();
         $tmp["username"] = $this->basic_authentications[$x]["username"];
         $tmp["password"] = $this->basic_authentications[$x]["password"];
-        
+
         return $tmp;
       }
     }
-    
+
     return null;
   }
 }
