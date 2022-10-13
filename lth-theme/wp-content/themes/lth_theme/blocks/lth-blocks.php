@@ -38,7 +38,7 @@ function lth_allowed_block_types( $allowed_blocks ) {
         // 'woocommerce/price-filter',
 
         'lazyblock/lth-section',
-        'lazyblock/lth-blocks',
+        // 'lazyblock/lth-blocks',
         'lazyblock/lth-banner',
         'lazyblock/lth-blogs',
         'lazyblock/lth-brand',
