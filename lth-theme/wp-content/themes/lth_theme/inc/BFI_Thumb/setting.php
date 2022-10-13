@@ -1,13 +1,21 @@
 <?php
 
-function lth_remove_unused_image_size( $sizes) { 
+// This will remove the default image sizes thumbnail, medium and large. 
+add_filter( 'intermediate_image_sizes_advanced', 'lth_remove_default_images' );
+function lth_remove_default_images( $sizes ) {
     unset( $sizes['thumbnail']);
     unset( $sizes['medium']);
     unset( $sizes['large']);
-    unset( $sizes['post-thumbnail']);
-    unset( $sizes['twentyfourteen-full-width']);
+    return $sizes;
 }
-add_filter('intermediate_image_sizes_advanced', 'remove_unused_image_size');
+function remove_extra_image_sizes() {
+    foreach ( get_intermediate_image_sizes() as $size ) {
+        if ( !in_array( $size, array( 'thumbnail', 'medium', 'medium_large', 'large' ) ) ) {
+            remove_image_size( $size );
+        }
+    }
+}
+add_action('init', 'remove_extra_image_sizes');
 
 // Tạo custom logo bằng bfi_thumb
 function lth_custom_logo( $thumb_size, $image_width, $image_height ) {
