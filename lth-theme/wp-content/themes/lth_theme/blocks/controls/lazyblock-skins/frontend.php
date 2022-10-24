@@ -51,17 +51,18 @@ if (!function_exists('lth_skins_output_fe')) :
                 <div class="item">
                     <div class="content">
                         <div class="content-box">
-                            <div class="content-line <?php echo $inner['animate']; ?>" style="overflow-x: hidden; position: relative;">
+                            <div class="content-line <?php echo $inner['animate']; ?>">
                                 <h3 class="content-name" style="margin-bottom: 0;">
                                     <?php echo wpautop($inner['item_title']); ?>
                                 </h3>
-                                <div class="line-bg" style="width: 100%; height: 3px; background-color: #ebebeb; position: relative; z-index: 1;"></div>
+                                <div class="line-bg"></div>
                                 <?php if ($inner['animate'] == 'yes') { ?>
-                                    <div class="line-number wow slideInLeft" data-wow-duration="<?php echo $inner['animate_duration']; ?>" data-wow-delay="<?php echo $inner['animate_delay']; ?>" style="width:<?php echo $inner['item_number']; ?>; height: 3px; background-color: #000; position: absolute; bottom: 0; left: 0; z-index: 2;">
+                                    <div class="line-number wow slideInLeft" data-wow-duration="<?php echo $inner['animate_duration']; ?>"
+                                    data-wow-delay="<?php echo $inner['animate_delay']; ?>" style="width:<?php echo $inner['item_number']; ?>;">
                                 <?php } else { ?>
-                                    <div class="line-number" style="width:<?php echo $inner['item_number']; ?>; height: 3px; background-color: #000; position: absolute; bottom: 0; left: 0; z-index: 2;">
+                                    <div class="line-number" style="width:<?php echo $inner['item_number']; ?>;">
                                 <?php } ?>
-                                    <span class="content-number" style="position: absolute; top: 0; right: 0; transform: translateY(-100%);">
+                                    <span class="content-number">
                                         <?php echo $inner['item_number']; ?>
                                     </span>
                                 </div>
