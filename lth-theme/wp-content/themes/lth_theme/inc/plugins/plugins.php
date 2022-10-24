@@ -128,6 +128,18 @@ function lth_plugin_activation() {
 
                 array(
 
+                        'name' => 'Shipping Viet Nam WooCommerce',
+
+                        'slug' => 'shipping-viet-nam-woocommerce',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'WP SMTP',
 
                         'slug' => 'wp-smtp',
