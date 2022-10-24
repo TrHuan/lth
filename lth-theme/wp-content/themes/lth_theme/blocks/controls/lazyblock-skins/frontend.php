@@ -52,7 +52,7 @@ if (!function_exists('lth_skins_output_fe')) :
                     <div class="content">
                         <div class="content-box">
                             <div class="content-line <?php echo $inner['animate']; ?>">
-                                <?php if ($inner['item_text']) { ?>
+                                <?php if ($inner['item_title']) { ?>
                                     <h3 class="content-name" style="margin-bottom: 0;">
                                         <?php echo wpautop($inner['item_title']); ?>
                                     </h3>
