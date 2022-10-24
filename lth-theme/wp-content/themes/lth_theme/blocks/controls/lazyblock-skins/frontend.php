@@ -52,9 +52,11 @@ if (!function_exists('lth_skins_output_fe')) :
                     <div class="content">
                         <div class="content-box">
                             <div class="content-line <?php echo $inner['animate']; ?>">
-                                <h3 class="content-name" style="margin-bottom: 0;">
-                                    <?php echo wpautop($inner['item_title']); ?>
-                                </h3>
+                                <?php if ($inner['item_text']) { ?>
+                                    <h3 class="content-name" style="margin-bottom: 0;">
+                                        <?php echo wpautop($inner['item_title']); ?>
+                                    </h3>
+                                <?php } ?>
                                 <div class="line-bg"></div>
                                 <?php if ($inner['animate'] == 'yes') { ?>
                                     <div class="line-number wow slideInLeft" data-wow-duration="<?php echo $inner['animate_duration']; ?>"
@@ -67,9 +69,11 @@ if (!function_exists('lth_skins_output_fe')) :
                                     </span>
                                 </div>
                             </div>
-                            <div class="content-excerpt">
-                                <?php echo wpautop($inner['item_text']); ?>
-                            </div>
+                            <?php if ($inner['item_text']) { ?>
+                                <div class="content-excerpt">
+                                    <?php echo wpautop($inner['item_text']); ?>
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
