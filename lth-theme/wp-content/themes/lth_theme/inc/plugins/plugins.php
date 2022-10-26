@@ -36,6 +36,30 @@ function lth_plugin_activation() {
 
                 array(
 
+                        'name' => 'Shipping Viet Nam WooCommerce',
+
+                        'slug' => 'shipping-viet-nam-woocommerce',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
+                        'name' => 'YITH WooCommerce Ajax Product Filter',
+
+                        'slug' => 'yith-woocommerce-ajax-navigation',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Contact Form 7',
 
                         'slug' => 'contact-form-7',
@@ -104,33 +128,9 @@ function lth_plugin_activation() {
 
                 array(
 
-                        'name' => 'YITH WooCommerce Ajax Product Filter',
-
-                        'slug' => 'yith-woocommerce-ajax-navigation',
-
-                        'required' => true,
-
-                ),
-
-
-
-                array(
-
                         'name' => 'Hyyan WooCommerce Polylang Integration',
 
                         'slug' => 'woo-poly-integration',
-
-                        'required' => true,
-
-                ),
-
-
-
-                array(
-
-                        'name' => 'Shipping Viet Nam WooCommerce',
-
-                        'slug' => 'shipping-viet-nam-woocommerce',
 
                         'required' => true,
 
