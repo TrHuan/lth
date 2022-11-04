@@ -1,25 +1,25 @@
 <?php
 /**
- * @block-slug  :   lth-features
- * @block-output:   lth_features_output
+ * @block-slug  :   lth-icons
+ * @block-output:   lth_icons_output
  * @block-attributes: get from attributes.php
  */
 
 // filter for Frontend output.
-add_filter('lazyblock/lth-features/frontend_callback', 'lth_features_output_fe', 10, 2);
+add_filter('lazyblock/lth-icons/frontend_callback', 'lth_icons_output_fe', 10, 2);
 
-if (!function_exists('lth_features_output_fe')) :
+if (!function_exists('lth_icons_output_fe')) :
     /**
      * Test Render Callback
      *
      * @param string $output - block output.
      * @param array  $attributes - block attributes.
      */
-    function lth_features_output_fe($output, $attributes) {
+    function lth_icons_output_fe($output, $attributes) {
         ob_start();
 ?>  
-<article class="lth-features <?php echo $attributes['class']; ?>">
-    <div class="module module_features">
+<article class="lth-icons <?php echo $attributes['class']; ?>">
+    <div class="module module_icons">
         <?php if ($attributes['title'] || $attributes['description']) : ?>
             <div class="module_header title-box">
                 <?php if (isset($attributes['title'])) : ?>
@@ -47,7 +47,7 @@ if (!function_exists('lth_features_output_fe')) :
         <?php endif; ?>
         
         <div class="module_content">
-            <div class="swiper swiper-slider swiper-features"
+            <div class="swiper swiper-slider swiper-icons"
             data-item="<?php echo $attributes['item']; ?>" 
             data-item_lg="<?php echo $attributes['item_lg']; ?>" 
             data-item_md="<?php echo $attributes['item_md']; ?>" 

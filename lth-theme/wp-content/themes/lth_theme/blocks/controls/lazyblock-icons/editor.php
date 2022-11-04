@@ -1,21 +1,21 @@
 <?php
 /**
- * @block-slug  :   lth-features
- * @block-output:   lth__features_output
+ * @block-slug  :   lth-icons
+ * @block-output:   lth__icons_output
  * @block-attributes: get from attributes.php
  */
 
 // filter for Editor output.
-add_filter('lazyblock/lth-features/editor_callback', 'lth__features_output', 10, 2);
+add_filter('lazyblock/lth-icons/editor_callback', 'lth__icons_output', 10, 2);
 
-if (!function_exists('lth__features_output')) :
+if (!function_exists('lth__icons_output')) :
     /**
      * Test Render Callback
      *
      * @param string $output - block output.
      * @param array  $attributes - block attributes.
      */
-    function lth__features_output($output, $attributes) {
+    function lth__icons_output($output, $attributes) {
         ob_start();
 ?>
     <?php if (isset($attributes['title'])) : ?>
