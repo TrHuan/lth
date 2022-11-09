@@ -37,7 +37,7 @@ if (!function_exists('lth_slider_output_fe')) :
                             <div class="content" style="position: relative;">
                                 <div class="content-image">
                                     <a href="<?php echo esc_url( $inner['image_url'] ); ?>" class="image">
-                                        <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Slide" width="<?php echo $attributes['image_width']; ?>" height="<?php echo $attributes['image_height']; ?>">  
+                                        <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Slide" width="auto" height="auto">  
                                     </a>
                                 </div>
                                 <?php if ($inner['text']) { ?>

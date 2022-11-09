@@ -63,7 +63,7 @@ if (!function_exists('lth_categories_output_fe')) :
                                     if ($image) { ?>
                                         <div class="content-image">
                                             <a href="<?php echo get_category_link($inner['item']); ?>">
-                                                <img src="<?php echo $image; ?>" alt="<?php echo get_cat_name($inner['item']); ?>">
+                                                <img src="<?php echo $image; ?>" alt="<?php echo get_cat_name($inner['item']); ?>" width="auto" height="auto">
                                             </a>
                                         </div>
                                     <?php } ?>

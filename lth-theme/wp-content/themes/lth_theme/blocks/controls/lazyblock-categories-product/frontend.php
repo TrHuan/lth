@@ -65,7 +65,7 @@ if (!function_exists('lth_categories_product_output_fe')) :
                                     if ($image) { ?>
                                         <div class="content-image">
                                             <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>">
-                                                <img src="<?php echo $image; ?>" alt="<?php echo $term->name; ?>">
+                                                <img src="<?php echo $image; ?>" alt="<?php echo $term->name; ?>" width="auto" height="auto">
                                             </a>
                                         </div>
                                     <?php } ?>

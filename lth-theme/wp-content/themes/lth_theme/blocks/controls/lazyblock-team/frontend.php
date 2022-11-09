@@ -63,7 +63,7 @@ if (!function_exists('lth_team_output_fe')) :
                         <div class="content">
                             <div class="content-image">
                                 <div class="image">
-                                    <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Team" width="<?php echo $attributes['image_width']; ?>" height="<?php echo $attributes['image_height']; ?>">
+                                    <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Team" width="auto" height="auto">
                                 </div>
                             </div>
 

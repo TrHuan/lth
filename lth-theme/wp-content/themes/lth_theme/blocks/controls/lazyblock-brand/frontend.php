@@ -63,7 +63,7 @@ if (!function_exists('lth_brand_output_fe')) :
                         <div class="content">
                             <div class="content-image">
                                 <a href="<?php echo esc_url( $inner['url'] ); ?>" title="" class="image">
-                                    <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Brand" width="<?php echo $attributes['image_width']; ?>" height="<?php echo $attributes['image_height']; ?>">
+                                    <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Brand" width="auto" height="auto">
                                 </a>
                             </div>
                         </div>

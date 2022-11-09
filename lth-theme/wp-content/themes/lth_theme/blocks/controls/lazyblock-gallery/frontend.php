@@ -27,7 +27,7 @@ if (!function_exists('lth_gallery_output_fe')) :
                         <li>
                             <div class="items">
                                 <a href="<?php echo esc_url( $inner['image']['url'] ); ?>" title="">
-                                    <img src="<?php echo esc_url( $inner['image']['url'] ); ?>" alt="Image" width="" height="">
+                                    <img src="<?php echo esc_url( $inner['image']['url'] ); ?>" alt="Image" width="auto" height="auto">
                                 </a>
                             </div>
                         </li>

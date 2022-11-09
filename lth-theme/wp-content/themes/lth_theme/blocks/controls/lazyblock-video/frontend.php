@@ -24,7 +24,7 @@ if (!function_exists('lth_video_output_fe')) :
         <div class="module_content">
             <div class="content">
                 <div class="content-video">
-                    <img src="<?php echo esc_url( $attributes['background']['url'] ); ?>" alt="Image">
+                    <img src="<?php echo esc_url( $attributes['background']['url'] ); ?>" alt="Image" width="auto" height="auto">
                     <?php if ($attributes['video']) { ?>
                         <a data-fancybox href="<?php echo $attributes['video']; ?>" class="icon-play"></a>
                     <?php } ?>

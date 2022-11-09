@@ -26,7 +26,7 @@ if (!function_exists('lth_banner_output_fe')) :
                 <div class="content" style="position: relative;">
                     <div class="content-image">
                         <a href="<?php echo esc_url( $attributes['image_url'] ); ?>" title="" class="image">
-                            <img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="Image" width="<?php echo $attributes['image_width']; ?>" height="<?php echo $attributes['image_height']; ?>">
+                            <img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="Image" width="auto" height="auto">
                         </a>
                     </div>
                     <?php if ($attributes['text']) { ?>
