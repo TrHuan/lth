@@ -82,6 +82,20 @@ function lth_plugin_activation() {
 
 
 
+                array(	                        
+
+                        'name' => 'QR code MeCard/vCard generator',
+
+                        'slug' => 'wp-qrcode-me-v-card',
+
+                        'required' => true,
+
+                        // desktop download contact, mobile add contact vào danh bạ điện thoại
+
+                ),
+
+
+
                 array(
 
                         'name'               => 'Polylang Pro', // The plugin name

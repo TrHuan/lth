@@ -1236,32 +1236,6 @@ form {
 }
 // end page login registrations
 
-.single_add_to_cart_button.added:not(.loading):before,
-.add_to_cart_button.added:before,
-.added_to_cart.wc-forward,
-.single_add_to_cart_button.added:not(.loading):before,
-.add_to_cart_button.added:before {
-    display: none;
-}
-.add-product,
-.remove-product {
-    position: fixed;
-    top: 15px;
-    right: -100%;
-    z-index: 9999991;
-    background: #000;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: all 800ms;
-    color: #fff;
-    font-weight: 500;
-    font-size: 15px;
-}
-.add-product.active,
-.remove-product.active {
-    right: 15px;
-}
-
 /*//////////////////////////////////////////////////*/
 
 section {
@@ -1632,6 +1606,21 @@ footer {
 	}
 }
 // end skins
+
+// countdown
+.countdown-box {
+	span {
+		&:not(:last-child) {
+			&::after {
+				content: ':';
+				margin: 0 5px;
+			}
+		}
+	}
+}
+// end countdown
+
+/*//////////////////////////////////////////////////*/
 
 @media (max-width: 1349px) {
 	// Code

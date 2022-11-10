@@ -132,7 +132,7 @@
                 <span class="remove-product"><?php echo __('Xóa sản phẩm thành công.'); ?></span>
                 <span class="add-product"><?php echo __('Thêm vào giỏ hàng thành công.'); ?></span>
             </div>
-        <?php } ?>
+        <?php } ?>  
 
         <?php $other = get_field('other', 'option');
         echo $other['code_footer']; ?>

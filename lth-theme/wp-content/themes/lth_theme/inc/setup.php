@@ -60,6 +60,20 @@ function lth_sidebar_register() {
         );
     }
 
+    
+    if ( class_exists( 'WQM_Qr_Code_Generator' ) ) {
+        register_sidebar (
+            array (
+                'name' => __('QR code vCard'),
+                'id'        => 'widget_qr_code_vcard',
+                'before_widget' => '<div class="widget-box qr-code-vcard-box">',
+                'after_widget' => '</div>',
+                'before_title' => '<h2 class="title">',
+                'after_title' => '</h2>',
+            )
+        );
+    }
+
     // register_sidebar (
     //     array (
     //         'name' => __('Tin Tức'),
@@ -188,21 +202,18 @@ function lth_admin_menu( $__return_true ) {
         'edit.php?post_type=page', // Menu Trang
         'edit.php', // Menu Bài viết
         'edit.php?post_type=product', // Menu Sản phẩm
-        // 'wc', // WooCommerce
-        'edit.php?post_type=slidershow', // slidershow
-        'edit.php?post_type=feature', // feature
-        'edit.php?post_type=brand', // brand
-        'edit.php?post_type=testimonial', // Testimonials
-        'edit.php?post_type=service', // services
-        'edit.php?post_type=project', // projects
+        // 'wc-admin', // WooCommerce
+        // 'admin.php?page=wc-admin', // WooCommerce
         'users.php', // Menu Thành viên
         'wpcf7', // Wpcf7
         'cfdb7-list.php', // Wpcf7
-        'wp-mail-smtp', // Wpcf7
+        'wp-smtp/wp-smtp.php', // Wpcf7
+        'edit.php?post_type=qrcode-card',
+        'wpseo_dashboard',
         'mlang', // Polylang
         'plugins.php', // Menu Plugins
         'upload.php', // Menu Media
-        'edit-comments.php', // Menu Bình luận 
+        'edit-comments.php', // Menu Phản hồi
         'tools.php', // Menu Công cụ
         'options-general.php', // Menu Cài đặt
         'separator1', // Đoạn Cách

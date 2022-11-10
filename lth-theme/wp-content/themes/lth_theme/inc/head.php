@@ -25,13 +25,12 @@ function lth_theme_styles() {
     wp_enqueue_style(THEME_NAME . '-bootstrap', ASSETS_URI . '/css/bootstrap.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-fontawesome', ASSETS_URI . '/css/all.fontawesome.min.css', false, THEME_VERSION, 'all');
     wp_enqueue_style(THEME_NAME . '-slick', ASSETS_URI . '/css/slick.min.css', false, THEME_VERSION, 'all');
-    wp_enqueue_style(THEME_NAME . '-wow-animate', ASSETS_URI . '/css/wow-animate.css', false, THEME_VERSION, 'all');
+    wp_enqueue_style(THEME_NAME . '-wow-animate', ASSETS_URI . '/css/wow-animate.css', false, THEME_VERSION, 'all');	
 
     wp_enqueue_style(THEME_NAME . '-main', ASSETS_URI . '/css/main.css', false, THEME_VERSION, 'all');
 
     if ( class_exists( 'WooCommerce' ) ) {
 		wp_enqueue_style(THEME_NAME . '-product', ASSETS_URI . '/css/product.css', false, THEME_VERSION, 'all');
-		wp_enqueue_style(THEME_NAME . '-repon-product', ASSETS_URI . '/css/repon-product.css', false, THEME_VERSION, 'all');
 	}
 
     wp_enqueue_style(THEME_NAME . '-customs', ASSETS_URI . '/css/customs.css', false, THEME_VERSION, 'all');
