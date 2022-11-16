@@ -76,6 +76,7 @@ if (!function_exists('lth_products_output_fe')) :
                         'post_status' => 'publish',
                         'post__in' => $kq,
                         'orderby' => "post__in",
+                        'posts_per_page' => $attributes['post_number'],
                     ];
                 } else {
                     $i = 0;
