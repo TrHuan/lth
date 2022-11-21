@@ -143,9 +143,9 @@ if (function_exists('lazyblocks')) :
          ),
          'control_checkbox_lth_products' => array(
             'type' => 'checkbox',
-            'name' => 'choose_products',
+            'name' => 'featured_products',
             'default' => '',
-            'label' => 'Choose Products',
+            'label' => 'Featured products',
             'help' => '',
             'child_of' => '',
             'placement' => 'inspector',

@@ -57,7 +57,7 @@ if (!function_exists('lth_blogs_output_fe')) :
 
         <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
             <?php           
-                if ($attributes['choose_posts']) {
+                if ($attributes['featured_posts']) {
                     $kq = array();
                     foreach( $attributes['posts'] as $inner ) {
                         $post = $inner['post'];

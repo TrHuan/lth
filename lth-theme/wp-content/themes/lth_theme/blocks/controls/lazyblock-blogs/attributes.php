@@ -144,9 +144,9 @@ if (function_exists('lazyblocks')) :
          ),
          'control_checkbox_lth_posts' => array(
             'type' => 'checkbox',
-            'name' => 'choose_posts',
+            'name' => 'featured_posts',
             'default' => '',
-            'label' => 'Choose Posts',
+            'label' => 'Featured Posts',
             'help' => '',
             'child_of' => '',
             'placement' => 'inspector',
