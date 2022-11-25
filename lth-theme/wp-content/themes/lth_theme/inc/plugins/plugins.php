@@ -1,8 +1,9 @@
 <?php
 
-function lth_plugin_activation() {
+function lth_plugin_activation()
+{
 
- 
+
 
         // Khai bao plugin can cai dat
 
@@ -82,7 +83,7 @@ function lth_plugin_activation() {
 
 
 
-                array(	                        
+                array(
 
                         'name' => 'QR code MeCard/vCard generator',
 
@@ -151,6 +152,17 @@ function lth_plugin_activation() {
                 ),
 
 
+                array(
+
+                        'name' => 'Premmerce Permalink Manager for WooCommerce',
+
+                        'slug' => 'woo-permalink-manager',
+
+                        'required' => true,
+
+                ),
+
+
 
                 array(
 
@@ -174,7 +186,7 @@ function lth_plugin_activation() {
 
                 ),
 
-                
+
 
                 array(
 
@@ -222,7 +234,7 @@ function lth_plugin_activation() {
 
         );
 
- 
+
 
         // Thiet lap TGM
 
@@ -238,12 +250,7 @@ function lth_plugin_activation() {
 
         );
 
-        tgmpa( $plugins, $configs );
-
- 
-
+        tgmpa($plugins, $configs);
 }
 
 add_action('tgmpa_register', 'lth_plugin_activation');
-
-?>
