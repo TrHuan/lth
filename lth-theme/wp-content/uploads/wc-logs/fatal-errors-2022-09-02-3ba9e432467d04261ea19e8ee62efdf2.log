@@ -1,4 +1,0 @@
-2022-09-02T16:57:52+00:00 CRITICAL require(): Failed opening required 'app/vendor/autoload.php' (include_path='.;C:\php\pear') in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-content-crawler\wp-content-crawler.php on line 12
-
-2022-09-02T16:57:57+00:00 CRITICAL require(): Failed opening required 'app/vendor/autoload.php' (include_path='.;C:\php\pear') in D:\wamp64\www\job\lth\lth-theme\wp-content\plugins\wp-content-crawler\wp-content-crawler.php on line 12
-

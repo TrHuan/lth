@@ -4,11 +4,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /job/lth/lth-theme/
+RewriteBase /job/lth/lth-theme-core/lth-demo-oto/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /job/lth/lth-theme/index.php [L]
+RewriteRule . /job/lth/lth-theme-core/lth-demo-oto/index.php [L]
 </IfModule>
 
 # END WordPress

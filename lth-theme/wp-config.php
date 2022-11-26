@@ -8,7 +8,7 @@
  *
  * This file contains the following configurations:
  *
- * * MySQL settings
+ * * Database settings
  * * Secret keys
  * * Database table prefix
  * * ABSPATH
@@ -18,18 +18,18 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
+// ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'lth_theme' );
+define( 'DB_NAME', 'epiz_32775069_lth_theme' );
 
-/** MySQL database username */
-define( 'DB_USER', 'root' );
+/** Database username */
+define( 'DB_USER', 'epiz_32775069' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
+/** Database password */
+define( 'DB_PASSWORD', 'kLWfvR5PQg' );
 
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+/** Database hostname */
+define( 'DB_HOST', 'sql206.epizy.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         ',lRv@kdur+-ESE]sK--`iEMA;I|k3Tlw0M2j(V>8az+$$lpoFoj#:XnPJjNl49g1' );
-define( 'SECURE_AUTH_KEY',  'R4r17?kg?*D3h.7X9?Ilg^,v~eEC^ZO&{!;)zMraA&$fZGZ{Ok>DS6cDV)aiG `[' );
-define( 'LOGGED_IN_KEY',    '?BO1`N#XB+:J^aaEna:%+[=M}AFK`ZdO]ak@qFBa$n8A x#?<WmL.e)X|trmmzv-' );
-define( 'NONCE_KEY',        'F9%_{Dr^Miw#Jy1LL{dr`c|kS?W1O0twPxah&3.7X+s31$;U[J{m+`rn=Px[t9Ex' );
-define( 'AUTH_SALT',        'D?l)Poi1/gCKX/IFTA&f W_X)(3WJ+ K$$)sKR>5++BH{!R;ZWP<%Nop%bEtCTIX' );
-define( 'SECURE_AUTH_SALT', '(mUn`%5#:qt2F!|a(7GrIUShv&_Wh[H~.3[u/@.2.2A~JMe&aa> ,H1MIZuR>@&z' );
-define( 'LOGGED_IN_SALT',   '{$P:Vy!`?dd9[Zbz;WA3lI6XNOBd9{C?Fygz[vj:cT5m9%l4t[9%/PT+KBSgQV,}' );
-define( 'NONCE_SALT',       '&TwHhEQn?a?F5eQ 1N-hV6%Qu,:D]%8^Pq=~z@@|?R]l>H<;yQP>DMpz8Xy$<F}*' );
+define( 'AUTH_KEY',         'E)fAttXuX>N]m=0|G3oCQhBQGOrzW7%*KRgJim&F{oZ-Q}(AK]!im8UvR<x~g~s[' );
+define( 'SECURE_AUTH_KEY',  'kF(>re.9:zSf}Rx>4Va1iomp@:<KLTw?S6D^6qFWn8HgRlU~ne;.z^,70:`Hr VC' );
+define( 'LOGGED_IN_KEY',    'FHLa[Hbx7;5wWmn%+g2lEda/[B{B}:{$q)zVe#S5/G UHmsl$3sr]]*K%*e]~O7J' );
+define( 'NONCE_KEY',        'G.-ExXG%r1Iz2-nHN}:IKcI*ySh4:S}/(~FDi7YT>)7oDayC-tw#}s}(9gEg~$ur' );
+define( 'AUTH_SALT',        'Iuwj%*nKd}/1enPu8^2lQt;dn=#H8Ii9lZUzTK0Gd&r-/6NYD>h/abJj5M1d$,_@' );
+define( 'SECURE_AUTH_SALT', 'cAJvJ}!|PdHpj=3oM[$$+KN`8[-1B2Pu v6at4[UC5h!46@%Vm1VqG0h3%vO!{V6' );
+define( 'LOGGED_IN_SALT',   'qs/n|dO(y=z,Nv2]y=zm4B(|bp.tqT#NFE|92JMcm,tX]hy.$FQKc)N__SO&k,{d' );
+define( 'NONCE_SALT',       'K*677}mfZgq7d!@/~gPQ@;k_dao:##8pOgPUV7Z@_^fP]xYU,TQhO5Ca~TS_K2>s' );
 
 /**#@-*/
 

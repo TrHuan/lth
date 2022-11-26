@@ -1,2 +1,0 @@
-2022-11-07T09:39:42+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 32768 bytes) in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\plugins\polylang-pro\vendor\wpsyntex\polylang\modules\sync\sync.php on line 1
-
