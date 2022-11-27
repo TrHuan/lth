@@ -34,6 +34,17 @@ function lth_plugin_activation()
                 ),
 
 
+                array(
+
+                        'name' => 'Premmerce Permalink Manager for WooCommerce',
+
+                        'slug' => 'woo-permalink-manager',
+
+                        'required' => true,
+
+                ),
+
+
 
                 array(
 
@@ -146,17 +157,6 @@ function lth_plugin_activation()
                         'name' => 'Hyyan WooCommerce Polylang Integration',
 
                         'slug' => 'woo-poly-integration',
-
-                        'required' => true,
-
-                ),
-
-
-                array(
-
-                        'name' => 'Premmerce Permalink Manager for WooCommerce',
-
-                        'slug' => 'woo-permalink-manager',
 
                         'required' => true,
 
