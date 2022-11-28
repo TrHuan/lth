@@ -1,6 +1,6 @@
 <?php
 
-if( function_exists('acf_add_options_page') ) {
+if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
         'page_title'    => __('Theme Options'), // Title hiển thị khi truy cập vào Options page
         'menu_title'    => __('Theme Options'), // Tên menu hiển thị ở khu vực admin
@@ -10,8 +10,8 @@ if( function_exists('acf_add_options_page') ) {
     ));
 }
 
-if ( class_exists( 'WooCommerce' ) ) {
-    if( function_exists('acf_add_local_field_group') ):
+if (class_exists('WooCommerce')) {
+    if (function_exists('acf_add_local_field_group')) :
         acf_add_local_field_group(array(
             'key' => 'group_5fafa09cda768',
             'title' => 'Options',
@@ -198,6 +198,7 @@ if ( class_exists( 'WooCommerce' ) ) {
                     'multiple' => 0,
                     'return_format' => 'id',
                     'ui' => 1,
+                    'allow_null' => 1,
                 ),
                 array(
                     'key' => 'field_61e8eac8137b1',
@@ -574,6 +575,7 @@ if ( class_exists( 'WooCommerce' ) ) {
                     'multiple' => 0,
                     'return_format' => 'id',
                     'ui' => 1,
+                    'allow_null' => 1,
                 ),
                 array(
                     'key' => 'field_621f3bafa843d',
@@ -1000,6 +1002,7 @@ if ( class_exists( 'WooCommerce' ) ) {
                             'multiple' => 0,
                             'return_format' => 'id',
                             'ui' => 1,
+                            'allow_null' => 1,
                         ),
                         // array(
                         //     'key' => 'field_61d9ccb824fe6',
@@ -1131,9 +1134,9 @@ if ( class_exists( 'WooCommerce' ) ) {
             'active' => true,
             'description' => '',
         ));
-    endif;  
+    endif;
 } else {
-    if( function_exists('acf_add_local_field_group') ):
+    if (function_exists('acf_add_local_field_group')) :
         acf_add_local_field_group(array(
             'key' => 'group_5fafa09cda768',
             'title' => 'Options',
@@ -1320,6 +1323,7 @@ if ( class_exists( 'WooCommerce' ) ) {
                     'multiple' => 0,
                     'return_format' => 'id',
                     'ui' => 1,
+                    'allow_null' => 1,
                 ),
                 array(
                     'key' => 'field_61fa65f5d22a7',
@@ -1508,6 +1512,7 @@ if ( class_exists( 'WooCommerce' ) ) {
                     'multiple' => 0,
                     'return_format' => 'id',
                     'ui' => 1,
+                    'allow_null' => 1,
                 ),
                 array(
                     'key' => 'field_621f3bafa843d',
@@ -1934,6 +1939,7 @@ if ( class_exists( 'WooCommerce' ) ) {
                             'multiple' => 0,
                             'return_format' => 'id',
                             'ui' => 1,
+                            'allow_null' => 1,
                         ),
                     ),
                 ),
