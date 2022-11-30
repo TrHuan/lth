@@ -72,7 +72,7 @@ if (function_exists('lazyblocks')) :
             'type' => 'url',
             'name' => 'image_url',
             'default' => '',
-            'label' => 'Image Url',
+            'label' => 'Url',
             'help' => '',
             'child_of' => '',
             'placement' => 'inspector',
