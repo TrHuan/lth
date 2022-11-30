@@ -167,7 +167,7 @@ if ( post_password_required() ) {
                                 <?php while ($tets->have_posts()) {
                                     $tets-> the_post(); ?>
                                     
-                                    <?php get_template_part('woocommerce/product-box/product-box', '5'); ?>
+                                    <?php get_template_part('woocommerce/product-box/product-box', ''); ?>
                                 <?php } ?>
                             </div>
                         </div>
