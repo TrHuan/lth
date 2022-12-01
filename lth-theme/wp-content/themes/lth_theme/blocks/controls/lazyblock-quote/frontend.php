@@ -16,13 +16,14 @@ if (!function_exists('lth_quote_output_fe')) :
      * @param string $output - block output.
      * @param array  $attributes - block attributes.
      */
-    function lth_quote_output_fe($output, $attributes) {
+    function lth_quote_output_fe($output, $attributes)
+    {
         ob_start();
 ?>
 
-    <div class="lth-quote">
-        <?php echo $attributes['quote']; ?>
-    </div>
+        <div class="lth-quote">
+            <blockquote><?php echo $attributes['quote']; ?></blockquote>
+        </div>
 
 <?php
         return ob_get_clean();

@@ -107,6 +107,80 @@ h6 {
   }
 }
 
+pre,
+blockquote,
+form,
+figure,
+p,
+dl,
+ul,
+ol {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 0 0 0 10px;
+  border-left: 2px solid #000;
+  font-style: italic;
+}
+
+code {
+  padding: 10px;
+  margin: 0 10px;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  word-wrap: break-word;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  overflow: auto;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+cite {
+  font-style: italic;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 10px;
+}
+
+.wp-caption {
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+.wp-caption-text {
+  text-align: center;
+}
+.wp-caption .wp-caption-text {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
 label,
 ul,
 ol,
@@ -673,6 +747,7 @@ form {
 
   li {
     margin-top: 15px;
+    list-style: none;
 
     &:first-child {
       margin-top: 0;

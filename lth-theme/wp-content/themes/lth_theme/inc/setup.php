@@ -134,11 +134,11 @@ function lth_sidebar_register()
 add_action('widgets_init', 'lth_sidebar_register');
 
 // Thay favicon admin wordpress
-function favicon4admin()
+function faviconadmin()
 {
     echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_field('favicon', 'option') . '" />';
 }
-add_action('admin_head', 'favicon4admin');
+add_action('admin_head', 'faviconadmin');
 
 // Thay doi logo admin wordpress page login
 
