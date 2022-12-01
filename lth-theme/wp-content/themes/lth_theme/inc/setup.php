@@ -24,7 +24,7 @@ function lth_theme_setup()
     add_theme_support('post-thumbnails');
 
     // remove admin bar font end
-    add_filter('show_admin_bar', '__return_false');
+    // add_filter('show_admin_bar', '__return_false');
 
     // add image for menu
     add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
@@ -157,6 +157,27 @@ function custom_admin_logo()
     }
 }
 add_action('login_enqueue_scripts', 'custom_admin_logo');
+
+// remove update plugins
+remove_action('load-update-core.php', 'wp_update_plugins');
+add_filter('pre_site_transient_update_plugins', '__return_null');
+
+// remove update themes
+remove_action('load-update-core.php', 'wp_update_themes');
+add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+
+// remove update core wordpress
+add_action('after_setup_theme', 'remove_core_updates');
+function remove_core_updates()
+{
+    if (!current_user_can('update_core')) {
+        return;
+    }
+
+    //fadd_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+    add_filter('pre_option_update_core', '__return_null');
+    add_filter('pre_site_transient_update_core', '__return_null');
+}
 
 // Thay logo admin wordpress
 function remove_logo_and_submenu()
