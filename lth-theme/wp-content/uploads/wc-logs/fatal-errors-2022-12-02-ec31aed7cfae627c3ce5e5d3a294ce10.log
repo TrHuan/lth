@@ -20,3 +20,75 @@ Stack trace:
 #6 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(308): do_blocks('<!-- wp:columns...')
 #7 D:\LTH\wamp\www\job\lth\lth-theme\ in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-products\frontend.php on line 227
 
+2022-12-02T03:36:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin-ajax.php(22): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:37:28+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin.php(34): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:38:53+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin-ajax.php(22): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:39:04+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin.php(34): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:39:54+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin-ajax.php(22): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:40:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin.php(34): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:44:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:305
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\functions.php(21): require_once()
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-settings.php(585): include('D:\\LTH\\wamp\\www...')
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-config.php(97): require_once('D:\\LTH\\wamp\\www...')
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-load.php(50): require_once('D:\\LTH\\wamp\\www...')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-admin\admin.php(34): require_once('D:\\LTH\\wamp\\www...')
+#5 {main}
+  thrown in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 305
+
+2022-12-02T03:49:43+00:00 CRITICAL Cannot redeclare remove_menu_pages() (previously declared in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php:88) in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\inc\setup.php on line 53
+

@@ -43,8 +43,54 @@ function lth_theme_setup()
         }
         return $items;
     }
+
+    $other = get_field('other', 'option');
+    if ($other['developer'] == 'no') {
+        /**
+         * Remove Item Menu Admin
+         */
+        add_action('admin_init', 'setting_remove_menu_pages');
+        function setting_remove_menu_pages()
+        {
+            remove_menu_page('edit.php?post_type=acf-field-group');
+            // remove_menu_page('options-general.php?page=tinymce-advanced');
+        }
+
+        // remove update plugins
+        remove_action('load-update-core.php', 'wp_update_plugins');
+        add_filter('pre_site_transient_update_plugins', '__return_null');
+        define('DISALLOW_FILE_EDIT', true);
+        define('DISALLOW_FILE_MODS', true);
+
+        // remove update themes
+        remove_action('load-update-core.php', 'wp_update_themes');
+        add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+
+        // remove update core wordpress
+        add_action('after_setup_theme', 'remove_core_updates');
+        function remove_core_updates()
+        {
+            if (!current_user_can('update_core')) {
+                return;
+            }
+
+            //fadd_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+            add_filter('pre_option_update_core', '__return_null');
+            add_filter('pre_site_transient_update_core', '__return_null');
+        }
+    }
 }
 add_action('after_setup_theme', 'lth_theme_setup');
+
+/**
+ * Remove Item Menu Admin
+ */
+add_action('admin_init', 'remove_menu_pages');
+function remove_menu_pages()
+{
+    remove_menu_page('acf-options');
+    remove_menu_page('edit.php?post_type=lazyblocks');
+}
 
 function lth_sidebar_register()
 {
@@ -157,27 +203,6 @@ function custom_admin_logo()
     }
 }
 add_action('login_enqueue_scripts', 'custom_admin_logo');
-
-// remove update plugins
-remove_action('load-update-core.php', 'wp_update_plugins');
-add_filter('pre_site_transient_update_plugins', '__return_null');
-
-// remove update themes
-remove_action('load-update-core.php', 'wp_update_themes');
-add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
-
-// remove update core wordpress
-add_action('after_setup_theme', 'remove_core_updates');
-function remove_core_updates()
-{
-    if (!current_user_can('update_core')) {
-        return;
-    }
-
-    //fadd_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
-    add_filter('pre_option_update_core', '__return_null');
-    add_filter('pre_site_transient_update_core', '__return_null');
-}
 
 // Thay logo admin wordpress
 function remove_logo_and_submenu()
@@ -321,15 +346,4 @@ function lth_render_the_column($column_name, $post_id)
             }
         }
     }
-}
-
-/**
- * Remove Item Menu Admin
- */
-add_action('admin_init', 'remove_menu_pages');
-function remove_menu_pages()
-{
-    // remove_menu_page( 'edit.php?post_type=acf-field-group' );
-    remove_menu_page('acf-options');
-    remove_menu_page('edit.php?post_type=lazyblocks');
 }
