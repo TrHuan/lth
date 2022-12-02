@@ -64,6 +64,9 @@
   .block-list-appender.block-list-appender {
   bottom: 0;
 }
+.lzb-gutenberg-select select[multiple].components-select-control__input {
+  height: 100px;
+}
 
 pre,
 blockquote,

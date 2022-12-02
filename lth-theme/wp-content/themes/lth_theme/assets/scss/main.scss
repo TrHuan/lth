@@ -1682,6 +1682,37 @@ footer {
 // tabs-box
 .tabs-box {
 }
+
+.tab-list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.tab-content {
+  position: relative;
+
+  .tab-content-item {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.active {
+      opacity: 1;
+      visibility: initial;
+      position: initial;
+    }
+  }
+}
 // end tabs-box
 
 // skins

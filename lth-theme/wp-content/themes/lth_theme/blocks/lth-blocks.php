@@ -70,6 +70,7 @@ if ( class_exists( 'WooCommerce' ) ) {
             'lazyblock/lth-shopcart',
             'lazyblock/lth-categories-product',
             'lazyblock/lth-products',
+            'lazyblock/lth-products-category',
 
             ////////////////////////////////////
 

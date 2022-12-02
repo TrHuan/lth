@@ -1,0 +1,22 @@
+2022-12-02T01:45:27+00:00 CRITICAL Uncaught Error: Call to a member function stock_status_meta_query() on null in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-products\frontend.php:219
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(308): lth_products_output_fe(NULL, Array)
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\plugin.php(205): WP_Hook->apply_filters(NULL, Array)
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\plugins\lazy-blocks\classes\class-blocks.php(1272): apply_filters('lazyblock/lth-p...', NULL, Array)
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-block.php(256): LazyBlocks_Blocks->render_callback(Array, '', 'frontend')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\blocks.php(1051): WP_Block->render()
+#5 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\blocks.php(1089): render_block(Array)
+#6 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(308): do_blocks('<!-- wp:columns...')
+#7 D:\LTH\wamp\www\job\l in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-products\frontend.php on line 219
+
+2022-12-02T01:46:03+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-products\frontend.php:227
+Stack trace:
+#0 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(308): lth_products_output_fe(NULL, Array)
+#1 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\plugin.php(205): WP_Hook->apply_filters(NULL, Array)
+#2 D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\plugins\lazy-blocks\classes\class-blocks.php(1272): apply_filters('lazyblock/lth-p...', NULL, Array)
+#3 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-block.php(256): LazyBlocks_Blocks->render_callback(Array, '', 'frontend')
+#4 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\blocks.php(1051): WP_Block->render()
+#5 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\blocks.php(1089): render_block(Array)
+#6 D:\LTH\wamp\www\job\lth\lth-theme\wp-includes\class-wp-hook.php(308): do_blocks('<!-- wp:columns...')
+#7 D:\LTH\wamp\www\job\lth\lth-theme\ in D:\LTH\wamp\www\job\lth\lth-theme\wp-content\themes\lth_theme\blocks\controls\lazyblock-products\frontend.php on line 227
+
