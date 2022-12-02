@@ -155,7 +155,7 @@ do_action('woocommerce_before_cart'); ?>
 			</li>
 
 			<?php foreach (WC()->cart->get_coupons() as $code => $coupon) : ?>
-				<li class="cart-discount coupon-<?php echo esc_attr(sanitize_title($code)); ?>">
+				<li class="cart-discount coupon-<?php echo esc_attr(sanitize_title($code)); ?> groups-box">
 					<label><?php wc_cart_totals_coupon_label($coupon); ?></label>
 					<strong data-title="<?php echo esc_attr(wc_cart_totals_coupon_label($coupon, false)); ?>">
 						<?php wc_cart_totals_coupon_html($coupon); ?>
@@ -170,7 +170,7 @@ do_action('woocommerce_before_cart'); ?>
 
 				<?php do_action('woocommerce_cart_totals_after_shipping'); ?>
 			<?php elseif (WC()->cart->needs_shipping() && 'yes' === get_option('woocommerce_enable_shipping_calc')) : ?>
-				<li class="shipping">
+				<li class="shipping groups-box">
 					<label><?php esc_html_e('Shipping', 'woocommerce'); ?></label>
 					<strong data-title="<?php esc_attr_e('Shipping', 'woocommerce'); ?>"><?php woocommerce_shipping_calculator(); ?></strong>
 				</li>

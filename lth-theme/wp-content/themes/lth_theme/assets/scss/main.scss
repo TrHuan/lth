@@ -14,6 +14,7 @@ body {
   line-height: 1.2;
 }
 
+.woocommerce-notices-wrapper,
 .container {
   max-width: 100%;
   width: 100%;
@@ -1683,15 +1684,20 @@ footer {
 .tabs-box {
 }
 
-.tab-list {
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.title-box {
+  .cat-list {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: -15px;
+    }
 
-  li {
-    list-style: none;
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+    }
   }
 }
 
