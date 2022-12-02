@@ -212,6 +212,20 @@ jQuery(document).ready(function($) {
             $('.tab-panel.'+tp).addClass('active');
         }
     });
+    
+    $('.tab-list a').click(function(e){
+        e.preventDefault();
+
+        var ac = $(this).hasClass('active');
+
+        if (!ac) {
+            var tp = $(this).attr('href');
+            $('.tab-list a').removeClass('active');
+            $(this).addClass('active');
+            $('.tab-content-item').removeClass('active');
+            $(tp).addClass('active');
+        }
+    });
 });
 // end js tab
 

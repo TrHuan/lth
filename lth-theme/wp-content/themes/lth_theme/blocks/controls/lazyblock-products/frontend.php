@@ -54,46 +54,46 @@ if (!function_exists('lth_products_output_fe')) :
                                         $j++;
 
                                         if ($inner == 'new_products') { ?>
-                                            <li class="<?php if ($j == 1) {
-                                                            echo 'active';
-                                                        } ?>">
-                                                <a href="#new_products">
+                                            <li>
+                                                <a href="#new_products" class="<?php if ($j == 1) {
+                                                                                    echo 'active';
+                                                                                } ?>">
                                                     <?php echo __('New Products'); ?>
                                                 </a>
                                             </li>
                                         <?php }
                                         if ($inner == 'featured_products') { ?>
-                                            <li class="<?php if ($j == 1) {
-                                                            echo 'active';
-                                                        } ?>">
-                                                <a href="#featured_products">
+                                            <li>
+                                                <a href="#featured_products" class="<?php if ($j == 1) {
+                                                                                        echo 'active';
+                                                                                    } ?>">
                                                     <?php echo __('New Products'); ?>
                                                 </a>
                                             </li>
                                         <?php }
                                         if ($inner == 'sale_products') { ?>
-                                            <li class="<?php if ($j == 1) {
-                                                            echo 'active';
-                                                        } ?>">
-                                                <a href="#sale_products">
+                                            <li>
+                                                <a href="#sale_products" class="<?php if ($j == 1) {
+                                                                                    echo 'active';
+                                                                                } ?>">
                                                     <?php echo __('Sale Products'); ?>
                                                 </a>
                                             </li>
                                         <?php }
                                         if ($inner == 'random_products') { ?>
-                                            <li class="<?php if ($j == 1) {
-                                                            echo 'active';
-                                                        } ?>">
-                                                <a href="#random_products">
+                                            <li>
+                                                <a href="#random_products" class="<?php if ($j == 1) {
+                                                                                        echo 'active';
+                                                                                    } ?>">
                                                     <?php echo __('Random Products'); ?>
                                                 </a>
                                             </li>
                                         <?php }
                                         if ($inner == 'viewed_products') { ?>
-                                            <li class="<?php if ($j == 1) {
-                                                            echo 'active';
-                                                        } ?>">
-                                                <a href="#viewed_products">
+                                            <li>
+                                                <a href="#viewed_products" class="<?php if ($j == 1) {
+                                                                                        echo 'active';
+                                                                                    } ?>">
                                                     <?php echo __('Viewed Products'); ?>
                                                 </a>
                                             </li>
