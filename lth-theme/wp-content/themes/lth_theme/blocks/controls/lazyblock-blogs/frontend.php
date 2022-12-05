@@ -54,7 +54,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                 <a href="#new_blogs" class="<?php if ($j == 1) {
                                                                                 echo 'active';
                                                                             } ?>">
-                                                    <?php echo __('New Posts'); ?>
+                                                    <?php echo __('Bài viết mới'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -63,7 +63,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                 <a href="#featured_blogs" class="<?php if ($j == 1) {
                                                                                         echo 'active';
                                                                                     } ?>">
-                                                    <?php echo __('Featured Posts'); ?>
+                                                    <?php echo __('Bài viết nổi bật'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -72,7 +72,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                 <a href="#random_blogs" class="<?php if ($j == 1) {
                                                                                     echo 'active';
                                                                                 } ?>">
-                                                    <?php echo __('Random Posts'); ?>
+                                                    <?php echo __('Bài viết ngẫu nhiên'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -83,7 +83,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                                                     echo 'active';
                                                                                 }
                                                                                 ?>">
-                                                    <?php echo __('Viewed Posts');
+                                                    <?php echo __('Bài viết vừa xem');
                                                     ?>
                                                 </a>
                                             </li>
