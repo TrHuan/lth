@@ -58,7 +58,7 @@ if (!function_exists('lth_products_output_fe')) :
                                                 <a href="#new_products" class="<?php if ($j == 1) {
                                                                                     echo 'active';
                                                                                 } ?>">
-                                                    <?php echo __('New Products'); ?>
+                                                    <?php echo __('Sản phẩm mới'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -67,7 +67,7 @@ if (!function_exists('lth_products_output_fe')) :
                                                 <a href="#featured_products" class="<?php if ($j == 1) {
                                                                                         echo 'active';
                                                                                     } ?>">
-                                                    <?php echo __('Featured Products'); ?>
+                                                    <?php echo __('Sản phẩm nổi bật'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -76,7 +76,7 @@ if (!function_exists('lth_products_output_fe')) :
                                                 <a href="#sale_products" class="<?php if ($j == 1) {
                                                                                     echo 'active';
                                                                                 } ?>">
-                                                    <?php echo __('Sale Products'); ?>
+                                                    <?php echo __('Sản phẩm giảm giá'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -85,7 +85,7 @@ if (!function_exists('lth_products_output_fe')) :
                                                 <a href="#random_products" class="<?php if ($j == 1) {
                                                                                         echo 'active';
                                                                                     } ?>">
-                                                    <?php echo __('Random Products'); ?>
+                                                    <?php echo __('Sản phẩm ngẫu nhiên'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -94,7 +94,7 @@ if (!function_exists('lth_products_output_fe')) :
                                                 <a href="#viewed_products" class="<?php if ($j == 1) {
                                                                                         echo 'active';
                                                                                     } ?>">
-                                                    <?php echo __('Viewed Products'); ?>
+                                                    <?php echo __('Sản phẩm vừa xem'); ?>
                                                 </a>
                                             </li>
                                     <?php }
