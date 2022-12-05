@@ -67,7 +67,7 @@ if (!function_exists('lth_products_output_fe')) :
                                                 <a href="#featured_products" class="<?php if ($j == 1) {
                                                                                         echo 'active';
                                                                                     } ?>">
-                                                    <?php echo __('New Products'); ?>
+                                                    <?php echo __('Featured Products'); ?>
                                                 </a>
                                             </li>
                                         <?php }

@@ -347,3 +347,16 @@ function lth_render_the_column($column_name, $post_id)
         }
     }
 }
+
+// sản phẩm đã xem
+function viewedPost()
+{
+    session_start();
+    if (!isset($_SESSION["viewedpost"])) {
+        $_SESSION["viewedpost"] = array();
+    }
+    if (is_singular('post')) {
+        $_SESSION["viewedpost"][get_the_ID()] = get_the_ID();
+    }
+}
+add_action('wp', 'viewedPost');

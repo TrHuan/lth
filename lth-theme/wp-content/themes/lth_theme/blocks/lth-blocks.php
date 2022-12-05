@@ -12,25 +12,27 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-define( 'LZB_PATH', get_stylesheet_directory() . '/blocks/plugins/lazy-blocks/' );
-define( 'LZB_URL', get_stylesheet_directory_uri() . '/blocks/plugins/lazy-blocks/' );
+define('LZB_PATH', get_stylesheet_directory() . '/blocks/plugins/lazy-blocks/');
+define('LZB_URL', get_stylesheet_directory_uri() . '/blocks/plugins/lazy-blocks/');
 
 // Include the LZB plugin.
 require_once LZB_PATH . 'lazy-blocks.php';
 
-add_filter( 'lzb/plugin_url', 'lzb_url' );
-function lzb_url( $url ) {
+add_filter('lzb/plugin_url', 'lzb_url');
+function lzb_url($url)
+{
     return LZB_URL;
 }
 
 ///////////////////////////////////
 
-foreach(glob(BLOCKS_DIR . '/controls/lazyblock-*/*.php') as $file) {
+foreach (glob(BLOCKS_DIR . '/controls/lazyblock-*/*.php') as $file) {
     require_once($file);
 }
 
-if ( class_exists( 'WooCommerce' ) ) {
-    function lth_allowed_block_types( $allowed_blocks ) {     
+if (class_exists('WooCommerce')) {
+    function lth_allowed_block_types($allowed_blocks)
+    {
         return array(
             'core/columns',
             'core/freeform', // Classic
@@ -42,6 +44,7 @@ if ( class_exists( 'WooCommerce' ) ) {
             'lazyblock/lth-banner',
             // 'lazyblock/lth-blocks',
             'lazyblock/lth-blogs',
+            'lazyblock/lth-blogs-category',
             'lazyblock/lth-brand',
             'lazyblock/lth-button',
             'lazyblock/lth-categories',
@@ -66,7 +69,7 @@ if ( class_exists( 'WooCommerce' ) ) {
             'lazyblock/lth-title',
             'lazyblock/lth-toggle',
             'lazyblock/lth-video',
-            
+
             'lazyblock/lth-shopcart',
             'lazyblock/lth-categories-product',
             'lazyblock/lth-products',
@@ -74,10 +77,12 @@ if ( class_exists( 'WooCommerce' ) ) {
 
             ////////////////////////////////////
 
-        );  
-    } add_action('allowed_block_types', 'lth_allowed_block_types', 11);
+        );
+    }
+    add_action('allowed_block_types', 'lth_allowed_block_types', 11);
 } else {
-    function lth_allowed_block_types( $allowed_blocks ) {     
+    function lth_allowed_block_types($allowed_blocks)
+    {
         return array(
             'core/columns',
             'core/freeform',
@@ -111,6 +116,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
             ////////////////////////////////////
 
-        );  
-    } add_action('allowed_block_types', 'lth_allowed_block_types', 11);
+        );
+    }
+    add_action('allowed_block_types', 'lth_allowed_block_types', 11);
 }
