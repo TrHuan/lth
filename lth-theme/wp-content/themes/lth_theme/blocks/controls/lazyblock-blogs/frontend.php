@@ -54,7 +54,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                 <a href="#new_blogs" class="<?php if ($j == 1) {
                                                                                 echo 'active';
                                                                             } ?>">
-                                                    <?php echo __('New Blogs'); ?>
+                                                    <?php echo __('New Posts'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -63,7 +63,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                 <a href="#featured_blogs" class="<?php if ($j == 1) {
                                                                                         echo 'active';
                                                                                     } ?>">
-                                                    <?php echo __('Featured Blogs'); ?>
+                                                    <?php echo __('Featured Posts'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -72,7 +72,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                 <a href="#random_blogs" class="<?php if ($j == 1) {
                                                                                     echo 'active';
                                                                                 } ?>">
-                                                    <?php echo __('Random Blogs'); ?>
+                                                    <?php echo __('Random Posts'); ?>
                                                 </a>
                                             </li>
                                         <?php }
@@ -83,7 +83,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                                                                                     echo 'active';
                                                                                 }
                                                                                 ?>">
-                                                    <?php echo __('Viewed Blogs');
+                                                    <?php echo __('Viewed Posts');
                                                     ?>
                                                 </a>
                                             </li>
