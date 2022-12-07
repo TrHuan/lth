@@ -62,7 +62,7 @@ function woocommerce_header_add_to_cart_fragment($fragments)
 }
 
 // xóa bỏ css mặc định của woocommerce
-// add_filter('woocommerce_enqueue_styles', '__return_false');
+add_filter('woocommerce_enqueue_styles', '__return_false');
 
 // xoá sản phẩm liên quan
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
