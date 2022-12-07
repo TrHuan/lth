@@ -50,6 +50,13 @@
                     "operator": "==",
                     "value": "product"
                 }
+            ],
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "all"
+                }
             ]
         ],
         "menu_order": 0,

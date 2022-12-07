@@ -146,3 +146,10 @@ ul {
   list-style-type: disc;
   margin-left: 2em;
 }
+
+#adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu {
+  margin-left: 0;
+}

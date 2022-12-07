@@ -1,6 +1,6 @@
 <?php
 
-if( function_exists('acf_add_local_field_group') ):
+if (function_exists('acf_add_local_field_group')) :
 	acf_add_local_field_group(array(
 		'key' => 'group_60d16bcdb11e1',
 		'title' => 'Breadcrumb',
@@ -50,6 +50,13 @@ if( function_exists('acf_add_local_field_group') ):
 					'param' => 'post_type',
 					'operator' => '==',
 					'value' => 'product',
+				),
+			),
+			array(
+				array(
+					'param' => 'taxonomy',
+					'operator' => '==',
+					'value' => 'all',
 				),
 			),
 		),
@@ -304,4 +311,4 @@ if( function_exists('acf_add_local_field_group') ):
 		'active' => true,
 		'description' => '',
 	));
-endif;	
+endif;
