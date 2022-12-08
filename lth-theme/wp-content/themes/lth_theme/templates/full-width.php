@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Template Name: Trang Chủ
+ * Template Name: Full Width
  * 
  * @author LTH
  * @since 2020
@@ -8,7 +9,7 @@
 ?>
 <?php get_header(); ?>
 
-<main class="main main-home">
+<main class="main main-full-width">
     <?php the_content(); ?>
 </main>
 
