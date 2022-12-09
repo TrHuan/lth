@@ -52,6 +52,7 @@ function lth_theme_setup()
         add_action('admin_init', 'setting_remove_menu_pages');
         function setting_remove_menu_pages()
         {
+            remove_menu_page('tools.php');
             remove_menu_page('edit.php?post_type=acf-field-group');
             // remove_menu_page('options-general.php?page=tinymce-advanced');
         }
@@ -78,6 +79,9 @@ function lth_theme_setup()
             add_filter('pre_option_update_core', '__return_null');
             add_filter('pre_site_transient_update_core', '__return_null');
         }
+
+        // xoá chỉnh sửa code theme, plugin trong admin
+        define('DISALLOW_FILE_EDIT', true);
     }
 }
 add_action('after_setup_theme', 'lth_theme_setup');

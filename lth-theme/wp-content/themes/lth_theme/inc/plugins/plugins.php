@@ -224,6 +224,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'Better Search Replace',
+
+                        'slug' => 'better-search-replace',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Really Simple SSL',
 
                         'slug' => 'really-simple-ssl',

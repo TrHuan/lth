@@ -142,10 +142,10 @@ cite {
   font-style: italic;
 }
 
-ul {
+/* ul {
   list-style-type: disc;
   margin-left: 2em;
-}
+} */
 
 #adminmenu .wp-has-current-submenu .wp-submenu,
 #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
