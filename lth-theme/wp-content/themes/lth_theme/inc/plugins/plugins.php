@@ -236,6 +236,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'EWWW Image Optimizer',
+
+                        'slug' => 'ewww-image-optimizer',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Really Simple SSL',
 
                         'slug' => 'really-simple-ssl',

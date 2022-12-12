@@ -1,8 +1,9 @@
 <?php
 
-function lth_plugin_activation() {
+function lth_plugin_activation()
+{
 
- 
+
 
         // Khai bao plugin can cai dat
 
@@ -75,6 +76,18 @@ function lth_plugin_activation() {
                         'name' => 'Contact Form CFDB7',
 
                         'slug' => 'contact-form-cfdb7',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
+                        'name' => 'EWWW Image Optimizer',
+
+                        'slug' => 'ewww-image-optimizer',
 
                         'required' => true,
 
@@ -304,7 +317,7 @@ function lth_plugin_activation() {
 
         );
 
- 
+
 
         // Thiet lap TGM
 
@@ -320,12 +333,7 @@ function lth_plugin_activation() {
 
         );
 
-        tgmpa( $plugins, $configs );
-
- 
-
+        tgmpa($plugins, $configs);
 }
 
 add_action('tgmpa_register', 'lth_plugin_activation');
-
-?>
