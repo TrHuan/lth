@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive
  *
@@ -15,42 +16,42 @@
  * @version 3.4.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-get_header( 'shop' );
-$products = get_field('products','option');
+get_header('shop');
+$products = get_field('products', 'option');
 $sidebar = $products['sidebar']; ?>
 
 <main class="main-site main-page main-products">
 	<?php require_once(LIBS_DIR . '/breadcrumbs.php'); ?>
 
-    <section class="lth-products">
-        <div class="container">
-            <div class="row">
+	<section class="lth-products">
+		<div class="container">
+			<div class="row">
 
-            	<?php if ($sidebar == 'left') { ?>
-	            	<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-	                     <div class="sidebars">
-	                        <!-- Sidebar -->
-	                        <?php if (is_active_sidebar('sidebar_shop')) { ?>
+				<?php if ($sidebar == 'left') { ?>
+					<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+						<div class="sidebars">
+							<!-- Sidebar -->
+							<?php if (is_active_sidebar('sidebar_shop')) { ?>
 
-	                            <aside class="lth-sidebars">
-	                                <?php dynamic_sidebar('sidebar_shop'); ?>
-	                            </aside>
+								<aside class="lth-sidebars">
+									<?php dynamic_sidebar('sidebar_shop'); ?>
+								</aside>
 
-	                        <?php } ?>
-	                    </div>
-	                </div>
-	            <?php } ?>
+							<?php } ?>
+						</div>
+					</div>
+				<?php } ?>
 
-	            <?php if ($sidebar == 'no') { ?>
-                	<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-               	<?php } else { ?>
-               		<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-               	<?php } ?>
-                    <div class="posts-list products-list">
-                        <?php
-                            if ( woocommerce_product_loop() ) {
+				<?php if ($sidebar == 'no') { ?>
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<?php } else { ?>
+						<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+						<?php } ?>
+						<div class="posts-list products-list module_products">
+							<?php
+							if (woocommerce_product_loop()) {
 								/**
 								 * Hook: woocommerce_before_shop_loop.
 								 *
@@ -58,20 +59,20 @@ $sidebar = $products['sidebar']; ?>
 								 * @hooked woocommerce_result_count - 20
 								 * @hooked woocommerce_catalog_ordering - 30
 								 */
-								do_action( 'woocommerce_before_shop_loop' );
+								do_action('woocommerce_before_shop_loop');
 
 								woocommerce_product_loop_start();
 
-								if ( wc_get_loop_prop( 'total' ) ) {
-									while ( have_posts() ) {
+								if (wc_get_loop_prop('total')) {
+									while (have_posts()) {
 										the_post();
 
 										/**
 										 * Hook: woocommerce_shop_loop.
 										 */
-										do_action( 'woocommerce_shop_loop' );
+										do_action('woocommerce_shop_loop');
 
-										wc_get_template_part( 'content', 'product' );
+										wc_get_template_part('content', 'product');
 									}
 								}
 
@@ -82,36 +83,36 @@ $sidebar = $products['sidebar']; ?>
 								 *
 								 * @hooked woocommerce_pagination - 10
 								 */
-								do_action( 'woocommerce_after_shop_loop' );
+								do_action('woocommerce_after_shop_loop');
 							} else {
 								/**
 								 * Hook: woocommerce_no_products_found.
 								 *
 								 * @hooked wc_no_products_found - 10
 								 */
-								do_action( 'woocommerce_no_products_found' );
+								do_action('woocommerce_no_products_found');
 							}
-                        ?>
-                    </div>
-                </div>
+							?>
+						</div>
+						</div>
 
-                <?php if ($sidebar == 'right') { ?>
-	                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-	                     <div class="sidebars">
-	                        <!-- Sidebar -->
-	                        <?php if (is_active_sidebar('sidebar_shop')) { ?>
+						<?php if ($sidebar == 'right') { ?>
+							<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+								<div class="sidebars">
+									<!-- Sidebar -->
+									<?php if (is_active_sidebar('sidebar_shop')) { ?>
 
-	                            <aside class="lth-sidebars">
-	                                <?php dynamic_sidebar('sidebar_shop'); ?>
-	                            </aside>
+										<aside class="lth-sidebars">
+											<?php dynamic_sidebar('sidebar_shop'); ?>
+										</aside>
 
-	                        <?php } ?>
-	                    </div>
-	                </div>
-                <?php } ?>
-            </div>
-        </div>   
-    </section>
+									<?php } ?>
+								</div>
+							</div>
+						<?php } ?>
+					</div>
+			</div>
+	</section>
 </main>
 
-<?php get_footer( 'shop' );
+<?php get_footer('shop');

@@ -7,13 +7,13 @@
         </div>
     <?php } ?>
 
-    <p class="content-days">
-        <?php the_time('d/m/Y'); ?>
-    </p>
-
     <h1 class="title">
         <?php the_title(); ?>
     </h1>
+
+    <p class="content-days">
+        <?php the_time('d/m/Y'); ?>
+    </p>
 
     <div class="content-excerpt">
         <?php wpautop(the_excerpt()); ?>

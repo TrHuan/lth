@@ -134,6 +134,7 @@ code {
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   word-wrap: break-word;
+  line-height: 3;
 }
 
 pre {
@@ -241,13 +242,6 @@ button,
 .button,
 .btn {
   display: inline-block;
-  padding: {
-    top: 13px;
-    bottom: 13px;
-    left: 30px;
-    right: 30px;
-  }
-  color: $col_body;
   background: {
     color: #fff;
   }
@@ -255,15 +249,18 @@ button,
     width: 1px;
     style: solid;
     color: $border_color;
-    radius: 0;
   }
   font: {
     size: $font_sz_body;
-    weight: 500;
   }
   transition: all 400ms;
   white-space: nowrap;
   cursor: pointer;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0 32px;
+  height: 38px;
+  line-height: 35px;
 
   &:focus,
   &.focus {
@@ -874,6 +871,7 @@ form {
 .pagination {
   width: 100%;
   justify-content: center;
+  margin-top: 30px;
 
   .screen-reader-text {
     display: none;
@@ -887,9 +885,7 @@ form {
       left: 15px;
       right: 15px;
     }
-    font: {
-      size: 20px;
-    }
+    font-size: 16px;
     border: {
       width: 1px;
       style: solid;
@@ -898,6 +894,7 @@ form {
     margin: {
       right: 7px;
     }
+    border-radius: 2px;
 
     &:last-child {
       margin: {
@@ -911,7 +908,23 @@ form {
 
     &.next,
     &.prev {
-      padding: 0 10px;
+      font-size: 0;
+      line-height: 32px;
+      padding: 0 16px;
+      position: relative;
+      top: -3px;
+      
+      &:after {
+        font-size: 16px;
+        content: '\f105';
+        font-family: "FontAwesome";
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    &.prev:after {
+      content: '\f104';
     }
   }
 }
@@ -961,7 +974,7 @@ form {
         color: $col_body;
 
         &:before {
-          content: "\f000";
+          content: "\f005";
           font-family: $font_family_icon;
           font-size: 14px;
           font-weight: 900;
@@ -1006,9 +1019,19 @@ form {
 }
 
 #review_form_wrapper {
+  label {
+    margin-bottom: 10px;
+  }
+  
+  .comment-reply-title {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
   .comment-form-comment {
     label {
       display: block;
+      margin-bottom: 10px;
     }
 
     input:not(.btn),
@@ -1018,6 +1041,12 @@ form {
   }
 
   .commentlist {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+
     .comment_container {
       margin-top: 20px;
       display: flex;
@@ -1059,26 +1088,29 @@ form {
 /*//////////////////////////////////////////////////*/
 
 // breadcrumbs
-.lth-breadcrumbs {
-  background-color: $bg_color;
-}
+.breadcrumbs {
+  background-color: #ebebeb;
 
-.breadcrumbs-content {
-  padding: 15px 0;
-
-  .title-box {
-    margin-bottom: 5px;
-
-    &:after {
-      display: none;
+  .breadcrumb-image {
+    .container {
+      position: relative;
+      min-height: 300px;
+    }
+  
+    .title-box {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate(0, -50%);
     }
   }
 
-  .woocommerce-breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  .breadcrumb-content {
+    border-top: 1px solid #fff;
+
+    .breadcrumb {
+      padding: 20px 0;
+    }
   }
 }
 // end breadcrumbs
@@ -1141,27 +1173,37 @@ form {
 // end sidebars
 
 // page posts
-.main-posts {
-  .posts-box {
-    .groups-box {
-      margin: -15px;
-    }
+.posts-list {
+  .groups-box {
+    margin: -15px;
+  }
 
-    .item {
-      width: calc(100% / 3);
-      padding: 15px;
-    }
-
-    .pagination {
-      margin-top: 30px;
-    }
+  .item {
+    width: calc(100% / 3);
+    padding: 15px;
   }
 }
 // end page posts
 
 // page single post
-.post-single-box {
+.post-single {
   margin-bottom: 60px;
+
+  .content-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .post-content {
+    padding: 0;
+  }
+}
+
+.post-next-prev {
+  .groups-box {
+    justify-content: space-between;
+  }
 }
 // end page single post
 
@@ -1673,7 +1715,40 @@ footer {
 // end slidershow
 
 // posts
+.post-box {
+  border: 1px solid #EAEEF1;
+}
 
+.post-image img {
+  width: 100%;
+}
+
+.post-content {
+  padding: 0 15px;
+}
+
+.post-name a {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.post-excerpt {
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.post-button {
+  padding: 0 15px 15px;
+
+  .btn {
+    // font-weight: 400;
+    // border-radius: 5px;
+    // padding: 0 32px;
+    // height: 38px;
+    // line-height: 35px;
+  }
+}
 // end posts
 
 // end banner
@@ -1766,6 +1841,28 @@ footer {
   }
 }
 // end countdown
+
+// socials
+.socials {
+  clear: both;
+  margin: 50px 0;
+
+  ul {
+    padding: 0;
+    margin: -5px;
+  }
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+}
+// end socials
 
 /*//////////////////////////////////////////////////*/
 

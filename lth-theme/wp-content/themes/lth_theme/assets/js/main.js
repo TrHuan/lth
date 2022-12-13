@@ -32,6 +32,7 @@ jQuery(document).ready(function ($) {
         }, 1000);
     });
 
+    //////////////////////////////////////////////////
     $(document).on('click', '.cart-container-list .cart_list .remove', function (e) {
         e.preventDefault();
         setTimeout(function () {
@@ -56,6 +57,25 @@ jQuery(document).ready(function ($) {
             }, 400);
         }, 1000);
     });
+
+    $(document).on('click', '.main-products .products-ordering label', function () {
+        // $(this).next().slideToggle('slow');
+        $(this).parent().toggleClass('show');
+    });
+
+    $('.product-tab-box .tab-menu a').click(function (e) {
+        e.preventDefault();
+        var hs = $(this).parent().hasClass('active');
+        if (!hs) {
+            $('.product-tab-box .tab-menu li').removeClass('active');
+            $(this).parent().addClass('active');
+        }
+
+        var data = $(this).attr('data_tab');
+        $('.product-tab-box .tab-pane').removeClass('active');
+        $('#' + data).addClass('active');
+    });
+    //////////////////////////////////////////////////
 });
 
 jQuery(document).ready(function ($) {
@@ -122,6 +142,51 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    $('.product-images .slick-product-images-for .ul').slick({
+        loop: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: '.product-images .slick-product-images-nav .ul',
+        prevArrow: '<a class="slick-arrow slick-prev" href="javascript:0"><i class="fal fa-angle-left icon"></i></a>',
+        nextArrow: '<a class="slick-arrow slick-next" href="javascript:0"><i class="fal fa-angle-right icon"></i></a>',
+    });
+    $('.product-images .slick-product-images-nav .ul').slick({
+        loop: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-images .slick-product-images-for .ul',
+        dots: false,
+        focusOnSelect: true,
+        prevArrow: '<a class="slick-arrow slick-prev" href="javascript:0"><i class="fal fa-angle-left icon"></i></a>',
+        nextArrow: '<a class="slick-arrow slick-next" href="javascript:0"><i class="fal fa-angle-right icon"></i></a>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
 });
 
 // js popups

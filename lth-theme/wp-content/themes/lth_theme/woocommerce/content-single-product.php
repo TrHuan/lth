@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying product content in the single-product.php template
  *
@@ -15,7 +16,7 @@
  * @version 3.6.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 
@@ -27,11 +28,11 @@ global $product;
  *
  * @hooked woocommerce_output_all_notices - 10
  */
-do_action( 'woocommerce_before_single_product' );
+do_action('woocommerce_before_single_product');
 
-if ( post_password_required() ) {
-	echo get_the_password_form(); // WPCS: XSS ok.
-	return;
+if (post_password_required()) {
+    echo get_the_password_form(); // WPCS: XSS ok.
+    return;
 }
 ?>
 
@@ -44,24 +45,24 @@ if ( post_password_required() ) {
          * @hooked woocommerce_show_product_sale_flash - 10
          * @hooked woocommerce_show_product_images - 20
          */
-        do_action( 'woocommerce_before_single_product_summary' );
+        do_action('woocommerce_before_single_product_summary');
         ?>
     </div>
 
     <div class="summary entry-summary">
         <?php
-            do_action('woocommerce_single_product_summary_title');
-            do_action('woocommerce_single_product_summary_rating');
-            do_action('woocommerce_single_product_summary_price');
-            do_action('woocommerce_single_product_summary_excerpt');
-            do_action('woocommerce_single_product_summary_meta');
-            do_action('woocommerce_single_product_summary_add_to_cart');
-            do_action('woocommerce_single_product_summary_sharing');
+        do_action('woocommerce_single_product_summary_title');
+        do_action('woocommerce_single_product_summary_rating');
+        do_action('woocommerce_single_product_summary_price');
+        do_action('woocommerce_single_product_summary_excerpt');
+        do_action('woocommerce_single_product_summary_meta');
+        do_action('woocommerce_single_product_summary_add_to_cart');
+        do_action('woocommerce_single_product_summary_sharing');
         ?>
     </div>
 </article>
 
-<article class="lth-product-tabs"> 
+<article class="lth-product-tabs">
     <div class="product-tab-box">
         <ul class="nav nav-tabs tab-menu">
             <li class="active">
@@ -87,95 +88,170 @@ if ( post_password_required() ) {
                         <?php the_content(); ?>
                     </div>
 
-                </div>    
+                </div>
             </div>
             <div class="tab-pane" id="info">
                 <div class="product-info-content">
-                    <?php do_action( 'woocommerce_product_additional_information', $product ); ?>
-                </div>    
+                    <?php do_action('woocommerce_product_additional_information', $product); ?>
+                </div>
             </div>
-            <div class="tab-pane" id="review">  
-                <?php comments_template(); ?> 
+            <div class="tab-pane" id="review">
+                <?php comments_template(); ?>
             </div>
 
-        </div>      
+        </div>
     </div>
 </article>
 
-<article class="related-product">
-    <div class="sec-title-two">
-        <h3><?php echo __('Sản phẩm liên quan') ?></h3>
-        <span class="border"></span>
-    </div>
+<?php $products = get_field('product_single_option', 'option');
+$sidebar = $products['sidebar'];
+if ($sidebar == 'no') {
+    $item = 4;
+    $item_lg = 3;
+    $item_md = 2;
+    $item_sm = 2;
+    $item_mb = 1;
+} else {
+    $item = 3;
+    $item_lg = 3;
+    $item_md = 2;
+    $item_sm = 2;
+    $item_mb = 1;
+} ?>
 
-    <div class="related-product-items slick-slider slick-products-related">
-        <?php
-        $san_pham_lien_quan = get_field('san_pham_lien_quan');
-        if( $san_pham_lien_quan ): ?>
-            <?php foreach( $san_pham_lien_quan as $post ):
-                $permalink = get_permalink( $post );
-                $title = get_the_title( $post );
-                ?>
-
-                <?php get_template_part('woocommerce/product-box/product-box', ''); ?>
-
-            <?php endforeach; ?>
-        <?php endif; ?> 
-    </div>
-</article>
+<!-- ////////////////////////////////////////////////// -->
 
 <?php
-    $id = get_queried_object_id();
+$cross_sells = $product->get_cross_sells();
 
-    if ( class_exists( 'WPSEO_Primary_Term' ) ) {
-        $wpseo_primary_term = new WPSEO_Primary_Term( 'product_cat', $id );
-        $wpseo_primary_term = $wpseo_primary_term->get_primary_term();
-        $term = get_term( $wpseo_primary_term );
-    }
+if ($cross_sells) {
+    $meta_query = WC()->query->get_meta_query();
 
-    $args = [
+    $args = array(
         'post_type' => 'product',
-        'post_status' => 'publish',
+        'ignore_sticky_posts' => 1,
+        'no_found_rows' => 1,
         'posts_per_page' => 8,
         'orderby' => 'date',
         'order' => 'DESC',
+        'post__in' => $cross_sells,
         'post__not_in' => array($id),
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'product_cat',
-                'field' => 'id',
-                'terms' => $term->term_id,
-            )
-        ),
+        'meta_query' => $meta_query
+    );
 
-    ];
-    $tets = new WP_Query($args);
-    if ($tets->have_posts()) { ?>
-    <section class="lth-section lth-products">
-        <div class="container">                   
-            <div class="row"> 
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="module module__header">
-                        <div class="module_title">
-                            <h2 class="title"><?php echo __('Sản phẩm cùng danh mục'); ?></h2>
-                        </div>
-                    </div>
+    $products = new WP_Query($args);
+    if ($products->have_posts()) : ?>
+        <section class="lth-section lth-products related-products">
+            <div class="module module_products">
+                <div class="module__header title-box">
+                    <h2 class="title"><?php echo __('Sản phẩm liên quan'); ?></h2>
+                </div>
 
-                    <div class="module module_products">
-                        <div class="module_content">
-                            <div class="slick-slider slick-products-3">
-                                <?php while ($tets->have_posts()) {
-                                    $tets-> the_post(); ?>
-                                    
-                                    <?php get_template_part('woocommerce/product-box/product-box', ''); ?>
-                                <?php } ?>
-                            </div>
-                        </div>
+                <div class="module_content">
+                    <div class="swiper swiper-slider swiper-products" data-item="<?php echo $item; ?>" data-item_lg="<?php echo $item_lg; ?>" data-item_md="<?php echo $item_md; ?>" data-item_sm="<?php echo $item_sm; ?>" data-item_mb="<?php echo $item_mb; ?>" data-row="1" data-dots="false" data-arrows="false" data-vertical="false" data-autoplay="false">
+                        <?php while ($products->have_posts()) {
+                            $products->the_post(); ?>
+                            <?php get_template_part('woocommerce/product-box/product-box', ''); ?>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
+        </section>
+    <?php endif; ?>
+<?php } ?>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<?php
+$upsells = $product->get_upsells();
+
+if ($upsells) {
+    $meta_query = WC()->query->get_meta_query();
+
+    $args = array(
+        'post_type' => 'product',
+        'ignore_sticky_posts' => 1,
+        'no_found_rows' => 1,
+        'posts_per_page' => 8,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post__in' => $upsells,
+        'post__not_in' => array($id),
+        'meta_query' => $meta_query
+    );
+
+    $products = new WP_Query($args);
+    if ($products->have_posts()) : ?>
+        <section class="lth-section lth-products related-products">
+            <div class="module module_products">
+                <div class="module__header title-box">
+                    <h2 class="title"><?php echo __('Sản phẩm khác'); ?></h2>
+                </div>
+
+                <div class="module_content">
+                    <div class="swiper swiper-slider swiper-products" data-item="<?php echo $item; ?>" data-item_lg="<?php echo $item_lg; ?>" data-item_md="<?php echo $item_md; ?>" data-item_sm="<?php echo $item_sm; ?>" data-item_mb="<?php echo $item_mb; ?>" data-row="1" data-dots="false" data-arrows="false" data-vertical="false" data-autoplay="false">
+                        <?php while ($products->have_posts()) {
+                            $products->the_post(); ?>
+                            <?php get_template_part('woocommerce/product-box/product-box', ''); ?>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
+<?php } ?>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<?php
+$id = get_queried_object_id();
+
+if (class_exists('WPSEO_Primary_Term')) {
+    $wpseo_primary_term = new WPSEO_Primary_Term('product_cat', $id);
+    $wpseo_primary_term = $wpseo_primary_term->get_primary_term();
+    $term = get_term($wpseo_primary_term);
+    $term_id = $term->term_id;
+}
+
+if (!$term_id) {
+    $term_id = $product->category_ids;
+}
+
+$args = [
+    'post_type' => 'product',
+    'post_status' => 'publish',
+    'posts_per_page' => 8,
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'post__not_in' => array($id),
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'product_cat',
+            'field' => 'id',
+            'terms' => $term_id,
+        )
+    ),
+
+];
+$tets = new WP_Query($args);
+if ($tets->have_posts()) { ?>
+    <section class="lth-section lth-products related-products">
+        <div class="module module_products">
+            <div class="module__header title-box">
+                <h2 class="title"><?php echo __('Sản phẩm cùng danh mục'); ?></h2>
+            </div>
+
+            <div class="module_content">
+                <div class="swiper swiper-slider swiper-products" data-item="<?php echo $item; ?>" data-item_lg="<?php echo $item_lg; ?>" data-item_md="<?php echo $item_md; ?>" data-item_sm="<?php echo $item_sm; ?>" data-item_mb="<?php echo $item_mb; ?>" data-row="1" data-dots="false" data-arrows="false" data-vertical="false" data-autoplay="false">
+                    <?php while ($tets->have_posts()) {
+                        $tets->the_post(); ?>
+
+                        <?php get_template_part('woocommerce/product-box/product-box', ''); ?>
+                    <?php } ?>
+                </div>
+            </div>
         </div>
-    </section>                   
-    <?php }
-    wp_reset_postdata();
+    </section>
+<?php }
+wp_reset_postdata();
 ?>

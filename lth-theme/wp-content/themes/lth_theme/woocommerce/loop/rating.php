@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Single Product Rating
  *
@@ -15,22 +16,22 @@
  * @version 3.6.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
 global $product; ?>
 
 <?php if ($ave = $product->get_average_rating()) : ?>
-    <div class="star-rating">
-	    <div style="display: inline-block;">
-	    	<span style="width: <?php echo $ave/5*100; ?>%; overflow: hidden; white-space: nowrap; display: inline-block;">
-	    		<span class="icofont-star icon"></span>
-	    		<span class="icofont-star icon"></span>
-	    		<span class="icofont-star icon"></span>
-	    		<span class="icofont-star icon"></span>
-	    		<span class="icofont-star icon"></span>
-	    	</span>
-	    </div>
-    </div>
+	<div class="star-rating">
+		<div style="display: inline-block;">
+			<span style="width: <?php echo $ave / 5 * 100; ?>%; overflow: hidden; white-space: nowrap; display: inline-block;">
+				<span class="fas fa-star icon"></span>
+				<span class="fas fa-star icon"></span>
+				<span class="fas fa-star icon"></span>
+				<span class="fas fa-star icon"></span>
+				<span class="fas fa-star icon"></span>
+			</span>
+		</div>
+	</div>
 <?php endif; ?>

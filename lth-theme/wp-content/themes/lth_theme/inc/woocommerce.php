@@ -1,8 +1,8 @@
 <?php
 
-$products = get_field('products', 'option');
-$products_per_page = $products['products_per_page'];
-$number_products_on_row = $products['number_products_on_row'];
+// $products = get_field('products', 'option');
+// $products_per_page = $products['products_per_page'];
+// $number_products_on_row = $products['number_products_on_row'];
 
 // Page shop nhận file archive-product.php
 add_theme_support('woocommerce');
@@ -12,18 +12,20 @@ add_filter('loop_shop_per_page', 'cols');
 if (!function_exists('cols')) {
     function cols($num)
     {
+        $products = get_field('products', 'option');
+        $products_per_page = $products['products_per_page'];
         return $products_per_page;
     }
 }
 
 // Hiển thị số lượng sản phẩm trên 1 hàng: return 3 (3 sản phẩm)
-add_filter('loop_shop_columns', 'loop_columns');
-if (!function_exists('loop_columns')) {
-    function loop_columns($num)
-    {
-        return $number_products_on_row;
-    }
-}
+// add_filter('loop_shop_columns', 'loop_columns');
+// if (!function_exists('loop_columns')) {
+//     function loop_columns($num)
+//     {
+//         return $number_products_on_row;
+//     }
+// }
 
 /* Sắp xếp sản phẩm mới nhất trước, hết hàng sau cùng */
 add_action('pre_get_posts', function ($q) {
