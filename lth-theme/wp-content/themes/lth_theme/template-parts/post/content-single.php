@@ -1,4 +1,4 @@
-<div class="post-content">
+<div class="post-single-content">
     <?php if (has_post_thumbnail()) { ?>
         <div class="content-image">
             <div class="image">
