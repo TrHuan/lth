@@ -9,7 +9,9 @@
 get_header(); ?>
 
 <main class="main main-page">
-    <?php require_once(LIBS_DIR . '/breadcrumbs.php'); ?>
+    <?php if (!is_home() && !is_front_page()) {
+        require_once(LIBS_DIR . '/breadcrumbs.php');
+    } ?>
 
     <!-- <div class="module_header title-box title-page">
         <div class="container">
