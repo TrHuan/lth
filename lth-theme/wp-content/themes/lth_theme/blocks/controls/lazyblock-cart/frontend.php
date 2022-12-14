@@ -16,17 +16,22 @@ if (!function_exists('lth_shopcart_output_fe')) :
      * @param string $output - block output.
      * @param array  $attributes - block attributes.
      */
-    function lth_shopcart_output_fe($output, $attributes) {        
+    function lth_shopcart_output_fe($output, $attributes)
+    {
         ob_start();
 ?>
-<?php if ( class_exists( 'WooCommerce' ) ) { ?>
-    <div class="lth-shopcart">
-        <div class="cart-header clearfix">
-            <?php global $woocommerce; ?>
-            <?php require_once(get_template_directory() . '/woocommerce/cart/header-cart-ajax.php'); ?>
-        </div>
-    </div>
-<?php } ?>
+        <?php if (class_exists('WooCommerce')) { ?>
+            <div class="lth-shopcart">
+                <div class="cart-header clearfix">
+                    <?php global $woocommerce; ?>
+                    <?php require_once(get_template_directory() . '/woocommerce/cart/header-cart-ajax.php'); ?>
+                </div>
+
+                <div class="cart-content">
+                    <?php require_once(get_template_directory() . '/woocommerce/cart/mini-cart-ajax.php'); ?>
+                </div>
+            </div>
+        <?php } ?>
 <?php
         return ob_get_clean();
     }

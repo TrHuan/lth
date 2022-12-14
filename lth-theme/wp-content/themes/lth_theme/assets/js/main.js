@@ -75,6 +75,16 @@ jQuery(document).ready(function ($) {
         $('.product-tab-box .tab-pane').removeClass('active');
         $('#' + data).addClass('active');
     });
+
+    $(document).on('click', '.cart-header .cart-btn', function (e) {
+        e.preventDefault();
+        $('.cart-content').addClass('active');
+    });
+
+    $(document).on('click', '.cart-content .cart-close', function () {
+        $('.cart-content').removeClass('active');
+    });
+
     //////////////////////////////////////////////////
 });
 

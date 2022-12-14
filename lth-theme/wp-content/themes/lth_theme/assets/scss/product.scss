@@ -1089,15 +1089,13 @@
   }
 }
 
-.carts-content {
+.cart-content {
   &.active {
-    .cart-content {
-      opacity: 1;
-      visibility: initial;
+    opacity: 1;
+    visibility: initial;
 
-      .cart-list {
-        @include translate(0, 0);
-      }
+    .cart-list {
+      @include translate(0, 0);
     }
   }
 }

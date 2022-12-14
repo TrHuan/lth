@@ -916,11 +916,11 @@
   width: 100%;
 }
 
-.carts-content.active .cart-content {
+.cart-content.active {
   opacity: 1;
   visibility: initial;
 }
-.carts-content.active .cart-content .cart-list {
+.cart-content.active .cart-list {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
