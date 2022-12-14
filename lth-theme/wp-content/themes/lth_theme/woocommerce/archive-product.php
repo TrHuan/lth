@@ -49,7 +49,9 @@ $sidebar = $products['sidebar']; ?>
 					<?php } else { ?>
 						<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
 						<?php } ?>
-						<div class="posts-list products-list module_products">
+						<?php $products = get_field('products', 'option');
+						$number = $products['number_products_on_row']; ?>
+						<div class="posts-list products-list module_products products_item_<?php echo $number; ?>">
 							<?php
 							if (woocommerce_product_loop()) {
 								/**

@@ -211,6 +211,18 @@
           justify-content: space-between;
   height: 100%;
 }
+.main-products .products-list.products_item_3 .item {
+  width: 33.3333333333%;
+}
+.main-products .products-list.products_item_4 .item {
+  width: 25%;
+}
+.main-products .products-list.products_item_5 .item {
+  width: 20%;
+}
+.main-products .products-list.products_item_6 .item {
+  width: 16.6666666667%;
+}
 
 .main-single-product .woocommerce-notices-wrapper {
   display: none;
