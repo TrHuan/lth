@@ -63,7 +63,7 @@ if (!function_exists('lth_products_category_output_fe')) :
                     </div>
                 <?php endif; ?>
 
-                <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
+                <div class="module_content content_text_<?php echo $attributes['text_align']; ?> module_style_<?php echo $attributes['style']; ?>">
                     <?php
                     $i = 0;
                     foreach ($attributes['items'] as $inner) {

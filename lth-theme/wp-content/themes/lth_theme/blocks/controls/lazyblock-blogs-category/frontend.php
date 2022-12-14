@@ -56,9 +56,9 @@ if (!function_exists('lth_blogs_category_output_fe')) :
                     </div>
                 <?php endif; ?>
 
-                <div class="module_content content_text_<?php echo $attributes['text_align']; ?>">
+                <div class="module_content content_text_<?php echo $attributes['text_align']; ?> module_style_<?php echo $attributes['style']; ?>">
                     <?php
-                    if ($attributes['featured_posts']) {
+                    if (isset($attributes['featured_posts'])) {
                         $kq = array();
                         foreach ($attributes['posts'] as $inner) {
                             $post = $inner['post'];

@@ -26,6 +26,15 @@ function lth_theme_setup()
     // remove admin bar font end
     // add_filter('show_admin_bar', '__return_false');
 
+    /**
+     * Remove Item Admin Bar
+     **/
+    function remove_wp_logo($wp_admin_bar)
+    {
+        $wp_admin_bar->remove_node('comments');
+    }
+    add_action('admin_bar_menu', 'remove_wp_logo', 999);
+
     // add image for menu
     add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
     function my_wp_nav_menu_objects($items, $args)
@@ -54,7 +63,10 @@ function lth_theme_setup()
         {
             remove_menu_page('tools.php');
             remove_menu_page('edit.php?post_type=acf-field-group');
-            // remove_menu_page('options-general.php?page=tinymce-advanced');
+            remove_submenu_page('options-general.php', 'tinymce-advanced');
+            remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
+            remove_menu_page('wpcf7');
+            remove_menu_page('wpseo_dashboard');
         }
 
         // remove update plugins
@@ -266,8 +278,9 @@ function lth_admin_menu($__return_true)
         'edit.php?post_type=page', // Menu Trang
         'edit.php', // Menu Bài viết
         'edit.php?post_type=product', // Menu Sản phẩm
+        'admin.php.php', 'wc-admin',
         // 'wc-admin', // WooCommerce
-        // 'admin.php?page=wc-admin', // WooCommerce
+        'admin.php?page=wc-admin', // WooCommerce
         'users.php', // Menu Thành viên
         'wpcf7', // Wpcf7
         'cfdb7-list.php', // Wpcf7

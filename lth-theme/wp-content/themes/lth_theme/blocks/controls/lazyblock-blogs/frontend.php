@@ -96,7 +96,7 @@ if (!function_exists('lth_blogs_output_fe')) :
                     </div>
                 <?php endif; ?>
 
-                <div class="module_content content_text_<?php echo $attributes['text_align']; ?> tab-content">
+                <div class="module_content content_text_<?php echo $attributes['text_align']; ?> tab-content module_style_<?php echo $attributes['style']; ?>">
                     <?php $i = 0;
                     foreach ($attributes['select'] as $inner) :
                         $i++;
