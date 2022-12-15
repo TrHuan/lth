@@ -19,16 +19,18 @@ if (!function_exists('lth_shopcart_output_fe')) :
     function lth_shopcart_output_fe($output, $attributes)
     {
         ob_start();
+
+        global $woocommerce;
 ?>
         <?php if (class_exists('WooCommerce')) { ?>
             <div class="lth-shopcart">
                 <div class="cart-header clearfix">
-                    <?php global $woocommerce; ?>
                     <?php require_once(get_template_directory() . '/woocommerce/cart/header-cart-ajax.php'); ?>
                 </div>
 
                 <div class="cart-content">
-                    <?php require_once(get_template_directory() . '/woocommerce/cart/mini-cart-ajax.php'); ?>
+                    <?php //require_once(get_template_directory() . '/woocommerce/cart/mini-cart-ajax.php');
+                    ?>
                 </div>
             </div>
         <?php } ?>

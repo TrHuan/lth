@@ -465,3 +465,34 @@ function viewedProduct()
     }
 }
 add_action('wp', 'viewedProduct');
+
+// Hợp nhất trang giỏ hàng và trang thanh toán
+// add_action('woocommerce_before_checkout_form', 'add_cart_on_checkout', 5);
+// function add_cart_on_checkout()
+// {
+//     if (is_wc_endpoint_url('order-received')) return;
+//     echo do_shortcode('[woocommerce_cart]'); // WooCommerce cart page shortcode
+// }
+
+// // Chuyển hướng trang giỏ hàng đến trang thanh toán
+// add_action('template_redirect', function () {
+//     // Replace "cart"  and "checkout" with cart and checkout page slug if needed
+//     if (is_page('cart')) {
+//         wp_redirect('/checkout/');
+//         die();
+//     }
+// });
+
+// // Chuyển hướng trang thanh toán WooCommerce sang trang cửa hàng
+// add_action('template_redirect', 'redirect_empty_checkout');
+// function redirect_empty_checkout()
+// {
+//     if (is_checkout() && 0 == WC()->cart->get_cart_contents_count() && !is_wc_endpoint_url('order-pay') && !is_wc_endpoint_url('order-received')) {
+//         wp_safe_redirect(get_permalink(wc_get_page_id('shop')));
+//         exit;
+//     }
+// }
+
+// // Hiển thị nút “Quay lại cửa hàng” trong trang thanh toán trống
+// add_filter('woocommerce_checkout_redirect_empty_cart', '__return_false');
+// add_filter('woocommerce_checkout_update_order_review_expired', '__return_false');

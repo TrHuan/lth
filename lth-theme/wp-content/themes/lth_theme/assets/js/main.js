@@ -76,14 +76,14 @@ jQuery(document).ready(function ($) {
         $('#' + data).addClass('active');
     });
 
-    $(document).on('click', '.cart-header .cart-btn', function (e) {
-        e.preventDefault();
-        $('.cart-content').addClass('active');
-    });
+    // $(document).on('click', '.cart-header .cart-btn', function (e) {
+    //     e.preventDefault();
+    //     $('.cart-content').addClass('active');
+    // });
 
-    $(document).on('click', '.cart-content .cart-close', function () {
-        $('.cart-content').removeClass('active');
-    });
+    // $(document).on('click', '.cart-content .cart-close', function () {
+    //     $('.cart-content').removeClass('active');
+    // });
 
     //////////////////////////////////////////////////
 });
