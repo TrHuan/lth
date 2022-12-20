@@ -29,23 +29,21 @@ if (!function_exists('lth_logo_output_fe')) :
         <div class="lth-logo">
             <?php if (is_front_page() || is_home()) { ?>
                 <?php if ($attributes['logo_image']['url']) { ?>
-                    <h1>
-                        <a href="<?php if (isset($lang)) {
-                                        echo get_home_url($lang);
-                                    } else {
-                                        echo get_home_url();
-                                    } ?>" title="">
-                            <img src="<?php echo esc_url($attributes['logo_image']['url']); ?>" alt="<?php bloginfo('title'); ?>" width="<?php echo $attributes['width']; ?>" height="<?php echo $attributes['height']; ?>">
-                        </a>
-                        <a href="<?php if (isset($lang)) {
-                                        echo get_home_url($lang);
-                                    } else {
-                                        echo get_home_url();
-                                    } ?>" title="" class="title d-none">
-                            <?php bloginfo('title'); ?>
-                        </a>
-                        <p class="infor d-none"><?php bloginfo('description'); ?></p>
-                    </h1>
+                    <a href="<?php if (isset($lang)) {
+                                    echo get_home_url($lang);
+                                } else {
+                                    echo get_home_url();
+                                } ?>" title="">
+                        <img src="<?php echo esc_url($attributes['logo_image']['url']); ?>" alt="<?php bloginfo('title'); ?>" width="<?php echo $attributes['width']; ?>" height="<?php echo $attributes['height']; ?>">
+                    </a>
+                    <a href="<?php if (isset($lang)) {
+                                    echo get_home_url($lang);
+                                } else {
+                                    echo get_home_url();
+                                } ?>" title="" class="title d-none">
+                        <?php bloginfo('title'); ?>
+                    </a>
+                    <p class="infor d-none"><?php bloginfo('description'); ?></p>
                     <?php } else {
                     if ($logo) { ?>
                         <h1>

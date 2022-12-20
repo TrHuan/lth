@@ -26,7 +26,11 @@ if (!function_exists('lth_banner_output_fe')) :
                 <div class="module_content">
                     <div class="content" style="position: relative;">
                         <div class="content-image">
-                            <a href="<?php echo esc_url($attributes['image_url']); ?>" title="" class="image">
+                            <a href="<?php if ($attributes['image_url']) {
+                                            echo esc_url($attributes['image_url']);
+                                        } else {
+                                            echo '#';
+                                        } ?>" title="" class="image">
                                 <img src="<?php echo esc_url($attributes['image']['url']); ?>" alt="Image" width="auto" height="auto">
 
                                 <?php if ($attributes['text']) { ?>
@@ -36,7 +40,11 @@ if (!function_exists('lth_banner_output_fe')) :
                         </div>
                         <?php if ($attributes['text']) { ?>
                             <div class="content-text" style="position: absolute; top: <?php echo $attributes['text_top']; ?>; bottom: <?php echo $attributes['text_bottom']; ?>; left: <?php echo $attributes['text_left']; ?>; right: <?php echo $attributes['text_right']; ?>; transform: translate(<?php echo $attributes['text_translate']; ?>);">
-                                <a href="<?php echo esc_url($attributes['image_url']); ?>" title="" class="text">
+                                <a href="<?php if ($attributes['image_url']) {
+                                                echo esc_url($attributes['image_url']);
+                                            } else {
+                                                echo '#';
+                                            } ?>" title="" class="text">
                                     <?php echo $attributes['text']; ?>
                                 </a>
                             </div>
