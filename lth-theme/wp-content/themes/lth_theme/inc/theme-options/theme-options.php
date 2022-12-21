@@ -1003,7 +1003,7 @@ if (class_exists('WooCommerce')) {
                             'label' => 'Zalo',
                             'name' => 'zalo',
                             'type' => 'url',
-                            'instructions' => 'Link To Zalo Message',
+                            'instructions' => 'Link To Zalo Message (https://zalo.me/id zalo)',
                             'required' => 0,
                             'conditional_logic' => 0,
                             'wrapper' => array(
@@ -1020,7 +1020,7 @@ if (class_exists('WooCommerce')) {
                             'label' => 'Facebook',
                             'name' => 'facebook',
                             'type' => 'url',
-                            'instructions' => 'Link To Facebook Message',
+                            'instructions' => 'Link To Facebook Message (https://m.me/id facebook)',
                             'required' => 0,
                             'conditional_logic' => 0,
                             'wrapper' => array(
@@ -1985,7 +1985,7 @@ if (class_exists('WooCommerce')) {
                             'label' => 'Zalo',
                             'name' => 'zalo',
                             'type' => 'url',
-                            'instructions' => 'Link To Zalo Message',
+                            'instructions' => 'Link To Zalo Message (https://zalo.me/id zalo)',
                             'required' => 0,
                             'conditional_logic' => 0,
                             'wrapper' => array(
@@ -2002,7 +2002,7 @@ if (class_exists('WooCommerce')) {
                             'label' => 'Facebook',
                             'name' => 'facebook',
                             'type' => 'url',
-                            'instructions' => 'Link To Facebook Message',
+                            'instructions' => 'Link To Facebook Message (https://m.me/id facebook)',
                             'required' => 0,
                             'conditional_logic' => 0,
                             'wrapper' => array(
