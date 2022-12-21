@@ -190,6 +190,18 @@
       height: 100%;
     }
 
+    &.products_item_1 {
+      .item {
+        width: 100%;
+      }
+    }
+
+    &.products_item_2 {
+      .item {
+        width: calc(100% / 2);
+      }
+    }
+
     &.products_item_3 {
       .item {
         width: calc(100% / 3);

@@ -211,6 +211,12 @@
           justify-content: space-between;
   height: 100%;
 }
+.main-products .products-list.products_item_1 .item {
+  width: 100%;
+}
+.main-products .products-list.products_item_2 .item {
+  width: 50%;
+}
 .main-products .products-list.products_item_3 .item {
   width: 33.3333333333%;
 }

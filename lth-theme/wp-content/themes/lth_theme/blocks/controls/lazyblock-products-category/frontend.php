@@ -23,8 +23,8 @@ if (!function_exists('lth_products_category_output_fe')) :
         <article class="lth-products">
             <div class="module module_products">
                 <?php if ($attributes['title'] || $attributes['description'] || $attributes['show_items']) : ?>
-                    <div class="module_header title-box">
-                        <?php if (isset($attributes['title'])) : ?>
+                    <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
+                        <?php if ($attributes['title']) : ?>
                             <h2 class="title">
                                 <?php if ($attributes['title_url']) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">

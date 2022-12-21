@@ -372,6 +372,26 @@ button,
     }
   }
 }
+
+.title-align-center {
+  text-align: center;
+
+  .tab-list, .cat-list {
+    ul {
+      justify-content: center;
+    }
+  }
+}
+
+.title-align-right {
+  text-align: right;
+
+  .tab-list, .cat-list {
+    ul {
+      justify-content: flex-end;
+    }
+  }
+}
 /*end title*/
 
 /*slick icon*/
@@ -1218,17 +1238,6 @@ form {
   }
 }
 
-.main-page {
-  .title-box {
-    text-align: left;
-    margin-bottom: 25px;
-
-    &:after {
-      display: none;
-    }
-  }
-}
-
 .main-contacts {
   .address-box {
     .contact-box {
@@ -1762,6 +1771,7 @@ footer {
 .post-excerpt {
   margin-bottom: 15px;
   line-height: 1.2;
+  @include numb_row(3);
 }
 
 .post-button {

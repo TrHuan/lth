@@ -6,7 +6,7 @@
  */
 
 // load block attributes 
-if ( function_exists( 'lazyblocks' ) ) :
+if (function_exists('lazyblocks')) :
 
    $block_fields = array(
       'id'           => 'lth_gallery', //thay đổi
@@ -17,12 +17,11 @@ if ( function_exists( 'lazyblocks' ) ) :
       'category'     => 'common'
    );
 
-   lazyblocks()->add_block( array(
+   lazyblocks()->add_block(array(
       'id' => $block_fields['id'],
       'title' => $block_fields['title'],
       'icon' => $block_fields['icon'],
-      'keywords' => array(
-      ),
+      'keywords' => array(),
       'slug' => $block_fields['slug'],
       'description' => $block_fields['description'],
       'category' => $block_fields['category'],
@@ -49,52 +48,85 @@ if ( function_exists( 'lazyblocks' ) ) :
       ),
       'controls' => array(
          'control_textarea_lth_title' => array(
-           'type' => 'textarea',
-           'name' => 'title',
-           'default' => '',
-           'label' => 'Title',
-           'help' => '',
-           'child_of' => '',
-           'placement' => 'inspector',
-           'width' => '100',
-           'hide_if_not_selected' => 'false',
-           'save_in_meta' => 'false',
-           'save_in_meta_name' => '',
-           'required' => 'false',
-           'placeholder' => '',
-           'characters_limit' => '',
+            'type' => 'textarea',
+            'name' => 'title',
+            'default' => '',
+            'label' => 'Title',
+            'help' => '',
+            'child_of' => '',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'placeholder' => '',
+            'characters_limit' => '',
          ),
          'control_url_lth_title_url' => array(
-           'type' => 'url',
-           'name' => 'title_url',
-           'default' => '',
-           'label' => 'Title Url',
-           'help' => '',
-           'child_of' => '',
-           'placement' => 'inspector',
-           'width' => '100',
-           'hide_if_not_selected' => 'false',
-           'save_in_meta' => 'false',
-           'save_in_meta_name' => '',
-           'required' => 'false',
-           'placeholder' => '',
-           'characters_limit' => '',
+            'type' => 'url',
+            'name' => 'title_url',
+            'default' => '',
+            'label' => 'Title Url',
+            'help' => '',
+            'child_of' => '',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'placeholder' => '',
+            'characters_limit' => '',
          ),
          'control_textarea_lth_description' => array(
-           'type' => 'textarea',
-           'name' => 'description',
-           'default' => '',
-           'label' => 'Description',
-           'help' => '',
-           'child_of' => '',
-           'placement' => 'inspector',
-           'width' => '100',
-           'hide_if_not_selected' => 'false',
-           'save_in_meta' => 'false',
-           'save_in_meta_name' => '',
-           'required' => 'false',
-           'placeholder' => '',
-           'characters_limit' => '',
+            'type' => 'textarea',
+            'name' => 'description',
+            'default' => '',
+            'label' => 'Description',
+            'help' => '',
+            'child_of' => '',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'placeholder' => '',
+            'characters_limit' => '',
+         ),
+         'control_select_lth_title_align' => array(
+            'type' => 'select',
+            'name' => 'title_align',
+            'default' => 'left',
+            'label' => 'Title Align',
+            'help' => '',
+            'child_of' => '',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'choices' => array(
+               array(
+                  'label' => 'Left',
+                  'value' => 'left',
+               ),
+               array(
+                  'label' => 'Center',
+                  'value' => 'center',
+               ),
+               array(
+                  'label' => 'Right',
+                  'value' => 'right',
+               ),
+            ),
+            'allow_null' => 'false',
+            'multiple' => 'false',
+            'output_format' => '',
+            'placeholder' => '',
+            'characters_limit' => '',
          ),
          'control_repeater_lth_items' => array(
             'type' => 'repeater',
@@ -164,8 +196,7 @@ if ( function_exists( 'lazyblocks' ) ) :
          'show_preview' => 'always',
          'single_output' => false,
       ),
-      'condition' => array(
-      ),
-   )  );
-    
+      'condition' => array(),
+   ));
+
 endif;

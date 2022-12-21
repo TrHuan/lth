@@ -29,8 +29,6 @@
     </div>
 </footer>
 
-<?php wp_footer(); ?>
-
 <!-- button show popup lấy theo id của popup -->
 <?php if (have_rows('popups', 'option')) : ?>
     <?php while (have_rows('popups', 'option')) : the_row();
@@ -137,6 +135,8 @@
 
 <?php $other = get_field('other', 'option');
 echo $other['code_footer']; ?>
+
+<?php wp_footer(); ?>
 
 </body>
 

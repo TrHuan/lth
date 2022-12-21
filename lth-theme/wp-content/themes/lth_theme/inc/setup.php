@@ -62,6 +62,7 @@ function lth_theme_setup()
         function setting_remove_menu_pages()
         {
             remove_menu_page('tools.php');
+            remove_menu_page('plugins.php');
             remove_menu_page('edit.php?post_type=acf-field-group');
             remove_submenu_page('options-general.php', 'tinymce-advanced');
             remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
@@ -278,9 +279,9 @@ function lth_admin_menu($__return_true)
         'edit.php?post_type=page', // Menu Trang
         'edit.php', // Menu Bài viết
         'edit.php?post_type=product', // Menu Sản phẩm
-        'admin.php.php', 'wc-admin',
-        // 'wc-admin', // WooCommerce
-        'admin.php?page=wc-admin', // WooCommerce
+        'woocommerce', // WooCommerce
+        // 'woocommerce-analytics',
+        // 'woocommerce-marketing',
         'users.php', // Menu Thành viên
         'wpcf7', // Wpcf7
         'cfdb7-list.php', // Wpcf7
