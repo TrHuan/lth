@@ -218,7 +218,7 @@ if (function_exists('lazyblocks')) :
          'control_select_lth_text_align' => array(
             'type' => 'select',
             'name' => 'text_align',
-            'default' => '',
+            'default' => 'left',
             'label' => 'Text Align',
             'help' => '',
             'child_of' => 'control_repeater_lth_items',
@@ -229,10 +229,6 @@ if (function_exists('lazyblocks')) :
             'save_in_meta_name' => '',
             'required' => 'false',
             'choices' => array(
-               array(
-                  'label' => 'Auto',
-                  'value' => 'auto',
-               ),
                array(
                   'label' => 'Left',
                   'value' => 'left',

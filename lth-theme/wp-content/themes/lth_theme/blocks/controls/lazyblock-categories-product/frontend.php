@@ -49,31 +49,33 @@ if (!function_exists('lth_categories_product_output_fe')) :
                         <?php foreach ($attributes['items'] as $inner) {
                             $term = get_term_by('id', $inner['item'], 'product_cat'); ?>
                             <div class="item">
-                                <div class="content">
-                                    <div class="content-header">
-                                        <?php $thumbnail_id = get_woocommerce_term_meta($inner['item'], 'thumbnail_id', true);
-                                        $image = wp_get_attachment_url($thumbnail_id);
-                                        if ($image) { ?>
-                                            <div class="content-image">
-                                                <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>">
-                                                    <img src="<?php echo $image; ?>" alt="<?php echo $term->name; ?>" width="auto" height="auto">
-                                                </a>
-                                            </div>
-                                        <?php } ?>
-                                        <div class="content-box" style="text-align: <?php echo $attributes['text_align']; ?>">
-                                            <h3 class="content-name">
-                                                <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>">
-                                                    <?php echo $term->name; ?>
-                                                </a>
-                                            </h3>
-                                            <div class="content-excerpt">
+                                <div class="post-box">
+                                    <?php $thumbnail_id = get_woocommerce_term_meta($inner['item'], 'thumbnail_id', true);
+                                    $image = wp_get_attachment_url($thumbnail_id);
+                                    if ($image) { ?>
+                                        <div class="post-image">
+                                            <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>">
+                                                <img src="<?php echo $image; ?>" alt="<?php echo $term->name; ?>" width="auto" height="auto">
+                                            </a>
+                                        </div>
+                                    <?php } ?>
+
+                                    <div class="post-content" style="text-align: <?php echo $attributes['text_align']; ?>">
+                                        <h3 class="post-name">
+                                            <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>">
+                                                <?php echo $term->name; ?>
+                                            </a>
+                                        </h3>
+
+                                        <?php if ($term->description) { ?>
+                                            <div class="post-excerpt">
                                                 <?php echo wpautop($term->description); ?>
                                             </div>
-                                        </div>
-                                    </div>
+                                        <?php } ?>
 
-                                    <div class="content-footer" style="text-align: <?php echo $attributes['text_align']; ?>">
-                                        <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>" title="" class="btn"><?php echo __('Xem thêm'); ?></a>
+                                        <div class="post-button" style="text-align: <?php echo $attributes['text_align']; ?>">
+                                            <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>" title="" class="btn"><?php echo __('Xem thêm'); ?></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

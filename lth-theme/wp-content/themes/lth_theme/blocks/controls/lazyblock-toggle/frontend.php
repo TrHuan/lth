@@ -51,11 +51,16 @@ if (!function_exists('lth_toggle_output_fe')) :
 
                 <div class="module_content">
                     <ul>
-                        <?php foreach ($attributes['toggle'] as $inner) : ?>
+                        <?php foreach ($attributes['items'] as $inner) : ?>
                             <li>
-                                <a href="#"><?php echo $inner['toggle_title']; ?></a>
+                                <a href="#">
+                                    <span><?php echo $inner['item_title']; ?></span>
+                                    <i class="fal fa-plus icon icon-plus"></i>
+                                    <i class="fal fa-minus icon icon-minus"></i>
+                                </a>
+
                                 <div class="content">
-                                    <?php echo $inner['toggle_content']; ?>
+                                    <?php echo $inner['item_content']; ?>
                                 </div>
                             </li>
                         <?php endforeach; ?>

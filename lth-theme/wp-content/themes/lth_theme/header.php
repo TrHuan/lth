@@ -69,25 +69,25 @@ if ($ptp == 'product' && !is_search() || is_tax()) {
 <body <?php body_class(); ?> <?php if (isset($dat_url)) { ?>data_url="<?php echo $dat_url; ?>" <?php } ?>>
 
     <header class="header">
-        <div class="header-stick">
-            <div class="container">
-                <?php $header_option = get_field('header', 'option');
-                if ($header_option) {
-                    $args = [
-                        'post_type' => 'html-blocks',
-                        'p' => $header_option,
-                    ];
-                    $lth = new WP_Query($args);
-                    if ($lth->have_posts()) { ?>
-                <?php while ($lth->have_posts()) {
-                            $lth->the_post();
-                            //load file tương ứng với post format
-                            the_content();
-                        }
+        <!-- <div class="header-stick"> -->
+        <div class="container">
+            <?php $header_option = get_field('header', 'option');
+            if ($header_option) {
+                $args = [
+                    'post_type' => 'html-blocks',
+                    'p' => $header_option,
+                ];
+                $lth = new WP_Query($args);
+                if ($lth->have_posts()) { ?>
+            <?php while ($lth->have_posts()) {
+                        $lth->the_post();
+                        //load file tương ứng với post format
+                        the_content();
                     }
-                    // reset post data
-                    wp_reset_postdata();
-                } ?>
-            </div>
+                }
+                // reset post data
+                wp_reset_postdata();
+            } ?>
         </div>
+        <!-- </div> -->
     </header>

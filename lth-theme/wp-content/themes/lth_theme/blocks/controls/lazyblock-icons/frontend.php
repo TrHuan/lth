@@ -52,21 +52,30 @@ if (!function_exists('lth_icons_output_fe')) :
                     <div class="swiper swiper-slider swiper-icons" data-item="<?php echo $attributes['item']; ?>" data-item_lg="<?php echo $attributes['item_lg']; ?>" data-item_md="<?php echo $attributes['item_md']; ?>" data-item_sm="<?php echo $attributes['item_sm']; ?>" data-item_mb="<?php echo $attributes['item_mb']; ?>" data-row="<?php echo $attributes['item_row']; ?>" data-dots="<?php echo $attributes['item_dots']; ?>" data-arrows="<?php echo $attributes['item_arrows']; ?>" data-vertical="<?php echo $attributes['item_vertical']; ?>" data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
                         <?php foreach ($attributes['items'] as $inner) : ?>
                             <div class="item">
-                                <div class="content">
-                                    <div class="content-image">
-                                        <div class="image">
-                                            <img src="<?php echo esc_url($inner['item_image']['url']); ?>" alt="Icon" width="auto" height="auto">
+                                <div class="post-box">
+                                    <?php if ($inner['item_image']['url']) { ?>
+                                        <div class="post-image">
+                                            <div class="image">
+                                                <img src="<?php echo esc_url($inner['item_image']['url']); ?>" alt="Icon" width="auto" height="auto">
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php } ?>
 
-                                    <div class="content-box" style="text-align: <?php echo $inner['text_align']; ?>">
-                                        <h3 class="content-name">
-                                            <?php echo wpautop($inner['item_title']); ?>
-                                        </h3>
-                                        <div class="content-excerpt">
-                                            <?php echo wpautop($inner['item_text']); ?>
+                                    <?php if ($inner['item_title'] || $inner['item_text']) { ?>
+                                        <div class="post-content" style="text-align: <?php echo $inner['text_align']; ?>">
+                                            <?php if ($inner['item_title']) { ?>
+                                                <h3 class="post-name">
+                                                    <?php echo wpautop($inner['item_title']); ?>
+                                                </h3>
+                                            <?php } ?>
+
+                                            <?php if ($inner['item_text']) { ?>
+                                                <div class="post-excerpt">
+                                                    <?php echo wpautop($inner['item_text']); ?>
+                                                </div>
+                                            <?php } ?>
                                         </div>
-                                    </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         <?php endforeach; ?>

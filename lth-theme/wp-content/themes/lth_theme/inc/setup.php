@@ -63,11 +63,12 @@ function lth_theme_setup()
         {
             remove_menu_page('tools.php');
             remove_menu_page('plugins.php');
-            remove_menu_page('edit.php?post_type=acf-field-group');
-            remove_submenu_page('options-general.php', 'tinymce-advanced');
-            remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
             remove_menu_page('wpcf7');
             remove_menu_page('wpseo_dashboard');
+            remove_menu_page('edit.php?post_type=acf-field-group');
+            remove_submenu_page('options-general.php', 'tinymce-advanced');
+            remove_submenu_page('options-general.php', 'dpp_page_settings');
+            remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
         }
 
         // remove update plugins
@@ -140,56 +141,10 @@ function lth_sidebar_register()
         );
     }
 
-    // register_sidebar (
-    //     array (
-    //         'name' => __('Tin Tức'),
-    //         'id'        => 'sidebar_blog',
-    //         'before_widget' => '<div class="sidebar-box">',
-    //         'after_widget' => '</div>',
-    //         'before_title' => '<h2 class="title">',
-    //         'after_title' => '</h2>',
-    //     )
-    // );
-
-    // register_sidebar (
-    //     array (
-    //         'name' => __('Chi Tiết Tin Tức'),
-    //         'id'        => 'sidebar_single_blog',
-    //         'before_widget' => '<div class="sidebar-box">',
-    //         'after_widget' => '</div>',
-    //         'before_title' => '<h2 class="title">',
-    //         'after_title' => '</h2>',
-    //     )
-    // );
-
     ///// Hiển thị widget
     // if (is_active_sidebar('sidebar_blog')) {
     //     dynamic_sidebar('sidebar_blog');
     // }   
-
-    if (class_exists('WooCommerce')) {
-        register_sidebar(
-            array(
-                'name' => __('Sản Phẩm'),
-                'id'        => 'sidebar_product',
-                'before_widget' => '<div class="sidebar-box sidebar-product">',
-                'after_widget' => '</div>',
-                'before_title' => '<h2 class="title">',
-                'after_title' => '</h2>',
-            )
-        );
-
-        //     register_sidebar (
-        //         array (
-        //             'name' => __('Chi Tiết Sản Phẩm'),
-        //             'id'        => 'sidebar_single_product',
-        //             'before_widget' => '<div class="sidebar-box sidebar-product">',
-        //             'after_widget' => '</div>',
-        //             'before_title' => '<h2 class="title">',
-        //             'after_title' => '</h2>',
-        //         )
-        //     );
-    }
 
     /////////////////////////////////////////
 
@@ -235,7 +190,9 @@ function remove_logo_and_submenu()
         //and this is to change wordpress logo
         $wp_admin_bar->add_menu(array(
             'id' => 'wp-logo',
-            'title' => '<img src="' . get_field('logo', 'option') . '" style="height: 15px; position: relative; top: 0; background: #fff; padding: 5px;" />',
+            'title' => '<img src="' . get_field('logo', 'option') . '" alt="Logo"
+            width: ' . get_field('width_logo', 'option') . ' height: ' . get_field('height_logo', 'option') . '
+            style="height: 15px; position: relative; top: 0; background: #fff; padding: 5px;" />',
             'href' => __('#'),
             'meta' => array(
                 'title' => __('LTH - Theme by LTH'),

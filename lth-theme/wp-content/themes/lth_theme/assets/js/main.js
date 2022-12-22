@@ -337,6 +337,16 @@ jQuery(document).ready(function ($) {
 
 });
 
+jQuery(document).ready(function ($) {
+    // toggle
+    $(document).on('click', '.module_toggle li a', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next().slideToggle('slow');
+    });
+    // end toggle
+});
+
 // wow
 jQuery(document).ready(function ($) {
     wow = new WOW(
