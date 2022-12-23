@@ -31,20 +31,22 @@
 			<?php get_template_part('woocommerce/loop/rating', ''); ?>
 
 			<div class="post-price">
-				<?php echo $product->get_price_html(); ?>
+				<?php if (!$product->get_regular_price()) { ?>
+					<span class="woocommerce-Price-amount amount">
+						<?php echo __('Liên hệ'); ?>
+					</span>
+				<?php } else {
+					echo $product->get_price_html();
+				} ?>
 			</div>
 
 			<div class="post-button">
-				<?php if ($product->is_type('variable')) { ?>
-					<a class="btn btn-read-more" href="<?php the_permalink(); ?>">
-						<span><?php echo __('Xem chi tiết'); ?></span>
-					</a>
-				<?php } else { ?>
-					<a class="btn btn-read-more" href="<?php the_permalink(); ?>">
-						<span><?php echo __('Xem chi tiết'); ?></span>
-					</a>
+				<a class="btn btn-read-more" href="<?php the_permalink(); ?>">
+					<span><?php echo __('Xem chi tiết'); ?></span>
+				</a>
 
-					<?php echo apply_filters(
+				<?php if (!$product->is_type('variable')) {
+					echo apply_filters(
 						'woocommerce_loop_add_to_cart_link',
 						sprintf(
 							'<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" 
@@ -57,8 +59,8 @@
 							esc_html($product->add_to_cart_text())
 						),
 						$product
-					); ?>
-				<?php } ?>
+					);
+				} ?>
 			</div>
 		</div>
 	</article>

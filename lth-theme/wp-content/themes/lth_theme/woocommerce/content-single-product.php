@@ -52,11 +52,25 @@ if (post_password_required()) {
     <div class="summary entry-summary">
         <?php
         do_action('woocommerce_single_product_summary_title');
+
         do_action('woocommerce_single_product_summary_rating');
-        do_action('woocommerce_single_product_summary_price');
+
+        if (!$product->get_regular_price()) { ?>
+            <div class="price">
+                <span class="woocommerce-Price-amount amount">
+                    <?php echo __('Liên hệ'); ?>
+                </span>
+            </div>
+        <?php } else {
+            do_action('woocommerce_single_product_summary_price');
+        }
+
         do_action('woocommerce_single_product_summary_excerpt');
+
         do_action('woocommerce_single_product_summary_meta');
+
         do_action('woocommerce_single_product_summary_add_to_cart');
+
         do_action('woocommerce_single_product_summary_sharing');
         ?>
     </div>
