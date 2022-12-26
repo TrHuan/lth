@@ -34,7 +34,7 @@ if (!function_exists('lth_logo_output_fe')) :
                                 } else {
                                     echo get_home_url();
                                 } ?>" title="">
-                        <img src="<?php echo esc_url($attributes['logo_image']['url']); ?>" alt="<?php bloginfo('title'); ?>" width="<?php echo $attributes['width']; ?>" height="<?php echo $attributes['height']; ?>">
+                        <img src="<?php echo esc_url($attributes['logo_image']['url']); ?>" alt="<?php bloginfo('title'); ?>" width="<?php echo $attributes['width']; ?>" height="<?php echo $attributes['height']; ?>" style="max-height:<?php echo $attributes['height']; ?>px">
                     </a>
                     <a href="<?php if (isset($lang)) {
                                     echo get_home_url($lang);
@@ -83,7 +83,7 @@ if (!function_exists('lth_logo_output_fe')) :
                                 } else {
                                     echo get_home_url();
                                 } ?>" title="">
-                        <img src="<?php echo esc_url($attributes['logo_image']['url']); ?>" alt="<?php bloginfo('title'); ?>" width="<?php echo $attributes['width']; ?>" height="<?php echo $attributes['height']; ?>">
+                        <img src="<?php echo esc_url($attributes['logo_image']['url']); ?>" alt="<?php bloginfo('title'); ?>" width="<?php echo $attributes['width']; ?>" height="<?php echo $attributes['height']; ?>" style="max-height:<?php echo $attributes['height']; ?>px">
                     </a>
                     <a href="<?php if (isset($lang)) {
                                     echo get_home_url($lang);

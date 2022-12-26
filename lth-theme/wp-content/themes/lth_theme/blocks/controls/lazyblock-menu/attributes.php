@@ -155,7 +155,7 @@ if (function_exists('lazyblocks')) :
             'save_in_meta_name' => '',
             'required' => 'false',
             'choices' => $choices,
-            'allow_null' => 'false',
+            'allow_null' => 'true',
             'multiple' => 'false',
             'output_format' => '',
             'placeholder' => '',

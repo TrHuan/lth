@@ -58,6 +58,8 @@ if (class_exists('WooCommerce')) {
             'lazyblock/lth-line',
             'lazyblock/lth-list',
             'lazyblock/lth-logo',
+            'lazyblock/lth-megamenu',
+            'lazyblock/lth-megamenu-mobile',
             'lazyblock/lth-menu',
             'lazyblock/lth-quote',
             'lazyblock/lth-search',
