@@ -69,8 +69,8 @@ if ($ptp == 'product' && !is_search() || is_tax()) {
 <body <?php body_class(); ?> <?php if (isset($dat_url)) { ?>data_url="<?php echo $dat_url; ?>" <?php } ?>>
 
     <header class="header">
-        <!-- <div class="header-stick"> -->
-        <div class="container">
+        <div class="header-stick">
+        <!-- <div class="container"> -->
             <?php $header_option = get_field('header', 'option');
             if ($header_option) {
                 $args = [
@@ -88,6 +88,6 @@ if ($ptp == 'product' && !is_search() || is_tax()) {
                 // reset post data
                 wp_reset_postdata();
             } ?>
-        </div>
         <!-- </div> -->
+        </div>
     </header>
