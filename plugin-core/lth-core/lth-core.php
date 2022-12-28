@@ -75,7 +75,7 @@ if (!class_exists('lth_core_update')) {
 
 			$this->plugin_slug = plugin_basename(__DIR__);
 			$this->version = '1.0.0';
-			$this->cache_key = 'gco-veoveo';
+			$this->cache_key = 'lth-core';
 			$this->cache_allowed = false;
 
 			add_filter('plugins_api', array($this, 'info'), 20, 3);
@@ -91,7 +91,7 @@ if (!class_exists('lth_core_update')) {
 			if (false === $remote || !$this->cache_allowed) {
 
 				$remote = wp_remote_get(
-					'https://veoveodemo.gcodemo.com/wp-content/uploads/updater/info.json', // đường dẫn đến thư mục chứa file plugin, json
+					'https://github.com/TrHuan/lth/tree/main/plugin-core/updater/info.json', // đường dẫn đến thư mục chứa file plugin, json
 					array(
 						'timeout' => 10,
 						'headers' => array(

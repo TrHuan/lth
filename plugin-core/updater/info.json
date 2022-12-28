@@ -4,7 +4,7 @@
     "author": "<a href='https://http://lth90.42web.io'>LTH Core</a>",
     "author_profile": "",
     "version": "2.0.0",
-    "download_url": "https://http://lth90.42web.io/updater/lth-core.zip", // đường dẫn đến thư mục chứa file plugin, json
+    "download_url": "https://github.com/TrHuan/lth/tree/main/plugin-core/updater/lth-core.zip", // đường dẫn đến thư mục chứa file plugin, json
     "requires": "3.0",
     "tested": "5.8",
     "requires_php": "5.3",
@@ -15,7 +15,7 @@
         "changelog": "<h4>1.0 –  1 august 2021</h4><ul><li>Bug fixes.</li><li>Initital release.</li></ul>"
     },
     "banners": {
-        "low": "https://http://lth90.42web.io/updater/banner-772x250.jpg",
-        "high": "https://http://lth90.42web.io/updater/banner-1544x500.jpg"
+        "low": "https://github.com/TrHuan/lth/tree/main/plugin-core/updater/banner-772x250.jpg",
+        "high": "https://github.com/TrHuan/lth/tree/main/plugin-core/updater/banner-1544x500.jpg"
     }
 }
