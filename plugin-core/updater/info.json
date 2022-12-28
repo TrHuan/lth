@@ -4,7 +4,7 @@
     "author": "<a href='https://http://lth90.42web.io'>LTH Core</a>",
     "author_profile": "",
     "version": "2.0.0",
-    "download_url": "https://github.com/TrHuan/lth/tree/main/plugin-core/updater/lth-core.zip", // đường dẫn đến thư mục chứa file plugin, json
+    "download_url": "https://github.com/TrHuan/lth/blob/f4522a609cc36ba41fff1937b41adc2ddf87bca8/plugin-core/updater/lth-core.zip", // đường dẫn đến thư mục chứa file plugin, json
     "requires": "3.0",
     "tested": "5.8",
     "requires_php": "5.3",
