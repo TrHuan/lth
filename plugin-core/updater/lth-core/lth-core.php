@@ -23,7 +23,7 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       lth-core
  * Domain Path:       /languages
- * GitHub Theme URI: https://github.com/TrHuan/lth/blob/main/plugin-core/updater/lth-core.zip
+ * GitHub Theme URI: https://github.com/TrHuan/lth/blob/main/plugin-core/updater/lth-core
  */
 
 // If this file is called directly, abort.
