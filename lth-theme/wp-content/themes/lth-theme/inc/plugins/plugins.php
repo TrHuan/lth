@@ -248,6 +248,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'iThemes Security',
+
+                        'slug' => 'better-wp-security',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Really Simple SSL',
 
                         'slug' => 'really-simple-ssl',
