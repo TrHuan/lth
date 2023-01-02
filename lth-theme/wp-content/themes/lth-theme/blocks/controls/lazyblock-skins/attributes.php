@@ -201,7 +201,7 @@ if (function_exists('lazyblocks')) :
          'control_inner_blocks_lth_animate' => array(
             'type' => 'select',
             'name' => 'animate',
-            'default' => 'no',
+            'default' => 'yes',
             'label' => 'Animate',
             'help' => '',
             'child_of' => 'control_repeater_lth_items',

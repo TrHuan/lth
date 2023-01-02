@@ -30,7 +30,7 @@ function my_plugin_add_stylesheet()
 //////////////////////////////////////////////////
 
 // theme options
-require_once get_theme_file_path('acf/acf.php');
+require_once get_theme_file_path('plugins/acf/acf.php');
 require_once get_theme_file_path('inc/theme-options.php');
 
 // khởi tạo widgets content

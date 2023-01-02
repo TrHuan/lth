@@ -22,7 +22,7 @@ if (!function_exists('lth_menu_output_fe')) :
 
         $nav_menu    = get_term_by('slug', $attributes['menu_name'], 'nav_menu');
 ?>
-        <article class="lth-megamenu <?php echo $attributes['class']; ?>">
+        <article class="lth-menu <?php echo $attributes['class']; ?>">
             <?php if ($attributes['title'] || $attributes['description']) : ?>
                 <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
                     <?php if ($attributes['title']) : ?>

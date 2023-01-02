@@ -44,7 +44,11 @@ if (!function_exists('lth_list_output_fe')) :
             <?php endif; ?>
 
             <div class="module_content">
-                <ul class="lists-text">
+                <?php if ($attributes['list_tag'] != 'ol') { ?>
+                    <ul class="lists-text" <?php if ($attributes['list_tag'] == 'none') { ?>style="list-style: none; padding-left: 0;"<?php } ?>>
+                <?php } else { ?>
+                    <ol class="lists-text">
+                <?php } ?>
                     <?php foreach ($attributes['items'] as $inner) { ?>
                         <li>
                             <?php if ($inner['item_url']) : ?>
@@ -56,7 +60,11 @@ if (!function_exists('lth_list_output_fe')) :
                             <?php endif; ?>
                         </li>
                     <?php } ?>
-                </ul>
+                <?php if ($attributes['list_tag'] == 'ul') { ?>
+                    </ul>
+                <?php } else { ?>
+                    </ol>
+                <?php } ?>
             </div>
         </article>
 <?php

@@ -19,14 +19,15 @@ define('LIBS_DIR', THEME_DIR . '/inc');
 
 if (THEME_NAME === 'lth_theme') {
 	// theme options
-	require_once(THEME_DIR . '/acf/acf.php');
-	require_once(LIBS_DIR . '/theme-options.php');
+	require_once(THEME_DIR . '/plugins/acf/acf.php');
 
 	// khởi tạo widgets content
 	define('BLOCKS_URI', THEME_URI . '/blocks');
 	define('BLOCKS_DIR', THEME_DIR . '/blocks');
 	require_once(BLOCKS_DIR . '/lth-blocks.php');
 }
+
+require_once(LIBS_DIR . '/theme-options.php');
 
 // khởi tạo theme
 require_once(LIBS_DIR . '/setup.php');

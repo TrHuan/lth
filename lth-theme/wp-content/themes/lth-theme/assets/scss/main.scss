@@ -119,6 +119,10 @@ ol {
   margin-bottom: 10px;
 }
 
+ul, ol {
+  padding-left: 17px;
+}
+
 blockquote {
   position: relative;
   margin: 0 0 10px;
@@ -278,7 +282,7 @@ button,
 .title {
   color: $col_title;
   font: {
-    family: $font_family_title;
+    // family: $font_family_title;
     size: $font_sz_title;
   }
   text-transform: uppercase;
@@ -1324,25 +1328,35 @@ iframe {
 }
 
 // megamenu
-.header {
-  .menu {
+.lth-megamenu {
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.megamenu-desktop {
+  ul {
     display: flex;
     margin: -5px -20px;
+  }
 
-    a {
-      font-size: 16px;
-      display: inline-block;
-      border-bottom: 1px solid transparent;
-    }
+  a {
+    font-size: 16px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+  }
 
-    li:not(.menu-item-has-children) a .icon {
-      display: none;
-    }
+  li:not(.menu-item-has-children) a .icon {
+    display: none;
+  }
 
-    li {
-      padding: 5px 20px;
-      margin-bottom: 0;
-    }
+  li {
+    padding: 5px 20px;
+    margin-bottom: 0;
   }
 }
 // end megamenu
@@ -1688,9 +1702,18 @@ footer {
 }
 // end posts
 
-// end banner
+// banner
 
 // end banner
+
+// menu
+.lth-menu {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+// end menu
 
 // tabs-box
 .tabs-box {
@@ -1756,6 +1779,10 @@ footer {
 
 // skins
 .module_skins {
+  .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
   .content-line {
     overflow-x: hidden;
     position: relative;
