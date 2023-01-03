@@ -11,7 +11,7 @@ if (class_exists('WooCommerce')) {
             // 'woocommerce/price-filter',
 
             'lazyblock/lth-section',
-            'lazyblock/lth-banner',
+            // 'lazyblock/lth-banner',
             // 'lazyblock/lth-blocks',
             'lazyblock/lth-blogs',
             'lazyblock/lth-blogs-category',

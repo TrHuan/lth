@@ -755,7 +755,7 @@ form {
   &.active {
     position: fixed;
     animation: headerstick 400ms;
-    top: 0;
+    // top: 0;
     left: 0;
   }
 }
@@ -1678,10 +1678,14 @@ footer {
   padding: 15px;
 }
 
-.post-name a {
+.post-name {
   font-size: 18px;
   font-weight: 500;
-  display: inherit;
+
+  a {
+    font-size: inherit;
+    font-weight: inherit;
+  }
 }
 
 .post-job,

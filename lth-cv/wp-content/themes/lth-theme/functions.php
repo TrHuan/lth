@@ -1,4 +1,13 @@
 <?php
+/* UPDATER THEME VERSION */
+require 'inc/theme-update-checker.php';
+$update_checker = new ThemeUpdateChecker(
+	'LTH',
+	'https://raw.githubusercontent.com/LTH-Themes/lth_theme/main/info.json'
+);
+/* Per la ricerca manuale degli aggiornamenti, altrimenti avviene automaticamente ogni 12 ore */
+//$update_checker->checkForUpdates();
+
 // thông tin theme
 $my_theme = wp_get_theme();
 define('THEME_NAME', sanitize_title($my_theme->get('Name')));
@@ -66,12 +75,3 @@ require_once(LIBS_DIR . '/widgets/remove-widgets.php');
 require_once(LIBS_DIR . '/widgets/show-widgets.php');
 
 //////////////////////////////////////////////////
-
-/* UPDATER THEME VERSION */
-require 'inc/theme-update-checker.php';
-$update_checker = new ThemeUpdateChecker(
-	'LTH',
-	'https://raw.githubusercontent.com/LTH-Themes/lth_theme/main/info.json'
-);
-/* Per la ricerca manuale degli aggiornamenti, altrimenti avviene automaticamente ogni 12 ore */
-//$update_checker->checkForUpdates();

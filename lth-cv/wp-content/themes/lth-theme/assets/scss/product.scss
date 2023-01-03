@@ -1221,26 +1221,6 @@
 // end cart
 
 // products
-.add-product,
-.remove-product {
-  position: fixed;
-  top: 15px;
-  right: -100%;
-  z-index: 9999991;
-  background: #000;
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: all 800ms;
-  color: #fff;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.add-product.active,
-.remove-product.active {
-  right: 15px;
-}
-
 .module_products {
   .post-box {
     border: 1px solid #EAEEF1;
@@ -1309,10 +1289,10 @@
 
     .add_to_cart_button {
       padding: 0 11px;
-
+      
       &:hover {
         background-color: #fff;
-      }
+    }
 
       span {
         display: none;

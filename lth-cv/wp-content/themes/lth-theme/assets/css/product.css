@@ -1088,28 +1088,6 @@
           transform: translate(0, 0);
 }
 
-.add-product,
-.remove-product {
-  position: fixed;
-  top: 15px;
-  right: -100%;
-  z-index: 9999991;
-  background: #000;
-  padding: 10px 20px;
-  border-radius: 25px;
-  -webkit-transition: all 800ms;
-  -o-transition: all 800ms;
-  transition: all 800ms;
-  color: #fff;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.add-product.active,
-.remove-product.active {
-  right: 15px;
-}
-
 .module_products .post-box {
   border: 1px solid #EAEEF1;
 }

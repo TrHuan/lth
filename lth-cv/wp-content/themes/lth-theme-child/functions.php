@@ -29,9 +29,14 @@ function my_plugin_add_stylesheet()
 
 //////////////////////////////////////////////////
 
-// theme options
-require_once get_theme_file_path('plugins/acf/acf.php');
-require_once get_theme_file_path('inc/theme-options.php');
+$my_theme = wp_get_theme();
+define('THEME_CHILD_NAME', sanitize_title($my_theme->get('Name')));
 
-// khởi tạo widgets content
-require_once get_theme_file_path('blocks/lth-blocks.php');
+if (THEME_CHILD_NAME == 'lth_theme_child') {
+	// theme options
+	require_once get_theme_file_path('plugins/acf/acf.php');
+	require_once get_theme_file_path('inc/theme-options.php');
+
+	// khởi tạo widgets content
+	require_once get_theme_file_path('blocks/lth-blocks.php');
+}
