@@ -22,7 +22,7 @@ if (!function_exists('lth_megamenu_output_fe')) :
 
         $nav_menu    = get_term_by('slug', $attributes['menu_name'], 'nav_menu');
 ?>
-        <article class="lth-megamenu megamenu-desktop d-none d-lg-block <?php echo $attributes['class']; ?>">
+        <article class="lth-megamenu megamenu-desktop d-none d-xl-block <?php echo $attributes['class']; ?>">
             <div class="module_content">
                 <div class="menus">
                     <?php if (!is_wp_error($nav_menu) && is_object($nav_menu) && !empty($nav_menu)) : ?>

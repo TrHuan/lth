@@ -18,60 +18,86 @@ if (!function_exists('lth_contact_output_fe')) :
      */
     function lth_contact_output_fe($output, $attributes) {
         ob_start();
+        
+    $contact = get_field('contact', 'option');
+
+    if ($attributes['address']) {
+        $address = $attributes['address'];
+    } else {
+        $address = $contact['address'];
+    }
+
+    if ($attributes['phone']) {
+        $hotline = $attributes['phone'];
+    } else {
+        $hotline = $contact['hotline'];
+    }
+    
+    if ($attributes['email']) {
+        $email = $attributes['email'];
+    } else {
+        $email = $contact['email'];
+    }    
 ?>
     <article class="lth-contacts">
-        <?php echo $attributes['map']; ?>
+        <?php //if ($attributes['map']) {
+            //echo $attributes['map'];
+        //} ?>
 
         <div class="module module_address">
             <div class="module_header title-box">
                 <h2 class="title"><?php echo __('Liên hệ'); ?></h2>
             </div>
 
-            <div class="module_content">
-                <ul>
-                    <li>
-                        <a href="#" title="">
-                            <?php echo __('Địa chỉ'); ?> : <?php echo $attributes['address']; ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:<?php echo $attributes['phone']; ?>" title="">
-                            <?php echo __('Hotline'); ?> : <?php echo $attributes['phone']; ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:<?php echo $attributes['email']; ?>" title="">
-                            <?php echo __('Email'); ?> : <?php echo $attributes['email']; ?>
-                        </a>
-                    </li>
-                    <?php if ( class_exists( 'WQM_Qr_Code_Generator' ) ) { ?>
-                        <li class="vcard-box">
-                            <div class="add-contact">
-                                <a href="#" title="">
-                                    <i class="fas fa-user-plus"></i>
-                                    <span><?php echo __('Thêm liên hệ'); ?></span>
-                                </a>
-
-                                <?php if (is_active_sidebar('widget_qr_code_vcard')) {
-                                    dynamic_sidebar('widget_qr_code_vcard');
-                                } ?>
-                            </div>
+            <?php if ($address || $hotline || $email || class_exists( 'WQM_Qr_Code_Generator' )) { ?>
+                <div class="module_content">
+                    <ul>
+                        <li>
+                            <a href="#" title="">
+                                <span><?php echo __('Địa chỉ:'); ?></span> <?php echo $address; ?>
+                            </a>
                         </li>
-
-                        <li class="qr-code-box">
-                            <div class="add-contact">
-                                <?php if (is_active_sidebar('widget_qr_code_vcard')) {
-                                    dynamic_sidebar('widget_qr_code_vcard');
-                                } ?>
-                            </div>
+                        <li>
+                            <a href="tel:<?php echo $hotline; ?>" title="">
+                            <span><?php echo __('Hotline:'); ?></span> <?php echo $hotline; ?>
+                            </a>
                         </li>
-                    <?php } ?>
-                </ul>
-            </div>
+                        <li>
+                            <a href="mailto:<?php echo $email; ?>" title="">
+                            <span><?php echo __('Email:'); ?></span> <?php echo $email; ?>
+                            </a>
+                        </li>
+                        <?php if ( class_exists( 'WQM_Qr_Code_Generator' ) ) { ?>
+                            <li class="vcard-box">
+                                <div class="add-contact">
+                                    <a href="#" title="">
+                                        <i class="fas fa-user-plus"></i>
+                                        <span><?php echo __('Thêm liên hệ'); ?></span>
+                                    </a>
 
-            <div class="module_form_contacts">
-                <?php echo do_shortcode($attributes['form']); ?>
-            </div>
+                                    <?php if (is_active_sidebar('widget_qr_code_vcard')) {
+                                        dynamic_sidebar('widget_qr_code_vcard');
+                                    } ?>
+                                </div>
+                            </li>
+
+                            <li class="qr-code-box">
+                                <div class="add-contact">
+                                    <?php if (is_active_sidebar('widget_qr_code_vcard')) {
+                                        dynamic_sidebar('widget_qr_code_vcard');
+                                    } ?>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            <?php } ?>
+
+            <?php //if ($attributes['form']) { ?>
+                <!-- <div class="module_form_contacts"> -->
+                    <?php //echo do_shortcode($attributes['form']); ?>
+                <!-- </div> -->
+            <?php //} ?>
         </div>
     </article>
 

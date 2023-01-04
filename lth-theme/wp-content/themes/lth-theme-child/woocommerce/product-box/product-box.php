@@ -1,6 +1,6 @@
 <?php global $product; ?>
 
-<div class="item child">
+<div class="item">
 	<article class="post-box">
 		<?php if (has_post_thumbnail()) { ?>
 			<div class="post-image">

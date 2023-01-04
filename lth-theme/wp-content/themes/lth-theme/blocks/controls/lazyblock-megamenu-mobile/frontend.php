@@ -22,7 +22,7 @@ if (!function_exists('lth_megamenu_mobile_output_fe')) :
 
         $nav_menu    = get_term_by('slug', $attributes['menu_name'], 'nav_menu');
 ?>
-        <article class="lth-megamenu megamenu-mobile d-block d-lg-none <?php echo $attributes['class']; ?>">
+        <article class="lth-megamenu megamenu-mobile d-block d-xl-none <?php echo $attributes['class']; ?>">
             <div class="open-box">
                 <a href="#" title="">
                     <span></span>
@@ -32,27 +32,29 @@ if (!function_exists('lth_megamenu_mobile_output_fe')) :
             </div>
 
             <div class="module_content">
-                <div class="close-box">
-                    <a href="#" title="" data_toggle="menu-content" class="menu-icon">
-                        <i class="fal fa-times"></i>
-                    </a>
-                </div>
+                <div class="content-box">
+                    <div class="close-box">
+                        <a href="#" title="" data_toggle="menu-content" class="menu-icon">
+                            <i class="fal fa-times"></i>
+                        </a>
+                    </div>
 
-                <div class="menus">
-                    <?php if (!is_wp_error($nav_menu) && is_object($nav_menu) && !empty($nav_menu)) : ?>
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'menu'            => $nav_menu->slug,
-                                'theme_location'  => $nav_menu->slug,
-                                'container'       => '',
-                                'container_class' => '',
-                                'container_id'    => '',
-                                'menu_class'      => 'menu',
-                            )
-                        );
-                        ?>
-                    <?php endif; ?>
+                    <div class="menus">
+                        <?php if (!is_wp_error($nav_menu) && is_object($nav_menu) && !empty($nav_menu)) : ?>
+                            <?php
+                            wp_nav_menu(
+                                array(
+                                    'menu'            => $nav_menu->slug,
+                                    'theme_location'  => $nav_menu->slug,
+                                    'container'       => '',
+                                    'container_class' => '',
+                                    'container_id'    => '',
+                                    'menu_class'      => 'menu',
+                                )
+                            );
+                            ?>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </article>
