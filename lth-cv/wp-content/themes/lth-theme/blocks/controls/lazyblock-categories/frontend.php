@@ -44,8 +44,13 @@ if (!function_exists('lth_categories_output_fe')) :
                     </div>
                 <?php endif; ?>
 
-                <div class="module_content">
-                    <div class="swiper swiper-slider swiper-categories" data-item="<?php echo $attributes['item']; ?>" data-item_lg="<?php echo $attributes['item_lg']; ?>" data-item_md="<?php echo $attributes['item_md']; ?>" data-item_sm="<?php echo $attributes['item_sm']; ?>" data-item_mb="<?php echo $attributes['item_mb']; ?>" data-row="<?php echo $attributes['item_row']; ?>" data-dots="<?php echo $attributes['item_dots']; ?>" data-arrows="<?php echo $attributes['item_arrows']; ?>" data-vertical="<?php echo $attributes['item_vertical']; ?>" data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
+                <div class="module_content module_style_<?php echo $attributes['style']; ?>">
+                    <div class="swiper swiper-slider swiper-categories" data-item="<?php echo $attributes['item']; ?>"
+                     data-item_lg="<?php echo $attributes['item_lg']; ?>" data-item_md="<?php echo $attributes['item_md']; ?>"
+                      data-item_sm="<?php echo $attributes['item_sm']; ?>" data-item_mb="<?php echo $attributes['item_mb']; ?>"
+                       data-row="<?php echo $attributes['item_row']; ?>" data-dots="<?php echo $attributes['item_dots']; ?>"
+                        data-arrows="<?php echo $attributes['item_arrows']; ?>" data-vertical="<?php echo $attributes['item_vertical']; ?>"
+                         data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
                         <?php foreach ($attributes['items'] as $inner) { ?>
                             <div class="item">
                                 <div class="post-box">
@@ -58,7 +63,7 @@ if (!function_exists('lth_categories_output_fe')) :
                                         </div>
                                     <?php } ?>
 
-                                    <div class="post-content" style="text-align: <?php echo $attributes['text_align']; ?>">
+                                    <div class="post-content" style="text-align: <?php echo $inner['text_align']; ?>">
                                         <h3 class="post-name">
                                             <a href="<?php echo get_category_link($inner['item']); ?>">
                                                 <?php echo get_cat_name($inner['item']); ?>
@@ -71,8 +76,10 @@ if (!function_exists('lth_categories_output_fe')) :
                                             </div>
                                         <?php } ?>
 
-                                        <div class="post-button" style="text-align: <?php echo $attributes['text_align']; ?>">
-                                            <a href="<?php echo get_category_link($inner['item']); ?>" title="" class="btn"><?php echo __('Xem thêm'); ?></a>
+                                        <div class="post-button">
+                                            <a href="<?php echo get_category_link($inner['item']); ?>" title="" class="btn">
+                                                <?php echo __('Xem thêm'); ?>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

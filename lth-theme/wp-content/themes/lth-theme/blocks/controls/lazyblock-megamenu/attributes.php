@@ -23,7 +23,7 @@ if (function_exists('lazyblocks')) :
       'description'  => 'Example block that helps you to get started with Lazy Blocks plugin',
       'icon'         => '<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.25" width="15" height="15" rx="4" transform="matrix(-1 0 0 1 22 7)" fill="currentColor" /><rect width="15" height="15" rx="4" transform="matrix(-1 0 0 1 17 2)" fill="currentColor" /></svg>',
       'slug'         => 'lazyblock/lth-megamenu',
-      'category'     => 'common'
+      'category'     => 'LTH'
    );
 
    lazyblocks()->add_block(array(

@@ -14,7 +14,7 @@ if (function_exists('lazyblocks')) :
       'description'  => 'Example block that helps you to get started with Lazy Blocks plugin',
       'icon'         => '<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.25" width="15" height="15" rx="4" transform="matrix(-1 0 0 1 22 7)" fill="currentColor" /><rect width="15" height="15" rx="4" transform="matrix(-1 0 0 1 17 2)" fill="currentColor" /></svg>',
       'slug'         => 'lazyblock/lth-icons', //thay đổi
-      'category'     => 'common'
+      'category'     => 'LTH'
    );
 
    lazyblocks()->add_block(array(
@@ -154,7 +154,7 @@ if (function_exists('lazyblocks')) :
             'type' => 'image',
             'name' => 'item_image',
             'default' => '',
-            'label' => 'Image',
+            'label' => 'Image Icon',
             'help' => '',
             'child_of' => 'control_repeater_lth_items',
             'placement' => 'inspector',
@@ -167,22 +167,59 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         // 'control_textarea_lth_class_icon' => array(
-         //    'type' => 'text',
-         //    'name' => 'item_class_icon',
-         //    'default' => '',
-         //    'label' => 'Class Icon',
-         //    'help' => '',
-         //    'child_of' => 'control_repeater_lth_items',
-         //    'placement' => 'inspector',
-         //    'width' => '100',
-         //    'hide_if_not_selected' => 'false',
-         //    'save_in_meta' => 'false',
-         //    'save_in_meta_name' => '',
-         //    'required' => 'false',
-         //    'placeholder' => '',
-         //    'characters_limit' => '',
-         // ),
+         'control_textarea_lth_class_icon' => array(
+            'type' => 'text',
+            'name' => 'item_class_icon',
+            'default' => '',
+            'label' => 'Class Icon',
+            'help' => '',
+            'child_of' => 'control_repeater_lth_items',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'placeholder' => '',
+            'characters_limit' => '',
+         ),         
+         'control_select_lth_icon_align' => array(
+            'type' => 'select',
+            'name' => 'icon_align',
+            'default' => 'top',
+            'label' => 'Icon Align',
+            'help' => '',
+            'child_of' => 'control_repeater_lth_items',
+            'placement' => 'inspector',
+            'width' => '100',
+            'hide_if_not_selected' => 'false',
+            'save_in_meta' => 'false',
+            'save_in_meta_name' => '',
+            'required' => 'false',
+            'choices' => array(
+               array(
+                  'label' => 'Top',
+                  'value' => 'top',
+               ),
+               array(
+                  'label' => 'Bottom',
+                  'value' => 'bottom',
+               ),
+               array(
+                  'label' => 'Left',
+                  'value' => 'left',
+               ),
+               array(
+                  'label' => 'Right',
+                  'value' => 'right',
+               ),
+            ),
+            'allow_null' => 'false',
+            'multiple' => 'false',
+            'output_format' => '',
+            'placeholder' => '',
+            'characters_limit' => '',
+         ),
          'control_textarea_lth_item_title' => array(
             'type' => 'textarea',
             'name' => 'item_title',

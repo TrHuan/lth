@@ -36,7 +36,7 @@ if (class_exists('WooCommerce')) {
                         'id' => '',
                     ),
                     'return_format' => 'url',
-                    'preview_size' => 'full',
+                    'preview_size' => 'medium',
                     'library' => 'all',
                     'min_width' => '',
                     'min_height' => '',
@@ -60,7 +60,7 @@ if (class_exists('WooCommerce')) {
                         'id' => '',
                     ),
                     'return_format' => 'url',
-                    'preview_size' => 'full',
+                    'preview_size' => 'medium',
                     'library' => 'all',
                     'min_width' => '',
                     'min_height' => '',
@@ -214,7 +214,7 @@ if (class_exists('WooCommerce')) {
                     'required' => 0,
                     'conditional_logic' => 0,
                     'wrapper' => array(
-                        'width' => '',
+                        'width' => '50',
                         'class' => '',
                         'id' => '',
                     ),
@@ -303,7 +303,7 @@ if (class_exists('WooCommerce')) {
                     'required' => 0,
                     'conditional_logic' => 0,
                     'wrapper' => array(
-                        'width' => '',
+                        'width' => '50',
                         'class' => '',
                         'id' => '',
                     ),
@@ -362,7 +362,7 @@ if (class_exists('WooCommerce')) {
                     'required' => 0,
                     'conditional_logic' => 0,
                     'wrapper' => array(
-                        'width' => '',
+                        'width' => '50',
                         'class' => '',
                         'id' => '',
                     ),
@@ -405,7 +405,7 @@ if (class_exists('WooCommerce')) {
                     'required' => 0,
                     'conditional_logic' => 0,
                     'wrapper' => array(
-                        'width' => '',
+                        'width' => '50',
                         'class' => '',
                         'id' => '',
                     ),

@@ -52,7 +52,7 @@ if (!function_exists('lth_icons_output_fe')) :
                     <div class="swiper swiper-slider swiper-icons" data-item="<?php echo $attributes['item']; ?>" data-item_lg="<?php echo $attributes['item_lg']; ?>" data-item_md="<?php echo $attributes['item_md']; ?>" data-item_sm="<?php echo $attributes['item_sm']; ?>" data-item_mb="<?php echo $attributes['item_mb']; ?>" data-row="<?php echo $attributes['item_row']; ?>" data-dots="<?php echo $attributes['item_dots']; ?>" data-arrows="<?php echo $attributes['item_arrows']; ?>" data-vertical="<?php echo $attributes['item_vertical']; ?>" data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
                         <?php foreach ($attributes['items'] as $inner) : ?>
                             <div class="item">
-                                <div class="post-box">
+                                <div class="post-box icon-<?php echo $inner['icon_align']; ?>">
                                     <?php if ($inner['item_image']['url']) { ?>
                                         <div class="post-image">
                                             <div class="image">

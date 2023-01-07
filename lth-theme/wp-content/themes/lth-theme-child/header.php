@@ -43,7 +43,8 @@
     <?php wp_head(); ?>
     <!-- hook của wordpress gọi đến file inc/head.php -->
 
-    <?php require_once get_theme_file_path('inc//css.php'); ?>
+    <?php require_once get_parent_theme_file_path('inc/css.php');
+    require_once get_theme_file_path('inc/css.php'); ?>
 </head>
 
 <?php

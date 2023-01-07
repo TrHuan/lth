@@ -160,3 +160,11 @@ cite {
 .no-js li.wp-has-current-submenu:hover .wp-submenu {
   margin-left: 0;
 }
+
+.acf-image-uploader[data-preview_size="medium"] {
+  height: 200px;
+  overflow: hidden;
+}
+.acf-image-uploader[data-preview_size="medium"] .image-wrap img {
+  height: 200px;
+}
