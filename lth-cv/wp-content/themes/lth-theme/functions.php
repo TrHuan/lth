@@ -2,7 +2,7 @@
 /* UPDATER THEME VERSION */
 require 'inc/theme-update-checker.php';
 $update_checker = new ThemeUpdateChecker(
-	'LTH',
+	'LTH_Theme',
 	'https://raw.githubusercontent.com/LTH-Themes/lth_theme/main/info.json'
 );
 /* Per la ricerca manuale degli aggiornamenti, altrimenti avviene automaticamente ogni 12 ore */

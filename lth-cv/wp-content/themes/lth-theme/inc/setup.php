@@ -304,7 +304,7 @@ function lth_admin_menu($__return_true)
         'users.php', // Menu Thành viên
         'wpcf7', // Wpcf7
         'cfdb7-list.php', // Wpcf7
-        'wp-smtp/wp-smtp.php', // Wpcf7
+        'wp-mail-smtp', // Wpcf7
         'edit.php?post_type=qrcode-card',
         'wpseo_dashboard',
         'mlang', // Polylang
@@ -416,26 +416,57 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 }
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 
-/* Kiểm tra lỗi đăng nhập */
-$login_page = get_pages(
-    array(
-        'meta_key' => '_wp_page_template',
-        'meta_value' => 'page-login.php'
-    )
-);
-$login_id = $login_page[0]->ID;
-$login_url = get_permalink( $login_id );
-function login_failed() {
-    $login_page  = $login_url;
-    wp_redirect( $login_page . '?login=failed' );
-    exit;
-}
-add_action( 'wp_login_failed', 'login_failed' );  
-function verify_username_password( $user, $username, $password ) {
-    $login_page  = $login_url;
-    if( $username == "" || $password == "" ) {
-        wp_redirect( $login_page . "?login=empty" );
-        exit;
-    }
-}
-add_filter( 'authenticate', 'verify_username_password', 1, 3);
+// lấy lại mật khẩu đăng nhập
+// add_action('wp_ajax_nopriv_ForgotPassword', 'lth_handle_forgot_password'); 
+// function lth_handle_forgot_password() {
+// 	$userData = [];
+ 
+// 	if ( isset($_POST['userData']) && is_array($_POST['userData']) ) {
+// 		$userData = $_POST['userData'];
+// 	}
+ 
+// 	if ( isset($userData['_wpnonce']) && wp_verify_nonce( $userData['_wpnonce'], 'form_forgot_password' ) ) {
+// 		$arr_form = [];
+// 		$arr_error = [];
+ 
+// 		if ( isset( $userData['email'] ) && $userData['email'] ) {
+// 			$arr_form['email'] = sanitize_text_field( $userData['email'] );
+ 
+// 			if ( ! email_exists( $arr_form['email'] ) ) {
+// 				$arr_error['email'] = 'Địa chỉ email chưa tồn tại trong hệ thống. Vui lòng kiểm tra lại';
+// 			}
+// 		} else {
+// 			$arr_error['email'] = 'Bạn chưa nhập địa chỉ email';
+// 		}
+ 
+// 		if ( count( $arr_error ) ) {
+// 			echo '<ul>';
+// 			foreach ( $arr_error as $key => $error ) {
+// 				echo '<li>'.$error.'</li>';
+// 			}
+// 			echo '</ul>';
+// 		} else {
+// 			$user = get_user_by( 'email', $arr_form['email'] );
+// 			$user_id = $user->ID;
+// 			$user_obj = new WP_User( $user_id );
+// 			$reset_key = get_password_reset_key( $user_obj );
+// 			$user_login = $user->user_login;
+// 			$site_name = get_bloginfo( 'name' );
+ 
+// 			$rp_link = network_site_url("wp-login.php?action=rp&key=$reset_key&login=" . rawurlencode($user_login), 'login');
+ 
+// 			$to = $arr_form['email'];
+// 			$subject = '['.$site_name.'] Yêu cầu thay đổi mật khẩu';
+// 			$headers = array( 'Content-Type: text/html; charset=UTF-8' );
+ 
+// 			$body = 'Yêu cầu thay đổi mật khẩu. <br/>';
+// 			$body .= 'Nếu bạn đã yêu cầu đặt lại mật khẩu cho <strong>' . $user_login . '</strong>, hãy sử dụng đường dẫn bên dưới để đặt mật khẩu mới.<br/>Nếu không phải bạn thực hiện, vui lòng bỏ qua email này. <br/>';
+// 			$body .= $rp_link;
+ 
+// 			wp_mail( $to, $subject, $body, $headers );
+ 
+// 			echo 'success';
+// 		}
+// 	}
+// 	die();
+// }

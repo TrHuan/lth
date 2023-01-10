@@ -13,12 +13,10 @@ function lth_allowed_block_types($allowed_blocks)
         'core/columns',
         'core/freeform', // Classic
         // 'core/paragraph',
-        // 'woocommerce/attribute-filter',
-        // 'woocommerce/price-filter',
+        // 'lazyblock/lth-blocks',
 
         'lazyblock/lth-section',
         'lazyblock/lth-banner',
-        // 'lazyblock/lth-blocks',
         'lazyblock/lth-blogs',
         'lazyblock/lth-blogs-category',
         'lazyblock/lth-brand',
