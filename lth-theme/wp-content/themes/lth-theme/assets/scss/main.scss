@@ -1945,6 +1945,28 @@ footer {
 }
 // end login
 
+// lth-qr-code
+.lth-qr-code {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: -15px;
+  }
+
+  li {
+    padding: 15px;
+    margin-bottom: 0;
+  }
+
+  .qr-code-box {
+    .add-contact {
+      border: 1px solid $border_color;
+      max-width: 320px;
+    }
+  }
+}
+// end lth-qr-code
+
 /*//////////////////////////////////////////////////*/
 
 @media (max-width: 1349px) {

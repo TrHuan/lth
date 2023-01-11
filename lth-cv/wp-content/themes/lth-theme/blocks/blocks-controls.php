@@ -9,6 +9,10 @@ function lth_allowed_block_types($allowed_blocks)
         $products_category = 'lazyblock/lth-products-category';
     }
 
+    if ( class_exists( 'WQM_Qr_Code_Generator' ) ) {
+        $qrcode = 'lazyblock/lth-contactqrcode';
+    }
+
     return array(
         'core/columns',
         'core/freeform', // Classic
@@ -51,6 +55,8 @@ function lth_allowed_block_types($allowed_blocks)
         $categories_product,
         $products,
         $products_category,
+
+        $qrcode,
 
         ////////////////////////////////////
 

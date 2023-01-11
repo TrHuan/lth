@@ -67,28 +67,6 @@ if (!function_exists('lth_contact_output_fe')) :
                             <span><?php echo __('Email:'); ?></span> <?php echo $email; ?>
                             </a>
                         </li>
-                        <?php if ( class_exists( 'WQM_Qr_Code_Generator' ) ) { ?>
-                            <li class="vcard-box">
-                                <div class="add-contact">
-                                    <a href="#" title="">
-                                        <i class="fas fa-user-plus"></i>
-                                        <span><?php echo __('Thêm liên hệ'); ?></span>
-                                    </a>
-
-                                    <?php if (is_active_sidebar('widget_qr_code_vcard')) {
-                                        dynamic_sidebar('widget_qr_code_vcard');
-                                    } ?>
-                                </div>
-                            </li>
-
-                            <li class="qr-code-box">
-                                <div class="add-contact">
-                                    <?php if (is_active_sidebar('widget_qr_code_vcard')) {
-                                        dynamic_sidebar('widget_qr_code_vcard');
-                                    } ?>
-                                </div>
-                            </li>
-                        <?php } ?>
                     </ul>
                 </div>
             <?php } ?>
