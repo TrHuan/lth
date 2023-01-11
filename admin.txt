@@ -1,0 +1,77 @@
+	
+Query Monitor : plugin check bug code
+
+Customizer Export/Import
+
+BIALTY - Bulk Image Alt Text (Alt tag, Alt Attribute) with Yoast SEO + WooCommerce
+
+Better Search Replace
+
+Simply Show Hooks
+
+// Trang web đổi màu ảnh bằng css 
+https://angel-rs.github.io/css-color-filter-generator/
+
+/////////////////////////////////////
+
+thêm đoạn code dưới vào file .htaccess
+
+php_value memory_limit 256M
+php_value upload_max_filesize 256M
+php_value post_max_size 256M
+
+/////////////////////////////////////
+
+$smtp_host = 'smtp.gmail.com';
+$smtp_port = 465;
+$email_shop = 'trhuan177@gmail.com';
+$email_pass = 'iagzjtpflskmgijh';
+
+/////////////////////////////////////
+
+add_filter('posts_search', 'my_search_is_exact', 20, 2);
+function my_search_is_exact($search, $wp_query){
+    global $wpdb;
+
+    if(empty($search))
+        return $search;
+
+    $q = $wp_query->query_vars;
+    $n = !empty($q['exact']) ? '' : '%';
+
+    $search = $searchand = '';
+
+    foreach((array)$q['search_terms'] as $term) :
+
+        $term = esc_sql(like_escape($term));
+
+        $search.= "{$searchand}($wpdb->posts.post_title REGEXP '[[:<:]]{$term}[[:>:]]') OR ($wpdb->posts.post_content REGEXP '[[:<:]]{$term}[[:>:]]')";
+
+        $searchand = ' AND ';
+
+    endforeach;
+
+    if(!empty($search)) :
+        $search = " AND ({$search}) ";
+        if(!is_user_logged_in())
+            $search .= " AND ($wpdb->posts.post_password = '') ";
+    endif;
+
+    return $search;
+}
+
+/////////////////////////////////////
+
+/*=== Safari ===*/
+@media screen and (-webkit-min-device-pixel-ratio:0)  {
+    /*=== câu lệnh bắt buộc phải có để safari nhận style ===*/
+    #safari { display: block; }
+
+    /*=== bắt đầu style ===*/
+    #footer .section-top-footer .col .img img {
+        width: auto;
+        max-height: 50px;
+    }
+}
+
+/////////////////////////////////////
