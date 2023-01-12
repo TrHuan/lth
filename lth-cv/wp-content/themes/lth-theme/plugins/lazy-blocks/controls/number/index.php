@@ -37,9 +37,9 @@ class LazyBlocks_Control_Number extends LazyBlocks_Control {
     public function register_assets() {
         wp_register_script(
             'lazyblocks-control-number',
-            lazyblocks()->plugin_url() . 'controls/number/script.min.js',
+            lazyblocks()->plugin_url() . 'dist/controls/number/script.min.js',
             array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components' ),
-            '2.4.2',
+            LAZY_BLOCKS_VERSION,
             true
         );
     }

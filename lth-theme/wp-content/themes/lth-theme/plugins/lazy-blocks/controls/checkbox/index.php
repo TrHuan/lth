@@ -42,9 +42,9 @@ class LazyBlocks_Control_Checkbox extends LazyBlocks_Control {
     public function register_assets() {
         wp_register_script(
             'lazyblocks-control-checkbox',
-            lazyblocks()->plugin_url() . 'controls/checkbox/script.min.js',
+            lazyblocks()->plugin_url() . 'dist/controls/checkbox/script.min.js',
             array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components' ),
-            '2.4.2',
+            LAZY_BLOCKS_VERSION,
             true
         );
     }
@@ -61,8 +61,8 @@ class LazyBlocks_Control_Checkbox extends LazyBlocks_Control {
     /**
      * Filter block attribute.
      *
-     * @param string $attribute_data - attribute data.
-     * @param mixed  $control - control data.
+     * @param array $attribute_data - attribute data.
+     * @param mixed $control - control data.
      *
      * @return array filtered attribute data.
      */

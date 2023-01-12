@@ -42,9 +42,9 @@ class LazyBlocks_Control_File extends LazyBlocks_Control {
     public function register_assets() {
         wp_register_script(
             'lazyblocks-control-file',
-            lazyblocks()->plugin_url() . 'controls/file/script.min.js',
+            lazyblocks()->plugin_url() . 'dist/controls/file/script.min.js',
             array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components' ),
-            '2.4.2',
+            LAZY_BLOCKS_VERSION,
             true
         );
     }
@@ -61,9 +61,9 @@ class LazyBlocks_Control_File extends LazyBlocks_Control {
     /**
      * Change block render attribute to array.
      *
-     * @param string $attributes - block attributes.
-     * @param mixed  $content - block content.
-     * @param mixed  $block - block data.
+     * @param array $attributes - block attributes.
+     * @param mixed $content - block content.
+     * @param mixed $block - block data.
      *
      * @return array filtered attribute data.
      */
@@ -85,7 +85,7 @@ class LazyBlocks_Control_File extends LazyBlocks_Control {
     /**
      * Change get_lzb_meta output to array.
      *
-     * @param string $result - meta data.
+     * @param array  $result - meta data.
      * @param string $name - meta name.
      * @param mixed  $id - post id.
      * @param mixed  $control - control data.
@@ -93,7 +93,7 @@ class LazyBlocks_Control_File extends LazyBlocks_Control {
      * @return array filtered meta.
      */
     public function filter_get_lzb_meta_json( $result, $name, $id, $control ) {
-        if ( ! $control || $this->name !== $control['type'] ) {
+        if ( ! $control || $this->name !== $control['type'] || ! is_string( $result ) ) {
             return $result;
         }
 

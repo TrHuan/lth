@@ -45,6 +45,7 @@
 		color: #fff;
 	}
 
+	.megamenu-mobile .current-menu-item a .icon,
 	.module_products .post-button .add_to_cart_button:hover,
 	.post-button .btn,
 	.paginations .page-numbers:hover,

@@ -58,6 +58,9 @@ class LazyBlocks_Control {
     public $default_restrictions = array(
         'once'                          => false,
         'as_child'                      => true,
+        'hidden_from_select'            => false,
+
+        // Display Settings.
         'name_settings'                 => true,
         'label_settings'                => true,
         'default_settings'              => true,
@@ -66,6 +69,7 @@ class LazyBlocks_Control {
         'width_settings'                => true,
         'required_settings'             => true,
         'hide_if_not_selected_settings' => true,
+        'translate_settings'            => false,
         'save_in_meta_settings'         => true,
     );
 
@@ -91,9 +95,10 @@ class LazyBlocks_Control {
         'placement'            => 'content',
         'width'                => '100',
         'hide_if_not_selected' => 'false',
+        'required'             => 'false',
+        'translate'            => 'false',
         'save_in_meta'         => 'false',
         'save_in_meta_name'    => '',
-        'required'             => 'false',
     );
 
     /**

@@ -303,6 +303,10 @@ jQuery(document).ready(function ($) {
             $(tp).addClass('active');
         }
     });
+
+    $('.product-tab-box .tab-content .tab-pane .title').click(function () {
+        $(this).parent().toggleClass('active');
+    });
 });
 // end js tab
 
@@ -331,6 +335,15 @@ jQuery(document).ready(function ($) {
         var whgtp = $('.header-top').outerHeight();
         $('.megamenu-mobile .module_content').height(whg);
         $('.megamenu-mobile .module_content').css({ 'top': '-' + whgtp + 'px' });
+    });
+
+    $('.megamenu-mobile li a .icon').click(function (e) {
+        e.preventDefault();
+        $(this).parent().next().slideToggle('slow');
+    });
+
+    $('.megamenu-mobile .module_content .content-box').click(function (e) {
+        e.stopPropagation();
     });
 });
 // end menu mobile

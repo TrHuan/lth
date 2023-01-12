@@ -97,6 +97,7 @@ if (post_password_required()) {
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="desc">
+                <h2 class="title"><?php echo __('Chi tiết sản phẩm') ?></h2>
                 <div class="product-details-content">
                     <div class="desc-content-box">
                         <?php the_content(); ?>
@@ -105,11 +106,13 @@ if (post_password_required()) {
                 </div>
             </div>
             <div class="tab-pane" id="info">
+                <h2 class="title"><?php echo __('Thông tin bổ sung') ?></h2>
                 <div class="product-info-content">
                     <?php do_action('woocommerce_product_additional_information', $product); ?>
                 </div>
             </div>
             <div class="tab-pane" id="review">
+                <h2 class="title"><?php echo __('Bình luận') ?></h2>
                 <?php comments_template(); ?>
             </div>
 

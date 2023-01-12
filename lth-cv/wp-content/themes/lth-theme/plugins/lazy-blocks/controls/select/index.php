@@ -43,9 +43,9 @@ class LazyBlocks_Control_Select extends LazyBlocks_Control {
     public function register_assets() {
         wp_register_script(
             'lazyblocks-control-select',
-            lazyblocks()->plugin_url() . 'controls/select/script.min.js',
+            lazyblocks()->plugin_url() . 'dist/controls/select/script.min.js',
             array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components' ),
-            '2.4.2',
+            LAZY_BLOCKS_VERSION,
             true
         );
     }
@@ -62,8 +62,8 @@ class LazyBlocks_Control_Select extends LazyBlocks_Control {
     /**
      * Filter block attribute.
      *
-     * @param string $attribute_data - attribute data.
-     * @param mixed  $control - control data.
+     * @param array $attribute_data - attribute data.
+     * @param mixed $control - control data.
      *
      * @return array filtered attribute data.
      */
@@ -177,7 +177,7 @@ class LazyBlocks_Control_Select extends LazyBlocks_Control {
     /**
      * Change get_lzb_meta output to custom output if needed.
      *
-     * @param string $result - meta data.
+     * @param array  $result - meta data.
      * @param string $name - meta name.
      * @param mixed  $id - post id.
      * @param mixed  $control - control data.

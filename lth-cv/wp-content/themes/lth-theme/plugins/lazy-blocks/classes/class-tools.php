@@ -80,7 +80,6 @@ class LazyBlocks_Tools {
 
     /**
      * Clear block data to export.
-     * Remove `edit_url`
      *
      * @param array $block block data.
      *
@@ -88,10 +87,77 @@ class LazyBlocks_Tools {
      */
     public function clean_block_to_export( $block ) {
         $db_blocks = lazyblocks()->blocks()->get_blocks( true );
+        $controls  = lazyblocks()->controls()->get_controls();
 
         foreach ( $db_blocks as $db_block ) {
             if ( $db_block['id'] === $block['id'] ) {
-                unset( $block['edit_url'] );
+                // Remove unused fields from controls data.
+                if ( 'lazyblock/example-block' === $block['slug'] && ! empty( $block['controls'] ) ) {
+                    foreach ( $block['controls'] as $k => $control ) {
+                        if ( ! isset( $control['type'] ) || ! isset( $controls[ $control['type'] ] ) ) {
+                            continue;
+                        }
+
+                        $control_data = $controls[ $control['type'] ];
+
+                        // Remove restricted fields.
+                        $restrictions_to_remove = array(
+                            'name',
+                            'label',
+                            'default',
+                            'placement',
+                            'width',
+                            'required',
+                            'hide_if_not_selected',
+                            'translate',
+                            'save_in_meta',
+                        );
+
+                        foreach ( $restrictions_to_remove as $restriction ) {
+                            if (
+                                isset( $control_data['restrictions'][ $restriction . '_settings' ] )
+                                && ! $control_data['restrictions'][ $restriction . '_settings' ]
+                                && isset( $block['controls'][ $k ][ $restriction ] )
+                            ) {
+                                unset( $block['controls'][ $k ][ $restriction ] );
+
+                                if ( 'save_in_meta' === $restriction && isset( $block['controls'][ $k ]['save_in_meta_name'] ) ) {
+                                    unset( $block['controls'][ $k ]['save_in_meta_name'] );
+                                }
+                            }
+                        }
+
+                        // Remove default fields.
+                        $default_fields_to_remove = array(
+                            'default'              => '',
+                            'help'                 => '',
+                            'child_of'             => '',
+                            'placeholder'          => '',
+                            'characters_limit'     => '',
+                            'width'                => '100',
+                            'hide_if_not_selected' => 'false',
+                            'required'             => 'false',
+                            'translate'            => 'false',
+                            'save_in_meta'         => 'false',
+                            'save_in_meta_name'    => '',
+                        );
+
+                        foreach ( $default_fields_to_remove as $field => $val ) {
+                            if ( isset( $block['controls'][ $k ][ $field ] ) && $val === $block['controls'][ $k ][ $field ] ) {
+                                unset( $block['controls'][ $k ][ $field ] );
+
+                                if ( 'save_in_meta' === $field && isset( $block['controls'][ $field ]['save_in_meta_name'] ) ) {
+                                    unset( $block['controls'][ $field ]['save_in_meta_name'] );
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Remove `edit_url`.
+                if ( isset( $block['edit_url'] ) ) {
+                    unset( $block['edit_url'] );
+                }
             }
         }
 
@@ -199,13 +265,17 @@ class LazyBlocks_Tools {
         // Lazyblocks Tools.
         wp_enqueue_script(
             'lazyblocks-tools',
-            lazyblocks()->plugin_url() . 'assets/admin/tools/index.min.js',
+            lazyblocks()->plugin_url() . 'dist/assets/admin/tools/index.min.js',
             array( 'wp-data', 'wp-element', 'wp-components', 'wp-api', 'wp-i18n' ),
-            '2.4.2',
+            LAZY_BLOCKS_VERSION,
             true
         );
 
         wp_localize_script( 'lazyblocks-tools', 'lazyblocksToolsData', $data );
+
+        wp_enqueue_style( 'lazyblocks-tools', lazyblocks()->plugin_url() . 'dist/assets/admin/tools/style.min.css', '', LAZY_BLOCKS_VERSION );
+        wp_style_add_data( 'lazyblocks-tools', 'rtl', 'replace' );
+        wp_style_add_data( 'lazyblocks-tools', 'suffix', '.min' );
     }
 
     /**
@@ -222,7 +292,8 @@ class LazyBlocks_Tools {
 
         // Check file size.
         if ( empty( $_FILES['lzb_tools_import_json']['size'] ) ) {
-            return $this->add_notice( esc_html__( 'No file selected', 'lazy-blocks' ), 'warning' );
+            $this->add_notice( esc_html__( 'No file selected', 'lazy-blocks' ), 'warning' );
+            return;
         }
 
         // Get file data.
@@ -231,12 +302,14 @@ class LazyBlocks_Tools {
 
         // Check for errors.
         if ( $file['error'] ) {
-            return $this->add_notice( esc_html__( 'Error uploading file. Please try again', 'lazy-blocks' ), 'warning' );
+            $this->add_notice( esc_html__( 'Error uploading file. Please try again', 'lazy-blocks' ), 'warning' );
+            return;
         }
 
         // Check file type.
         if ( pathinfo( $file['name'], PATHINFO_EXTENSION ) !== 'json' ) {
-            return $this->add_notice( esc_html__( 'Incorrect file type', 'lazy-blocks' ), 'warning' );
+            $this->add_notice( esc_html__( 'Incorrect file type', 'lazy-blocks' ), 'warning' );
+            return;
         }
 
         // Read JSON.
@@ -246,8 +319,11 @@ class LazyBlocks_Tools {
 
         // Check if empty.
         if ( ! $json || ! is_array( $json ) ) {
-            return $this->add_notice( esc_html__( 'Import file empty', 'lazy-blocks' ), 'warning' );
+            $this->add_notice( esc_html__( 'Import file empty', 'lazy-blocks' ), 'warning' );
+            return;
         }
+
+        $json = apply_filters( 'lzb/import_json', $json );
 
         // Remember imported ids.
         $imported_blocks    = array();
@@ -265,7 +341,7 @@ class LazyBlocks_Tools {
                     }
 
                     // check if template.
-                } elseif ( isset( $data['data'] ) ) {
+                } elseif ( isset( $data['post_types'] ) ) {
                     $imported_id = $this->import_template( $data );
 
                     if ( $imported_id ) {
@@ -408,6 +484,23 @@ class LazyBlocks_Tools {
             )
         );
 
+        // TODO - reuse this data from /controls/_base/index.php .
+        $default_control_attributes = array(
+            'type'                 => 'text',
+            'name'                 => '',
+            'default'              => '',
+            'label'                => '',
+            'help'                 => '',
+            'child_of'             => '',
+            'placement'            => 'content',
+            'width'                => '100',
+            'hide_if_not_selected' => 'false',
+            'required'             => 'false',
+            'translate'            => 'false',
+            'save_in_meta'         => 'false',
+            'save_in_meta_name'    => '',
+        );
+
         if ( 0 < $post_id ) {
             // add 'lazyblocks_' prefix.
             foreach ( $data as $k => $val ) {
@@ -420,6 +513,14 @@ class LazyBlocks_Tools {
                         $val = substr( $val, strpos( $val, '/' ) + 1 );
                     } elseif ( 'keywords' === $k ) {
                         $val = implode( ',', $val );
+                    } elseif ( 'controls' === $k ) {
+                        $controls = array();
+
+                        foreach ( $val as $i => $inner_val ) {
+                            $controls[ $i ] = array_merge( $default_control_attributes, $inner_val );
+                        }
+
+                        $val = $controls;
                     }
 
                     $meta[ $meta_prefix . $k ] = $val;
@@ -442,7 +543,7 @@ class LazyBlocks_Tools {
      * @param array $data - new template data.
      */
     private function import_template( $data ) {
-        if ( ! isset( $data['post_type'] ) ) {
+        if ( ! isset( $data['post_types'] ) || empty( $data['post_types'] ) ) {
             return false;
         }
 
@@ -450,9 +551,9 @@ class LazyBlocks_Tools {
 
         // check if template already exists.
         foreach ( $templates as $template ) {
-            if ( $template['post_type']['data']['post_type'] === $data['post_type'] ) {
+            if ( count( array_intersect( $data['post_types'], $template['post_types'] ) ) > 0 ) {
                 // translators: %s - post type.
-                $text = sprintf( esc_html__( 'Template for post type \'%s\' already exists.', 'lazy-blocks' ), $data['post_type'] );
+                $text = sprintf( esc_html__( 'Template for these post types \'%s\' already exists.', 'lazy-blocks' ), implode( ',', $data['post_types'] ) );
                 $this->add_notice( $text, 'warning' );
                 return false;
             }
@@ -467,12 +568,12 @@ class LazyBlocks_Tools {
         );
 
         if ( 0 < $post_id ) {
-            $template_data = isset( $data['data'] ) && ! empty( $data['data'] ) ? $data['data'] : array();
+            add_post_meta( $post_id, '_lzb_template_blocks', rawurlencode( wp_json_encode( $data['blocks'] ) ) );
+            add_post_meta( $post_id, '_lzb_template_convert_blocks_to_content', true );
+            add_post_meta( $post_id, '_lzb_template_lock', $data['template_lock'] );
+            add_post_meta( $post_id, '_lzb_template_post_types', $data['post_types'] );
 
-            // phpcs:ignore
-            add_post_meta( $post_id, 'lzb_template_data', urlencode( json_encode( $template_data ) ) );
-
-            do_action( 'lzb/import/template', $post_id, $template_data );
+            do_action( 'lzb/import/template', $post_id, $data );
 
             return $post_id;
         }
@@ -507,6 +608,10 @@ class LazyBlocks_Tools {
     /**
      * Duplicate Block.
      *
+     * Thanks to:
+     * - https://wordpress.org/plugins/duplicate-post/
+     * - https://wordpress.org/plugins/duplicate-page/
+     *
      * @param int $block_id block ID to duplicate.
      */
     public function duplicate_block( $block_id ) {
@@ -517,8 +622,6 @@ class LazyBlocks_Tools {
         if ( ! $nonce || ! wp_verify_nonce( $nonce, 'lzb-duplicate-block-nonce' ) ) {
             return;
         }
-
-        global $wpdb;
 
         $post            = get_post( $block_id );
         $current_user    = wp_get_current_user();
@@ -553,28 +656,46 @@ class LazyBlocks_Tools {
                 wp_set_object_terms( $new_post_id, $post_terms, $taxonomy, false );
             }
 
-            // Duplicate all post meta just in two SQL queries.
-            // phpcs:ignore
-            $post_meta_infos = $wpdb->get_results( "SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id=$block_id" );
+            // Duplicate all post meta.
+            $post_meta_keys = get_post_custom_keys( $block_id );
+            if ( ! empty( $post_meta_keys ) ) {
+                // Default meta field names to be filtered out.
+                $meta_exclude_list = array(
+                    '_edit_lock',
+                    '_edit_last',
+                    '_dp_original',
+                    '_dp_is_rewrite_republish_copy',
+                    '_dp_has_rewrite_republish_copy',
+                    '_dp_has_been_republished',
+                    '_dp_creation_date_gmt',
+                );
 
-            if ( count( $post_meta_infos ) ) {
-                $sql_query = "INSERT INTO $wpdb->postmeta (post_id, meta_key, meta_value) ";
+                $meta_exclude_list_string = '(' . implode( ')|(', $meta_exclude_list ) . ')';
 
-                foreach ( $post_meta_infos as $meta_info ) {
-                    $meta_key = $meta_info->meta_key;
+                if ( strpos( $meta_exclude_list_string, '*' ) !== false ) {
+                    $meta_exclude_list_string = str_replace( array( '*' ), array( '[a-zA-Z0-9_]*' ), $meta_exclude_list_string );
 
-                    if ( '_wp_old_slug' === $meta_key ) {
-                        continue;
+                    $meta_keys = array();
+                    foreach ( $post_meta_keys as $meta_key ) {
+                        if ( ! preg_match( '#^' . $meta_exclude_list_string . '$#', $meta_key ) ) {
+                            $meta_keys[] = $meta_key;
+                        }
                     }
-
-                    $meta_value      = addslashes( $meta_info->meta_value );
-                    $sql_query_sel[] = "SELECT $new_post_id, '$meta_key', '$meta_value'";
+                } else {
+                    $meta_keys = array_diff( $post_meta_keys, $meta_exclude_list );
                 }
 
-                $sql_query .= implode( ' UNION ALL ', $sql_query_sel );
+                foreach ( $meta_keys as $meta_key ) {
+                    $meta_values = get_post_custom_values( $meta_key, $post->ID );
 
-                // phpcs:ignore
-                $wpdb->query( $sql_query );
+                    // Clear existing meta data so that add_post_meta() works properly with non-unique keys.
+                    delete_post_meta( $new_post_id, $meta_key );
+
+                    foreach ( $meta_values as $meta_value ) {
+                        $meta_value = maybe_unserialize( $meta_value );
+                        add_post_meta( $new_post_id, $meta_key, wp_slash( $meta_value ) );
+                    }
+                }
             }
 
             // Redirect.

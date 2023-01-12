@@ -2,9 +2,9 @@
 /**
  * Plugin Name:  Lazy Blocks
  * Description:  Gutenberg blocks visual constructor. Custom meta fields or blocks with output without hard coding.
- * Version:      2.4.2
- * Author:       nK
- * Author URI:   https://nkdev.info/
+ * Version:      3.3.0
+ * Author:       Lazy Blocks Team
+ * Author URI:   https://www.lazyblocks.com/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=byline
  * License:      GPLv2 or later
  * License URI:  https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:  lazy-blocks
@@ -16,8 +16,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-if ( ! class_exists( 'LazyBlocks' ) ) :
+if ( ! defined( 'LAZY_BLOCKS_VERSION' ) ) {
+    define( 'LAZY_BLOCKS_VERSION', '3.3.0' );
+}
 
+if ( ! class_exists( 'LazyBlocks' ) ) :
     /**
      * LazyBlocks Class
      */
@@ -56,18 +59,46 @@ if ( ! class_exists( 'LazyBlocks' ) ) :
         public $plugin_url;
 
         /**
+         * Plugin basename
+         *
+         * @var string
+         */
+        public $plugin_basename;
+
+        /**
+         * Icons class object.
+         *
+         * @var LazyBlocks_Icons
+         */
+        private $icons;
+
+        /**
+         * Controls class object.
+         *
+         * @var LazyBlocks_Controls
+         */
+        private $controls;
+
+        /**
          * Blocks class object.
          *
-         * @var object
+         * @var LazyBlocks_Blocks
          */
         private $blocks;
 
         /**
          * Templates class object.
          *
-         * @var object
+         * @var LazyBlocks_Templates
          */
         private $templates;
+
+        /**
+         * Tools class object.
+         *
+         * @var LazyBlocks_Tools
+         */
+        private $tools;
 
         /**
          * LazyBlocks constructor.
@@ -92,8 +123,9 @@ if ( ! class_exists( 'LazyBlocks' ) ) :
          * Init.
          */
         public function init() {
-            $this->plugin_path = plugin_dir_path( __FILE__ );
-            $this->plugin_url  = plugin_dir_url( __FILE__ );
+            $this->plugin_path     = plugin_dir_path( __FILE__ );
+            $this->plugin_url      = plugin_dir_url( __FILE__ );
+            $this->plugin_basename = plugin_basename( __FILE__ );
 
             $this->load_text_domain();
             $this->include_dependencies();
@@ -103,6 +135,15 @@ if ( ! class_exists( 'LazyBlocks' ) ) :
             $this->blocks    = new LazyBlocks_Blocks();
             $this->templates = new LazyBlocks_Templates();
             $this->tools     = new LazyBlocks_Tools();
+
+            add_action( 'init', array( $this, 'init_hook' ), 5 );
+        }
+
+        /**
+         * Init hook should be used to register user blocks and add customizations.
+         */
+        public function init_hook() {
+            do_action( 'lzb/init' );
         }
 
         /**
@@ -120,16 +161,68 @@ if ( ! class_exists( 'LazyBlocks' ) ) :
         }
 
         /**
+         * Get plugin_basename.
+         */
+        public function plugin_basename() {
+            return apply_filters( 'lzb/plugin_basename', $this->plugin_basename );
+        }
+
+        /**
          * Sets the text domain with the plugin translated into other languages.
          */
         public function load_text_domain() {
-            load_plugin_textdomain( 'lazy-blocks', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+            load_plugin_textdomain( 'lazy-blocks', false, dirname( $this->plugin_basename() ) . '/languages/' );
+        }
+
+        /**
+         * Check if Pro plugin installed.
+         */
+        public function is_pro() {
+            return defined( 'LAZY_BLOCKS_PRO' ) && LAZY_BLOCKS_PRO;
+        }
+
+        /**
+         * Get URL to main site with UTM tags.
+         *
+         * @param array $args - Arguments of link.
+         * @return string
+         */
+        public function get_plugin_site_url( $args = array() ) {
+            $args       = array_merge(
+                array(
+                    'sub_path'     => 'pro',
+                    'utm_source'   => 'plugin',
+                    'utm_medium'   => 'admin_menu',
+                    'utm_campaign' => 'go_pro',
+                    'utm_content'  => LAZY_BLOCKS_VERSION,
+                ),
+                $args
+            );
+            $url        = 'https://www.lazyblocks.com/';
+            $first_flag = true;
+
+            if ( isset( $args['sub_path'] ) && ! empty( $args['sub_path'] ) ) {
+                $url .= $args['sub_path'] . '/';
+            }
+
+            foreach ( $args as $key => $value ) {
+                if ( 'sub_path' !== $key && ! empty( $value ) ) {
+                    $url       .= ( $first_flag ? '?' : '&' );
+                    $url       .= $key . '=' . $value;
+                    $first_flag = false;
+                }
+            }
+
+            return $url;
         }
 
         /**
          * Set plugin Dependencies.
          */
         private function include_dependencies() {
+            // Deprecations run before all features.
+            require_once $this->plugin_path() . 'classes/class-deprecated.php';
+
             require_once $this->plugin_path() . '/classes/class-migration.php';
             require_once $this->plugin_path() . '/classes/class-admin.php';
             require_once $this->plugin_path() . '/classes/class-icons.php';
@@ -140,6 +233,8 @@ if ( ! class_exists( 'LazyBlocks' ) ) :
             require_once $this->plugin_path() . '/classes/class-rest.php';
             require_once $this->plugin_path() . '/classes/class-dummy.php';
             require_once $this->plugin_path() . '/classes/class-force-gutenberg.php';
+            require_once $this->plugin_path() . '/classes/class-deactivate-duplicate-plugin.php';
+            require_once $this->plugin_path() . '/classes/class-wpml.php';
         }
 
         /**

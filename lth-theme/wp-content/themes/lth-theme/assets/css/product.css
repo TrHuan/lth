@@ -386,6 +386,9 @@
   border-top: none;
   padding: 25px 30px;
 }
+.product-tab-box .tab-content .title {
+  display: none;
+}
 
 .main-page .woocommerce {
   display: -webkit-box;
@@ -1093,6 +1096,7 @@
 }
 .module_products .post-image {
   position: relative;
+  overflow: hidden;
 }
 .module_products .post-image .on-sale {
   font-size: 13px;
@@ -1155,6 +1159,11 @@
 }
 
 /*//////////////////////////////////////////////////*/
+@media (max-width: 1199px) {
+  .main-products .products-list .item {
+    width: 50% !important;
+  }
+}
 @media (max-width: 767px) {
   .product-content-box > * {
     width: 100%;
@@ -1162,8 +1171,44 @@
   .product-content-box .product-images {
     margin-bottom: 20px;
   }
-  .main-products .products-list .groups-box > * {
-    width: 50%;
+  .product-tab-box .tab-menu {
+    display: none;
+  }
+  .product-tab-box .tab-content {
+    border: none;
+    padding: 0;
+  }
+  .product-tab-box .tab-content .tab-pane,
+.product-tab-box .tab-content .title {
+    display: block;
+  }
+  .product-tab-box .tab-content .tab-pane {
+    margin-bottom: 30px;
+  }
+  .product-tab-box .tab-content .tab-pane .title {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product-tab-box .tab-content .tab-pane .title:after {
+    content: "+";
+    display: inline-block;
+  }
+  .product-tab-box .tab-content .tab-pane > div {
+    display: none;
+  }
+  .product-tab-box .tab-content .tab-pane.active .title:after {
+    content: "-";
+  }
+  .product-tab-box .tab-content .tab-pane.active > div {
+    display: block;
   }
 }
 @media (max-width: 575px) {
@@ -1176,9 +1221,7 @@
   .main-products .products-list .products-box .woocommerce-result-count {
     margin-bottom: 15px;
   }
-}
-@media (max-width: 479px) {
-  .main-products .products-list .groups-box > * {
-    width: 100%;
+  .main-products .products-list .item {
+    width: 100% !important;
   }
 }

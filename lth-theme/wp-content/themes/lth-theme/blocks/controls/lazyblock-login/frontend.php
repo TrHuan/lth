@@ -42,28 +42,34 @@ if (!function_exists('lth_login_output_fe')) :
 ?>
         <div class="lth-login">
             <?php if(is_user_logged_in()) { $user_id = get_current_user_id();$current_user = wp_get_current_user();$profile_url = get_author_posts_url($user_id);$edit_profile_url = get_edit_profile_url($user_id); ?>
-                <div class="login-box">
+                <div class="login-box user-box">
                     <ul>
                         <?php if (!class_exists('WooCommerce')) { ?>
                             <li>
-                                <?php echo __('Xin chào'); ?> 
+                                <i class="fas fa-user icon"></i>
+                                <label><?php echo __('Xin chào'); ?> </label>
                                 <!-- <a href="<?php //echo $profile_url ?>"><?php //echo $current_user->display_name . '.'; ?></a> -->
                                 <strong><?php echo $current_user->display_name . '.'; ?></strong>
                             </li>
                             <li>
-                                <a href="<?php echo esc_url(wp_logout_url($current_url)); ?>">
-                                <?php echo __('Đăng xuất'); ?></a>
+                                <a href="<?php echo esc_url(wp_logout_url($current_url)); ?>">                                
+                                    <i class="far fa-sign-out icon"></i>
+                                    <span><?php echo __('Đăng xuất'); ?></span>
+                                </a>
                             </li>
                         <?php } else { ?>
                             <li>
-                                <lable><?php echo __('Xin chào'); ?></lable>
+                                <label><?php echo __('Xin chào'); ?></label>
                                 <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+                                    <i class="fas fa-user icon"></i>
                                     <strong><?php echo $current_user->display_name . '.'; ?></strong>    
                                 </a>
                             </li>
                             <li>
                                 <a href="<?php echo esc_url(wp_logout_url(get_permalink( get_option('woocommerce_myaccount_page_id') ))); ?>">
-                                <?php echo __('Đăng xuất'); ?></a>
+                                    <i class="far fa-sign-out icon"></i>
+                                    <span><?php echo __('Đăng xuất'); ?></span>
+                                </a>
                             </li>
                         <?php } ?>
                     </ul>
@@ -74,12 +80,16 @@ if (!function_exists('lth_login_output_fe')) :
                         <?php if (!class_exists('WooCommerce')) { ?>
                             <li>
                                 <a href="<?php echo $login_url; ?>">
-                                <?php echo __('Đăng nhập / Đăng ký'); ?></a>
+                                    <i class="fas fa-sign-in icon"></i>
+                                    <span><?php echo __('Đăng nhập / Đăng ký'); ?></span>
+                                </a>
                             </li>
                         <?php } else { ?>
                             <li>
                                 <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-                                <?php echo __('Đăng nhập / Đăng ký'); ?></a>
+                                    <i class="fas fa-sign-in icon"></i>
+                                    <span><?php echo __('Đăng nhập / Đăng ký'); ?></span>
+                                </a>
                             </li>
                         <?php } ?>
                     </ul>

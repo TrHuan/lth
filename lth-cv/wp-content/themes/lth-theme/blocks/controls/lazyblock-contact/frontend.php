@@ -40,42 +40,29 @@ if (!function_exists('lth_contact_output_fe')) :
     }    
 ?>
     <article class="lth-contacts">
-        <?php //if ($attributes['map']) {
-            //echo $attributes['map'];
-        //} ?>
-
         <div class="module module_address">
             <div class="module_header title-box">
                 <h2 class="title"><?php echo __('Liên hệ'); ?></h2>
             </div>
 
-            <?php if ($address || $hotline || $email || class_exists( 'WQM_Qr_Code_Generator' )) { ?>
+            <?php if ($address || $hotline || $email) { ?>
                 <div class="module_content">
                     <ul>
                         <li>
-                            <a href="#" title="">
-                                <span><?php echo __('Địa chỉ:'); ?></span> <?php echo $address; ?>
-                            </a>
+                            <span><?php echo __('Địa chỉ:'); ?></span> 
+                            <a href="#" title=""><?php echo $address; ?></a>
                         </li>
                         <li>
-                            <a href="tel:<?php echo $hotline; ?>" title="">
-                            <span><?php echo __('Hotline:'); ?></span> <?php echo $hotline; ?>
-                            </a>
+                            <span><?php echo __('Hotline:'); ?></span>
+                            <a href="tel:<?php echo $hotline; ?>" title=""><?php echo $hotline; ?></a>
                         </li>
                         <li>
-                            <a href="mailto:<?php echo $email; ?>" title="">
-                            <span><?php echo __('Email:'); ?></span> <?php echo $email; ?>
-                            </a>
+                            <span><?php echo __('Email:'); ?></span>
+                            <a href="mailto:<?php echo $email; ?>" title=""><?php echo $email; ?></a>
                         </li>
                     </ul>
                 </div>
             <?php } ?>
-
-            <?php //if ($attributes['form']) { ?>
-                <!-- <div class="module_form_contacts"> -->
-                    <?php //echo do_shortcode($attributes['form']); ?>
-                <!-- </div> -->
-            <?php //} ?>
         </div>
     </article>
 

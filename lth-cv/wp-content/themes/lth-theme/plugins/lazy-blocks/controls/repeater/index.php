@@ -26,7 +26,6 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
             'as_child'          => false,
             'default_settings'  => false,
             'required_settings' => false,
-            'help_settings'     => false,
         );
         $this->attributes   = array(
             'rows_min'              => '',
@@ -51,9 +50,9 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
     public function register_assets() {
         wp_register_script(
             'lazyblocks-control-repeater',
-            lazyblocks()->plugin_url() . 'controls/repeater/script.min.js',
+            lazyblocks()->plugin_url() . 'dist/controls/repeater/script.min.js',
             array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components' ),
-            '2.4.2',
+            LAZY_BLOCKS_VERSION,
             true
         );
     }
@@ -70,7 +69,7 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
     /**
      * Filter block attribute.
      *
-     * @param string $attribute_data - attribute data.
+     * @param array  $attribute_data - attribute data.
      * @param array  $control - control data.
      * @param array  $controls - all controls.
      * @param string $control_id - current control id.
@@ -87,14 +86,7 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
             return $attribute_data;
         }
 
-        $default_val  = array();
-        $inner_blocks = lazyblocks()->blocks()->prepare_block_attributes( $controls, $control_id, $block );
-
-        foreach ( $inner_blocks as $n => $inner_block ) {
-            $default_val[ $n ] = $inner_blocks[ $n ]['default'];
-        }
-
-        $attribute_data['default'] = rawurlencode( wp_json_encode( array( $default_val ) ) );
+        $attribute_data['default'] = rawurlencode( wp_json_encode( array() ) );
 
         return $attribute_data;
     }
@@ -102,9 +94,9 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
     /**
      * Change block render attribute to array.
      *
-     * @param string $attributes - block attributes.
-     * @param mixed  $content - block content.
-     * @param mixed  $block - block data.
+     * @param array $attributes - block attributes.
+     * @param mixed $content - block content.
+     * @param mixed $block - block data.
      *
      * @return array filtered attribute data.
      */
@@ -126,7 +118,7 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
     /**
      * Change get_lzb_meta output to array.
      *
-     * @param string $result - meta data.
+     * @param array  $result - meta data.
      * @param string $name - meta name.
      * @param mixed  $id - post id.
      * @param mixed  $control - control data.
@@ -134,7 +126,7 @@ class LazyBlocks_Control_Repeater extends LazyBlocks_Control {
      * @return array filtered meta.
      */
     public function filter_get_lzb_meta_json( $result, $name, $id, $control ) {
-        if ( ! $control || $this->name !== $control['type'] ) {
+        if ( ! $control || $this->name !== $control['type'] || ! is_string( $result ) ) {
             return $result;
         }
 
