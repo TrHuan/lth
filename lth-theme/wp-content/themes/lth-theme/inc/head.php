@@ -35,17 +35,10 @@ function lth_theme_styles()
 	if (class_exists('WooCommerce')) {
 		wp_enqueue_style(THEME_NAME . '-product', ASSETS_URI . '/css/product.css', false, THEME_VERSION, 'all');
 	}
-}
-add_action('wp_enqueue_scripts', 'lth_theme_styles');
 
-/**
- * Add js
- * 
- * @author LTH
- * @since 2020
- */
-function lth_theme_scripts()
-{
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// file js
 	if (!class_exists('WooCommerce')) {
 		// file js (được add vào header - sử dụng khi không dùng woocommerce)	
 		wp_enqueue_script(THEME_NAME . '-jquery', ASSETS_URI . '/js/jquery.min.js', false, THEME_VERSION, false, 'all');
@@ -63,4 +56,4 @@ function lth_theme_scripts()
 	// 	wp_enqueue_script(THEME_NAME.'-product', ASSETS_URI .'/js/product.js', false, THEME_VERSION, false, 'all');
 	// }
 }
-add_action('wp_enqueue_scripts', 'lth_theme_scripts', 99);
+add_action('wp_enqueue_scripts', 'lth_theme_styles', 98);

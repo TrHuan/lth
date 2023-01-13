@@ -31,9 +31,9 @@ defined( 'ABSPATH' ) || exit;
 <?php } ?>
 
 <div class="slick-slider slick-product-images-for">
-	<?php echo lth_custom_imgs_single_product('full', 530, 314); ?>
+	<?php echo lth_custom_imgs_single_product('full', 530, 530); ?>
 </div>
 
 <div class="slick-slider slick-product-images-nav">
-	<?php echo lth_custom_imgs_single_product('full', 146, 83); ?>
+	<?php echo lth_custom_imgs_single_product('full', 146, 146); ?>
 </div>

@@ -37,7 +37,7 @@ if (!function_exists('lth_contactqrcode_output_fe')) :
                 <li class="qr-code-box">
                     <div class="add-contact">
                         <?php //echo do_shortcode($attributes['qrcode']); ?>
-                        <image src="<?php echo esc_url( $attributes['url_qrcode'] ); ?>" alt="Qrcode">
+                        <image src="<?php echo esc_url( $attributes['url_qrcode'] ); ?>" width="320" height="320" alt="Qrcode">
                     </div>
                 </li>
             <?php } ?>
