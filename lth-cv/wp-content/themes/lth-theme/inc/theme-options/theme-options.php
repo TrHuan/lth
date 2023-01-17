@@ -3,11 +3,11 @@
 if (class_exists('WooCommerce')) {
     if (function_exists('acf_add_local_field_group')) :
         acf_add_local_field_group(array(
-            'key' => 'group_5fafa09cda768',
+            'key' => 'group_options',
             'title' => 'Options',
             'fields' => array(
                 array(
-                    'key' => 'field_5fafa0da8a9d9',
+                    'key' => 'field_options_general',
                     'label' => 'General',
                     'name' => '',
                     'type' => 'tab',
@@ -23,7 +23,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_5fafa2aaddc14',
+                    'key' => 'field_options_favicon',
                     'label' => 'Favicon',
                     'name' => 'favicon',
                     'type' => 'image',
@@ -47,7 +47,7 @@ if (class_exists('WooCommerce')) {
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_5fafa27dddc12',
+                    'key' => 'field_options_logo',
                     'label' => 'Logo',
                     'name' => 'logo',
                     'type' => 'image',
@@ -71,7 +71,7 @@ if (class_exists('WooCommerce')) {
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_5fafa2e1fd2b4',
+                    'key' => 'field_options_color',
                     'label' => 'Color',
                     'name' => 'color',
                     'type' => 'color_picker',
@@ -88,7 +88,7 @@ if (class_exists('WooCommerce')) {
                     'return_format' => 'string',
                 ),
                 array(
-                    'key' => 'field_607660a1af5c1',
+                    'key' => 'field_options_width_logo',
                     'label' => 'Width Logo',
                     'name' => 'width_logo',
                     'type' => 'text',
@@ -108,7 +108,7 @@ if (class_exists('WooCommerce')) {
                     'translations' => 'translate',
                 ),
                 array(
-                    'key' => 'field_6090a3e614b04',
+                    'key' => 'field_options_height_logo',
                     'label' => 'Height Logo',
                     'name' => 'height_logo',
                     'type' => 'text',
@@ -128,7 +128,7 @@ if (class_exists('WooCommerce')) {
                     'translations' => 'translate',
                 ),
                 array(
-                    'key' => 'field_5fd973dd73b21',
+                    'key' => 'field_options_breadcrumb',
                     'label' => 'Breadcrumb',
                     'name' => 'breadcrumb',
                     'type' => 'image',
@@ -152,7 +152,7 @@ if (class_exists('WooCommerce')) {
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_61e8e9870cd35',
+                    'key' => 'field_header',
                     'label' => 'Header',
                     'name' => '',
                     'type' => 'tab',
@@ -168,7 +168,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61e8e9a20cd36',
+                    'key' => 'field_header_object',
                     'label' => 'Header',
                     'name' => 'header',
                     'type' => 'post_object',
@@ -190,7 +190,7 @@ if (class_exists('WooCommerce')) {
                     'ui' => 1,
                 ),
                 array(
-                    'key' => 'field_61e8eac8137b1',
+                    'key' => 'field_products',
                     'label' => 'Products',
                     'name' => '',
                     'type' => 'tab',
@@ -206,7 +206,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61e8eade137b2',
+                    'key' => 'field_products_group',
                     'label' => 'Products',
                     'name' => 'products',
                     'type' => 'group',
@@ -221,7 +221,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61e8ebad137b5',
+                            'key' => 'field_products_sidebar',
                             'label' => 'Sidebar',
                             'name' => 'sidebar',
                             'type' => 'select',
@@ -247,7 +247,7 @@ if (class_exists('WooCommerce')) {
                             'placeholder' => '',
                         ),
                         array(
-                            'key' => 'field_61e8ec070ccbb',
+                            'key' => 'field_products_per_page',
                             'label' => 'Products Per Page',
                             'name' => 'products_per_page',
                             'type' => 'text',
@@ -266,7 +266,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_61e8ec5a0ccbc',
+                            'key' => 'field_products_number_on_row',
                             'label' => 'Number Products On Row',
                             'name' => 'number_products_on_row',
                             'type' => 'select',
@@ -295,7 +295,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61e8ecabb4909',
+                    'key' => 'field_product_single',
                     'label' => 'Product Single',
                     'name' => 'product_single_option',
                     'type' => 'group',
@@ -310,7 +310,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61e8ecabb490b',
+                            'key' => 'field_product_single_sidebar',
                             'label' => 'Sidebar',
                             'name' => 'sidebar',
                             'type' => 'select',
@@ -338,7 +338,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61fa65f5d22a7',
+                    'key' => 'field_blogs',
                     'label' => 'Blogs',
                     'name' => '',
                     'type' => 'tab',
@@ -354,7 +354,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61fa6608d22a8',
+                    'key' => 'field_blogs_group',
                     'label' => 'Blogs',
                     'name' => 'blogs',
                     'type' => 'group',
@@ -369,7 +369,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61fa6608d22aa',
+                            'key' => 'field_blogs_sidebar',
                             'label' => 'Sidebar',
                             'name' => 'sidebar',
                             'type' => 'select',
@@ -397,7 +397,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61fa661fd22ad',
+                    'key' => 'field_blog_single',
                     'label' => 'Blog Single',
                     'name' => 'blog_single',
                     'type' => 'group',
@@ -412,7 +412,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61fa661fd22af',
+                            'key' => 'field_blog_single_sidebar',
                             'label' => 'Sidebar',
                             'name' => 'sidebar',
                             'type' => 'select',
@@ -440,7 +440,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61e8e9c70cd37',
+                    'key' => 'field_footer',
                     'label' => 'Footer',
                     'name' => '',
                     'type' => 'tab',
@@ -456,7 +456,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61e8e9cb0cd38',
+                    'key' => 'field_footer_object',
                     'label' => 'Footer',
                     'name' => 'footer',
                     'type' => 'post_object',
@@ -478,7 +478,7 @@ if (class_exists('WooCommerce')) {
                     'ui' => 1,
                 ),
                 array(
-                    'key' => 'field_621f3bafa843d',
+                    'key' => 'field_contact',
                     'label' => 'Contact',
                     'name' => '',
                     'type' => 'tab',
@@ -494,7 +494,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_621f3bbea843e',
+                    'key' => 'field_contact_group',
                     'label' => 'Contact',
                     'name' => 'contact',
                     'type' => 'group',
@@ -509,7 +509,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'row',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_621f3bfba8441',
+                            'key' => 'field_contact_address',
                             'label' => 'Address',
                             'name' => 'address',
                             'type' => 'text',
@@ -528,7 +528,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3bd8a843f',
+                            'key' => 'field_contact_hotline',
                             'label' => 'Hotline',
                             'name' => 'hotline',
                             'type' => 'text',
@@ -547,7 +547,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3beba8440',
+                            'key' => 'field_contact_email',
                             'label' => 'Email',
                             'name' => 'email',
                             'type' => 'text',
@@ -566,10 +566,10 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3c14a8442',
+                            'key' => 'field_contact_map',
                             'label' => 'Map',
                             'name' => 'map',
-                            'type' => 'text',
+                            'type' => 'textarea',
                             'instructions' => '',
                             'required' => 0,
                             'conditional_logic' => 0,
@@ -585,7 +585,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3c1da8443',
+                            'key' => 'field_contact_form',
                             'label' => 'Contact Form',
                             'name' => 'contact_form',
                             'type' => 'text',
@@ -606,7 +606,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_5fb01d7a066c5',
+                    'key' => 'field_socials',
                     'label' => 'Socials',
                     'name' => '',
                     'type' => 'tab',
@@ -622,7 +622,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_5fafa4cf04e0f',
+                    'key' => 'field_socials_repeater',
                     'label' => 'Socials',
                     'name' => 'socials',
                     'type' => 'repeater',
@@ -641,7 +641,7 @@ if (class_exists('WooCommerce')) {
                     'button_label' => 'Add Social',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_5fafa4ed04e10',
+                            'key' => 'field_social_title',
                             'label' => 'Title',
                             'name' => 'title',
                             'type' => 'text',
@@ -660,7 +660,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_5fafa55bb45e9',
+                            'key' => 'field_social_url',
                             'label' => 'Url',
                             'name' => 'url',
                             'type' => 'url',
@@ -679,7 +679,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_5fb025bb65704',
+                            'key' => 'field_social_icon_image',
                             'label' => 'Icon Image',
                             'name' => 'icon_image',
                             'type' => 'image',
@@ -703,7 +703,7 @@ if (class_exists('WooCommerce')) {
                             'mime_types' => '',
                         ),
                         array(
-                            'key' => 'field_5fafa52db45e8',
+                            'key' => 'field_social_icon_class',
                             'label' => 'Icon Class',
                             'name' => 'icon_class',
                             'type' => 'text',
@@ -724,7 +724,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_5fed28e12234b',
+                    'key' => 'field_chats',
                     'label' => 'Chats',
                     'name' => '',
                     'type' => 'tab',
@@ -740,7 +740,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_6179041e65ea8',
+                    'key' => 'field_chats_group',
                     'label' => 'Chats',
                     'name' => 'chats',
                     'type' => 'group',
@@ -755,7 +755,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'row',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_60935c0d40771',
+                            'key' => 'field_chat_phone',
                             'label' => 'Phone',
                             'name' => 'phone',
                             'type' => 'text',
@@ -775,7 +775,7 @@ if (class_exists('WooCommerce')) {
                             'translations' => 'translate',
                         ),
                         array(
-                            'key' => 'field_5fed28fa2234c',
+                            'key' => 'field_chat_zalo',
                             'label' => 'Zalo',
                             'name' => 'zalo',
                             'type' => 'url',
@@ -792,7 +792,7 @@ if (class_exists('WooCommerce')) {
                             'translations' => 'copy_once',
                         ),
                         array(
-                            'key' => 'field_61250a0da5056',
+                            'key' => 'field_chat_facebook',
                             'label' => 'Facebook',
                             'name' => 'facebook',
                             'type' => 'url',
@@ -809,7 +809,7 @@ if (class_exists('WooCommerce')) {
                             'translations' => 'copy_once',
                         ),
                         array(
-                            'key' => 'field_6179041565ea7',
+                            'key' => 'field_chats_email',
                             'label' => 'Email',
                             'name' => 'email',
                             'type' => 'url',
@@ -828,7 +828,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61cd7034d032c',
+                    'key' => 'field_popups',
                     'label' => 'Popups',
                     'name' => '',
                     'type' => 'tab',
@@ -844,7 +844,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61cd7046d032d',
+                    'key' => 'field_popups_repeater',
                     'label' => 'Popups',
                     'name' => 'popups',
                     'type' => 'repeater',
@@ -863,7 +863,7 @@ if (class_exists('WooCommerce')) {
                     'button_label' => 'Add Item',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61d9ccca24fe7',
+                            'key' => 'field_popup_id',
                             'label' => 'ID',
                             'name' => 'id',
                             'type' => 'text',
@@ -882,7 +882,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_61cd7059d032e',
+                            'key' => 'field_popup_object',
                             'label' => 'Popup',
                             'name' => 'popup',
                             'type' => 'post_object',
@@ -906,7 +906,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_619b3994f6fdd',
+                    'key' => 'field_other',
                     'label' => 'Other',
                     'name' => '',
                     'type' => 'tab',
@@ -922,7 +922,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_619b39a0f6fde',
+                    'key' => 'field_other_group',
                     'label' => 'Other',
                     'name' => 'other',
                     'type' => 'group',
@@ -937,7 +937,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_619b39ccf6fdf',
+                            'key' => 'field_other_code_header',
                             'label' => 'Chèn mã Header',
                             'name' => 'code_header',
                             'type' => 'textarea',
@@ -956,7 +956,7 @@ if (class_exists('WooCommerce')) {
                             'new_lines' => '',
                         ),
                         array(
-                            'key' => 'field_619b39e5f6fe0',
+                            'key' => 'field_other_code_footer',
                             'label' => 'Chèn mã Footer',
                             'name' => 'code_footer',
                             'type' => 'textarea',
@@ -975,7 +975,7 @@ if (class_exists('WooCommerce')) {
                             'new_lines' => '',
                         ),
                         array(
-                            'key' => 'field_638974593c85a',
+                            'key' => 'field_other_developer',
                             'label' => 'Developer',
                             'name' => 'developer',
                             'type' => 'select',
@@ -1025,11 +1025,11 @@ if (class_exists('WooCommerce')) {
 } else {
     if (function_exists('acf_add_local_field_group')) :
         acf_add_local_field_group(array(
-            'key' => 'group_5fafa09cda768',
+            'key' => 'group_options',
             'title' => 'Options',
             'fields' => array(
                 array(
-                    'key' => 'field_5fafa0da8a9d9',
+                    'key' => 'field_options_general',
                     'label' => 'General',
                     'name' => '',
                     'type' => 'tab',
@@ -1045,7 +1045,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_5fafa2aaddc14',
+                    'key' => 'field_options_favicon',
                     'label' => 'Favicon',
                     'name' => 'favicon',
                     'type' => 'image',
@@ -1069,7 +1069,7 @@ if (class_exists('WooCommerce')) {
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_5fafa27dddc12',
+                    'key' => 'field_options_logo',
                     'label' => 'Logo',
                     'name' => 'logo',
                     'type' => 'image',
@@ -1093,7 +1093,7 @@ if (class_exists('WooCommerce')) {
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_5fafa2e1fd2b4',
+                    'key' => 'field_options_color',
                     'label' => 'Color',
                     'name' => 'color',
                     'type' => 'color_picker',
@@ -1110,7 +1110,7 @@ if (class_exists('WooCommerce')) {
                     'return_format' => 'string',
                 ),
                 array(
-                    'key' => 'field_607660a1af5c1',
+                    'key' => 'field_options_width_logo',
                     'label' => 'Width Logo',
                     'name' => 'width_logo',
                     'type' => 'text',
@@ -1130,7 +1130,7 @@ if (class_exists('WooCommerce')) {
                     'translations' => 'translate',
                 ),
                 array(
-                    'key' => 'field_6090a3e614b04',
+                    'key' => 'field_options_height_logo',
                     'label' => 'Height Logo',
                     'name' => 'height_logo',
                     'type' => 'text',
@@ -1150,7 +1150,7 @@ if (class_exists('WooCommerce')) {
                     'translations' => 'translate',
                 ),
                 array(
-                    'key' => 'field_5fd973dd73b21',
+                    'key' => 'field_options_breadcrumb',
                     'label' => 'Breadcrumb',
                     'name' => 'breadcrumb',
                     'type' => 'image',
@@ -1174,7 +1174,7 @@ if (class_exists('WooCommerce')) {
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_61e8e9870cd35',
+                    'key' => 'field_header',
                     'label' => 'Header',
                     'name' => '',
                     'type' => 'tab',
@@ -1190,7 +1190,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61e8e9a20cd36',
+                    'key' => 'field_header_object',
                     'label' => 'Header',
                     'name' => 'header',
                     'type' => 'post_object',
@@ -1212,7 +1212,7 @@ if (class_exists('WooCommerce')) {
                     'ui' => 1,
                 ),
                 array(
-                    'key' => 'field_61fa65f5d22a7',
+                    'key' => 'field_blogs',
                     'label' => 'Blogs',
                     'name' => '',
                     'type' => 'tab',
@@ -1228,7 +1228,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61fa6608d22a8',
+                    'key' => 'field_blogs_group',
                     'label' => 'Blogs',
                     'name' => 'blogs',
                     'type' => 'group',
@@ -1243,7 +1243,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61fa6608d22aa',
+                            'key' => 'field_blogs_sidebar',
                             'label' => 'Sidebar',
                             'name' => 'sidebar',
                             'type' => 'select',
@@ -1271,7 +1271,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61fa661fd22ad',
+                    'key' => 'field_blog_single',
                     'label' => 'Blog Single',
                     'name' => 'blog_single',
                     'type' => 'group',
@@ -1286,7 +1286,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61fa661fd22af',
+                            'key' => 'field_blog_single_sidebar',
                             'label' => 'Sidebar',
                             'name' => 'sidebar',
                             'type' => 'select',
@@ -1314,7 +1314,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61e8e9c70cd37',
+                    'key' => 'field_footer',
                     'label' => 'Footer',
                     'name' => '',
                     'type' => 'tab',
@@ -1330,7 +1330,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61e8e9cb0cd38',
+                    'key' => 'field_footer_object',
                     'label' => 'Footer',
                     'name' => 'footer',
                     'type' => 'post_object',
@@ -1352,7 +1352,7 @@ if (class_exists('WooCommerce')) {
                     'ui' => 1,
                 ),
                 array(
-                    'key' => 'field_621f3bafa843d',
+                    'key' => 'field_contact',
                     'label' => 'Contact',
                     'name' => '',
                     'type' => 'tab',
@@ -1368,7 +1368,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_621f3bbea843e',
+                    'key' => 'field_contact_group',
                     'label' => 'Contact',
                     'name' => 'contact',
                     'type' => 'group',
@@ -1383,7 +1383,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'row',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_621f3bfba8441',
+                            'key' => 'field_contact_address',
                             'label' => 'Address',
                             'name' => 'address',
                             'type' => 'text',
@@ -1402,7 +1402,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3bd8a843f',
+                            'key' => 'field_contact_hotline',
                             'label' => 'Hotline',
                             'name' => 'hotline',
                             'type' => 'text',
@@ -1421,7 +1421,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3beba8440',
+                            'key' => 'field_contact_email',
                             'label' => 'Email',
                             'name' => 'email',
                             'type' => 'text',
@@ -1440,10 +1440,10 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3c14a8442',
+                            'key' => 'field_contact_map',
                             'label' => 'Map',
                             'name' => 'map',
-                            'type' => 'text',
+                            'type' => 'textarea',
                             'instructions' => '',
                             'required' => 0,
                             'conditional_logic' => 0,
@@ -1459,7 +1459,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_621f3c1da8443',
+                            'key' => 'field_contact_form',
                             'label' => 'Contact Form',
                             'name' => 'contact_form',
                             'type' => 'text',
@@ -1480,7 +1480,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_5fb01d7a066c5',
+                    'key' => 'field_socials',
                     'label' => 'Socials',
                     'name' => '',
                     'type' => 'tab',
@@ -1496,7 +1496,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_5fafa4cf04e0f',
+                    'key' => 'field_socials_repeater',
                     'label' => 'Socials',
                     'name' => 'socials',
                     'type' => 'repeater',
@@ -1515,7 +1515,7 @@ if (class_exists('WooCommerce')) {
                     'button_label' => 'Add Social',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_5fafa4ed04e10',
+                            'key' => 'field_social_title',
                             'label' => 'Title',
                             'name' => 'title',
                             'type' => 'text',
@@ -1534,7 +1534,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_5fafa55bb45e9',
+                            'key' => 'field_social_url',
                             'label' => 'Url',
                             'name' => 'url',
                             'type' => 'url',
@@ -1553,7 +1553,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_5fb025bb65704',
+                            'key' => 'field_social_icon_image',
                             'label' => 'Icon Image',
                             'name' => 'icon_image',
                             'type' => 'image',
@@ -1577,7 +1577,7 @@ if (class_exists('WooCommerce')) {
                             'mime_types' => '',
                         ),
                         array(
-                            'key' => 'field_5fafa52db45e8',
+                            'key' => 'field_social_icon_class',
                             'label' => 'Icon Class',
                             'name' => 'icon_class',
                             'type' => 'text',
@@ -1598,7 +1598,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_5fed28e12234b',
+                    'key' => 'field_chats',
                     'label' => 'Chats',
                     'name' => '',
                     'type' => 'tab',
@@ -1614,7 +1614,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_6179041e65ea8',
+                    'key' => 'field_chats_group',
                     'label' => 'Chats',
                     'name' => 'chats',
                     'type' => 'group',
@@ -1629,7 +1629,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'row',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_60935c0d40771',
+                            'key' => 'field_chat_phone',
                             'label' => 'Phone',
                             'name' => 'phone',
                             'type' => 'text',
@@ -1649,7 +1649,7 @@ if (class_exists('WooCommerce')) {
                             'translations' => 'translate',
                         ),
                         array(
-                            'key' => 'field_5fed28fa2234c',
+                            'key' => 'field_chat_zalo',
                             'label' => 'Zalo',
                             'name' => 'zalo',
                             'type' => 'url',
@@ -1666,7 +1666,7 @@ if (class_exists('WooCommerce')) {
                             'translations' => 'copy_once',
                         ),
                         array(
-                            'key' => 'field_61250a0da5056',
+                            'key' => 'field_chat_facebook',
                             'label' => 'Facebook',
                             'name' => 'facebook',
                             'type' => 'url',
@@ -1683,7 +1683,7 @@ if (class_exists('WooCommerce')) {
                             'translations' => 'copy_once',
                         ),
                         array(
-                            'key' => 'field_6179041565ea7',
+                            'key' => 'field_chats_email',
                             'label' => 'Email',
                             'name' => 'email',
                             'type' => 'url',
@@ -1702,7 +1702,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_61cd7034d032c',
+                    'key' => 'field_popups',
                     'label' => 'Popups',
                     'name' => '',
                     'type' => 'tab',
@@ -1718,7 +1718,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_61cd7046d032d',
+                    'key' => 'field_popups_repeater',
                     'label' => 'Popups',
                     'name' => 'popups',
                     'type' => 'repeater',
@@ -1737,7 +1737,7 @@ if (class_exists('WooCommerce')) {
                     'button_label' => 'Add Item',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_61d9ccca24fe7',
+                            'key' => 'field_popup_id',
                             'label' => 'ID',
                             'name' => 'id',
                             'type' => 'text',
@@ -1756,7 +1756,7 @@ if (class_exists('WooCommerce')) {
                             'maxlength' => '',
                         ),
                         array(
-                            'key' => 'field_61cd7059d032e',
+                            'key' => 'field_popup_object',
                             'label' => 'Popup',
                             'name' => 'popup',
                             'type' => 'post_object',
@@ -1780,7 +1780,7 @@ if (class_exists('WooCommerce')) {
                     ),
                 ),
                 array(
-                    'key' => 'field_619b3994f6fdd',
+                    'key' => 'field_other',
                     'label' => 'Other',
                     'name' => '',
                     'type' => 'tab',
@@ -1796,7 +1796,7 @@ if (class_exists('WooCommerce')) {
                     'endpoint' => 0,
                 ),
                 array(
-                    'key' => 'field_619b39a0f6fde',
+                    'key' => 'field_other_group',
                     'label' => 'Other',
                     'name' => 'other',
                     'type' => 'group',
@@ -1811,7 +1811,7 @@ if (class_exists('WooCommerce')) {
                     'layout' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_619b39ccf6fdf',
+                            'key' => 'field_other_code_header',
                             'label' => 'Chèn mã Header',
                             'name' => 'code_header',
                             'type' => 'textarea',
@@ -1830,7 +1830,7 @@ if (class_exists('WooCommerce')) {
                             'new_lines' => '',
                         ),
                         array(
-                            'key' => 'field_619b39e5f6fe0',
+                            'key' => 'field_other_code_footer',
                             'label' => 'Chèn mã Footer',
                             'name' => 'code_footer',
                             'type' => 'textarea',
@@ -1849,7 +1849,7 @@ if (class_exists('WooCommerce')) {
                             'new_lines' => '',
                         ),
                         array(
-                            'key' => 'field_638974593c85a',
+                            'key' => 'field_other_developer',
                             'label' => 'Developer',
                             'name' => 'developer',
                             'type' => 'select',

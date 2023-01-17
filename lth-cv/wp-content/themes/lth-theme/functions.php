@@ -31,8 +31,8 @@ if (THEME_NAME === 'lth_theme') {
 	require_once(THEME_DIR . '/plugins/acf/acf.php');
 
 	// khởi tạo widgets content
-	define('BLOCKS_URI', THEME_URI . '/blocks');
-	define('BLOCKS_DIR', THEME_DIR . '/blocks');
+	define('BLOCKS_URI', THEME_URI . '/inc/blocks');
+	define('BLOCKS_DIR', THEME_DIR . '/inc/blocks');
 	require_once(BLOCKS_DIR . '/lth-blocks.php');
 }
 
@@ -43,12 +43,6 @@ require_once(LIBS_DIR . '/setup.php');
 
 // thiết lập files css + js
 require_once(LIBS_DIR . '/head.php');
-
-// khởi tạo các action hook
-require_once(LIBS_DIR . '/hooks/action.php');
-
-// khởi tạo các functions hỗ trợ
-require_once(LIBS_DIR . '/help.php');
 
 // BFI_Thumb
 require_once(LIBS_DIR . '/BFI_Thumb/BFI_Thumb.php');

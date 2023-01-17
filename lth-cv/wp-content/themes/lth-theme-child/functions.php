@@ -42,5 +42,5 @@ if (THEME_CHILD_NAME == 'lth_theme_child') {
 	require_once get_theme_file_path('inc/theme-options.php');
 
 	// khởi tạo widgets content
-	require_once get_theme_file_path('blocks/lth-blocks-child.php');
+	require_once get_theme_file_path('inc/blocks/lth-blocks-child.php');
 }
