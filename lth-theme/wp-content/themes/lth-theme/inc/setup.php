@@ -219,6 +219,7 @@ function faviconadmin()
     echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_field('favicon', 'option') . '" />';
 }
 add_action('admin_head', 'faviconadmin');
+add_action('login_head', 'faviconadmin');
 
 // Thay doi logo admin wordpress page login
 
