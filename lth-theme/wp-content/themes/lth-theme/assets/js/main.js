@@ -373,12 +373,17 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {
     // toggle
-    $(document).on('click', '.module_toggle li a', function (e) {
+    $(document).on('click', '.module_toggle li a, .menu_toggle .title-box', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
         $(this).next().slideToggle('slow');
     });
     // end toggle
+
+    $('.lth-menu li a .icon').click(function (e) {
+        e.preventDefault();
+        $(this).parent().next().slideToggle('slow');
+    });
 });
 
 jQuery(document).ready(function ($) {

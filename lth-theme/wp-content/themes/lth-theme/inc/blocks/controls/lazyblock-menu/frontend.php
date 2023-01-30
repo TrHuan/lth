@@ -22,9 +22,15 @@ if (!function_exists('lth_menu_output_fe')) :
 
         $nav_menu    = get_term_by('slug', $attributes['menu_name'], 'nav_menu');
 ?>
-        <article class="lth-menu <?php echo $attributes['class']; ?>">
+        <article class="lth-menu <?php echo $attributes['class'];
+        if ($attributes['menu_toggle'] != 'toggle_none') {
+            echo 'menu_toggle';
+        } ?>">
             <?php if ($attributes['title'] || $attributes['description']) : ?>
-                <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
+                <div class="module_header title-box title-align-<?php echo $attributes['title_align'];
+                if ($attributes['menu_toggle'] == 'toggle_show') {
+                    echo ' active';
+                } ?>">
                     <?php if ($attributes['title']) : ?>
                         <h2 class="title">
                             <?php if ($attributes['url']) : ?>
@@ -34,6 +40,12 @@ if (!function_exists('lth_menu_output_fe')) :
                                 <?php if ($attributes['url']) : ?>
                                 </a>
                             <?php endif; ?>
+                                
+                            <?php if ($attributes['menu_toggle'] != 'toggle_none') { ?>
+                                <i class="fal fa-angle-down icon"></i>
+                                <!-- <i class="fal fa-angle-down icon icon-plus"></i> -->
+                                <!-- <i class="fal fa-angle-up icon icon-minus"></i> -->
+                            <?php } ?>
                         </h2>
                     <?php endif; ?>
 
@@ -45,7 +57,12 @@ if (!function_exists('lth_menu_output_fe')) :
                 </div>
             <?php endif; ?>
 
-            <div class="module_content">
+            <div class="module_content <?php if ($attributes['menu_toggle'] == 'toggle_show') {
+                echo 'slow';
+            } ?>" <?php 
+            if ($attributes['menu_toggle'] == 'toggle_hidden') {
+                echo 'style="display: none;"';
+            } ?>>
                 <div class="menus">
                     <?php if (!is_wp_error($nav_menu) && is_object($nav_menu) && !empty($nav_menu)) : ?>
                         <?php
