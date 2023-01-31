@@ -45,9 +45,14 @@ if (!function_exists('lth_blogs_category_output_fe')) :
                         <?php if ($attributes['show_items']) : ?>
                             <div class="cat-list">
                                 <ul>
-                                    <?php foreach ($attributes['items'] as $inner) { ?>
+                                    <?php $j = 0;
+                                    foreach ($attributes['items'] as $inner) {
+                                        $j++; ?>
                                         <li>
-                                            <a href="<?php echo get_category_link($inner['item']); ?>" data_id="<?php echo $inner['item']; ?>"><?php echo get_cat_name($inner['item']); ?></a>
+                                            <a href="<?php echo get_category_link($inner['item']); ?>" data_id="<?php echo $inner['item']; ?>"
+                                            <?php if ($j == 1) { ?>class="active"<?php } ?>>
+                                                <?php echo get_cat_name($inner['item']); ?>
+                                            </a>
                                         </li>
                                     <?php } ?>
                                 </ul>

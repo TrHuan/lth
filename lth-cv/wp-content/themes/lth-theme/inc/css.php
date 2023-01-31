@@ -18,6 +18,8 @@
 	.module_products .post-price .amount,
 	.module_products .post-button .add_to_cart_button:hover,
 	.current-menu-item>a,
+	.title-box .cat-list li a.active,
+	/* .title-box .cat-list li a:hover, */
 	.title-tab .title.active,
 	.title-tab .title:hover,
 	.back-to-top,

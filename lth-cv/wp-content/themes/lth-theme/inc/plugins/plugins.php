@@ -268,6 +268,30 @@ function lth_plugin_activation()
 
                 ),
 
+
+
+                array(
+
+                        'name' => 'Simply Show Hooks',
+
+                        'slug' => 'simply-show-hooks',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
+                        'name' => 'Query Monitor',
+
+                        'slug' => 'query-monitor',
+
+                        'required' => true,
+
+                ),
+
         );
 
 

@@ -49,10 +49,13 @@ if (!function_exists('lth_products_category_output_fe')) :
                         <?php if ($attributes['show_items']) : ?>
                             <div class="cat-list">
                                 <ul>
-                                    <?php foreach ($attributes['items'] as $inner) {
+                                    <?php $j = 0;
+                                    foreach ($attributes['items'] as $inner) {
+                                        $j++;
                                         $term = get_term_by('id', $inner['item'], 'product_cat'); ?>
                                         <li>
-                                            <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>" data_id="<?php echo $inner['item']; ?>">
+                                            <a href="<?php echo get_term_link($term->slug, 'product_cat'); ?>" data_id="<?php echo $inner['item']; ?>" 
+                                            <?php if ($j == 1) { ?>class="active"<?php } ?>>
                                                 <?php echo $term->name; ?>
                                             </a>
                                         </li>

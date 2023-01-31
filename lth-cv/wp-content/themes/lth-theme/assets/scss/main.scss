@@ -1558,11 +1558,13 @@ footer {
 }
 // end footer
 
+// logo
 .lth-logo {
   * {
     margin-bottom: 0;
   }
 }
+// end logo
 
 // banner
 .module_banners {
@@ -1993,6 +1995,18 @@ footer {
   }
 }
 // end lth-qr-code
+
+// address
+.module_address {
+  li {
+    display: flex;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+// end address
 
 /*//////////////////////////////////////////////////*/
 

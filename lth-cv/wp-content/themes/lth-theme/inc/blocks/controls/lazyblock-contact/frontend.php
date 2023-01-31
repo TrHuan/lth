@@ -50,7 +50,7 @@ if (!function_exists('lth_contact_output_fe')) :
                     <ul>
                         <li>
                             <span><?php echo __('Địa chỉ:'); ?></span> 
-                            <a href="#" title=""><?php echo $address; ?></a>
+                            <p><?php echo $address; ?></p>
                         </li>
                         <li>
                             <span><?php echo __('Hotline:'); ?></span>

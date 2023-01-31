@@ -19,31 +19,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="noindex" />
     <meta name="AdsBot-Google" content="noindex" />
-    <meta name="Googlebot" content="noindex">
+    <meta name="Googlebot" content="noindex">  
 
-    <link rel="icon" href="<?php the_field('favicon', 'option'); ?>" type="image/gif">
-
-    <?php if (is_tax()) { ?>
-        <link rel="canonical" href="<?php echo get_term_link($term, $taxonomy); ?>" />
-    <?php } elseif (is_category()) { ?>
-        <link rel="canonical" href="<?php echo get_category_link(get_the_category()[0]->term_id); ?>" />
-    <?php } else { ?>
-        <?php if (get_post_type() == 'product' && !is_single()) {
-            $shop_page_url = get_permalink(woocommerce_get_page_id('shop'));
-        ?>
-            <link rel="canonical" href="<?php echo $shop_page_url; ?>" />
-        <?php } else { ?>
-            <link rel="canonical" href="<?php the_permalink(); ?>" />
-        <?php } ?>
-    <?php } ?>
-
-    <?php $other = get_field('other', 'option');
-    echo $other['code_header']; ?>
-
-    <?php wp_head(); ?>
     <!-- hook của wordpress gọi đến file inc/head.php -->
-
-    <?php require_once(LIBS_DIR . '/css.php'); ?>
+    <?php wp_head(); ?>
 </head>
 
 <?php

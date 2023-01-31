@@ -100,6 +100,34 @@ function lth_theme_setup()
 }
 add_action('after_setup_theme', 'lth_theme_setup');
 
+// wp_head
+function lth_header()
+{
+
+    echo '<link rel="icon" href="' . get_field('favicon', 'option') . '" type="image/gif">';  
+
+    if (is_tax()) {
+        echo '<link rel="canonical" href="' . get_term_link($term, $taxonomy) . '" />';
+    } elseif (is_category()) {
+        echo '<link rel="canonical" href="' . get_category_link(get_the_category()[0]->term_id) . '" />';
+    } else {
+        if (get_post_type() == 'product' && !is_single()) {
+            $shop_page_url = get_permalink(woocommerce_get_page_id('shop'));
+       
+            echo '<link rel="canonical" href="' . $shop_page_url . '" />';
+        } else {
+            echo '<link rel="canonical" href="' . the_permalink() . '" />';
+        }
+    }
+
+    $other = get_field('other', 'option');
+    echo $other['code_header'];
+
+    require_once(LIBS_DIR . '/css.php');
+}
+add_action('wp_head', 'lth_header', 1000);
+// end wp_head
+
 /**
  * Remove Item Menu Admin
  */
