@@ -38,6 +38,9 @@ if (THEME_NAME === 'lth_theme') {
 
 require_once(LIBS_DIR . '/theme-options.php');
 
+// hooks
+require_once(LIBS_DIR . '/hooks.php');
+
 // khởi tạo theme
 require_once(LIBS_DIR . '/setup.php');
 
