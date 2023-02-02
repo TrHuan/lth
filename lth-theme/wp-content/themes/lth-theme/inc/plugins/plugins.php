@@ -248,9 +248,9 @@ function lth_plugin_activation()
 
                 array(
 
-                        'name' => 'iThemes Security',
+                        'name' => 'Wordfence',
 
-                        'slug' => 'better-wp-security',
+                        'slug' => 'wordfence',
 
                         'required' => true,
 

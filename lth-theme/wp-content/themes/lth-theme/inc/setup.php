@@ -74,12 +74,10 @@ function lth_theme_setup()
         // remove update plugins
         remove_action('load-update-core.php', 'wp_update_plugins');
         add_filter('pre_site_transient_update_plugins', '__return_null');
-        define('DISALLOW_FILE_EDIT', true);
-        define('DISALLOW_FILE_MODS', true);
 
         // remove update themes
-        remove_action('load-update-core.php', 'wp_update_themes');
-        add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+        // remove_action('load-update-core.php', 'wp_update_themes');
+        // add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
 
         // remove update core wordpress
         add_action('after_setup_theme', 'remove_core_updates');
