@@ -64,11 +64,14 @@ function lth_theme_setup()
             remove_menu_page('tools.php');
             remove_menu_page('plugins.php');
             remove_menu_page('wpcf7');
+            remove_menu_page('wp-mail-smtp');
             remove_menu_page('wpseo_dashboard');
+            remove_menu_page('Wordfence');
             remove_menu_page('edit.php?post_type=acf-field-group');
             remove_submenu_page('options-general.php', 'tinymce-advanced');
             remove_submenu_page('options-general.php', 'dpp_page_settings');
             remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
+            remove_submenu_page('options-general.php', 'whl_settings');
         }
 
         // remove update plugins

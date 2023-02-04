@@ -256,6 +256,16 @@ function lth_plugin_activation()
 
                 ),
 
+                array(
+
+                        'name' => 'WPS Hide Login',
+
+                        'slug' => 'wps-hide-login',
+
+                        'required' => true,
+
+                ),
+
 
 
                 array(
