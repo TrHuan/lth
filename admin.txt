@@ -82,36 +82,6 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
 
 /////////////////////////////////////
 
-tạo sitemap
-1: tạo file whitespacefix.php nội dung:
-<?php
-function ___wejns_wp_whitespace_fix($input) {
-    $allowed = false;
-    $found = false;
-    foreach (headers_list() as $header) {
-        if (preg_match("/^content-type:\\s+(text\\/|application\\/((xhtml|atom|rss)\\+xml|xml))/i", $header)) {
-            $allowed = true;
-        }
-        if (preg_match("/^content-type:\\s+/i", $header)) {
-            $found = true;
-        }
-    }
-    if ($allowed || !$found) {
-        return preg_replace("/\\A\\s*/m", "", $input);
-    } else {
-        return $input;
-    }
-}
-ob_start("___wejns_wp_whitespace_fix");
-?>
-
-2: sửa file index.php: include('whitespacefix.php'); (ngay sau <?php )
-
-// 2 file cùng cấp với wp-content, .htaccess
-// link sitemap: https://..._.vn/sitemap_index.xml
-
-/////////////////////////////////////
-
 1: Xử lý mã độc trong code
 - thay core wordpress mới, giữ lại folder wp-content
 - xoá file .htaccess trong wp-content
@@ -119,5 +89,78 @@ ob_start("___wejns_wp_whitespace_fix");
 - xoá link không phải của web trong Bảng: wp_yoast_seo_links
 3: Cài đặt plugin bảo mật, scan virut - Wordfence
 4: đổi link đăng nhập bằng plugin - WPS Hide Login
-5: Cài plugin ẩn cập nhật core, theme, plugin - disable admin notices
-6: Đặt lại quyền các folder và file của web
+5: code ẩn cập nhật code, theme, plugin, Remove Item Menu Admin
+    // remove update plugins
+    remove_action('load-update-core.php', 'wp_update_plugins');
+    add_filter('pre_site_transient_update_plugins', '__return_null');
+    define('DISALLOW_FILE_EDIT', true);
+    define('DISALLOW_FILE_MODS', true);
+
+    // remove update themes
+    remove_action('load-update-core.php', 'wp_update_themes');
+    add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+
+    // remove update core wordpress
+    add_action('after_setup_theme', 'remove_core_updates');
+    function remove_core_updates()
+    {
+        if (!current_user_can('update_core')) {
+            return;
+        }
+
+        //fadd_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+        add_filter('pre_option_update_core', '__return_null');
+        add_filter('pre_site_transient_update_core', '__return_null');
+    }
+
+    // xoá chỉnh sửa code theme, plugin trong admin
+    define('DISALLOW_FILE_EDIT', true);
+
+    /**
+    * Remove Item Menu Admin
+    */
+    add_action('admin_init', 'setting_remove_menu_pages');
+    function setting_remove_menu_pages()
+    {
+        remove_menu_page('tools.php');
+        remove_menu_page('plugins.php');
+        remove_menu_page('wpcf7');
+        remove_menu_page('wpseo_dashboard');
+        remove_menu_page('edit.php?post_type=acf-field-group');
+        remove_submenu_page('options-general.php', 'tinymce-advanced');
+        remove_submenu_page('options-general.php', 'dpp_page_settings');
+        remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
+    }
+6: tạo sitemap
+    1: tạo file whitespacefix.php nội dung:
+    <?php
+    function ___wejns_wp_whitespace_fix($input) {
+        $allowed = false;
+        $found = false;
+        foreach (headers_list() as $header) {
+            if (preg_match("/^content-type:\\s+(text\\/|application\\/((xhtml|atom|rss)\\+xml|xml))/i", $header)) {
+                $allowed = true;
+            }
+            if (preg_match("/^content-type:\\s+/i", $header)) {
+                $found = true;
+            }
+        }
+        if ($allowed || !$found) {
+            return preg_replace("/\\A\\s*/m", "", $input);
+        } else {
+            return $input;
+        }
+    }
+    ob_start("___wejns_wp_whitespace_fix");
+    ?>
+
+    2: sửa file index.php: include('whitespacefix.php'); (ngay sau <?php )
+
+    // 2 file cùng cấp với wp-content, .htaccess
+    // link sitemap: https://..._.vn/sitemap_index.xml
+7: Đặt lại quyền các folder và file của web
+
+/////////////////////////////////////
+
+chat gpt
+trhuan177@gmail.com / lth@123454321

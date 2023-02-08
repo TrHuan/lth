@@ -79,3 +79,5 @@
         </div>
     </div>
 <?php endif; ?>
+
+<?php comments_template(); ?>
