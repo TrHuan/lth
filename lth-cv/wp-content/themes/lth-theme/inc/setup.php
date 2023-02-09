@@ -7,6 +7,12 @@
  * @since 2020
  */
 
+// thay url admin
+// function custom_admin_url() {
+//     return '/lth-admin';
+// }
+// add_filter('admin_url', 'custom_admin_url');
+
 function lth_theme_setup()
 {
     // cho phép hiển thị title trên trình duyệt
@@ -77,6 +83,15 @@ function lth_theme_setup()
         // remove update plugins
         remove_action('load-update-core.php', 'wp_update_plugins');
         add_filter('pre_site_transient_update_plugins', '__return_null');
+
+        // remove update plugin
+        // function disable_update_plugin($value)
+        // {
+        //     unset($value->response['advanced-custom-fields-pro/acf.php']);
+        //     unset($value->response['polylang-pro/polylang.php']);
+        //     return $value;
+        // }
+        // add_filter('site_transient_update_plugins', 'disable_update_plugin');
 
         // remove update themes
         // remove_action('load-update-core.php', 'wp_update_themes');
@@ -321,15 +336,6 @@ function lth_admin_menu($__return_true)
 add_filter('custom_menu_order', 'lth_admin_menu');
 add_filter('menu_order', 'lth_admin_menu');
 
-// remove update plugin
-function disable_update_plugin($value)
-{
-    unset($value->response['advanced-custom-fields-pro/acf.php']);
-    unset($value->response['polylang-pro/polylang.php']);
-    return $value;
-}
-add_filter('site_transient_update_plugins', 'disable_update_plugin');
-
 function more_posts_per_search_page($query)
 {
     if (!is_admin() && $query->is_main_query()) {
@@ -363,7 +369,7 @@ add_action('pre_get_posts', 'more_posts_per_search_page');
 //   }
 // }
 
-// thêm cột ảnh đại diện cho bàu viết trong admin
+// thêm cột ảnh đại diện cho bài viết trong admin
 add_filter('manage_post_posts_columns', 'lth_featured_image_column');
 function lth_featured_image_column($column_array)
 {
@@ -418,57 +424,17 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 }
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 
-// lấy lại mật khẩu đăng nhập
-// add_action('wp_ajax_nopriv_ForgotPassword', 'lth_handle_forgot_password'); 
-// function lth_handle_forgot_password() {
-// 	$userData = [];
- 
-// 	if ( isset($_POST['userData']) && is_array($_POST['userData']) ) {
-// 		$userData = $_POST['userData'];
-// 	}
- 
-// 	if ( isset($userData['_wpnonce']) && wp_verify_nonce( $userData['_wpnonce'], 'form_forgot_password' ) ) {
-// 		$arr_form = [];
-// 		$arr_error = [];
- 
-// 		if ( isset( $userData['email'] ) && $userData['email'] ) {
-// 			$arr_form['email'] = sanitize_text_field( $userData['email'] );
- 
-// 			if ( ! email_exists( $arr_form['email'] ) ) {
-// 				$arr_error['email'] = 'Địa chỉ email chưa tồn tại trong hệ thống. Vui lòng kiểm tra lại';
-// 			}
-// 		} else {
-// 			$arr_error['email'] = 'Bạn chưa nhập địa chỉ email';
-// 		}
- 
-// 		if ( count( $arr_error ) ) {
-// 			echo '<ul>';
-// 			foreach ( $arr_error as $key => $error ) {
-// 				echo '<li>'.$error.'</li>';
-// 			}
-// 			echo '</ul>';
-// 		} else {
-// 			$user = get_user_by( 'email', $arr_form['email'] );
-// 			$user_id = $user->ID;
-// 			$user_obj = new WP_User( $user_id );
-// 			$reset_key = get_password_reset_key( $user_obj );
-// 			$user_login = $user->user_login;
-// 			$site_name = get_bloginfo( 'name' );
- 
-// 			$rp_link = network_site_url("wp-login.php?action=rp&key=$reset_key&login=" . rawurlencode($user_login), 'login');
- 
-// 			$to = $arr_form['email'];
-// 			$subject = '['.$site_name.'] Yêu cầu thay đổi mật khẩu';
-// 			$headers = array( 'Content-Type: text/html; charset=UTF-8' );
- 
-// 			$body = 'Yêu cầu thay đổi mật khẩu. <br/>';
-// 			$body .= 'Nếu bạn đã yêu cầu đặt lại mật khẩu cho <strong>' . $user_login . '</strong>, hãy sử dụng đường dẫn bên dưới để đặt mật khẩu mới.<br/>Nếu không phải bạn thực hiện, vui lòng bỏ qua email này. <br/>';
-// 			$body .= $rp_link;
- 
-// 			wp_mail( $to, $subject, $body, $headers );
- 
-// 			echo 'success';
-// 		}
-// 	}
-// 	die();
+// comments
+// function custom_comments_fields($fields) {
+//     $fields['author'] = '<p class="comment-form-author">' .
+//         '<input id="author" class="form-control" name="author" type="text" placeholder="Tên của bạn" value="' . esc_attr($commenter['comment_author']) .
+//         '" size="30"' . $aria_req . ' /></p>';
+//     $fields['email'] = '<p class="comment-form-email">' .
+//         '<input id="email" class="form-control" name="email" type="text" placeholder="Email của bạn" value="' . esc_attr($commenter['comment_author_email']) .
+//         '" size="30"' . $aria_req . ' /></p>';
+//     $fields['url'] = '<p class="comment-form-url">' .
+//         '<input id="url" class="form-control" name="url" type="text" placeholder="Website của bạn" value="' . esc_attr($commenter['comment_author_url']) .
+//         '" size="30" /></p>';
+//     return $fields;
 // }
+// add_filter('comment_form_default_fields', 'custom_comments_fields');

@@ -248,6 +248,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'WpDiscuz',
+
+                        'slug' => 'wpdiscuz',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Wordfence',
 
                         'slug' => 'wordfence',
