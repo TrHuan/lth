@@ -41,6 +41,12 @@
                     
                                 wp_login_form( $args );
                                 ?>
+                                <br/>                
+                                <p class="lostpassword">
+                                    <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>">
+                                        <?php echo __('Quên mật khẩu?'); ?>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>

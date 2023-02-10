@@ -423,18 +423,3 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 	}
 }
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
-
-// comments
-// function custom_comments_fields($fields) {
-//     $fields['author'] = '<p class="comment-form-author">' .
-//         '<input id="author" class="form-control" name="author" type="text" placeholder="Tên của bạn" value="' . esc_attr($commenter['comment_author']) .
-//         '" size="30"' . $aria_req . ' /></p>';
-//     $fields['email'] = '<p class="comment-form-email">' .
-//         '<input id="email" class="form-control" name="email" type="text" placeholder="Email của bạn" value="' . esc_attr($commenter['comment_author_email']) .
-//         '" size="30"' . $aria_req . ' /></p>';
-//     $fields['url'] = '<p class="comment-form-url">' .
-//         '<input id="url" class="form-control" name="url" type="text" placeholder="Website của bạn" value="' . esc_attr($commenter['comment_author_url']) .
-//         '" size="30" /></p>';
-//     return $fields;
-// }
-// add_filter('comment_form_default_fields', 'custom_comments_fields');

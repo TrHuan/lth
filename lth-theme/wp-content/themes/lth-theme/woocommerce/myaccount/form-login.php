@@ -93,23 +93,16 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                                         $pwd2 = $wpdb->escape(trim($_POST['pwd2']));
                                         $first_name = $wpdb->escape(trim($_POST['first_name']));
                                         $last_name = $wpdb->escape(trim($_POST['last_name']));
-                                        // $email = $wpdb->escape(trim($_POST['email']));
                                         $username = $wpdb->escape(trim($_POST['username']));
                                         
-                                        // if( $email == "" || $pwd1 == "" || $pwd2 == "" || $username == "" || $first_name == "" || $last_name == "") {
                                         if( $pwd1 == "" || $pwd2 == "" || $username == "" || $first_name == "" || $last_name == "") {
                                             $err = 'Vui lòng không bỏ trống các thông tin!';
-                                        // } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                                        //     $err = 'Địa chỉ email không hợp lệ!';
-                                        // } else if(email_exists($email) ) {
-                                        //     $err = 'Email đã tồn tại!';
                                         } else {                                    
                                             $user_id = wp_insert_user( array (
                                                 'first_name' => apply_filters('pre_user_first_name', $first_name),
                                                 'last_name' => apply_filters('pre_user_last_name', $last_name),
                                                 'user_pass' => apply_filters('pre_user_user_pass', $pwd1),
                                                 'user_login' => apply_filters('pre_user_user_login', $username),
-                                                // 'user_email' => apply_filters('pre_user_user_email', $email),
                                                 'role' => 'subscriber' 
                                             ) );
 
@@ -123,7 +116,6 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                                     }
                                 ?>
                                 
-                                <!--display error/success message-->
                                 <div id="message">
                                     <?php
                                     if(! empty($err) ) :
@@ -143,8 +135,6 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                                     <p><input type="text" value="" name="last_name" id="last_name" class="form-control" /></p>
                                     <p><label><?php echo __('Tên của bạn'); ?></label></p>
                                     <p><input type="text" value="" name="first_name" id="first_name" class="form-control" /></p>
-                                    <!-- <p><label>Email của bạn</label></p>
-                                    <p><input type="text" value="" name="email" id="email" /></p> -->
                                     <p><label><?php echo __('Tài khoản'); ?></label></p>
                                     <p><input type="text" value="" name="username" id="username" class="form-control" /></p>
                                     <p><label><?php echo __('Mật khẩu'); ?></label></p>
