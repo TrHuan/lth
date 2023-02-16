@@ -1,0 +1,54 @@
+
+//*/ gco.vn
+huan@gco.vn
+171.244.141.150
+YVhD5,L~J~Rp
+
+//////////////////////////////////////
+
+//*/ frontend gco
+115.165.161.188
+huan@tpl.gco.vn
+23G4jWbBknSLX93
+
+
+//////////////////////////////////////
+
+Gco_Backend_2
+plesk.gco.vn / huan / cJ71*8ht
+
+https://plesk.gco.vn:8443/
+demo01gvn / Rv35sq73^
+
+//////////////////////////////////////
+
+theme_gco
+https://da.gco.vn:2222/
+duong
+gco@2021
+
+//////////////////////////////////////
+
+https://app.infinityfree.net/accounts
+- trhuan177@gmail.com  /  phuongmai051094
+
+//////////////////////////////////////
+
+huanlt@gcosoftware.vn / Thucanh131017
+
+//////////////////////////////////////
+
+https://da.gco.vn:2222/ / webmau / gco@2022
+
+https://da.gco.vn:2222/ / webmau2 / gcovn@2022
+
+https://da.gco.vn:2222/ / gcodemo / YDd6Ksv8Ni8PRMc
+
+cloudflare.com / tamnd@gco.vn / RSe2L%Y*v6  // xóa cache css trên server
+
+da.gco.vn / veoveo_huan@veoveo.com.vn / BuudX80G2
+
+//////////////////////////////////////
+
+GitLab.com
+huanlt@gcosoftware.vn / huan@12345678
