@@ -167,7 +167,8 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
     Allow: /wp-admin/admin-ajax.php
     Allow: /wp-admin/images/*
     Sitemap: thay link sitemap của web/sitemap_index.xml
-8: Đặt lại quyền các folder và file của web
+8: Cài SSL trên host
+9: Đặt lại quyền các folder và file của web
 
 /////////////////////////////////////
 
