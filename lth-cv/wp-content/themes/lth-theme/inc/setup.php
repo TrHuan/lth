@@ -35,11 +35,11 @@ function lth_theme_setup()
     /**
      * Remove Item Admin Bar
      **/
-    function remove_wp_logo($wp_admin_bar)
+    function remove_wp_logo_menubar($wp_admin_bar)
     {
         $wp_admin_bar->remove_node('comments');
     }
-    add_action('admin_bar_menu', 'remove_wp_logo', 999);
+    add_action('admin_bar_menu', 'remove_wp_logo_menubar', 999);
 
     // add image for menu
     add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
@@ -73,42 +73,38 @@ function lth_theme_setup()
             remove_menu_page('wp-mail-smtp');
             remove_menu_page('wpseo_dashboard');
             remove_menu_page('Wordfence');
+            remove_menu_page('wpdiscuz');
+            remove_menu_page('elementor');
+            remove_menu_page('premmerce-url-manager-admin');
             remove_menu_page('edit.php?post_type=acf-field-group');
             remove_submenu_page('options-general.php', 'tinymce-advanced');
             remove_submenu_page('options-general.php', 'dpp_page_settings');
             remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
             remove_submenu_page('options-general.php', 'whl_settings');
+            remove_submenu_page('options-general.php', 'really-simple-security');
+            remove_submenu_page('options-general.php', 'wprocket');
         }
 
         // remove update plugins
         remove_action('load-update-core.php', 'wp_update_plugins');
         add_filter('pre_site_transient_update_plugins', '__return_null');
 
-        // remove update plugin
-        // function disable_update_plugin($value)
-        // {
-        //     unset($value->response['advanced-custom-fields-pro/acf.php']);
-        //     unset($value->response['polylang-pro/polylang.php']);
-        //     return $value;
-        // }
-        // add_filter('site_transient_update_plugins', 'disable_update_plugin');
-
         // remove update themes
-        // remove_action('load-update-core.php', 'wp_update_themes');
-        // add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+        remove_action('load-update-core.php', 'wp_update_themes');
+        add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
 
         // remove update core wordpress
-        add_action('after_setup_theme', 'remove_core_updates');
-        function remove_core_updates()
-        {
-            if (!current_user_can('update_core')) {
-                return;
-            }
+        // add_action('after_setup_theme', 'remove_core_updates');
+        // function remove_core_updates()
+        // {
+        //     if (!current_user_can('update_core')) {
+        //         return;
+        //     }
 
-            //fadd_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
-            add_filter('pre_option_update_core', '__return_null');
-            add_filter('pre_site_transient_update_core', '__return_null');
-        }
+        //     //fadd_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+        //     add_filter('pre_option_update_core', '__return_null');
+        //     add_filter('pre_site_transient_update_core', '__return_null');
+        // }
 
         // xoá chỉnh sửa code theme, plugin trong admin
         define('DISALLOW_FILE_EDIT', true);
@@ -330,6 +326,7 @@ function lth_admin_menu($__return_true)
         'edit-comments.php', // Menu Phản hồi
         'tools.php', // Menu Công cụ
         'options-general.php', // Menu Cài đặt
+        // 'yith_wcan_panel',
         'separator1', // Đoạn Cách
     );
 }
