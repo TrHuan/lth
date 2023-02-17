@@ -41,4 +41,4 @@ function unregister_elementor_widgets_categories() {
 }
 add_action( 'elementor/widgets/widgets_registered', 'unregister_elementor_widgets_categories' );
 
-//require_once(LIBS_DIR . '/elementor/widgets.php');
+require_once(LIBS_DIR . '/elementor/widgets.php');

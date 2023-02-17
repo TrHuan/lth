@@ -4,24 +4,18 @@ class Elementor_Widget_1 extends \Elementor\Widget_Base {
     public function get_style_depends() {
 
 		wp_register_style( 'widget-style-1', plugins_url( 'assets/css/widget-style-1.css', __FILE__ ) );
-		wp_register_style( 'widget-style-2', plugins_url( 'assets/css/widget-style-2.css', __FILE__ ), [ 'external-framework' ] );
-		wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
 
 		return [
 			'widget-style-1',
-			'widget-style-2',
 		];
 
 	}
 
     public function get_script_depends() {
 		wp_register_script( 'widget-script-1', plugins_url( 'assets/js/widget-script-1.js', __FILE__ ) );
-		wp_register_script( 'widget-script-2', plugins_url( 'assets/js/widget-script-2.js', __FILE__ ), [ 'external-library' ] );
-		wp_register_script( 'external-library', plugins_url( 'assets/js/libs/external-library.js', __FILE__ ) );
 
 		return [
 			'widget-script-1',
-			'widget-script-2',
 		];
 	}
 
@@ -59,103 +53,158 @@ class Elementor_Widget_1 extends \Elementor\Widget_Base {
 			]
 		);
 
-		/**
-         * TEXT control.
-         */
+        // Text Control
         $this->add_control(
-            'title',
-            [
-                'label' => __( 'Title', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::TEXT,
-                'dynamic' => [
-                    'active' => true,
-                ],
-                'default' => __( 'This is the heading', 'elementor' ),
-                'placeholder' => __( 'Enter your title', 'elementor' ),
-                'label_block' => true,
-            ]
-        );
-
-        /**
-         * TEXTAREA control.
-         */
-        $this->add_control(
-            'description',
-            [
-                'label' => '',
-                'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'dynamic' => [
-                    'active' => true,
-                ],
-                'default' => __( 'Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'elementor' ),
-                'placeholder' => __( 'Enter your description', 'elementor' ),
-                'rows' => 10,
-                'separator' => 'none',
-                'show_label' => false,
-            ]
-        );
-
-        /**
-         * WYSIWYG control.
-         */
-        $this->add_control(
-            'content',
-            [
-                'label' => __( 'Content', 'elementor' ),
-                'default' => __( 'Content', 'elementor' ),
-                'placeholder' => __( 'Content', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::WYSIWYG,
-                'show_label' => false,
-            ]
-        );
-
-        /**
-         * URL control.
-         */
-        $this->add_control(
-            'link',
-            [
-                'label' => __( 'Link', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::URL,
-                'dynamic' => [
-                    'active' => true,
-                ],
-                'placeholder' => __( 'https://your-link.com', 'elementor' ),
-                'default' => [
-                    'url' => '',
-                ],
-                'separator' => 'before',
-            ]
-        );
-
-        /**
-         * SELECT control.
-         */
-        $this->add_control(
-            'size',
-            [
-                'label' => __( 'Size', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::SELECT,
-                'default' => 'default',
-                'options' => [
-                    'default' => __( 'Default', 'elementor' ),
-                    'small' => __( 'Small', 'elementor' ),
-                    'medium' => __( 'Medium', 'elementor' ),
-                    'large' => __( 'Large', 'elementor' ),
-                    'xl' => __( 'XL', 'elementor' ),
-                    'xxl' => __( 'XXL', 'elementor' ),
-                ],
-            ]
-        );
-
-        /**
-         * CHOOSE control.
-         */
-        $this->add_control(
-			'alignment',
+			'widget_text',
 			[
+				'label' => esc_html__( 'Text', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__( 'Text', 'textdomain' ),
+				'placeholder' => esc_html__( 'Type your text here', 'textdomain' ),
+			]
+		);
+
+        // Number Control
+        $this->add_control(
+			'widget_number',
+			[
+				'label' => esc_html__( 'Number', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'min' => 5,
+				'max' => 100,
+				'step' => 5,
+				'default' => 10,
+			]
+		);
+
+        // Textarea Control
+        $this->add_control(
+			'widget_textarea',
+			[
+				'label' => esc_html__( 'Textarea', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'rows' => 10,
+				'default' => esc_html__( 'Textarea', 'textdomain' ),
+				'placeholder' => esc_html__( 'Type your textarea here', 'textdomain' ),
+			]
+		);
+
+        // WYSIWYG Control
+        $this->add_control(
+			'widget_wysiwyg',
+			[
+				'label' => esc_html__( 'Wysiwyg', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+				'default' => esc_html__( 'Default wysiwyg', 'textdomain' ),
+				'placeholder' => esc_html__( 'Type your wysiwyg here', 'textdomain' ),
+			]
+		);
+
+        // Code Control
+        $this->add_control(
+			'widget_code',
+			[
+				'label' => esc_html__( 'Code', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::CODE,
+				'language' => 'html',
+				'rows' => 20,
+			]
+		);
+
+        // Hidden Control
+        $this->add_control(
+			'widget_hidden',
+			[
+				'label' => esc_html__( 'Hidden', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::HIDDEN,
+				'default' => 'Hidden',
+			]
+		);
+
+        // Switcher Control
+        $this->add_control(
+			'widget_switcher',
+			[
+				'label' => esc_html__( 'Switcher', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__( 'Show', 'textdomain' ),
+				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
+			]
+		);
+
+        // Popover Toggle Control
+        $this->add_control(
+			'widget_popover_toggle',
+			[
+				'label' => esc_html__( 'Popover Toggle', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+				'label_off' => esc_html__( 'Default', 'textdomain' ),
+				'label_on' => esc_html__( 'Custom', 'textdomain' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
+			]
+		);
+		$this->start_popover();
+
+		$this->add_control(
+			'widget_popover_toggle_text',
+			[
+				'label' => esc_html__( 'Text', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__( 'Text', 'textdomain' ),
+				'placeholder' => esc_html__( 'Type your text here', 'textdomain' ),
+			]
+		);
+
+		$this->end_popover();
+        // End Popover Toggle Control
+
+        // Select Control
+        $this->add_control(
+			'widget_select',
+			[
+				'label' => esc_html__( 'Select', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'default' => 'solid',
+				'options' => [
+					'' => esc_html__( 'Default', 'textdomain' ),
+					'none' => esc_html__( 'None', 'textdomain' ),
+					'solid'  => esc_html__( 'Solid', 'textdomain' ),
+					'dashed' => esc_html__( 'Dashed', 'textdomain' ),
+					'dotted' => esc_html__( 'Dotted', 'textdomain' ),
+					'double' => esc_html__( 'Double', 'textdomain' ),
+				],
+				'selectors' => [
+					'{{WRAPPER}} .your-class-select' => 'border-style: {{VALUE}};',
+				],
+			]
+		);
+
+        // Select2 Control
+        $this->add_control(
+			'widget_select2',
+			[
+				'label' => esc_html__( 'Select2', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SELECT2,
+				'label_block' => true,
+				'multiple' => true,
+				'options' => [
+					'title'  => esc_html__( 'Title', 'textdomain' ),
+					'description' => esc_html__( 'Description', 'textdomain' ),
+					'button' => esc_html__( 'Button', 'textdomain' ),
+				],
+				'default' => [ 'title', 'description' ],
+			]
+		);
+
+        // Choose Control
+        $this->add_control(
+			'widget_choose',
+			[
+				'label' => esc_html__( 'Choose', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'label' => esc_html__( 'Alignment', 'textdomain' ),
 				'options' => [
 					'left' => [
 						'title' => esc_html__( 'Left', 'textdomain' ),
@@ -171,222 +220,175 @@ class Elementor_Widget_1 extends \Elementor\Widget_Base {
 					],
 				],
 				'default' => 'center',
+				'toggle' => true,
+				'selectors' => [
+					'{{WRAPPER}} .your-class-choose' => 'text-align: {{VALUE}};',
+				],
 			]
 		);
 
-        /**
-         * HIDDEN control.
-         */
+        // Color Control
         $this->add_control(
-            'view',
-            [
-                'label' => __( 'View', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::HIDDEN,
-                'default' => 'traditional',
-            ]
-        );
-
-        /**
-         * COLOR control.
-         */
-        $this->add_control(
-            'color',
-            [
-                'label' => __( 'Text Color', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#f00',
-				'selectors' => [
-					'{{WRAPPER}} h3' => 'color: {{VALUE}}',
-				],
-            ]
-        );
-
-        /**
-         * TYPOGRAPHY control.
-         */
-        // $this->add_group_control(
-        //     Group_Control_Typography::get_type(),
-        //     [
-        //         'name' => 'typography',
-        //         'scheme' => Scheme_Typography::TYPOGRAPHY_1, // TYPOGRAPHY_1, TYPOGRAPHY_2, TYPOGRAPHY_3, TYPOGRAPHY_4.
-        //         'selector' => '{{WRAPPER}} .elementor-heading-title',
-        //     ]
-        // );
-
-        /**
-         * TYPOGRAPHY control.
-         */
-        // $this->add_group_control(
-        //     Group_Control_Text_Shadow::get_type(),
-        //     [
-        //         'name' => 'text_shadow',
-        //         'selector' => '{{WRAPPER}} .elementor-heading-title',
-        //     ]
-        // );
-
-        /**
-         * DIMENSIONS control.
-         */
-        $this->add_responsive_control(
-            'margin',
-            [
-                'label' => __( 'Margin', 'pd-framework' ),
-                'type' => \Elementor\Controls_Manager::DIMENSIONS,
-                'size_units' => [ 'px', '%' ],
-                'selectors' => [
-                    '{{WRAPPER}} .lth-title .lth-title__line' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                ],
-            ]
-        );
-
-        /**
-         * CODE control.
-         */
-        $this->add_control(
-            'html',
-            [
-                'label' => '',
-                'type' => \Elementor\Controls_Manager::CODE,
-                'default' => '',
-                'placeholder' => __( 'Enter your code', 'elementor' ),
-                'show_label' => false,
-            ]
-        );
-
-        /**
-         * ICON control.
-         */
-        $this->add_control(
-            'icon',
-            [
-                'label' => __( 'Icon', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::ICON,
-                'default' => 'fa fa-star',
-            ]
-        );
-
-        /**
-         * ANIMATION control.
-         */
-        $this->add_control(
-            'animation',
-            [
-                'label' => __( 'Animation', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::ANIMATION,
-                'default' => '',
-                'frontend_available' => true,
-                'label_block' => true,
-            ]
-        );
-
-        /**
-         * HOVER_ANIMATION control.
-         */
-        $this->add_control(
-            'hover_animation',
-            [
-                'label' => __( 'Hover Animation', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
-            ]
-        );
-
-        /**
-         * SLIDER control.
-         */
-        $this->add_responsive_control(
-            'icon_space',
-            [
-                'label' => __( 'Spacing', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::SLIDER,
-                'default' => [
-                    'size' => 15,
-                ],
-                'range' => [
-                    'px' => [
-                        'min' => 0,
-                        'max' => 100,
-                    ],
-                ],
-                'selectors' => [
-                    '{{WRAPPER}}.elementor-position-right .elementor-icon-box-icon' => 'margin-left: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}}.elementor-position-left .elementor-icon-box-icon' => 'margin-right: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}}.elementor-position-top .elementor-icon-box-icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
-                    '(mobile){{WRAPPER}} .elementor-icon-box-icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
-                ],
-            ]
-        );
-
-        /**
-         * HEADING control.
-         */
-        $this->add_control(
-            'heading_title',
-            [
-                'label' => __( 'Title', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-            ]
-        );
-
-        /**
-         * REPEATER control.
-         */
-        $this->add_control(
-			'list',
+			'widget_color',
 			[
-				'label' => esc_html__( 'List', 'textdomain' ),
+				'label' => esc_html__( 'Color', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .your-class-color' => 'color: {{VALUE}}',
+				],
+			]
+		);
+
+        // Icon Control
+        $this->add_control(
+			'widget_icon',
+			[
+				'label' => esc_html__( 'Icons', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::ICON,
+				'include' => [
+					'fa fa-facebook',
+					'fa fa-flickr',
+					'fa fa-google-plus',
+					'fa fa-instagram',
+					'fa fa-linkedin',
+					'fa fa-pinterest',
+					'fa fa-reddit',
+					'fa fa-twitch',
+					'fa fa-twitter',
+					'fa fa-vimeo',
+					'fa fa-youtube',
+				],
+				'default' => 'fa fa-facebook',
+			]
+		);
+
+        // Font Control
+        $this->add_control(
+			'widget_font_family',
+			[
+				'label' => esc_html__( 'Font Family', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::FONT,
+				'default' => "'Open Sans', sans-serif",
+				'selectors' => [
+					'{{WRAPPER}} .your-class-font-family' => 'font-family: {{VALUE}}',
+				],
+			]
+		);
+
+        // Date Time Control
+        $this->add_control(
+			'widget_date_time',
+			[
+				'label' => esc_html__( 'Date Time', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::DATE_TIME,
+			]
+		);
+
+        // Gallery Control
+        $this->add_control(
+			'widget_gallery',
+			[
+				'label' => esc_html__( 'Add Images', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::GALLERY,
+				'show_label' => false,
+				'default' => [],
+			]
+		);
+
+        // Repeater Control
+        $this->add_control(
+			'widget_repeater',
+			[
+				'label' => esc_html__( 'Repeater List', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => [
 					[
-						'name' => 'text',
-						'label' => esc_html__( 'Text', 'textdomain' ),
+						'name' => 'list_title',
+						'label' => esc_html__( 'Title', 'textdomain' ),
 						'type' => \Elementor\Controls_Manager::TEXT,
-						'placeholder' => esc_html__( 'List Item', 'textdomain' ),
-						'default' => esc_html__( 'List Item', 'textdomain' ),
+						'default' => esc_html__( 'List Title' , 'textdomain' ),
+						'label_block' => true,
 					],
 					[
-						'name' => 'link',
-						'label' => esc_html__( 'Link', 'textdomain' ),
-						'type' => \Elementor\Controls_Manager::URL,
-						'placeholder' => esc_html__( 'https://your-link.com', 'textdomain' ),
+						'name' => 'list_content',
+						'label' => esc_html__( 'Content', 'textdomain' ),
+						'type' => \Elementor\Controls_Manager::WYSIWYG,
+						'default' => esc_html__( 'List Content' , 'textdomain' ),
+						'show_label' => false,
 					],
+					[
+						'name' => 'list_color',
+						'label' => esc_html__( 'Color', 'textdomain' ),
+						'type' => \Elementor\Controls_Manager::COLOR,
+						'selectors' => [
+							'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
+						],
+					]
 				],
 				'default' => [
 					[
-						'text' => esc_html__( 'List Item #1', 'textdomain' ),
-						'link' => 'https://elementor.com/',
+						'list_title' => esc_html__( 'Title #1', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
 					],
 					[
-						'text' => esc_html__( 'List Item #2', 'textdomain' ),
-						'link' => 'https://elementor.com/',
+						'list_title' => esc_html__( 'Title #2', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
 					],
 				],
-				'title_field' => '{{{ text }}}',
+				'title_field' => '{{{ list_title }}}',
 			]
 		);
 
-        /**
-         * SWITCHER control.
-         */
+        // Animation Control
         $this->add_control(
-            'divider',
-            [
-                'label' => __( 'Divider', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_off' => __( 'Off', 'elementor' ),
-                'label_on' => __( 'On', 'elementor' ),
-                'selectors' => [
-                    '{{WRAPPER}} .elementor-icon-list-item:not(:last-child):after' => 'content: ""',
-                ],
-                'separator' => 'before',
-            ]
-        );
+			'widget_animation',
+			[
+				'label' => esc_html__( 'Animation', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::ANIMATION,
+				'prefix_class' => 'animated ',
+			]
+		);
 
-        /**
-         * MEDIA control.
-         */
+        // Exit Animation Control
         $this->add_control(
-			'image',
+			'widget_exit_animation',
+			[
+				'label' => esc_html__( 'Exit Animation', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::EXIT_ANIMATION,
+				'prefix_class' => 'animated ',
+			]
+		);
+
+        // Hover Animation Control
+        $this->add_control(
+			'widget_hover_animation',
+			[
+				'label' => esc_html__( 'Hover Animation', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
+			]
+		);
+
+        // URL Control
+        $this->add_control(
+			'widget_url',
+			[
+				'label' => esc_html__( 'Url', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => esc_html__( 'https://your-link.com', 'textdomain' ),
+				'options' => [ 'url', 'is_external', 'nofollow' ],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true,
+			]
+		);
+
+        // Media Control
+        $this->add_control(
+			'widget_media',
 			[
 				'label' => esc_html__( 'Choose Image', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
@@ -396,162 +398,344 @@ class Elementor_Widget_1 extends \Elementor\Widget_Base {
 			]
 		);
 
-        /**
-         * MEDIA Group control.
-         */
-        // $this->add_group_control(
-        //     Group_Control_Image_Size::get_type(),
-        //     [
-        //         'name' => 'thumbnail', // Usage: `{name}_size` and `{name}_custom_dimension`, in this case `thumbnail_size` and `thumbnail_custom_dimension`.
-        //         'default' => 'full',
-        //         'separator' => 'none',
-        //     ]
-        // );
-
-        /**
-         * GALLERY control.
-         */
+        // Slider Control
         $this->add_control(
-            'gallary',
-            [
-                'label' => __( 'Add Images', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::GALLERY,
-                'default' => [],
-                'show_label' => false,
-                'dynamic' => [
-                    'active' => true,
-                ],
-            ]
-        );
+			'widget_slider',
+			[
+				'label' => esc_html__( 'Width', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 1000,
+						'step' => 5,
+					],
+					'%' => [
+						'min' => 0,
+						'max' => 100,
+					],
+				],
+				'default' => [
+					'unit' => '%',
+					'size' => 50,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .your-class-slider' => 'width: {{SIZE}}{{UNIT}};',
+				],
+			]
+		);
 
-        /**
-         * Image_Size Group control.
-         */
-        // $this->add_group_control(
-        //     Group_Control_Image_Size::get_type(),
-        //     [
-        //         'name' => 'thumbnail', // Usage: `{name}_size` and `{name}_custom_dimension`, in this case `thumbnail_size` and `thumbnail_custom_dimension`.
-        //         'separator' => 'none',
-        //     ]
-        // );
-
-        /**
-         * NUMBER control.
-         */
+        // Dimensions Control
         $this->add_control(
-            'number',
-            [
-                'label' => __( 'Number', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::NUMBER,
-                'default' => 5000,
-                'frontend_available' => true,
-            ]
-        );
-
-        /**
-         * Group_Control_Border control.
-         */
-        // $this->add_group_control(
-        //     Group_Control_Border::get_type(),
-        //     [
-        //         'name' => 'image_border',
-        //         'selector' => '{{WRAPPER}} .gallery-item img',
-        //         'separator' => 'before',
-        //     ]
-        // );
-
-        /**
-         * RAW_HTML control.
-         */
-        $this->add_control(
-            'anchor_description',
-            [
-                'raw' => __( 'This ID will be the CSS ID you will have to use in your own page, Without #.', 'elementor' ),
-                'type' => \Elementor\Controls_Manager::RAW_HTML,
-                'content_classes' => 'elementor-descriptor',
-            ]
-        );
+			'widget_dimensions',
+			[
+				'label' => esc_html__( 'Margin', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} .your-class-dimensions' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
 
 		$this->end_controls_section();
 
 	}
     
 	protected function render() {
-        $settings = $this->get_settings_for_display();
+        $settings = $this->get_settings_for_display(); ?>
 
-		echo '<h3>' . $settings['title'] . '</h3>';
+        <!-- Text Control -->
+        <h2>
+			<?php echo $settings['widget_text']; ?>
+		</h2>
 
-		echo '<p>' . $settings['description'] . '</p>';
+        <!-- Number Control -->
+        <p>
+			<?php echo $settings['widget_number']; ?>
+        </p>
 
-		echo '<div>' . $settings['content'] . '</div>';
+        <!-- Textarea Control -->
+        <p>
+			<?php echo $settings['widget_textarea']; ?>
+		</p>
 
-        echo '<a href="'.esc_url( $settings['link']['url'] ).'">abc</a>';
+        <!-- WYSIWYG Control -->
+        <div>
+			<?php echo $settings['widget_wysiwyg']; ?>
+		</div>
 
-		echo '<p>' . $settings['size'] . '</p>';
+        <!-- Code Control -->
+        <?php echo $settings['widget_code']; ?>
 
-		echo '<p>' . $settings['alignment'] . '</p>';
+        <!-- Hidden Control -->
+        <?php echo $settings['widget_hidden']; ?>
 
-		echo '<p>' . $settings['view'] . '</p>';
+        <!-- Switcher Control -->
+        <p>
+            <?php if ( 'yes' === $settings['widget_switcher'] ) {
+                echo 'Switcher';
+            } ?>
+        </p>
 
-		echo '<p>' . $settings['color'] . '</p>';
+        <!-- Popover Toggle Control -->
+        <h2>
+			<?php echo $settings['widget_popover_toggle_text']; ?>
+		</h2>
 
-		echo '<p>' . $settings['margin'] . '</p>';
+        <!-- Select Control -->
+        <div class="your-class-select">
+			... Select ...
+		</div>
 
-        echo '<img src="' . esc_url( $settings['image']['url'] ) . '" alt="">';
+        <!-- Select2 Control -->
+        <?php if ( $settings['widget_select2'] ) {
+			echo '<ul>';
+			foreach ( $settings['widget_select2'] as $item ) {
+				echo '<li>' . $item . '</li>';
+			}
+			echo '</ul>';
+		} ?>
 
-        echo '<ul>';
-        foreach ( $settings['list'] as $index => $item ) :
-            echo '<li>';
-            if ( ! $item['link']['url'] ) {
-                echo $item['text'];
-            } else {
-                echo '<a href="'.esc_url( $item['link']['url'] ).'">';
-                    echo $item['text'];
-                echo '</a>';
-            }
-            echo '</li>';
-        endforeach;
-        echo '</ul>';
-    }
+        <!-- Choose Control -->
+        <div class="your-class-choose">
+			... Alignment ...
+		</div>
+
+        <!-- Color Control -->
+        <div class="your-class-color">
+			... Color ...
+		</div>
+
+        <!-- Icon Control -->
+        <p>
+            <i class="<?php echo esc_attr( $settings['widget_icon'] ); ?>" aria-hidden="true"></i>
+        </p>
+
+        <!-- Font Control -->
+        <h2 class="your-class-font-family">
+			... Font Family ...
+		</h2>
+
+        <!-- Date Time Control -->
+        <p><?php echo $settings['widget_date_time']; ?></p>
+
+        <!-- Gallery Control -->
+        <?php foreach ( $settings['widget_gallery'] as $image ) {
+			echo '<img src="' . esc_attr( $image['url'] ) . '">';
+		} ?>
+
+        <!-- Repeater Control -->
+        <?php if ( $settings['widget_repeater'] ) {
+			echo '<ul>';
+			foreach (  $settings['widget_repeater'] as $item ) {
+				echo '<li class="elementor-repeater-item-' . esc_attr( $item['_id'] ) . '">
+                        <p>' . $item['list_title'] . '</p>
+                        <p>' . $item['list_content'] . '</p>
+                    </li>';
+                
+			}
+			echo '</ul>';
+		} ?>
+
+        <!-- Animation Control -->
+        <div class="<?php echo esc_attr( $settings['widget_animation'] ); ?>">
+			... Animation ...
+		</div>
+
+        <!-- Exit Animation Control -->
+        <div class="<?php echo esc_attr( $settings['widget_exit_animation '] ); ?>">
+			... Exit Animation ...
+		</div>
+
+        <!-- Hover Animation Control -->
+        <?php $elementClass = 'container';
+		if ( $settings['widget_hover_animation'] ) {
+			$elementClass .= ' elementor-animation-' . $settings['widget_hover_animation'];
+		}
+		$this->add_render_attribute( 'wrapper', 'class', $elementClass );
+		?>
+		<div <?php echo $this->get_render_attribute_string( 'wrapper' ); ?>>
+			... Hover Animation ...
+		</div>
+
+        <!-- URL Control -->
+        <?php if ( ! empty( $settings['widget_url']['url'] ) ) {
+			$this->add_link_attributes( 'widget_url', $settings['widget_url'] );
+		}
+		?>
+		<a <?php echo $this->get_render_attribute_string( 'widget_url' ); ?>>
+			... Url ...
+		</a>
+
+        <!-- Media Control -->
+        <?php // Get image URL
+		echo '<p><img src="' . $settings['widget_media']['url'] . '"></p>'; ?>
+
+        <!-- Slider Control -->
+        <div class="your-class-slider">
+			... Slider ...
+		</div>
+
+        <!-- Dimensions Control -->
+        <div class="your-class-dimensions">
+			... Dimensions ...
+		</div>
+
+    <?php }
 
 	protected function content_template() { ?>
-        <h3>{{{ settings.title }}}</h3>
+    
+        <!-- Text Control -->
+        <h2>
+			{{{ settings.widget_text }}}
+		</h2>
 
-        <p>{{{ settings.description }}}</p>
+        <!-- Number Control -->
+        <p>
+			{{{ settings.widget_number }}}
+        </p>
 
-        <div>{{{ settings.content }}}</div>
+        <!-- Textarea Control -->
+        <p>
+			{{{ settings.widget_textarea }}}
+		</p>
 
-        <a href="{{{ settings.link.url }}}">abc</a>
+        <!-- WYSIWYG Control -->
+        <div>
+            {{{ settings.widget_wysiwyg }}}
+		</div>
 
-        <p>{{{ settings.size }}}</p>
+        <!-- Code Control -->
+        {{{ settings.widget_code }}}
 
-        <p>{{{ settings.alignment }}}</p>
+        <!-- Hidden Control -->
+        <p>
+            {{{ settings.widget_hidden }}}
+        </p>
 
-        <p>{{{ settings.view }}}</p>
+        <!-- Switcher Control -->
+        <# if ( 'yes' === settings.widget_switcher ) { #>
+			Switcher
+		<# } #>
 
-        <p>{{{ settings.color }}}</p>
+        <!-- Popover Toggle Control -->
+        <h2>
+			{{{ settings.widget_popover_toggle_text }}}
+		</h2>
 
-        <p>{{{ settings.margin }}}</p>
+        <!-- Select Control -->
+        <div class="your-class-select">
+			... Select ...
+		</div>
 
-        <img src="{{{ settings.image.url }}}">
+        <!-- Select2 Control -->
+        <# if ( settings.widget_select2.length ) { #>
+			<ul>
+			<# _.each( settings.widget_select2, function( item ) { #>
+				<li>{{{ item }}}</li>
+			<# } ) #>
+			</ul>
+		<# } #>
 
-        <ul>
-		<#
-		if ( settings.list ) {
-			_.each( settings.list, function( item, index ) {
-			#>
-			<li>
-				<# if ( item.link && item.link.url ) { #>
-					<a href="{{{ item.link.url }}}">{{{ item.text }}}</a>
-				<# } else { #>
-					{{{ item.text }}}
-				<# } #>
-			</li>
-			<#
-			} );
+        <!-- Choose Control -->
+        <div class="your-class-choose">
+            ... Alignment ...
+		</div>
+
+        <!-- Color Control -->
+        <div class="your-class-color">
+			... Color ...
+		</div>
+
+        <!-- Icon Control -->
+        <p>
+            <i class="{{ settings.widget_icon }}" aria-hidden="true"></i>
+        </p>
+
+        <!-- Font Control -->
+        <h2 class="your-class-font-family">
+			... Font Family ...
+		</h2>
+
+        <!-- Date Time Control -->
+        <p>{{{settings.widget_date_time}}}</p>
+
+        <!-- Gallery Control -->
+        <# _.each( settings.widget_gallery, function( image ) { #>
+			<img src="{{ image.url }}">
+		<# }); #>
+
+        <!-- Repeater Control -->
+        <# if ( settings.widget_repeater.length ) { #>
+			<ul>
+			<# _.each( settings.widget_repeater, function( item ) { #>
+				<li class="elementor-repeater-item-{{ item._id }}">
+                    {{{ item.list_title }}}
+                    {{{ item.list_content }}}
+                </li>
+			<# }); #>
+			</ul>
+		<# } #>
+
+        <!-- Animation Control -->
+        <div class="{{ settings.widget_animation }}">
+			... Animation ...
+		</div>
+
+        <!-- Exit Animation Control -->
+        <div class="{{ settings.widget_exit_animation }}">
+			... Exit Animation ...
+		</div>
+
+        <!-- Hover Animation Control -->
+        <#
+		var elementClass = 'container';
+		if ( '' !== settings.widget_hover_animation ) {
+			elementClass += ' elementor-animation-' + settings.widget_hover_animation;
+		}
+		view.addRenderAttribute( 'wrapper', { 'class': elementClass } );
+		#>
+		<div {{{ view.getRenderAttributeString( 'wrapper' ) }}}>
+			... Hover Animation ...
+		</div>
+
+        <!-- URL Control -->
+        <a href="{{ settings.widget_url.url }}">
+			... Url ...
+		</a>
+
+        <!-- Media Control -->
+        <#
+		if ( settings.widget_media.url ) {
+			var image = {
+				id: settings.widget_media.id,
+				url: settings.widget_media.url,
+				size: settings.widget_media,
+				dimension: settings.image_custom_dimension,
+				model: view.getEditModel()
+			};
+
+			var image_url = elementor.imagesManager.getImageUrl( image );
+
+			if ( ! image_url ) {
+				return;
+			}
 		}
 		#>
-		</ul>
+		<p><img src="{{ image_url }}"></p>
+
+        <!-- Slider Control -->
+        <div class="your-class-slider">
+			... Slider ...
+		</div>
+
+        <!-- Dimensions Control -->
+        <div class="your-class-dimensions">
+			... Dimensions ...
+		</div>
+
     <?php }
 
 }

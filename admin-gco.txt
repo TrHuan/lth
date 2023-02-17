@@ -854,3 +854,9 @@ DB: chahunggja_db / vz8g7THYZ
 https://pasini.vn/psn-login
 gco_admin / gco@123454321
 DB: zanilock_db / FmN5tX5M0
+
+/////////////////////////////////////
+
+https://vestongiang.com.vn/
+admin / gco@123454321
+DB: vestongian_ddb / 150IRC4ZZ1
