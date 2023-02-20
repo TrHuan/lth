@@ -812,8 +812,8 @@ if (class_exists('WooCommerce')) {
                             'key' => 'field_chats_email',
                             'label' => 'Email',
                             'name' => 'email',
-                            'type' => 'url',
-                            'instructions' => 'Link To Email',
+                            'type' => 'text',
+                            'instructions' => '',
                             'required' => 0,
                             'conditional_logic' => 0,
                             'wrapper' => array(
@@ -1686,8 +1686,8 @@ if (class_exists('WooCommerce')) {
                             'key' => 'field_chats_email',
                             'label' => 'Email',
                             'name' => 'email',
-                            'type' => 'url',
-                            'instructions' => 'Link To Email',
+                            'type' => 'text',
+                            'instructions' => '',
                             'required' => 0,
                             'conditional_logic' => 0,
                             'wrapper' => array(

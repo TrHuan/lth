@@ -31,6 +31,8 @@ get_header(); ?>
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <?php the_content(); ?>
+
+                    <?php //echo do_shortcode("[bws_pdfprint display='pdf']"); ?>
                 </div>
             </div>
         </div>

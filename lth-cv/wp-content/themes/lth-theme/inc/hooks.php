@@ -73,11 +73,9 @@ function lth_footer() { ?>
             <?php if ($facebook) { ?>
                 <li class="chat-box chat-facebook-box">
                     <a href="<?php echo $facebook; ?>" target="_blank" title="">
-                        <!--  <span class="icon-facebook">
-                                    <i class="fab fa-facebook-square icon"></i>
-                                </span> -->
-
-                        <img src="<?php echo ASSETS_URI; ?>/images/icon-12.png" alt="Icon">
+                        <span class="icon-facebook">
+                            <i class="fab fa-facebook-square icon"></i>
+                        </span>
                     </a>
                 </li>
             <?php } ?>
@@ -85,11 +83,9 @@ function lth_footer() { ?>
             <?php if ($phone) { ?>
                 <li class="chat-box chat-phone-box">
                     <a href="tel:<?php echo $phone; ?>" target="_blank" title="">
-                        <!-- <span class="icon-phone">
-                                    <i class="fas fa-phone-alt icon"></i>
-                                </span> -->
-
-                        <img src="<?php echo ASSETS_URI; ?>/images/icon-13.png" alt="Icon" width="80" height="80">
+                        <span class="icon-phone">
+                            <i class="fab fa-facebook-messenger icon"></i>
+                        </span>
                     </a>
                 </li>
             <?php } ?>
@@ -97,11 +93,9 @@ function lth_footer() { ?>
             <?php if ($zalo) { ?>
                 <li class="chat-box chat-zalo-box">
                     <a href="<?php echo $zalo; ?>" target="_blank" title="">
-                        <!-- <span class="icon-zalo">
-                                    <i class="icofont-phone icon"></i>
-                                </span> -->
-
-                        <img src="<?php echo ASSETS_URI; ?>/images/icon-12.png" alt="Icon">
+                        <span class="icon-zalo">
+                            <i class="icofont-phone icon"></i>
+                        </span>
                     </a>
                 </li>
             <?php } ?>

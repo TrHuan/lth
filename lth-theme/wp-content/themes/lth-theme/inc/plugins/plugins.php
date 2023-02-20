@@ -294,6 +294,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'Print Friendly and PDF Button',
+
+                        'slug' => 'pdf-print',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Simply Show Hooks',
 
                         'slug' => 'simply-show-hooks',
