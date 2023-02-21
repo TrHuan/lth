@@ -131,6 +131,7 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
         remove_submenu_page('options-general.php', 'dpp_page_settings');
         remove_submenu_page('options-general.php', 'ewww-image-optimizer-options');
     }
+    - hoặc dùng plugin: Disable WordPress Update Notifications and auto-update Email Notifications
 6: tạo sitemap
     1: tạo file whitespacefix.php nội dung:
     <?php
@@ -168,7 +169,7 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
     Allow: /wp-admin/images/*
     Sitemap: thay link sitemap của web/sitemap_index.xml
 8: Cài SSL trên host
-9: Đặt lại quyền các folder và file của web
+9: Đặt lại quyền các folder (755) và file (644) của web
 
 /////////////////////////////////////
 

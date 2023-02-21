@@ -1,0 +1,13 @@
+{
+    "name": "Capture Webpage Screenshot",
+    "version": "1.0",
+    "description": "Capture a screenshot of the entire webpage",
+    "author": "LTH",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "tabs"
+    ]
+}
