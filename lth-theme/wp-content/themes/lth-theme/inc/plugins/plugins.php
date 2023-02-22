@@ -304,6 +304,22 @@ function lth_plugin_activation()
 
 
 
+                //////////////////////////////////////////////////
+
+
+
+                array(
+
+                        'name' => 'Elementor',
+
+                        'slug' => 'elementor',
+
+                        'required' => true,
+
+                ),
+
+
+
                 array(
 
                         'name' => 'Simply Show Hooks',
