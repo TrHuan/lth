@@ -27,7 +27,9 @@ if (!function_exists('lth_countdown_output_fe')) :
             $('.countdown-box-<?php echo $rand; ?>').each(function() {
                 var $this = $(this), finalDate = $(this).data('countdown');
                 $this.countdown(finalDate, function(event) {
-                    $this.html(event.strftime('<span>%D</span><span>%H</span><span>%M</span><span>%S</span>'));
+                    $this.html(event.strftime(
+                        '<div><span>%D</span><span class="txt"><?php echo __('Ngày'); ?></span></div><div><span>%H</span><span class="txt"><?php echo __('Giờ'); ?></span></div><div><span>%M</span><span class="txt"><?php echo __('Phút'); ?></span></div><div><span>%S</span><span class="txt"><?php echo __('Giây'); ?></span></div>'
+                    ));
                 });
             });
         });   

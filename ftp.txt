@@ -48,7 +48,9 @@ cloudflare.com / tamnd@gco.vn / RSe2L%Y*v6  // xóa cache css trên server
 
 da.gco.vn / veoveo_huan@veoveo.com.vn / BuudX80G2
 
-https://da.gco.vn:2222/ / admin / VuBS^0fiqdfaBi1r
+https://da.gco.vn:2222/ / admin / VuBS^0fiqdfaBi1rACD
+
+https://cp2.gco.vn:2087 / root / GcoGroup123@123#
 
 //////////////////////////////////////
 
