@@ -908,6 +908,13 @@ DB: vv307_db / Q8R73s1W
 
 /////////////////////////////////////
 
+https://bghome.vn/bgh-login/
+admin / bgh@gco2021
+
+Data: bghomevn_db / 9aQfh2GneD
+
+/////////////////////////////////////
+
 cũ
 FTP: 115.165.161.69 / gco@dieuhoarenhat.vn / 6_bqjq?SNSgy
 DB: dieuhoarevn_db / Iwud9snntQUK
@@ -937,5 +944,49 @@ thegioib_store / HNfpHEJHk
 
 https://duhocredbeans.edu.vn/dhrb-login
 Admin: gco_admin / gco@123454321
+Data: duhocred_db / ku2X6Nok0O
 
 da.gco.vn / gco@duhocredbeans.edu.vn / m6LMIEHnrq
+
+/////////////////////////////////////
+
+https://sky-sliver.gcodemo.com/ss-login
+sky-sliver_admin / sky-sliver@veoveo#313truongchinh
+
+/////////////////////////////////////
+
+https://phutungoto.gcodemo.com/ptot-login
+phutungoto_admin / phutungoto@veoveo#313truongchinh
+
+/////////////////////////////////////
+
+https://innhanhnhanh.com/
+innhanhnha / innhanhnha@veoveo#313truongchinh
+
+innhanhnha_db / uAzeILi5Ps
+
+/////////////////////////////////////
+
+https://phone.gcodemo.com/ph-login
+phone_admin / phone@veoveo#313truongchinh
+
+Data: phone_vv530 / Gx2J95Ua
+
+/////////////////////////////////////
+
+https://quatet.gcodemo.com/qt-login
+quatet_admin / quatet@veoveo#313truongchinh
+
+Data: quatet_db / 0ASb57YJn
+
+/////////////////////////////////////
+
+huyennganbakery
+da.gco.vn / nam@huyennganbakery.vn / jAZzOD2J
+
+/////////////////////////////////////
+
+https://fwatch.gcodemo.com/
+fwatch_admin / fwatch@veoveo#313truongchinh
+
+Data: fwatch_db / 1rqRNhcy
