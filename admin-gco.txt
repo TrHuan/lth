@@ -799,6 +799,13 @@ gco_admin / 1a2s3d4f5g6h
 http://localhost/job/gco/web-yeu-cau/makawa/makawa/
 gco_admin / gco@2022
 
+https://makawa.vn/mkw-login
+mkw_admin / mkw@makawa#2023
+
+mkw_admin / Makawa68@gmail.com
+
+makawavn_db / tFCJb6gAkV
+
 /////////////////////////////////////
 
 https://tests.gcodemo.com/
@@ -986,7 +993,7 @@ da.gco.vn / nam@huyennganbakery.vn / jAZzOD2J
 
 /////////////////////////////////////
 
-https://fwatch.gcodemo.com/
+https://fwatch.gcodemo.com/fw-login
 fwatch_admin / fwatch@veoveo#313truongchinh
 
 Data: fwatch_db / 1rqRNhcy
