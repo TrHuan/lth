@@ -1071,7 +1071,7 @@ Data: medicalmar_db / c6jNQLBSXy
 
 /////////////////////////////////////
 
-https://vfresh.gcodemo.com/mm-login
+https://vfresh.gcodemo.com/vf-login
 vfresh_admin / vfresh@veoveo#313truongchinh
 
 Data: vfresh_db / iOIpytvb
