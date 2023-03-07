@@ -1,10 +1,10 @@
-https://veoveo.com.vn/gco-admin
+https://veoveo.com.vn/gco-login
 
 21/02/2023
 https://veoveo.com.vn/gco-login
-gco_admin / Vyda4a(QhFaFrJpReC)n^*!G
+gco_admin / gco@veoveo#2022
 
-healer_admin / gco@123454321
+healer_admin / healer@veoveo#2022
 
 //////////////////////////////////////
 
@@ -970,7 +970,7 @@ phutungoto_admin / phutungoto@veoveo#313truongchinh
 https://innhanhnhanh.com/
 innhanhnha / innhanhnha@veoveo#313truongchinh
 
-innhanhnha_db / uAzeILi5Ps
+innhanhnha_db / 8sEjag3Q
 
 /////////////////////////////////////
 
@@ -997,3 +997,81 @@ https://fwatch.gcodemo.com/fw-login
 fwatch_admin / fwatch@veoveo#313truongchinh
 
 Data: fwatch_db / 1rqRNhcy
+
+/////////////////////////////////////
+
+https://ftree.gcodemo.com/ft-login
+ftree_admin / ftree@veoveo#313truongchinh
+
+Data: ftree_db / po3CrtYB
+
+/////////////////////////////////////
+
+https://f-sunny.gcodemo.com/fs-login
+fsunny_admin / fsunny@veoveo#313truongchinh
+
+Data: fsunny_db / PIqd5KQd
+
+/////////////////////////////////////
+
+https://kindergarten2.gcodemo.com/kg2-login
+kindergarten2_admin / kindergarten2@veoveo#313truongchinh
+
+Data: kindergart_db / lHx2VGLO1
+
+/////////////////////////////////////
+
+https://fphone.gcodemo.com/fp-login
+fphone_admin / fphone@veoveo#313truongchinh
+
+Data: fphone_db / 1YuFZWFAx
+
+/////////////////////////////////////
+
+https://sonphat.gcodemo.com
+
+sonphat / sonphat@veoveo#313truongchinh
+
+Data: sonphat_db / BtcK4xH54g
+
+/////////////////////////////////////
+
+https://sonphat.com
+
+sonphat2 / sonphat2@veoveo#313truongchinh
+
+Data: sonphat2_db / fcK8J2R5
+
+/////////////////////////////////////
+
+viethuan@techbond.com.vn
+
+/////////////////////////////////////
+
+haminco2 / haminco2@veoveo#313truongchinh
+
+http://haminco2.gcodemo.com/
+
+Data: haminco2_db / IUKDEbFaE
+
+/////////////////////////////////////
+
+haminco / haminco@veoveo#313truongchinh
+
+https://haminco.com/
+
+Data: haminco_db / tIS6ueY5M
+
+/////////////////////////////////////
+
+https://medicalmarijuana.gcodemo.com/mm-login
+medicalmarijuana_admin / medicalmarijuana@veoveo#313truongchinh
+
+Data: medicalmar_db / c6jNQLBSXy
+
+/////////////////////////////////////
+
+https://vfresh.gcodemo.com/mm-login
+vfresh_admin / vfresh@veoveo#313truongchinh
+
+Data: vfresh_db / iOIpytvb

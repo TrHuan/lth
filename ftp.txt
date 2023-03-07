@@ -44,13 +44,19 @@ https://da.gco.vn:2222/ / webmau2 / gcovn@2022
 
 https://da.gco.vn:2222/ / gcodemo / YDd6Ksv8Ni8PRMc
 
-cloudflare.com / tamnd@gco.vn / RSe2L%Y*v6  // xóa cache css trên server
+cloudflare.com / anhbt@gco.vn / RSe2L%Y*v6SDF  // xóa cache css trên server
 
 da.gco.vn / veoveo_huan@veoveo.com.vn / BuudX80G2
 
 https://da.gco.vn:2222/ / admin / VuBS^0fiqdfaBi1rACD
 
 https://cp2.gco.vn:2087 / root / GcoGroup123@123#
+
+//////////////////////////////////////
+
+IP	115.165.161.188	
+Name Server 1	ns1.gco.vn	
+Name Server 2	ns2.gco.vn
 
 //////////////////////////////////////
 
