@@ -54,7 +54,7 @@ if (!function_exists('lth_list_output_fe')) :
                             <?php if ($inner['item_url']) : ?>
                                 <a href="<?php echo esc_url($inner['item_url']); ?>" title="">
                                 <?php endif; ?>
-                                <?php echo $inner['item_text']; ?>
+                                <?php echo wpautop($inner['item_text']); ?>
                                 <?php if ($inner['item_url']) : ?>
                                 </a>
                             <?php endif; ?>

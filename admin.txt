@@ -179,6 +179,9 @@ API Key:
 
 /////////////////////////////////////
 
+http://localhost/job/lth/lth-test/
+Admin: admin / 123456
+
 Data: webmau1_lth_test / vkvF3ksoCz
 
-Admin: admin / aJ@CuQ^jLv78zoE7#QT
+Admin: admin / 123456
