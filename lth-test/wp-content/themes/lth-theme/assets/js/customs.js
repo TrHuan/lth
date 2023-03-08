@@ -8,6 +8,7 @@ jQuery(document).ready(function ($) {
         e.stopPropagation();
     });
 
+    // Tinh gia khi load trang
     var price = $('.module_selectpackage .post-box.active .post-price-total span.total').html();
     var post_name = $('.module_selectpackage .post-box.active .post-name').html();
     $('.item-selectpackage .selectpackage-name-price').append( "<span>"+post_name+"</span><span>"+price+"</span>" );
@@ -25,6 +26,7 @@ jQuery(document).ready(function ($) {
     $('.module_shippinginformation .form-group-product input[name="your-product-qty"]').val(data_qty);
     $('.module_shippinginformation .form-group-product input[name="your-product-price"]').val('$'+data_price_kq);
 
+    // Tinh gia khi click vao step select package
     $(document).on('click', '.module_selectpackage .post-box', function (e) {
         e.preventDefault();
         var hsac = $(this).hasClass('active');
@@ -64,6 +66,7 @@ jQuery(document).ready(function ($) {
         $(this).parent().toggleClass('active');
     });
 
+    // Tinh gia khi click vao step add ons
     $(document).on('click', '.module_addon .add-box', function (e) {
         e.preventDefault();
 
