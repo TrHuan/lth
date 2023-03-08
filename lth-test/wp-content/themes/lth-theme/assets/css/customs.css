@@ -44,12 +44,13 @@ footer .lists-text li {
     justify-content: center;
     align-items: center;
     border: none;
+    padding: 0;
 }
 
 .lth-quote blockquote:before {
     content: '';
     display: inline-block;
-    width: 32px;
+    width: 45px;
     height: 32px;
     background-image: url(../images/chk.png);
     background-repeat: no-repeat;
@@ -718,4 +719,78 @@ footer .lists-text li {
     line-height: 1.1;
     margin-bottom: 0.25rem;
     font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+    .module_selectpackage .post-content .post-button {
+        display: none;
+    }
+
+    .module_selectpackage .post-footer > ul li {
+        width: 50%;
+    }
+
+    .module_selectpackage .post-header .freeship,
+    .module_selectpackage .post-header .sale,
+    .module_selectpackage .post-header .name {
+        font-size: 12px;
+    }
+
+    .module_selectpackage .post-content {
+        justify-content: start;
+    }
+
+    .module_selectpackage .post-image {
+        margin-right: 0.5rem;
+    }
+
+    .module_selectpackage .post-content .post-name {
+        font-size: 15px;
+    }
+    .module_selectpackage .post-content .post-qty {
+        font-size: 13px;
+    }
+    .module_selectpackage .post-content .post-price {
+        font-size: 18px;
+    }
+
+    .module_selectpackage .item-selectpackage > div {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .module_selectpackage .post-image {
+        max-width: 150px;
+    }
+
+    .module_selectpackage .item-selectpackage > div {
+        width: 100%;
+    }
+    .module_selectpackage .item-selectpackage .post-image {
+        margin-bottom: 10px;
+    }
+
+    .module_toggle .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .module_selectpackage .post-footer .post-bullet li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 479px) {
+    .module_selectpackage .post-header {
+        flex-wrap: wrap;
+        padding: 0 15px 15px;
+    }
+
+    .module_selectpackage .post-header .freeship {
+        padding: 0;
+        width: 100%;
+        line-height: 22px;
+    }
 }
