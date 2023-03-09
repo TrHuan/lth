@@ -177,6 +177,9 @@ chat gpt
 trhuan177@gmail.com / lth@123454321
 API Key: 
 
+PayPal identity token: 
+API Credentials: 
+
 /////////////////////////////////////
 
 http://localhost/job/lth/lth-test/
@@ -184,4 +187,12 @@ Admin: admin / 123456
 
 Data: webmau1_lth_test / vkvF3ksoCz
 
+<<<<<<< Updated upstream
 Admin: admin / 123456
+=======
+Admin: admin / aJ@CuQ^jLv78zoE7#QT
+
+http://lthtest.local/
+
+http://localhost/job/lth/lth-test/
+>>>>>>> Stashed changes
