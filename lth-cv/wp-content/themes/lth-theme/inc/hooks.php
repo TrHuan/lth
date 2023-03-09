@@ -84,7 +84,7 @@ function lth_footer() { ?>
                 <li class="chat-box chat-phone-box">
                     <a href="tel:<?php echo $phone; ?>" target="_blank" title="">
                         <span class="icon-phone">
-                            <i class="fab fa-facebook-messenger icon"></i>
+                            <i class="icofont-phone icon"></i>
                         </span>
                     </a>
                 </li>
@@ -92,9 +92,9 @@ function lth_footer() { ?>
 
             <?php if ($zalo) { ?>
                 <li class="chat-box chat-zalo-box">
-                    <a href="<?php echo $zalo; ?>" target="_blank" title="">
+                    <a href="<?php echo $zalo; ?>" target="_blank" title="" style="font-size: 15px">
                         <span class="icon-zalo">
-                            <i class="icofont-phone icon"></i>
+                            <?php echo __('Zalo'); ?>
                         </span>
                     </a>
                 </li>

@@ -72,6 +72,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'WooCommerce PayPal Checkout Gateway',
+
+                        'slug' => 'woocommerce-gateway-paypal-express-checkout',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'Contact Form 7',
 
                         'slug' => 'contact-form-7',
