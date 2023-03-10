@@ -184,6 +184,7 @@ footer .lists-text li {
     color: orange;
 }
 
+.module_paymentoption .title-box,
 .module_addon .title-box,
 .module_shippinginformation .title-box,
 .module_selectpackage .title-box {
@@ -192,6 +193,7 @@ footer .lists-text li {
     margin-bottom: 16px;
 }
 
+.module_paymentoption .title,
 .module_addon .title,
 .module_shippinginformation .title,
 .module_selectpackage .title {
@@ -355,7 +357,7 @@ footer .lists-text li {
     padding-left: 0;
 }
 
-.module_selectpackage .post-footer > ul {
+.module_selectpackage .post-footer>ul {
     background: #265f91 50%;
     padding: 10px;
     color: #fff;
@@ -385,7 +387,7 @@ footer .lists-text li {
 
 .module_selectpackage .post-footer .post-bullet {
     color: #10852a;
-    background: rgba(255,255,255,.6);
+    background: rgba(255, 255, 255, .6);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 0 48px;
@@ -410,7 +412,7 @@ footer .lists-text li {
     background-color: #fff6d1;
 }
 
-.module_selectpackage .post-box.active .post-footer > ul {
+.module_selectpackage .post-box.active .post-footer>ul {
     display: flex;
 }
 
@@ -440,7 +442,7 @@ footer .lists-text li {
     margin-bottom: 16px;
 }
 
-.module_selectpackage .item-selectpackage > div {
+.module_selectpackage .item-selectpackage>div {
     width: 50%;
     max-width: 100% !important;
 }
@@ -451,7 +453,7 @@ footer .lists-text li {
 
 .module_selectpackage .item-selectpackage .post-content {
     color: #333;
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     border: 1px solid #dedede;
     border-radius: 3px;
     -webkit-box-shadow: #000 0 6px 9px -9px;
@@ -483,7 +485,7 @@ footer .lists-text li {
     background-color: #343a40
 }
 
-.module_selectpackage .item-selectpackage .post-content li.order-summary-header > i {
+.module_selectpackage .item-selectpackage .post-content li.order-summary-header>i {
     margin-right: 4px;
 }
 
@@ -493,11 +495,11 @@ footer .lists-text li {
 
 .module_shippinginformation .contact-form-header {
     background-color: #0070ba;
-    background: -webkit-gradient(linear,left top,right top,from(#0070ba),color-stop(#5b8db1),to(#0070ba));
-    background: linear-gradient(to right,#0070ba,#5b8db1,#0070ba);
-    background-image: -webkit-gradient(linear,left top,right top,from(#0070ba),color-stop(#5b8db1),to(#0070ba));
-    background-image: linear-gradient(to right,#0070ba,#5b8db1,#0070ba);
-    background-image: -moz-linear-gradient(left,#0070ba,#5b8db1,#0070ba);
+    background: -webkit-gradient(linear, left top, right top, from(#0070ba), color-stop(#5b8db1), to(#0070ba));
+    background: linear-gradient(to right, #0070ba, #5b8db1, #0070ba);
+    background-image: -webkit-gradient(linear, left top, right top, from(#0070ba), color-stop(#5b8db1), to(#0070ba));
+    background-image: linear-gradient(to right, #0070ba, #5b8db1, #0070ba);
+    background-image: -moz-linear-gradient(left, #0070ba, #5b8db1, #0070ba);
     -webkit-box-shadow: 0 6px 9px -5px #000;
     box-shadow: 0 6px 9px -5px #000;
     padding: 15px;
@@ -515,7 +517,7 @@ footer .lists-text li {
     font-size: 14px;
     padding: 3px 8px;
     outline: 0;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 400;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -536,11 +538,11 @@ footer .lists-text li {
     display: flex;
     padding: 15px;
     background-color: #0070ba;
-    background: -webkit-gradient(linear,left top,right top,from(#0070ba),color-stop(#5b8db1),to(#0070ba));
-    background: linear-gradient(to right,#0070ba,#5b8db1,#0070ba);
-    background-image: -webkit-gradient(linear,left top,right top,from(#0070ba),color-stop(#5b8db1),to(#0070ba));
-    background-image: linear-gradient(to right,#0070ba,#5b8db1,#0070ba);
-    background-image: -moz-linear-gradient(left,#0070ba,#5b8db1,#0070ba);
+    background: -webkit-gradient(linear, left top, right top, from(#0070ba), color-stop(#5b8db1), to(#0070ba));
+    background: linear-gradient(to right, #0070ba, #5b8db1, #0070ba);
+    background-image: -webkit-gradient(linear, left top, right top, from(#0070ba), color-stop(#5b8db1), to(#0070ba));
+    background-image: linear-gradient(to right, #0070ba, #5b8db1, #0070ba);
+    background-image: -moz-linear-gradient(left, #0070ba, #5b8db1, #0070ba);
     -webkit-box-shadow: 0 6px 9px -5px #000;
     box-shadow: 0 6px 9px -5px #000;
     padding: 15px;
@@ -558,7 +560,7 @@ footer .lists-text li {
     margin-right: 4px;
 }
 
-.module_shippinginformation .form-group-checkbox.active ~ .contact-form-billing {
+.module_shippinginformation .form-group-checkbox.active~.contact-form-billing {
     display: none;
 }
 
@@ -640,11 +642,11 @@ footer .lists-text li {
 
 .module_addon .addon-box-footer {
     background-color: #0070ba;
-    background: -webkit-gradient(linear,left top,right top,from(#0070ba),color-stop(#5b8db1),to(#0070ba));
-    background: linear-gradient(to right,#0070ba,#5b8db1,#0070ba);
-    background-image: -webkit-gradient(linear,left top,right top,from(#0070ba),color-stop(#5b8db1),to(#0070ba));
-    background-image: linear-gradient(to right,#0070ba,#5b8db1,#0070ba);
-    background-image: -moz-linear-gradient(left,#0070ba,#5b8db1,#0070ba);
+    background: -webkit-gradient(linear, left top, right top, from(#0070ba), color-stop(#5b8db1), to(#0070ba));
+    background: linear-gradient(to right, #0070ba, #5b8db1, #0070ba);
+    background-image: -webkit-gradient(linear, left top, right top, from(#0070ba), color-stop(#5b8db1), to(#0070ba));
+    background-image: linear-gradient(to right, #0070ba, #5b8db1, #0070ba);
+    background-image: -moz-linear-gradient(left, #0070ba, #5b8db1, #0070ba);
     -webkit-box-shadow: 0 6px 9px -5px #000;
     box-shadow: 0 6px 9px -5px #000;
     padding: 15px;
@@ -670,12 +672,17 @@ footer .lists-text li {
     padding: 15px;
     width: 100%;
     position: relative;
-    outline: none!important;
+    outline: none !important;
     border: 2px solid #fff;
     background-color: #1e8504;
     padding: 0;
     height: 56px;
     margin-bottom: 0.25rem;
+}
+
+.addon-guarantee ul {
+    list-style: none;
+    padding: 0;
 }
 
 .addon-guarantee li {
@@ -684,12 +691,15 @@ footer .lists-text li {
     margin-top: 1rem;
     padding: 1rem;
 }
+
 .addon-guarantee .guarantee-container {
     text-align: center;
 }
+
 .addon-guarantee .guarantee-item:not(:last-child) {
     margin-bottom: 6px;
 }
+
 .addon-guarantee .guarantee-item i {
     color: green;
 }
@@ -726,7 +736,7 @@ footer .lists-text li {
         display: none;
     }
 
-    .module_selectpackage .post-footer > ul li {
+    .module_selectpackage .post-footer>ul li {
         width: 50%;
     }
 
@@ -747,14 +757,16 @@ footer .lists-text li {
     .module_selectpackage .post-content .post-name {
         font-size: 15px;
     }
+
     .module_selectpackage .post-content .post-qty {
         font-size: 13px;
     }
+
     .module_selectpackage .post-content .post-price {
         font-size: 18px;
     }
 
-    .module_selectpackage .item-selectpackage > div {
+    .module_selectpackage .item-selectpackage>div {
         margin: 0;
     }
 }
@@ -764,9 +776,10 @@ footer .lists-text li {
         max-width: 150px;
     }
 
-    .module_selectpackage .item-selectpackage > div {
+    .module_selectpackage .item-selectpackage>div {
         width: 100%;
     }
+
     .module_selectpackage .item-selectpackage .post-image {
         margin-bottom: 10px;
     }

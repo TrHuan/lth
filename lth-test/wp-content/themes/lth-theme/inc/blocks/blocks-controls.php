@@ -47,6 +47,7 @@ function lth_allowed_block_types($allowed_blocks)
         'lazyblock/lth-skins',
         'lazyblock/lth-slider',
         'lazyblock/lth-step-addon',
+        'lazyblock/lth-step-paymentoption',
         'lazyblock/lth-step-selectpackage',
         'lazyblock/lth-step-shippinginformation',
         // 'lazyblock/lth-tab',
