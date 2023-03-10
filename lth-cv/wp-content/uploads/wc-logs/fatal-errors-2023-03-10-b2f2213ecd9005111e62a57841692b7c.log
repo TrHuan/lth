@@ -1,0 +1,4 @@
+2023-03-10T11:47:51+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-includes\functions.php on line 6620
+
+2023-03-10T11:47:51+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-mail-smtp\src\Admin\DashboardWidget.php on line 3
+
