@@ -17,6 +17,10 @@ jQuery(document).ready(function ($) {
     var data_price_shipping = $('.item-selectpackage .price-shipping').attr('data_price');
     var data_price_kq = parseFloat(data_price) + parseFloat(data_price_shipping);
     $('.item-selectpackage strong.price-kq').append( '<span data_kq="'+data_price_kq+'">$'+data_price_kq+'</span>' );
+
+    $('.module_paymentoption #smart-button-container #item-options option').attr('value', post_name);
+    $('.module_paymentoption #smart-button-container #item-options option').attr('price', data_price_kq);
+    $('.module_paymentoption #smart-button-container #item-options option').html(post_name + ' - ' + data_price_kq); 
     
     var image = $('.module_selectpackage .post-box.active .post-image img').attr('src');
     $('.item-selectpackage .post-image img').attr('src', image);
@@ -37,7 +41,7 @@ jQuery(document).ready(function ($) {
             var price = $('.module_selectpackage .post-box.active .post-price-total span.total').html();
             var post_name = $('.module_selectpackage .post-box.active .post-name').html();
             $('.item-selectpackage .selectpackage-name-price span').remove();
-            $('.item-selectpackage .selectpackage-name-price').append( "<span>"+post_name+"</span><span>"+price+"</span>" );
+            $('.item-selectpackage .selectpackage-name-price').append( '<span class="name">'+post_name+'</span><span>'+price+'</span>' );
 
             var data_price = $('.module_selectpackage .post-box.active .post-price-total span.total').attr('data_price');
             var data_price_shipping = $('.item-selectpackage .price-shipping').attr('data_price');
@@ -50,6 +54,9 @@ jQuery(document).ready(function ($) {
             }
             $('.item-selectpackage strong.price-kq span').remove();
             $('.item-selectpackage strong.price-kq').append( '<span data_kq="'+data_price_kq+'">$'+data_price_kq+'</span>' );
+
+            $('.module_paymentoption #smart-button-container #item-options option').attr('price', data_price_kq);
+            $('.module_paymentoption #smart-button-container #item-options option').html(post_name + ' - ' + data_price_kq); 
     
             var image = $('.module_selectpackage .post-box.active .post-image img').attr('src');
             $('.item-selectpackage .post-image img').attr('src', image);            
@@ -77,6 +84,8 @@ jQuery(document).ready(function ($) {
         var data_i = $(this).attr('data_i');
         var data_order = parseFloat(data_i) + 3;
 
+        var post_name = $('.module_selectpackage .selectpackage-name-price .name').html();
+
         if (hsac) {
             $(this).removeClass('active');
             $('.module_selectpackage .item-selectpackage .post-content .package_addon_'+data_i).remove();
@@ -85,6 +94,9 @@ jQuery(document).ready(function ($) {
             var data_kq2 = parseFloat(data_kq) - parseFloat(data_add_price);
             $('.item-selectpackage strong.price-kq span').remove();
             $('.item-selectpackage strong.price-kq').append( '<span data_kq="'+data_kq2+'">$'+data_kq2+'</span>' );
+
+            $('.module_paymentoption #smart-button-container #item-options option').attr('price', data_kq2);
+            $('.module_paymentoption #smart-button-container #item-options option').html(post_name + ' - ' + data_kq2); 
 
             var data_package_addon_all = $('.module_selectpackage .item-selectpackage .post-content .package_addon_all').attr('data_package_addon_all');
             var data_package_addon_all2 = data_package_addon_all - data_add_price;
@@ -103,6 +115,9 @@ jQuery(document).ready(function ($) {
             $('.item-selectpackage strong.price-kq span').remove();
             $('.item-selectpackage strong.price-kq').append( '<span data_kq="'+data_kq2+'">$'+data_kq2+'</span>' );
 
+            $('.module_paymentoption #smart-button-container #item-options option').attr('price', data_kq2);
+            $('.module_paymentoption #smart-button-container #item-options option').html(post_name + ' - ' + data_kq2);  
+
             $('.module_selectpackage .item-selectpackage .post-content .package_addon_all').append('<span class="'+data_i+'" data_package_addon_all_item="'+data_add_price+'"></span>');
 
             var addon_leg = $('.module_selectpackage .item-selectpackage .post-content .package_addon_all span').length;
@@ -113,8 +128,7 @@ jQuery(document).ready(function ($) {
                 $('.module_selectpackage .item-selectpackage .post-content .package_addon_all').attr('data_package_addon_all',data_add_price2);
             } else {
                 $('.module_selectpackage .item-selectpackage .post-content .package_addon_all').attr('data_package_addon_all',data_add_price);
-            }
-            
+            } 
         }
     });
     

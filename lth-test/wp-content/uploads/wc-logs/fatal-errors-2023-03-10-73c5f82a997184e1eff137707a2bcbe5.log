@@ -1,2 +1,4 @@
 2023-03-10T11:47:50+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-test\wp-content\themes\lth-theme\plugins\acf\includes\ajax\class-acf-ajax-user-setting.php on line 3
 
+2023-03-10T16:18:19+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-test\wp-includes\formatting.php on line 1163
+

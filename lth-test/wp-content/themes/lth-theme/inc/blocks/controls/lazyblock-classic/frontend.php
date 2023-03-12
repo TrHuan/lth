@@ -22,6 +22,8 @@ if (!function_exists('lth_classic_output_fe')) :
 
     <div class="entry-content lth-classic">
         <?php echo $attributes['classic']; ?>
+
+        <?php //echo do_shortcode([woocommerce_checkout]); ?>
     </div>
 
 <?php

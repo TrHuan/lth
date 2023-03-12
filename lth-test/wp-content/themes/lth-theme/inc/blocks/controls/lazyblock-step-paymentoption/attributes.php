@@ -132,11 +132,11 @@ if (function_exists('lazyblocks')) :
             'placeholder' => '',
             'characters_limit' => '',
          ),
-         'control_text_lth_content' => array(
+         'control_text_lth_client_id' => array(
             'type' => 'text',
-            'name' => 'content',
+            'name' => 'client_id',
             'default' => '',
-            'label' => 'Content',
+            'label' => 'Client Id',
             'help' => '',
             'child_of' => '',
             'placement' => 'inspector',
