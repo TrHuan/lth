@@ -174,7 +174,7 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
 /////////////////////////////////////
 
 CV:
-https://drive.google.com/file/d/1YyLQBUPvuX9FE0xlY8r9-FcBomKC4kBR/view?usp=sharing
+https://drive.google.com/file/d/1XdG_P8rFkkEOM9yK5NIJC8ubu6mrXEqu/view?usp=sharing
 
 /////////////////////////////////////
 
@@ -186,18 +186,3 @@ PayPal:
 CLIENT ID: AUo0tSoz0GRMElWHNc9No6nPODoaxmoZ7LFNCEIHvnM2ppjYs80CSWlunGqA2G5hpsYChqzKzJAltv52
 
 /////////////////////////////////////
-
-http://localhost/job/lth/lth-test/
-Admin: admin / 123456
-
-Data: webmau1_lth_test / vkvF3ksoCz
-
-<<<<<<< Updated upstream
-Admin: admin / 123456
-=======
-Admin: admin / aJ@CuQ^jLv78zoE7#QT
-
-http://lthtest.local/
-
-http://localhost/job/lth/lth-test/
->>>>>>> Stashed changes
