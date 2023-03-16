@@ -19,6 +19,9 @@ if (!function_exists('lth_testimonials_output_fe')) :
     function lth_testimonials_output_fe($output, $attributes)
     {
         ob_start();
+
+        $star = rand(4, 5);
+
 ?>
         <article class="lth-testimonials">
             <div class="module module_testimonials">
@@ -74,6 +77,18 @@ if (!function_exists('lth_testimonials_output_fe')) :
                                                     <?php echo wpautop($inner['item_job']); ?>
                                                 </div>
                                             <?php } ?>
+
+                                            <div class="post-star-rating">
+                                                <div style="display: inline-block;">
+                                                    <span style="width: <?php echo $star / 5 * 100; ?>%; overflow: hidden; white-space: nowrap; display: inline-block;">
+                                                        <span class="fas fa-star icon"></span>
+                                                        <span class="fas fa-star icon"></span>
+                                                        <span class="fas fa-star icon"></span>
+                                                        <span class="fas fa-star icon"></span>
+                                                        <span class="fas fa-star icon"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
 
                                             <?php if ($inner['item_description']) { ?>
                                                 <div class="post-excerpt">

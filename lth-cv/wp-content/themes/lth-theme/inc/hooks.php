@@ -84,7 +84,7 @@ function lth_footer() { ?>
                 <li class="chat-box chat-phone-box">
                     <a href="tel:<?php echo $phone; ?>" target="_blank" title="">
                         <span class="icon-phone">
-                            <i class="icofont-phone icon"></i>
+                            <i class="fas fa-phone-alt icon"></i>
                         </span>
                     </a>
                 </li>

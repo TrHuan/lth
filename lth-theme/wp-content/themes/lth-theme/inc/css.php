@@ -11,7 +11,6 @@
 
 <style type="text/css">
 	.product-content-box .price .amount,
-	.star-rating,
 	.product-tab-box .tab-menu .active a,
 	.post-button .btn,
 	.module_products .post-price,
@@ -37,6 +36,7 @@
 	.post-button .btn:hover,
 	.module_products .post-image .on-sale,
 	.module_products .post-button .add_to_cart_button,
+	.footer-fixed a:hover,
 	.back-to-top:hover,
 	.wpcf7-submit:hover,
 	.submit:hover,
@@ -52,6 +52,7 @@
 	.post-button .btn,
 	.paginations .page-numbers:hover,
 	.paginations .page-numbers.current,
+	.footer-fixed a:hover,
 	.wpcf7-submit,
 	.submit,
 	.btn,

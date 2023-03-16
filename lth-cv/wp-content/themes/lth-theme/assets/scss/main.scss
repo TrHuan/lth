@@ -715,6 +715,10 @@ form {
   text-align: center;
   z-index: 99999;
 
+  ul {
+    padding-left: 0;
+  }
+
   li {
     margin-top: 15px;
     list-style: none;
@@ -1089,6 +1093,10 @@ form {
       .star-rating {
         order: 2;
         margin-bottom: 5px;
+
+        .icon {
+          color: #ff0000;
+        }
       }
 
       .description {
@@ -1223,6 +1231,8 @@ form {
 }
 
 .post-next-prev {
+  margin: 50px 0;
+
   .groups-box {
     justify-content: space-between;
   }
@@ -1766,6 +1776,11 @@ footer {
     // height: 38px;
     // line-height: 35px;
   }
+}
+
+.post-star-rating .icon {
+  color: #ff0000;
+  margin-bottom: 15px;
 }
 
 // end posts

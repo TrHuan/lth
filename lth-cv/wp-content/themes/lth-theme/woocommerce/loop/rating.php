@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
 global $product; ?>
 
 <?php if ($ave = $product->get_average_rating()) : ?>
-	<div class="star-rating">
+	<div class="post-star-rating">
 		<div style="display: inline-block;">
 			<span style="width: <?php echo $ave / 5 * 100; ?>%; overflow: hidden; white-space: nowrap; display: inline-block;">
 				<span class="fas fa-star icon"></span>
