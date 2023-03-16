@@ -29,7 +29,7 @@ if (!function_exists('lth_shopcart_output_fe')) :
                 </div>
 
                 <div class="cart-content">
-                    <?php //require_once(get_template_directory() . '/woocommerce/cart/mini-cart-ajax.php');
+                    <?php require_once(get_template_directory() . '/woocommerce/cart/mini-cart-ajax.php');
                     ?>
                 </div>
             </div>
