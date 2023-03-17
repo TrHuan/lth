@@ -35,7 +35,9 @@ if (THEME_NAME === 'lth_theme') {
 	define('BLOCKS_DIR', THEME_DIR . '/inc/blocks');
 	require_once(BLOCKS_DIR . '/lth-blocks.php');
 
-	require_once(LIBS_DIR . '/elementor/lth-elementor.php');
+	define('ELEMENTOR_DIR', THEME_DIR . '/inc/elementor');
+	// require_once(ELEMENTOR_DIR . '/lth-elementor.php');
+	require_once(ELEMENTOR_DIR . '/class-modules-elementor.php');
 }
 
 require_once(LIBS_DIR . '/theme-options.php');

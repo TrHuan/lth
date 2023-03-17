@@ -126,8 +126,8 @@ jQuery(document).ready(function ($) {
                 // verticalSwiping: true,
                 dots: dots,
                 arrows: arrows,
-                prevArrow: '<a class="slick-arrow slick-prev" href="javascript:0"><i class="icofont-thin-left icon"></i></a>',
-                nextArrow: '<a class="slick-arrow slick-next" href="javascript:0"><i class="icofont-thin-right icon"></i></a>',
+                prevArrow: '<a class="slick-arrow slick-prev" href="javascript:0"><i class="fal fa-angle-left icon"></i></a>',
+                nextArrow: '<a class="slick-arrow slick-next" href="javascript:0"><i class="fal fa-angle-right icon"></i></a>',
                 responsive: [
                     {
                         breakpoint: 1200,
