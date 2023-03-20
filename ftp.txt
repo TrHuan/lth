@@ -44,15 +44,23 @@ https://da.gco.vn:2222/ / webmau1 / gco@2020
 
 https://da.gco.vn:2222/ / webmau2 / gcovn@2022
 
-https://da.gco.vn:2222/ / gcodemo / YDd6Ksv8Ni8PRMc
+https://da.gco.vn:2222/ / admin / VuBS^0fiqdfaBi1rACD
+
+https://cp2.gco.vn:2087 / root / GcoGroup123@123#
 
 cloudflare.com / anhbt@gco.vn / RSe2L%Y*v6SDF  // xóa cache css trên server
 
 da.gco.vn / veoveo_huan@veoveo.com.vn / BuudX80G2
 
-https://da.gco.vn:2222/ / admin / VuBS^0fiqdfaBi1rACD
+//////////////////////////////////////
 
-https://cp2.gco.vn:2087 / root / GcoGroup123@123#
+https://da.gco.vn:2222/ / gcodemo / QZt8ecbA9AXaSsw7
+
+https://da.gco.vn:2222/ / gcovn / 6QmtZK2fL4fZMtfW
+
+https://da.gco.vn:2222/ / gcoweb / 9f8bknvTUPMTXGjC
+
+https://cp2.gco.vn:2087 / cpgco / WxnGtW]By~2F
 
 //////////////////////////////////////
 
