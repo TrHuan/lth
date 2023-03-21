@@ -80,6 +80,11 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
 
 /////////////////////////////////////
 
+Google search console
+huanjob177@gmail.com / lth@123454321
+
+/////////////////////////////////////
+
 1: Xử lý mã độc trong code
     - thay core wordpress mới, giữ lại folder wp-content
     - xoá file .htaccess trong wp-content
