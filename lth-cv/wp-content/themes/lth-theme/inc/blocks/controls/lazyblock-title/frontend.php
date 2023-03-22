@@ -23,9 +23,9 @@ if (!function_exists('lth_title_output_fe')) :
     $description_color = 'color: '.$attributes['description_color'];
 ?>
 
-    <?php if ($attributes['title'] || $attributes['description']) : ?>
+    <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
         <div class="module_header title-box" style="text-align: <?php echo $attributes['text_align']; ?>">
-            <?php if (isset($attributes['title'])) : ?>
+            <?php if (!empty($attributes['title'])) : ?>
                 <?php if ($attributes['title_tag'] == 'h1') { ?>
                     <h1 class="title" <?php if (!$attributes['title_url'] && $attributes['title_color']) : ?>style="<?php echo $title_color; ?>"<?php endif; ?>>
                 <?php } elseif ($attributes['title_tag'] == 'h2') { ?>
@@ -39,11 +39,11 @@ if (!function_exists('lth_title_output_fe')) :
                 <?php } elseif ($attributes['title_tag'] == 'h6') { ?>
                     <h6 class="title" <?php if (!$attributes['title_url'] && $attributes['title_color']) : ?>style="<?php echo $title_color; ?>"<?php endif; ?>>
                 <?php } ?>
-                    <?php if ($attributes['title_url']) : ?> 
+                    <?php if (!empty($attributes['title_url'])) : ?> 
                         <a href="<?php echo esc_url($attributes['title_url']); ?>" title="" <?php if ($attributes['title_color']) : ?>style="<?php echo $title_color; ?>"<?php endif; ?>>
                     <?php endif; ?>
                         <?php echo wpautop(esc_html($attributes['title'])); ?>
-                    <?php if ($attributes['title_url']) : ?> 
+                    <?php if (!empty($attributes['title_url'])) : ?> 
                         </a>
                     <?php endif; ?>
                 <?php if ($attributes['title_tag'] == 'h1') { ?>
@@ -61,7 +61,7 @@ if (!function_exists('lth_title_output_fe')) :
                 <?php } ?>
             <?php endif; ?>
 
-            <?php if ($attributes['description']) : ?>
+            <?php if (!empty($attributes['description'])) : ?>
                 <div class="infor" <?php if ($attributes['description_color']) : ?>style="<?php echo $description_color; ?>"<?php endif; ?>>
                     <?php echo wpautop(esc_html($attributes['description'])); ?>
                 </div>

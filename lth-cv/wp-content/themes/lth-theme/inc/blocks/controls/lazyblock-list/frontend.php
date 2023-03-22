@@ -21,50 +21,52 @@ if (!function_exists('lth_list_output_fe')) :
         ob_start();
 ?>
         <article class="lth-lists <?php echo $attributes['class']; ?>">
-            <?php if ($attributes['title'] || $attributes['description']) : ?>
-                <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                    <?php if ($attributes['title']) : ?>
-                        <h2 class="title">
-                            <?php if ($attributes['title_url']) : ?>
-                                <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
+            <div class="module_lists">
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
+                    <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
+                        <?php if (!empty(($attributes['title']))) : ?>
+                            <h2 class="title">
+                                <?php if (!empty($attributes['title_url'])) : ?>
+                                    <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
                                 <?php endif; ?>
-                                <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                <?php if ($attributes['title_url']) : ?>
-                                </a>
-                            <?php endif; ?>
-                        </h2>
-                    <?php endif; ?>
-
-                    <?php if ($attributes['description']) : ?>
-                        <div class="infor">
-                            <?php echo wpautop(esc_html($attributes['description'])); ?>
-                        </div>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
-
-            <div class="module_content">
-                <?php if ($attributes['list_tag'] != 'ol') { ?>
-                    <ul class="lists-text" <?php if ($attributes['list_tag'] == 'none') { ?>style="list-style: none; padding-left: 0;"<?php } ?>>
-                <?php } else { ?>
-                    <ol class="lists-text">
-                <?php } ?>
-                    <?php foreach ($attributes['items'] as $inner) { ?>
-                        <li>
-                            <?php if ($inner['item_url']) : ?>
-                                <a href="<?php echo esc_url($inner['item_url']); ?>" title="">
+                                    <?php echo wpautop(esc_html($attributes['title'])); ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
+                                    </a>
                                 <?php endif; ?>
-                                <?php echo $inner['item_text']; ?>
-                                <?php if ($inner['item_url']) : ?>
-                                </a>
-                            <?php endif; ?>
-                        </li>
+                            </h2>
+                        <?php endif; ?>
+
+                        <?php if (!empty($attributes['description'])) : ?>
+                            <div class="infor">
+                                <?php echo wpautop(esc_html($attributes['description'])); ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+
+                <div class="module_content">
+                    <?php if ($attributes['list_tag'] != 'ol') { ?>
+                        <ul class="lists-text" <?php if ($attributes['list_tag'] == 'none') { ?>style="list-style: none; padding-left: 0;"<?php } ?>>
+                    <?php } else { ?>
+                        <ol class="lists-text">
                     <?php } ?>
-                <?php if ($attributes['list_tag'] == 'ul') { ?>
-                    </ul>
-                <?php } else { ?>
-                    </ol>
-                <?php } ?>
+                        <?php foreach ($attributes['items'] as $inner) { ?>
+                            <li>
+                                <?php if ($inner['item_url']) : ?>
+                                    <a href="<?php echo esc_url($inner['item_url']); ?>" title="">
+                                    <?php endif; ?>
+                                    <?php echo $inner['item_text']; ?>
+                                    <?php if ($inner['item_url']) : ?>
+                                    </a>
+                                <?php endif; ?>
+                            </li>
+                        <?php } ?>
+                    <?php if ($attributes['list_tag'] == 'ul') { ?>
+                        </ul>
+                    <?php } else { ?>
+                        </ol>
+                    <?php } ?>
+                </div>
             </div>
         </article>
 <?php

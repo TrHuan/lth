@@ -96,6 +96,18 @@ function lth_plugin_activation()
 
                 array(
 
+                        'name' => 'AntiSpam for Contact Form 7',
+
+                        'slug' => 'cf7-antispam',
+
+                        'required' => true,
+
+                ),
+
+
+
+                array(
+
                         'name' => 'QR code MeCard/vCard generator',
 
                         'slug' => 'wp-qrcode-me-v-card',

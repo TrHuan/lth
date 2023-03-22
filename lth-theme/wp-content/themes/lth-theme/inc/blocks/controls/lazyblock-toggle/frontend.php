@@ -23,27 +23,23 @@ if (!function_exists('lth_toggle_output_fe')) :
 
         <article class="lth-toggle">
             <div class="module module_toggle">
-                <?php if ($attributes['title'] || $attributes['description']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php else : ?>
-                                        <span>
-                                        <?php endif; ?>
-                                        <?php echo esc_html($attributes['title']); ?>
-                                        <?php if ($attributes['title_url']) : ?>
+                                <?php endif; ?>
+                                    <?php echo wpautop(esc_html($attributes['title'])); ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
-                                <?php else : ?>
-                                    </span>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
-                                <p><?php echo esc_html($attributes['description']); ?></p>
+                                <?php echo wpautop(esc_html($attributes['description'])); ?>
                             </div>
                         <?php endif; ?>
                     </div>

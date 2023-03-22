@@ -22,25 +22,21 @@ if (!function_exists('lth_brand_output_fe')) :
 ?>
         <article class="lth-brands <?php echo $attributes['class']; ?>">
             <div class="module module_brands">
-                <?php if ($attributes['title'] || $attributes['description']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php else : ?>
-                                        <span>
-                                        <?php endif; ?>
-                                        <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                        <?php if ($attributes['title_url']) : ?>
+                                <?php endif; ?>
+                                    <?php echo wpautop(esc_html($attributes['title'])); ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
-                                <?php else : ?>
-                                    </span>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo wpautop(esc_html($attributes['description'])); ?>
                             </div>
@@ -53,11 +49,17 @@ if (!function_exists('lth_brand_output_fe')) :
                         <?php foreach ($attributes['items'] as $inner) : ?>
                             <div class="swiper-slide item">
                                 <div class="content">
-                                    <div class="content-image">
-                                        <a href="<?php echo esc_url($inner['url']); ?>" title="" class="image">
-                                            <img src="<?php echo esc_url($inner['item_image']['url']); ?>" alt="Brand" width="auto" height="auto">
-                                        </a>
-                                    </div>
+                                    <?php if ($inner['item_image']) : ?>
+                                        <div class="content-image">
+                                            <?php if ($inner['url']) : ?>
+                                                <a href="<?php echo esc_url($inner['url']); ?>" title="" class="image">
+                                            <?php endif; ?>
+                                                <img src="<?php echo esc_url($inner['item_image']['url']); ?>" alt="Brand" width="auto" height="auto">
+                                            <?php if ($inner['url']) : ?>
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         <?php endforeach; ?>

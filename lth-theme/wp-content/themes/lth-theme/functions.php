@@ -26,6 +26,17 @@ define('ASSETS_URI', THEME_URI . '/assets');
 // đường dẫn thư viện
 define('LIBS_DIR', THEME_DIR . '/inc');
 
+// thiết lập files css + js
+require_once(LIBS_DIR . '/head.php');
+
+// BFI_Thumb
+require_once(LIBS_DIR . '/BFI_Thumb/BFI_Thumb.php');
+require_once(LIBS_DIR . '/BFI_Thumb/setting.php');
+
+// Cài đặt những plugins cần thiết
+require_once(LIBS_DIR . '/plugins/class-tgm-plugin-activation.php');
+require_once(LIBS_DIR . '/plugins/plugins.php');
+
 if (THEME_NAME === 'lth_theme') {
 	// theme options
 	require_once(THEME_DIR . '/plugins/acf/acf.php');
@@ -42,22 +53,11 @@ if (THEME_NAME === 'lth_theme') {
 
 require_once(LIBS_DIR . '/theme-options.php');
 
-// hooks
-require_once(LIBS_DIR . '/hooks.php');
-
 // khởi tạo theme
 require_once(LIBS_DIR . '/setup.php');
 
-// thiết lập files css + js
-require_once(LIBS_DIR . '/head.php');
-
-// BFI_Thumb
-require_once(LIBS_DIR . '/BFI_Thumb/BFI_Thumb.php');
-require_once(LIBS_DIR . '/BFI_Thumb/setting.php');
-
-// Cài đặt những plugins cần thiết
-require_once(LIBS_DIR . '/plugins/class-tgm-plugin-activation.php');
-require_once(LIBS_DIR . '/plugins/plugins.php');
+// hooks
+require_once(LIBS_DIR . '/hooks.php');
 
 if (class_exists('WooCommerce')) {
 	// woocommerce

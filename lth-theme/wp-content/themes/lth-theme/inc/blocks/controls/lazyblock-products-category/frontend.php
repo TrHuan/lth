@@ -22,11 +22,11 @@ if (!function_exists('lth_products_category_output_fe')) :
 ?>
         <article class="lth-products">
             <div class="module module_products">
-                <?php if ($attributes['title'] || $attributes['description'] || $attributes['show_items']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description']) || !empty($attributes['show_items'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty($attributes['title'])) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
                                     <?php else : ?>
                                         <span>
@@ -40,13 +40,13 @@ if (!function_exists('lth_products_category_output_fe')) :
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo esc_html($attributes['description']); ?>
                             </div>
                         <?php endif; ?>
 
-                        <?php if ($attributes['show_items']) : ?>
+                        <?php if (!empty($attributes['show_items'])) : ?>
                             <div class="cat-list">
                                 <ul>
                                     <?php $j = 0;

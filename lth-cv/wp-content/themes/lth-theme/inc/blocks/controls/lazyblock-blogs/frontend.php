@@ -22,75 +22,23 @@ if (!function_exists('lth_blogs_output_fe')) :
 ?>
         <article class="lth-blogs <?php echo $attributes['class']; ?>">
             <div class="module module_blogs">
-                <?php if ($attributes['title'] || $attributes['description'] || $attributes['show_items']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php endif; ?>
+                                <?php endif; ?>
                                     <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                    <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo wpautop(esc_html($attributes['description'])); ?>
-                            </div>
-                        <?php endif; ?>
-
-                        <?php if ($attributes['show_items']) : ?>
-                            <div class="cat-list tab-list">
-                                <ul>
-                                    <?php $j = 0;
-                                    foreach ($attributes['select'] as $inner) :
-                                        $j++;
-
-                                        if ($inner == 'new_posts') { ?>
-                                            <li>
-                                                <a href="#new_blogs" class="<?php if ($j == 1) {
-                                                                                echo 'active';
-                                                                            } ?>">
-                                                    <?php echo __('Bài viết mới'); ?>
-                                                </a>
-                                            </li>
-                                        <?php }
-                                        if ($inner == 'featured_posts') { ?>
-                                            <li>
-                                                <a href="#featured_blogs" class="<?php if ($j == 1) {
-                                                                                        echo 'active';
-                                                                                    } ?>">
-                                                    <?php echo __('Bài viết nổi bật'); ?>
-                                                </a>
-                                            </li>
-                                        <?php }
-                                        if ($inner == 'random_posts') { ?>
-                                            <li>
-                                                <a href="#random_blogs" class="<?php if ($j == 1) {
-                                                                                    echo 'active';
-                                                                                } ?>">
-                                                    <?php echo __('Bài viết ngẫu nhiên'); ?>
-                                                </a>
-                                            </li>
-                                        <?php }
-                                        if ($inner == 'viewed_posts') {
-                                        ?>
-                                            <li>
-                                                <a href="#viewed_blogs" class="<?php if ($j == 1) {
-                                                                                    echo 'active';
-                                                                                }
-                                                                                ?>">
-                                                    <?php echo __('Bài viết vừa xem');
-                                                    ?>
-                                                </a>
-                                            </li>
-                                    <?php }
-                                    endforeach;
-                                    ?>
-                                </ul>
                             </div>
                         <?php endif; ?>
                     </div>

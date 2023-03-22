@@ -22,25 +22,21 @@ if (!function_exists('lth_icons_output_fe')) :
 ?>
         <article class="lth-icons <?php echo $attributes['class']; ?>">
             <div class="module module_icons">
-                <?php if ($attributes['title'] || $attributes['description']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php else : ?>
-                                        <span>
-                                        <?php endif; ?>
-                                        <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                        <?php if ($attributes['title_url']) : ?>
+                                <?php endif; ?>
+                                    <?php echo wpautop(esc_html($attributes['title'])); ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
-                                <?php else : ?>
-                                    </span>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo wpautop(esc_html($attributes['description'])); ?>
                             </div>
@@ -53,7 +49,7 @@ if (!function_exists('lth_icons_output_fe')) :
                         <?php foreach ($attributes['items'] as $inner) : ?>
                             <div class="item">
                                 <div class="post-box icon-<?php echo $inner['icon_align']; ?>">
-                                    <?php if ($inner['item_image']['url']) { ?>
+                                    <?php if (!empty($inner['item_image']['url'])) { ?>
                                         <div class="post-image">
                                             <div class="image">
                                                 <img src="<?php echo esc_url($inner['item_image']['url']); ?>" alt="Icon" width="auto" height="auto">
@@ -61,15 +57,15 @@ if (!function_exists('lth_icons_output_fe')) :
                                         </div>
                                     <?php } ?>
 
-                                    <?php if ($inner['item_title'] || $inner['item_text']) { ?>
+                                    <?php if (!empty($inner['item_title']) || !empty($inner['item_text'])) { ?>
                                         <div class="post-content" style="text-align: <?php echo $inner['text_align']; ?>">
-                                            <?php if ($inner['item_title']) { ?>
+                                            <?php if (!empty($inner['item_title'])) { ?>
                                                 <h3 class="post-name">
                                                     <?php echo wpautop($inner['item_title']); ?>
                                                 </h3>
                                             <?php } ?>
 
-                                            <?php if ($inner['item_text']) { ?>
+                                            <?php if (!empty($inner['item_text'])) { ?>
                                                 <div class="post-excerpt">
                                                     <?php echo wpautop($inner['item_text']); ?>
                                                 </div>

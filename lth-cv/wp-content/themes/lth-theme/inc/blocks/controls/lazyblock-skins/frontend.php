@@ -22,25 +22,21 @@ if (!function_exists('lth_skins_output_fe')) :
 ?>
         <article class="lth-skins">
             <div class="module module_skins">
-                <?php if ($attributes['title'] || $attributes['description']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php else : ?>
-                                        <span>
-                                        <?php endif; ?>
-                                        <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                        <?php if ($attributes['title_url']) : ?>
+                                <?php endif; ?>
+                                    <?php echo wpautop(esc_html($attributes['title'])); ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
-                                <?php else : ?>
-                                    </span>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo wpautop(esc_html($attributes['description'])); ?>
                             </div>

@@ -78,26 +78,23 @@ if (!function_exists('lth_section_output_fe')) :
         }
 ?>
         <?php if ($attributes['animate'] != 'none') { ?>
-            <section class="lth-section <?php echo $attributes['class']; ?> wow <?php echo $attributes['animate']; ?>" data-wow-duration="<?php echo $attributes['animate_duration']; ?>" data-wow-delay="<?php echo $attributes['animate_delay']; ?>" style="<?php echo $margin_top; ?> <?php echo $margin_bottom; ?> <?php echo $padding_top; ?> <?php echo $padding_bottom; ?> <?php if (isset($background)) {
-                                                                                                                                                                                                                                                                                                                                                                                        echo $background;
-                                                                                                                                                                                                                                                                                                                                                                                    } ?> <?php if (isset($text)) {
-                                                                                                                                                                                                                                                                                                                                                                                                echo $text;
-                                                                                                                                                                                                                                                                                                                                                                                            } ?>">
-            <?php } else { ?>
-                <section class="lth-section <?php echo $attributes['class']; ?>" style="<?php echo $margin_top; ?> <?php echo $margin_bottom; ?> <?php echo $padding_top; ?> <?php echo $padding_bottom; ?> <?php if (isset($background)) {
-                                                                                                                                                                                                                echo $background;
-                                                                                                                                                                                                            } ?> <?php if (isset($text)) {
-                                                                                                                                                                                                                        echo $text;
-                                                                                                                                                                                                                    } ?>">
-                <?php } ?>
-                <?php if ($attributes['full_width']) : ?>
-                    <div class="container-fluid">
-                    <?php else : ?>
-                        <div class="container">
-                        <?php endif; ?>
-                        <?php echo $attributes['section']; ?>
-                        </div>
-                </section>
+            <section class="lth-section <?php echo $attributes['class']; ?> wow <?php echo $attributes['animate']; ?>" 
+            data-wow-duration="<?php echo $attributes['animate_duration']; ?>" data-wow-delay="<?php echo $attributes['animate_delay']; ?>" 
+            style="<?php echo $margin_top; ?> <?php echo $margin_bottom; ?> <?php echo $padding_top; ?> <?php echo $padding_bottom; ?> 
+            <?php if (isset($background)) {echo $background;} ?> <?php if (isset($text)) {echo $text;} ?>">
+        <?php } else { ?>
+            <section class="lth-section <?php echo $attributes['class']; ?>" 
+            style="<?php echo $margin_top; ?> <?php echo $margin_bottom; ?> <?php echo $padding_top; ?> <?php echo $padding_bottom; ?> 
+            <?php if (isset($background)) {echo $background;} ?> <?php if (isset($text)) {echo $text;} ?>">
+        <?php } ?>
+            <?php if ($attributes['full_width']) : ?>
+                <div class="container-fluid">
+            <?php else : ?>
+                <div class="container">
+            <?php endif; ?>
+                    <?php echo $attributes['section']; ?>
+                </div>
+            </section>
 
         <?php
         return ob_get_clean();

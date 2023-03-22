@@ -22,21 +22,21 @@ if (!function_exists('lth_categories_output_fe')) :
 ?>
         <article class="lth-categories <?php echo $attributes['class']; ?>">
             <div class="module module_categories">
-                <?php if ($attributes['title'] || $attributes['description'] || $attributes['categories']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php endif; ?>
+                                <?php endif; ?>
                                     <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                    <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo wpautop(esc_html($attributes['description'])); ?>
                             </div>

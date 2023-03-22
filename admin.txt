@@ -81,7 +81,7 @@ ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894
 /////////////////////////////////////
 
 Google search console
-huanjob177@gmail.com / lth@123454321
+huanjob177@gmail.com / lth@123456789
 
 /////////////////////////////////////
 
@@ -98,7 +98,6 @@ huanjob177@gmail.com / lth@123454321
     // remove update plugins
     remove_action('load-update-core.php', 'wp_update_plugins');
     add_filter('pre_site_transient_update_plugins', '__return_null');
-    define('DISALLOW_FILE_EDIT', true);
     define('DISALLOW_FILE_MODS', true);
 
     // remove update themes

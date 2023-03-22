@@ -32,7 +32,7 @@ if (!function_exists('lth_line_output_fe')) :
 ?>
     <div class="lth-lines" style="max-width:<?php echo $attributes['line_width']; ?>; height:<?php echo $attributes['line_height']; ?>; width:100%;
     background-color:<?php echo $attributes['background_color']; ?>; <?php echo $margin_top; ?> <?php echo $margin_bottom; ?>">
-        <?php if ($attributes['image']['url']) { ?>
+        <?php if (!empty($attributes['image']['url'])) { ?>
             <img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="Image" width="auto" height="auto">
         <?php } ?>
     </div>

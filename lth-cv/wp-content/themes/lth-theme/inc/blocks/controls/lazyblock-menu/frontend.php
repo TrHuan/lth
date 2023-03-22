@@ -26,18 +26,18 @@ if (!function_exists('lth_menu_output_fe')) :
         if ($attributes['menu_toggle'] != 'toggle_none') {
             echo 'menu_toggle';
         } ?>">
-            <?php if ($attributes['title'] || $attributes['description']) : ?>
+            <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                 <div class="module_header title-box title-align-<?php echo $attributes['title_align'];
                 if ($attributes['menu_toggle'] == 'toggle_show') {
                     echo ' active';
                 } ?>">
-                    <?php if ($attributes['title']) : ?>
+                    <?php if (!empty($attributes['title'])) : ?>
                         <h2 class="title">
-                            <?php if ($attributes['url']) : ?>
+                            <?php if (!empty($attributes['url'])) : ?>
                                 <a href="<?php echo esc_url($attributes['url']); ?>" title="">
-                                <?php endif; ?>
-                                <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                <?php if ($attributes['url']) : ?>
+                            <?php endif; ?>
+                        <?php echo wpautop(esc_html($attributes['title'])); ?>
+                            <?php if (!empty($attributes['url'])) : ?>
                                 </a>
                             <?php endif; ?>
                                 
@@ -49,7 +49,7 @@ if (!function_exists('lth_menu_output_fe')) :
                         </h2>
                     <?php endif; ?>
 
-                    <?php if ($attributes['description']) : ?>
+                    <?php if (!empty($attributes['description'])) : ?>
                         <div class="infor">
                             <?php echo wpautop(esc_html($attributes['description'])); ?>
                         </div>

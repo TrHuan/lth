@@ -25,25 +25,21 @@ if (!function_exists('lth_testimonials_output_fe')) :
 ?>
         <article class="lth-testimonials">
             <div class="module module_testimonials">
-                <?php if ($attributes['title'] || $attributes['description']) : ?>
+                <?php if (!empty($attributes['title']) || !empty($attributes['description'])) : ?>
                     <div class="module_header title-box title-align-<?php echo $attributes['title_align']; ?>">
-                        <?php if ($attributes['title']) : ?>
+                        <?php if (!empty(($attributes['title']))) : ?>
                             <h2 class="title">
-                                <?php if ($attributes['title_url']) : ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     <a href="<?php echo esc_url($attributes['title_url']); ?>" title="">
-                                    <?php else : ?>
-                                        <span>
-                                        <?php endif; ?>
-                                        <?php echo wpautop(esc_html($attributes['title'])); ?>
-                                        <?php if ($attributes['title_url']) : ?>
+                                <?php endif; ?>
+                                    <?php echo wpautop(esc_html($attributes['title'])); ?>
+                                <?php if (!empty($attributes['title_url'])) : ?>
                                     </a>
-                                <?php else : ?>
-                                    </span>
                                 <?php endif; ?>
                             </h2>
                         <?php endif; ?>
 
-                        <?php if ($attributes['description']) : ?>
+                        <?php if (!empty($attributes['description'])) : ?>
                             <div class="infor">
                                 <?php echo wpautop(esc_html($attributes['description'])); ?>
                             </div>
@@ -56,7 +52,7 @@ if (!function_exists('lth_testimonials_output_fe')) :
                         <?php foreach ($attributes['items'] as $inner) : ?>
                             <div class="item">
                                 <div class="post-box">
-                                    <?php if ($inner['item_image']['url']) { ?>
+                                    <?php if (!empty($inner['item_image']['url'])) { ?>
                                         <div class="post-image">
                                             <div class="image">
                                                 <img src="<?php echo esc_url($inner['item_image']['url']); ?>" alt="Team" width="auto" height="auto">
@@ -64,15 +60,16 @@ if (!function_exists('lth_testimonials_output_fe')) :
                                         </div>
                                     <?php } ?>
 
-                                    <?php if ($inner['item_name'] || $inner['item_job'] || $inner['item_description']) { ?>
-                                        <div class="post-content" style="text-align: <?php echo $inner['text_align']; ?>">
-                                            <?php if ($inner['item_name']) { ?>
+                                    <?php if (!empty($inner['item_name']) || !empty($inner['item_job']) || !empty($inner['item_description'])) { ?>
+                                        <div class="post-content" 
+                                        <?php if (!empty($inner['text_align'])) { ?>style="text-align: <?php echo $inner['text_align']; ?>"><?php } ?>
+                                            <?php if (!empty($inner['item_name'])) { ?>
                                                 <h3 class="post-name">
                                                     <?php echo wpautop($inner['item_name']); ?>
                                                 </h3>
                                             <?php } ?>
 
-                                            <?php if ($inner['item_job']) { ?>
+                                            <?php if (!empty($inner['item_job'])) { ?>
                                                 <div class="post-job">
                                                     <?php echo wpautop($inner['item_job']); ?>
                                                 </div>
@@ -90,7 +87,7 @@ if (!function_exists('lth_testimonials_output_fe')) :
                                                 </div>
                                             </div>
 
-                                            <?php if ($inner['item_description']) { ?>
+                                            <?php if (!empty($inner['item_description'])) { ?>
                                                 <div class="post-excerpt">
                                                     <?php echo wpautop($inner['item_description']); ?>
                                                 </div>

@@ -20,7 +20,7 @@ if (!function_exists('lth_logo_output_fe')) :
     {
         ob_start();
 
-        if (!$attributes['logo_image']['url']) {
+        if (empty($attributes['logo_image']['url'])) {
             $logo = get_field('logo', 'option');
             $w = get_field('width_logo', 'option');
             $h = get_field('height_logo', 'option');
@@ -28,7 +28,7 @@ if (!function_exists('lth_logo_output_fe')) :
 ?>
         <div class="lth-logo">
             <?php if (is_front_page() || is_home()) { ?>
-                <?php if ($attributes['logo_image']['url']) { ?>
+                <?php if (!empty($attributes['logo_image']['url'])) { ?>
                     <a href="<?php if (isset($lang)) {
                                     echo get_home_url($lang);
                                 } else {
@@ -44,8 +44,8 @@ if (!function_exists('lth_logo_output_fe')) :
                         <?php bloginfo('title'); ?>
                     </a>
                     <p class="infor d-none"><?php bloginfo('description'); ?></p>
-                    <?php } else {
-                    if ($logo) { ?>
+                <?php } else {
+                    if (!empty($logo)) { ?>
                         <h1>
                             <a href="<?php if (isset($lang)) {
                                             echo get_home_url($lang);
@@ -74,10 +74,10 @@ if (!function_exists('lth_logo_output_fe')) :
                             </a>
                             <p class="infor"><?php bloginfo('description'); ?></p>
                         </h1>
-                <?php }
+                    <?php }
                 } ?>
             <?php } else { ?>
-                <?php if ($attributes['logo_image']['url']) { ?>
+                <?php if (!empty($attributes['logo_image']['url'])) { ?>
                     <a href="<?php if (isset($lang)) {
                                     echo get_home_url($lang);
                                 } else {
@@ -93,8 +93,8 @@ if (!function_exists('lth_logo_output_fe')) :
                         <?php bloginfo('title'); ?>
                     </a>
                     <p class="infor d-none"><?php bloginfo('description'); ?></p>
-                    <?php } else {
-                    if ($logo) { ?>
+                <?php } else {
+                    if (!empty($logo)) { ?>
                         <a href="<?php if (isset($lang)) {
                                         echo get_home_url($lang);
                                     } else {
@@ -121,7 +121,7 @@ if (!function_exists('lth_logo_output_fe')) :
                             </a>
                             <p class="infor"><?php bloginfo('description'); ?></p>
                         </h2>
-                <?php }
+                    <?php }
                 } ?>
             <?php } ?>
         </div>
