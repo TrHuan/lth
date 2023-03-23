@@ -76,7 +76,10 @@ function my_search_is_exact($search, $wp_query){
 
 Key Wordfence free:
 trhuan177@gmail.com
-ceda993fc364b90907a5b8fedae55078b37351df8f09c271c5c0af28b1c92cae1a98b7c649fc5894d08e737aa1da3501e81bc60687297aceb7ccf5684aee1070
+e7dfc85c7119fc6fde8203323a32dae3edae1c05e4c1db232fcc0955c0bbc5439f6fb9b994b8b4668500c103398a6e85690410e574fe1eb099a544f2c627029a
+
+huanjob177@gmail.com
+07fdb41bd949ec21247c6c164dc3c52d1e5fdd67e76841967efa52bdfda1b891187d35b4fb824670b474492251738426f8525a5f06f92d308699d7807a737163
 
 /////////////////////////////////////
 
@@ -192,3 +195,5 @@ PayPal:
 CLIENT ID: AUo0tSoz0GRMElWHNc9No6nPODoaxmoZ7LFNCEIHvnM2ppjYs80CSWlunGqA2G5hpsYChqzKzJAltv52
 
 /////////////////////////////////////
+
+Đã xoá tất cả nội dung độc hai trên web. Làm ơn bỏ cảnh báo nguy hiểm trên trình duyệt. Xin cảm ơn!
