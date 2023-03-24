@@ -192,7 +192,7 @@ Shop Dược Mỹ Phẩm / gco_admin / shopduocmypham@2021
 
 /////////////////////////////////////
 
-BepBon / gco_admin / bep-bon@2021
+BepBon / gco_admin / vv184@veoveo#313truongchinh
 
 https://bepbon.gcosoftware.vn/
 Data: gcoweb_bepbon / gcowe_bepbo / k2Zi&b29
@@ -1125,7 +1125,11 @@ Data: vv093_db / JjDiCghX
 
 http://vv156.local/
 
-https://vv156.gcodemo.com/
+https://vv156.gcodemo.com/tdg-login
 vv156_admin / vv156@veoveo#313truongchinh
 
-Data: webmau_vv156 / aoCZJpBX9981
+Data: vv156_db / 4dPi2Jxx
+
+/////////////////////////////////////
+
+megan_admin / megan@veoveo#313truongchinh
