@@ -25,6 +25,11 @@ $smtp_port = 465;
 $email_shop = 'trhuan177@gmail.com';
 $email_pass = 'iagzjtpflskmgijh';
 
+$smtp_host = 'smtp.gmail.com';
+$smtp_port = 465;
+$email_shop = 'huanjob177@gmail.com';
+$email_pass = 'chưa có';
+
 /////////////////////////////////////
 
 add_filter('posts_search', 'my_search_is_exact', 20, 2);
@@ -197,3 +202,16 @@ CLIENT ID: AUo0tSoz0GRMElWHNc9No6nPODoaxmoZ7LFNCEIHvnM2ppjYs80CSWlunGqA2G5hpsYCh
 /////////////////////////////////////
 
 Đã xoá tất cả nội dung độc hai trên web. Làm ơn bỏ cảnh báo nguy hiểm trên trình duyệt. Xin cảm ơn!
+
+/////////////////////////////////////
+
+https://lth.azdigi.shop/
+
+https://my.azdigi.com/login
+trhuan177@gmail.com / lth@123454321
+
+https://svh-22151.azdigihost.com:2222/
+Tên đăng nhập: ngjynjcv
+Mật khẩu: f4F1s1c6Dn
+
+FTP: lth@lth.azdigi.shop / lth@123454321
