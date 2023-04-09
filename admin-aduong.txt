@@ -3,12 +3,19 @@ https://lth.azdigi.shop/aduong/dbiz/dbiz-login/
 admin / ngjynjcv_dbiz
 ngjynjcv_dbiz / gFTnth7cM
 
+https://digitalbiz.com.vn/admin/
+admin / ngjynjcv_dbiz
+
 //////////////////////////////////////////////////
 
 http://172.96.191.13/cpanel
 Username: vnskills Password: 7r3q48QN;R*Dbj
 
 //////////////////////////////////////////////////
+
+https://lth.azdigi.shop/aduong/pdent/
+admin / pdent@123454321
+ngjynjcv_pdent / rgv2DG76CQ
 
 http://vnskills.top/nhakhoa/wp-admin
 admin / pdent@123454321
@@ -19,13 +26,16 @@ Trang chủ -> done
 về pdent - done
 Tin tức sự kiện -> done
 Liên hệ -> done
-Sản phẩm & dịch vụ
-Tài liệu
-Vật liệu ghép sinh học
-Implant
-Thương hiệu phân phối
-Tuyển dụng
 
-Đào tạo (dành cho bác sĩ), về pdent, Tin tức sự kiện, Liên hệ
+Chi tiết tin tức, sự kiện, thư viện - done
+Tài liệu - done
+Implant - done
+Sản phẩm & dịch vụ - done
+
+Vật liệu ghép sinh học -done
+Thương hiệu phân phối - done
+Tuyển dụng - done
+
+nhakhoa_admin / 4bCybxFNcA5ul7EWdaDh*L)D
 
 //////////////////////////////////////////////////

@@ -62,6 +62,8 @@ https://da.gco.vn:2222/ / gcoweb / 9f8bknvTUPMTXGjC
 
 https://cp2.gco.vn:2087 / cpgco / WxnGtW]By~2F
 
+Đuôi 188 ở trên da, 69 trên cp2, còn lại trên plesk
+
 //////////////////////////////////////
 
 IP	115.165.161.188	

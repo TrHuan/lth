@@ -121,6 +121,12 @@ https://kitchenhome.gcosoftware.vn/
 Data: gcoweb_kitchenhome / gcowe_kitchen / jA*3i97o
 
 da.gco.vn / thegioib / 6Q#0JiCp]Uo94c
+da.gco.vn / gco@thegioibep.store / eFjO4otV
+
+bepgiahuy.vn
+
+DB: bepgiahuy_db / A50jD697u
+da.gco.vn / bepgiahuy / bepgiahuy@2023
 
 //////////////////////////////
 
@@ -152,6 +158,15 @@ phutungn
 +0w16ih@WeJHG2
 
 gco_phutung@phutungnguyenngoc.com / puQUdBToe
+
+http://phutungnguyenngoc.local/
+gco_admin / gco@admin#2023
+
+https://phutungnguyenngoc.com/ptnn-login/
+admin / nguyenngoc@admin#2023
+gco_admin / gco@admin#2023
+
+DB: phutungn_db / PjMrvCLD2
 
 //////////////////////////////
 
@@ -1133,3 +1148,21 @@ Data: vv156_db / 4dPi2Jxx
 /////////////////////////////////////
 
 megan_admin / megan@veoveo#313truongchinh
+
+/////////////////////////////////////
+
+https://maytracdiasaoviet.vn/wp-login.php
+
+Data: maytracd_ad / maytracd_viet / 9nSPmYjrh9981
+
+/////////////////////////////////////
+
+trungtamlaixelachong.com
+Hosting: trungtam / trungtamlaixelachong@admin#2023
+
+FTP: gco@trungtamlaixelachong.com / DsvPZ8VZ
+
+trungtamlaixelachong.vn
+
+DB: lachongvn_db / 0gOoSXVa7R
+Hosting: lachongvn / S2yYDI7hzH
