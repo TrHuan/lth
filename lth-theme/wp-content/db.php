@@ -1,1 +1,0 @@
-D:/LTH/wamp/www/job/lth/lth-theme/wp-content/plugins/query-monitor/wp-content/db.php
