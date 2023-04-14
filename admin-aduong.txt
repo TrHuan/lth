@@ -6,6 +6,10 @@ ngjynjcv_dbiz / gFTnth7cM
 https://digitalbiz.com.vn/admin/
 admin / ngjynjcv_dbiz
 
+host: s88d74.cloudnetwork.vn
+user: anka@digitalbiz.com.vn
+pass: Jv[Uq_bS&AN0
+
 //////////////////////////////////////////////////
 
 http://172.96.191.13/cpanel

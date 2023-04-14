@@ -126,6 +126,7 @@ da.gco.vn / gco@thegioibep.store / eFjO4otV
 bepgiahuy.vn
 
 DB: bepgiahuy_db / A50jD697u
+bepgiahuy_db2 / A50jD697u
 da.gco.vn / bepgiahuy / bepgiahuy@2023
 
 //////////////////////////////
@@ -1149,6 +1150,8 @@ Data: vv156_db / 4dPi2Jxx
 
 megan_admin / megan@veoveo#313truongchinh
 
+da.gco.vn / gco@megan.gcodemo.com / 6zeGtcAywG
+
 /////////////////////////////////////
 
 https://maytracdiasaoviet.vn/wp-login.php
@@ -1158,7 +1161,7 @@ Data: maytracd_ad / maytracd_viet / 9nSPmYjrh9981
 /////////////////////////////////////
 
 trungtamlaixelachong.com
-Hosting: trungtam / trungtamlaixelachong@admin#2023
+Hosting: https://da.gco.vn:2222/ / trungtam / trungtamlaixelachong@admin#2023
 
 FTP: gco@trungtamlaixelachong.com / DsvPZ8VZ
 
@@ -1166,3 +1169,23 @@ trungtamlaixelachong.vn
 
 DB: lachongvn_db / 0gOoSXVa7R
 Hosting: lachongvn / S2yYDI7hzH
+
+/////////////////////////////////////
+
+https://nib2.gcodemo.com/login
+duongcgc / Duong@6789
+
+/////////////////////////////////////
+
+https://mythuatduccuong.com/wp-admin
+NDC / pgNKwp!4$JiPIr&!H8!Gr0y6
+cuongboden@gmail.com
+
+/////////////////////////////////////
+
+adminXy43bDU3	aeLWJJS!9TE*K*qeRN5emAeo
+
+/////////////////////////////////////
+
+https://duocgiabao.vn/
+da.gco.vn / admin@duocgiabao.vn / JrLFrOsi
