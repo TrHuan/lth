@@ -942,7 +942,9 @@ DB: vv307_db / Q8R73s1W
 https://bghome.vn/bgh-login/
 admin / bgh@gco2021
 
-Data: bghomevn_db / Y1afKMk1P
+Data: bghomevn_db / 9LSgdTZCV
+
+bghomedemo_db / pEaTSRZCDQ
 
 bghomedemo@12345
 
@@ -1193,3 +1195,6 @@ adminXy43bDU3	aeLWJJS!9TE*K*qeRN5emAeo
 
 https://duocgiabao.vn/
 da.gco.vn / admin@duocgiabao.vn / JrLFrOsi
+
+
+edufly.vn
