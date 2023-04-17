@@ -1,2 +1,2 @@
-http://lth90.epizy.com/bepbon/bb-login
-admin / admin@bepbon#12345
+http://lth90.epizy.com/bepeu/eu-login
+admin / admin@bepeu#12345

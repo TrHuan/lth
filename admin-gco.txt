@@ -942,7 +942,9 @@ DB: vv307_db / Q8R73s1W
 https://bghome.vn/bgh-login/
 admin / bgh@gco2021
 
-Data: bghomevn_db / 9aQfh2GneD
+Data: bghomevn_db / Y1afKMk1P
+
+bghomedemo@12345
 
 /////////////////////////////////////
 
@@ -1174,6 +1176,8 @@ Hosting: lachongvn / S2yYDI7hzH
 
 https://nib2.gcodemo.com/login
 duongcgc / Duong@6789
+
+Hình ảnh bàn giao: https://prnt.sc/tPujght9hD07
 
 /////////////////////////////////////
 
