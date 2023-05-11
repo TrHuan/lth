@@ -1,0 +1,391 @@
+@media (max-width: 1529px) {
+	.main-header {
+	    padding: 57px 15px 45px;
+	}
+	.hotline-block .hotline-box {
+		font-size: 20px;
+	}
+	.hotline-block .hotline-box .number {
+		font-size: 26px;
+	}
+
+	.main-content {
+	    padding: 65px 15px;
+	}
+	.main-content .grid {
+		margin: -15px;
+	}
+	.main-content .item {
+		padding: 15px;
+	}
+
+	.advanced-search-form select,
+	.advanced-search-form input {
+	    margin: 5px 10px 5px 0;
+	}
+	.single-menus .content-table td {
+	    padding: 70px 10px;
+	    font-size: 14px;
+	}
+	.single-menus .content-table .title {
+		font-size: 16px;
+	}
+
+	.withdrawal-search-form select, .withdrawal-search-form input {
+	    width: 400px;
+	}
+
+	.history-search-form select, .history-search-form input {
+	    width: 199px;
+	}
+
+	.information-block {
+	    padding: 50px;
+	}
+
+	.recharges-content .content {
+	    padding: 0 15px 20px;
+	}
+	.recharge-form .image img {
+	    max-width: 100px;
+	}
+
+	.purchase-orders .table-content {
+		overflow-x: auto;
+	}
+	.purchase-orders table {
+		width: 1299px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.m-order-1 {
+		order: 1;
+	}
+	.m-order-2 {
+		order: 2;
+	}
+	.m-order-3 {
+		order: 3;
+	}
+
+	.main-header .row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.hotline-block {
+		margin-bottom: 15px;
+	}
+
+	.main-content .grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.main-sticky {
+	    padding: 25px 15px;
+	}
+	.logo p {
+	    margin-left: 15px;
+	}
+
+	.withdrawal-search-form select, .withdrawal-search-form input {
+	    width: 300px;
+	}
+
+	.recharges-content .content:after {
+		display: none;
+	}
+
+	.purchase-orders .table-content {
+		overflow-x: auto;
+	}
+	.purchase-orders table {
+		width: 1062px;
+	}
+
+	.message-alert li {
+		width: 33.3333%;
+	}
+}
+
+@media (max-width: 991px) {
+	.search-block p {
+	    white-space: initial;
+	}
+	.logo {
+	    flex-direction: column;
+	}
+	.logo p {
+	    font-size: 12px;
+	    margin: 0;
+	}
+
+	.main-content .grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.use-block .use-content {
+	    max-width: 300px;
+	    padding: 55px 15px;
+	}
+
+	.main-site {
+	    max-width: 100%;
+	    left: 0;
+	}
+
+	.single-menus .table-content {
+		overflow-x: auto;
+	}
+
+	.withdrawal-search-form select, .withdrawal-search-form input {
+	    width: 290px;
+	}
+
+	.megamenu-mobile {
+		font-size: 22px;
+		color: #fff;
+	}
+	.lumped-block > div {
+	    margin-left: 20px;
+	}
+
+	.megamenu-block {
+	    top: 0;
+	    z-index: 999;
+	    transform: translateX(-202px);
+	    transition: all 400ms;
+	}
+	.megamenu-block.active {
+	    transform: translateX(0);
+	}
+	.use-block .use-content {
+		top: 0;
+	}
+	.megamenu-block {
+		padding-top: 26px;
+	}
+	.megamenu-block .megamenu-mobile {
+		padding-right: 15px;
+		text-align: right;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	body.active .main-site {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.lumped-block > div {
+	    margin-left: 12px;
+	}
+	.surplu-title {
+	    padding: 7px 15px;
+	    font-size: 14px;
+	}
+	.remind-block {
+	    margin-right: 0px;
+	}
+
+	.logo p {
+	    font-size: 10px;
+	}
+
+	.hotline-block .hotline-box {
+	    font-size: 15px;
+	}
+	.hotline-block .hotline-box .hotline-icon {
+	    margin-right: 10px;
+	    max-width: 30px;
+	}
+	.hotline-block .hotline-box .number {
+	    font-size: 18px;
+	}
+
+	.search-form .search-list {
+	    padding: 0 10px;
+	}
+	.search-form .search-input {
+	    height: 50px;
+	    padding-left: 117px;
+	    font-size: 14px;
+	}
+	.search-form .btn {
+	    width: 50px;
+	    height: 50px;
+	    font-size: 20px;
+	}
+
+	.main-content .grid {
+	    grid-template-columns: 1fr 1fr;
+	}
+
+	.advanced-search-form select, .advanced-search-form input {
+	    width: calc(50% - 15px);
+	    /*max-width: 260px;*/
+	}
+
+	.information-block {
+	    padding: 50px 15px;
+	}
+	.information-block form span,
+	.information-block h4 {
+	    width: 180px;
+	}
+
+	.export-excel-2 {
+		display: block;
+	}
+	.export-excel-2 > div {
+		width: 100%;
+	}
+	.export-excel-2 .button {
+		width: 100%;
+		margin-top: 30px;
+		justify-content: flex-start;
+	}
+	.export-excel-2 .button .btn {
+	    margin-right: 10px;
+	    padding: 11px 20px;
+	    font-size: 15px;
+	}
+
+	.message-alert li {
+		width: 50%;
+	}
+}
+
+@media (max-width: 575px) {
+	.search-form .search-list {
+	    padding: 0;
+	    width: 50px;
+	}
+	.search-form .search-input {
+	    padding-left: 65px;
+	    font-size: 11px;
+	}
+
+	.main-content .grid {
+	    grid-template-columns: 1fr;
+	}
+
+	.advanced-search-form select, .advanced-search-form input {
+	    width: 100%;
+	    /*max-width: 260px;*/
+	    margin-right: 0;
+	}
+
+	.information-block form span,
+	.information-block h4 {
+	    width: 100%;
+	}
+	.information-block ul ul,
+	.information-block form input,
+	.information-block form select {
+		width: 100%;
+		margin: 5px 0;
+	}
+	.information-block .content > ul > li,
+	.information-block form li {
+	    flex-direction: column;
+	}
+
+	.delivery-address .information-block form select {
+		width: 100%;
+	}
+
+	.recharges-content .title {
+	    font-size: 15px;
+	}
+	.recharges-content .title:before {
+	    width: 16px;
+	    height: 16px;
+	}
+	.recharges-content .title:after {
+	    width: 10px;
+	    height: 10px;
+	    top: 17px;
+	}
+	.recharge-block li {
+	    padding-left: 25px;
+	}
+	.recharge-block .item {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 15px 5px;
+	}
+	.recharge-image {
+		margin-bottom: 10px;
+	}
+	.recharge-block ul {
+		padding-left: 10px;
+	}
+	.recharge-form .image {
+		display: block;
+	}
+	.recharge-form .image span {
+		display: block;
+		order: 1;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.recharge-form .image img {
+		margin-left: 0;
+	}
+
+	.header-bar {
+	    padding-bottom: 166px;
+	}
+	.use-title img {
+	    max-width: 40px;
+	}
+	.use-title .icon {
+		display: none;
+	}
+	.surplu-title {
+	    padding: 2px 12px;
+	    font-size: 10px;
+	}
+	.lumped-block {
+	    display: block;
+	    margin-top: 10px;
+	}
+	.megamenu-mobile {
+	    float: right;
+	    top: 5px;
+	    z-index: 9999;
+	}
+	/*.megamenu-block .megamenu-mobile {
+		position: absolute;
+		right: 0;
+	}*/
+	.lumped-block > div {
+		display: inline-block;
+		margin-left: 7px;
+	}
+
+	.hotline-block .hotline-box {
+	    font-size: 12px;
+	}
+	.hotline-block .hotline-box .number {
+	    font-size: 16px;
+	}
+
+	.message-alert li {
+		width: 100%;
+	}
+
+	.customer-content label {
+	    width: 100%;
+	}
+
+	.transport-orders-setting .total-order-setting .total-title,
+	.transport-orders-setting li {
+		display: block;
+	}
+	.address-setting li {
+		padding-left: 25px;
+	}
+}

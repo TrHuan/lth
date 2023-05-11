@@ -1,0 +1,286 @@
+
+@media (max-width: 1199px) {
+	.slide-content {
+		max-width: 960px;
+		width: 100%;
+		left: calc(50% - 480px);
+		padding: 0 60px;
+	}
+
+	.slick-products .slick-prev {
+	    left: -10px;
+	}
+	.slick-products .slick-next {
+	    right: -10px;
+	}
+
+	/*.slick-products .slick-list {
+		padding: 2px;
+	}*/
+
+	.blogs-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 991px) {
+	.slide-content {
+		max-width: 720px;
+		left: calc(50% - 360px);
+	}
+
+	.top-bar ul {
+		justify-content: center !important;
+	}
+
+	.main-bar {
+	    padding-bottom: 81px;
+	}
+	.main-sticky {
+		padding: 22px 0;
+	}
+	.megamenu-mobile {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu-open {
+		margin: 0;
+		width: 30px;
+		height: 30px;
+		top: 3px;
+	}
+	.menu-open span {
+		top: 0;
+	}
+	.menu-open span, .menu-open span:before, .menu-open span:after {
+		height: 2px;
+		background-color: #333;
+	}
+	.menu-close {
+		padding: 15px 15px 0;
+	}
+	.menu-close .close {
+		color: #333;
+		font-size: 50px;
+	}
+	.menu-content .nav ul {
+	    flex-direction: column;
+	}
+	.menu-content .nav ul li {
+		margin: 0;
+	}
+	.main-sticky .megamenu-content a {
+	    padding: 10px 0 !important;
+	}
+	.megamenu-mobile .menu-content {
+		overflow-y: scroll;
+	}
+
+	.services-box {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.services-commitments .services-box {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.services-transport .item:nth-child(3n + 1):before {
+		width: calc(100% - 15px);
+		left: 15px;
+	}
+	.services-transport .item:nth-child(3n):before {
+		width: calc(100% - 15px);
+	}
+
+	.products-sidebar {
+	    margin-bottom: 20px;
+	}
+
+	.look-form .btn {
+	    padding: 5px 15px;
+	    font-size: 15px;
+	}
+
+	.products-tab a {
+	    font-size: 12px;
+	    line-height: 1.5em;
+	}
+	.slide-content .content {
+	    padding: 0 15px 5px;
+	}
+
+	.look-bill-form {
+		grid-template-columns: 1fr;
+	}
+	.look-bill-form .form-group span {
+		min-width: 170px !important;
+	}
+	.look-bill-form .form-control {
+		min-width: calc(100% - 170px) !important;
+	}
+	.price-list-table .table-content .content,
+	.look-bill-table .table-content {
+		overflow-x: auto;
+	}
+	.price-list-table table,
+	.look-bill-table table {
+		min-width: 658px;
+	}
+	.two-table-content {
+		flex-direction: column;
+	}
+	.two-table-content .content {
+		width: 100% !important;
+		margin-bottom: 15px;
+	}
+	.price-list-table .two-table-content .content:first-child .content-table,
+	.price-list-table .two-table-content .content:first-child .title-table {
+		border-right: 1px solid #a7a9ac;
+	}
+}
+
+@media (max-width: 767px) {
+	.slide-content {
+		position: initial;
+		padding: 0;
+	}
+	.slide-content .content {
+		max-width: 100%;
+	    padding: 0 25px 40px;
+	}
+	.slick-slidershow .slick-dots {
+		bottom: 5px;
+	}
+	.slick-slidershow .slick-arrow {
+	    width: 22px;
+	    height: 40px;
+	    font-size: 25px;
+	    left: 0;
+	}
+	.slick-slidershow .slick-next {
+		left: auto;
+		right: 0;
+	}
+	.slide-content {
+	    max-width: 100%;
+	    left: 0;
+	}
+
+	.services-commitments .services-box {
+	    grid-template-columns: 1fr;
+	}
+
+	.products-tab ul {
+	    grid-template-columns: 1fr;
+	}
+	.products-tab li {
+		border-right: 1px solid #e0e0e0;
+		border-bottom: none;
+	}
+	.products-tab li:last-child {
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.blogs-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.popup-account .popups-content {
+		max-width: calc(100% - 30px);
+	}
+	.form-account .content {
+		display: block;
+	}
+	.form-account .mxh-login {
+		display: flex;
+	}
+	.form-account .mxh-login > div {
+		width: 50%;
+	}
+	.form-account .form-group {
+		max-width: 100%;
+	}
+
+}
+
+@media (max-width: 575px) {
+	.title {
+	    font-size: 20px !important;
+	    line-height: 1.5em;
+	}
+
+	.top-bar span {
+		margin-left: 0;
+	}
+	.top-bar li {
+		padding: 0 5px;
+	}
+	.top-bar li:after {
+		display: none;
+	}
+	.top-bar-right a {
+	    margin-right: 0;
+	}
+	.top-bar-right img {
+		max-width: 114px;
+	}
+	.regis-all .regis-face {
+	    padding-left: 9px;
+	}
+
+	.services-box {
+	    grid-template-columns: 1fr;
+	}
+	.service-text {
+		font-size: 14px;
+	}
+	.services-commitment .service-title {
+	    font-size: 15px;
+	}
+
+	.products-title .title {
+	    font-size: 20px;
+	}
+
+	.blog-detail-short-description {
+	    font-size: 16px;
+	}
+	.blog-detail-description .title {
+	    font-size: 18px;
+	}
+	.sidebar-blogs-title .title {
+		font-size: 20px;
+	}
+
+	.policy-detail-short-description {
+	    font-size: 16px;
+	}
+	.policy-detail-description .title {
+	    font-size: 18px;
+	}
+	.sidebar-policys-title .title {
+		font-size: 20px;
+	}
+
+	.look-up-bill-title {
+	    margin-bottom: 15px;
+	}
+	.look-bill-form .form-group {
+	    padding: 0 15px;
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	.look-bill-form .form-control {
+	    min-width: 100% !important;
+	}
+	.look-bill-table {
+	    padding: 0 15px;
+	}
+
+	.popup-account-title a {
+		font-size: 16px;
+	}
+	.form-account .mxh-login > div {
+		width: 100%;
+		padding: 10px;
+	}
+}
