@@ -941,12 +941,12 @@ DB: vv307_db / Q8R73s1W
 
 /////////////////////////////////////
 
+bghomevn / bghomevn@2023#123454321
+
 https://bghome.vn/bgh-login/
 admin / bgh@gco2021
 
-Data: bghomevn_db / 9LSgdTZCV
-
-bghomedemo_db / pEaTSRZCDQ
+Data: bghomevn_db / BKXb8OPqp
 
 bghomedemo@12345
 
