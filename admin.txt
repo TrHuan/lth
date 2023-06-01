@@ -28,7 +28,7 @@ $email_pass = 'iagzjtpflskmgijh';
 $smtp_host = 'smtp.gmail.com';
 $smtp_port = 465;
 $email_shop = 'huanjob177@gmail.com';
-$email_pass = 'chưa có';
+$email_pass = 'imyqbmefdevmuaym';
 
 /////////////////////////////////////
 
@@ -195,6 +195,13 @@ https://www.topcv.vn/xem-cv/A1cECgYHBgRcUQFcBARTAgACVVUAVgtWCwIHUQ42a4
 chat gpt
 trhuan177@gmail.com / lth@123454321
 API Key: 
+
+/////////////////////////////////////
+
+tối ưu web https://gtmetrix.com/
+điểm > 75%, tốc độ web < 3s là ok
+
+/////////////////////////////////////
 
 PayPal: 
 CLIENT ID: AUo0tSoz0GRMElWHNc9No6nPODoaxmoZ7LFNCEIHvnM2ppjYs80CSWlunGqA2G5hpsYChqzKzJAltv52

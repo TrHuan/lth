@@ -129,6 +129,9 @@ DB: bepgiahuy_db / A50jD697u
 bepgiahuy_db2 / A50jD697u
 da.gco.vn / bepgiahuy / bepgiahuy@2023
 
+beptuduc.vn
+da.gco.vn / beptuducvn / 6Q#0JliCp]Uo954c
+
 //////////////////////////////
 
 https://medhanoi.gcosoftware.vn/
@@ -251,6 +254,8 @@ FTP: skinloveme@skinloveme.com / x_H6M4*ajEL@
 
 /////////////////////////////////////
 
+lên mạng nhwof sửa code -> ko hỗ trợ bảo hành sửa code
+
 vanphuccare / gco_admin / vanphuccare@2021
 
 https://vanphuccare.gcosoftware.vn/
@@ -332,6 +337,13 @@ Data: webmau_vv106 / webmau_vv106 / gSS74N6fk
 
 https://pcccvn.gcosoftware.vn
 Data: gcoweb_pcccvn / gcowe_pcccvn / O@g24gd7
+
+https://pcccvn.com.vn/
+admin@gmail.com / 1uYF^grTbK9@FBcNA*X6XULi
+
+Control panel	http://112.213.89.42:2082  hay http://gaad.asia:2082
+Username	culteaco
+Password	5gy3JvVS72pE																									
 
 /////////////////////////////////////
 
@@ -1134,6 +1146,14 @@ https://137.59.106.30:2083/
 
 Data: q861trcgeaz4_dvgkgs / $BbBSjd~N7[}
 
+https://dichvugiatghekgs.com/
+https://137.59.106.30:2083/
+- Tên đăng nhập: q861trcgeaz4
+- Mật khẩu: Thaongoc2725
+
+khonggiansach.hotro2725@gmail.com
+ukecdxeomrmgpzuf
+
 /////////////////////////////////////
 
 http://vv053.local/
@@ -1156,7 +1176,7 @@ Data: vv093_db / JjDiCghX
 http://vv156.local/
 
 https://vv156.gcodemo.com/tdg-login
-vv156_admin / vv156@veoveo#313truongchinh
+https://vv106.gcodemo.com/ / vv156@veoveo#313truongchinh
 
 Data: vv156_db / 4dPi2Jxx
 
@@ -1231,3 +1251,14 @@ FTP: gco@hoankimviet.vn / XEdJ9Q2h
 http://duocgiabao.vn/
 
 https://da.gco.vn:2222/ / duocgiabao / duocgiabao@2023#12345
+
+/////////////////////////////////////
+		
+https://dogocaocapngoctu.com/wp-admin/
+dogoatu / KJGkOF3H2)$U)oaK$9kP9^mA
+
+/////////////////////////////////////
+
+inphuongdong.com
+
+inphuongdo / inphuongdo@2023#12345
