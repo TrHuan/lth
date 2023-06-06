@@ -181,7 +181,11 @@ huanjob177@gmail.com / lth@123456789
     Allow: /wp-admin/images/*
     Sitemap: thay link sitemap của web/sitemap_index.xml
 8: Cài SSL trên host
-9: Đặt lại quyền các folder (755) và file (644) của web
+9: Đặt lại quyền các folder và file của web
+- Folders – 755
+- Files – 644
+- wp-config.php – 600
+- .htaccess – 644, hoặc 600
 
 /////////////////////////////////////
 
