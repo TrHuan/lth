@@ -1,15 +1,1 @@
-http://lth90.epizy.com/lth-bh01/wp-admin
-bh01_admin / bh01@123454321
-
-/////
-
-https://lth.azdigi.shop/lth/lth-bh01/
-bh01_admin / bh01@123454321
-
-ngjynjcv_bh01 / yMRPkxmpv
-
-/////
-
-http://lthtest.gcodemo.com/
-
-Data: lthtest_db / cVgXDhKov
+lth001-bepeu / lth001_admin / lth001@admin#12345
