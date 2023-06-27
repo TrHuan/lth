@@ -1,17 +1,21 @@
 Host: http://116.118.48.23:8998/948663fd
 username: ztndjt2f	/ password: 8252bbe43163
+FTP: 116.118.48.23 / ztndjt2f / 2iz8zRxMsZKhpYcy
 
 
 https://giaiphapmarketing.vn/wp-login.php
-gp_user / Gcogiaiphapmarketing@123
+gp_user / Gcogiaiphapmarketing@12345
+
+https://seoplus.com.vn/seoplus/
+gco_admin / Admin@1234!Seoplus.com.vn@1241
+FTP: 116.118.48.23 / seoplus.com.vn / mBSxdYkbwzARZybE
 
 https://phongcachlamdep.com/wp-admin
 helios / Admin@1234!Gcoads123456
 Data: sql_phongcachlam / x3GA46Yy7ak6isxX
 
-https://seoplus.com.vn/seoplus/
-gco_admin / Admin@1234!Seoplus.com.vn@1241
-FTP: 116.118.48.23 / seoplus.com.vn / mBSxdYkbwzARZybE
+https://manhuaaz.com/hongky
+admin / Admin@1234!Manhuascom@)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -32,3 +36,41 @@ FTP: / 7]n8kO25u7UUTHF
 
 https://banglaixeotohanoi.com/
 banglaixeotohanoi / wzhyh^oq6H5H(rPQNEd*K&P!
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+https://haloka.com.vn/
+https://da.gco.vn:2222/ / halokaco / halokaco@2023#12345
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+https://gameoff.vn/
+https://da.gco.vn:2222/ / gameoffv / gameoffv@2023#12345
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+http://103.162.31.90:1891/
+admin / bkns@123
+
+https://khucongnghiepvn.com/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+haloka.com.vn
+nhahungdien.vn
+thienphuocfurniture.com
+hataphaco.com
+nhangiacongmypham.vn
+nhuadenhat.com.vn
+httechgroup.vn
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+https://sieutaywin.com:2083/
+- Tên đăng nhập: evkef5gib0zt
+- Mật khẩu: @!)jY8Rtp7OAu$!)
+FTP: admin@sieutaywin.com / {RB)sKN1C&!s
+
+
+https://sieutaywin.com/wp-login.php
+gco_admin / sieutaywin@gcovn2021#
