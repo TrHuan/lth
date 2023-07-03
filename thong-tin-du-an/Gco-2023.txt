@@ -54,6 +54,8 @@ admin / bkns@123
 
 https://khucongnghiepvn.com/
 
+kcnadmin / kcnadmin@2023#12345
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 haloka.com.vn
@@ -74,3 +76,26 @@ FTP: admin@sieutaywin.com / {RB)sKN1C&!s
 
 https://sieutaywin.com/wp-login.php
 gco_admin / sieutaywin@gcovn2021#
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+http://invnholdings.com/wp-admin
+admin / 123456@
+FTP: gco@invnholdings.com / Ue9qdwAfL
+DB: invnholdin_db / 248nqmJhZ4
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+https://login.secureweb.vn/accounts/login
+fnams145 / Admin@1234!Hongky
+
+FTP:
+Host name: cnode004.secureweb.vn
+Port: 9090
+Username: fnams145
+Password: KweeQsRoeoSX 
+
+
+
+https://trumcokhi.com.vn/
+trumcokhi / Admin@1234!Trumcokhi1
