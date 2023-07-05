@@ -53,8 +53,9 @@ http://103.162.31.90:1891/
 admin / bkns@123
 
 https://khucongnghiepvn.com/
-
 kcnadmin / kcnadmin@2023#12345
+Data: khucongnghiepvn_kcnvncom / rxlZo0KBD
+FTP: gco@khucongnghiepvn.com / 5eBgnYqACx
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
