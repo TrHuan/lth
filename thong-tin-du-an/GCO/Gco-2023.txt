@@ -19,11 +19,6 @@ admin / Admin@1234!Manhuascom@)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-invnholdings.com
-invnholdin / invnholdin@2023#12345
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 https://hoankimviet.vn/admin
 - Tài khoản: hoankimviet
 - Mật khẩu: cJeCZ#QyFrAh0aKIbRFVVWcg
@@ -80,10 +75,12 @@ gco_admin / sieutaywin@gcovn2021#
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-http://invnholdings.com/wp-admin
+https://invnholdings.com/wp-admin
 admin / 123456@
 FTP: gco@invnholdings.com / Ue9qdwAfL
-DB: invnholdin_db / 248nqmJhZ4
+DB: invnholdin_db / 6DptEWlwQN
+
+invnholdin / invnholdin@12345
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -95,8 +92,6 @@ Host name: cnode004.secureweb.vn
 Port: 9090
 Username: fnams145
 Password: KweeQsRoeoSX 
-
-
 
 https://trumcokhi.com.vn/
 trumcokhi / Admin@1234!Trumcokhi1
