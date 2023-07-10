@@ -4,7 +4,8 @@ FTP: 116.118.48.23 / ztndjt2f / 2iz8zRxMsZKhpYcy
 
 
 https://giaiphapmarketing.vn/wp-login.php
-gp_user / Gcogiaiphapmarketing@12345
+gp_user / Gcogiaiphapmarketing#12345
+Data: giaiphapmarketin / 6Sb4WmHGCajZMM5C
 
 https://seoplus.com.vn/seoplus/
 gco_admin / Admin@1234!Seoplus.com.vn@1241

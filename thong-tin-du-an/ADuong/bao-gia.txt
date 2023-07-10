@@ -1,0 +1,13 @@
+
+Dbiz - trang đăng ký - 500k
+
+
+
+Nhakhoa                                             - 2tr
+Thương hiệu phân phối, slide brand, thêm lượt xem   - 1tr
+Chi tiết sản phẩm                                   - 1tr (500k) - 28/4
+Sửa layout thư viện (cây lâm sàng)                  - 500k - 25/5
+Sửa layout thư viện (implant...)                    - 300k - 25/5
+bổ xung layout tuyển dụng, thư viện                 - 200k - 25/5
+
+--------------------------------------------------  4tr500k
