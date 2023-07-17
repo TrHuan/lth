@@ -1,0 +1,10 @@
+2023-07-15T03:14:47+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-admin\includes\class-wp-privacy-policy-content.php on line 11
+
+2023-07-15T03:14:47+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\ProductTitle.php on line 2
+
+2023-07-15T10:03:20+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 65536 bytes) in D:\wamp64\www\job\lth\lth-cv\wp-admin\includes\media.php on line 1309
+
+2023-07-15T14:49:57+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-admin\includes\user.php on line 16
+
+2023-07-15T14:50:04+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\setup.php on line 412
+
