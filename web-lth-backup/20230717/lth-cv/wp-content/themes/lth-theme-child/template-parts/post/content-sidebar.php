@@ -5,7 +5,7 @@
             <?php if (has_post_thumbnail()) { ?>
                 <div class="content-image">      
                     <a href="<?php the_permalink(); ?>" title="" class="image">
-                        <img src="<?php echo lth_custom_img('full', 100, 70);?>" width="100" height="70" alt="<?php the_title(); ?>">
+                        <img src="<?php echo lth_custom_img('full', 160, 107);?>" width="160" height="107" alt="<?php the_title(); ?>">
                     </a>
                 </div>
             <?php } ?>

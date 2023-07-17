@@ -5,10 +5,10 @@
                 <div class="post-image">
                     <a href="<?php the_permalink(); ?>" title="" class="image">
                         <picture>
-                            <source media="(min-width:1200px)" srcset="<?php echo lth_custom_img('full', 420, 420); ?>">
-                            <source media="(min-width:768px)" srcset="<?php echo lth_custom_img('full', 330, 330); ?>">
-                            <source media="(min-width:576px)" srcset="<?php echo lth_custom_img('full', 240, 240); ?>">
-                            <img src="<?php echo lth_custom_img('full', 420, 420); ?>" width="420" height="420" alt="<?php the_title(); ?>">
+                            <source media="(min-width:1200px)" srcset="<?php echo lth_custom_img('full', 420, 280); ?>">
+                            <source media="(min-width:768px)" srcset="<?php echo lth_custom_img('full', 330, 220); ?>">
+                            <source media="(min-width:576px)" srcset="<?php echo lth_custom_img('full', 240, 160); ?>">
+                            <img src="<?php echo lth_custom_img('full', 420, 280); ?>" width="420" height="280" alt="<?php the_title(); ?>">
                         </picture>
                     </a>
                 </div>
