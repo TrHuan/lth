@@ -2788,12 +2788,12 @@ footer {
   //   padding: 0 8px;
   // }
 
-  .page-searchs .searchs-list .item {
-    width: 50%;
+  .lth-sidebars {
+    margin-top: 30px;
   }
 
-  .lth-login {
-    padding: 0 !important;
+  .page-searchs .searchs-list .item {
+    width: 50%;
   }
 
   .main-posts .posts-box {
@@ -2812,8 +2812,11 @@ footer {
     width: 50%;
   }
 
-  .login-box li {
+  .lth-login {
+    padding: 0 !important;
+  }
 
+  .login-box li {
     strong,
     span,
     label {
