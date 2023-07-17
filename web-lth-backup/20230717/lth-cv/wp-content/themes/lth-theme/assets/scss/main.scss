@@ -2334,6 +2334,8 @@ footer {
 
     li {
       padding-right: 0;
+      margin-bottom: 0;
+      padding: 5px 0;
     }
   }
 }
@@ -2750,19 +2752,25 @@ footer {
       }
     }
 
-    .menu-item-has-children a .icon {
-      width: 26px;
-      height: 26px;
-      text-align: center;
-      line-height: 24px;
-      border: 1px solid $border_color;
+    .menu-item-has-children a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .icon {
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 24px;
+        border: 1px solid $border_color;
+      }
     }
 
     .sub-menu {
       display: none;
 
       .menu-item-has-children a .icon {
-        transform: rotate(90deg);
+        transform: rotate(0deg);
       }
 
       li {
