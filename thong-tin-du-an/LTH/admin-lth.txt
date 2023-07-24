@@ -1,1 +1,7 @@
-lth001-bepeu / lth001_admin / lth001@admin#12345
+Web bán hàng đồ gia dụng
+/lth001-login/
+- lth001-bepeu / lth001_admin / lth001@admin#12345
+
+Web giới thiệu dịch vụ y tế
+/lth002-login/
+- lth002-mevabe / lth002_admin / lth002@admin#12345

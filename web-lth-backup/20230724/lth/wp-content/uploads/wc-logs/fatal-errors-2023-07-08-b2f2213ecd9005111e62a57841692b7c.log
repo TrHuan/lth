@@ -1,0 +1,8 @@
+2023-07-08T03:15:04+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 536576 bytes) in D:\wamp64\www\lth\lth-cv\wp-includes\pomo\streams.php on line 229
+
+2023-07-08T03:57:09+00:00 CRITICAL syntax error, unexpected ''separator1'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\wamp64\www\lth\lth-cv\wp-content\themes\lth-theme\inc\setup.php on line 347
+
+2023-07-08T03:57:13+00:00 CRITICAL syntax error, unexpected ''separator1'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\wamp64\www\lth\lth-cv\wp-content\themes\lth-theme\inc\setup.php on line 347
+
+2023-07-08T03:57:15+00:00 CRITICAL syntax error, unexpected ''separator1'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\wamp64\www\lth\lth-cv\wp-content\themes\lth-theme\inc\setup.php on line 347
+
