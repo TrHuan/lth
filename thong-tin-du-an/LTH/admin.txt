@@ -202,8 +202,13 @@ API Key:
 
 /////////////////////////////////////
 
-tối ưu web https://gtmetrix.com/
+tối ưu web 
+https://gtmetrix.com/
 điểm > 75%, tốc độ web < 3s là ok
+
+https://pagespeed.web.dev/?hl=vi
+desktop >= 80
+mobile >= 50
 
 /////////////////////////////////////
 

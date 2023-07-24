@@ -5,3 +5,7 @@ Web bán hàng đồ gia dụng
 Web giới thiệu dịch vụ y tế
 /lth002-login/
 - lth002-mevabe / lth002_admin / lth002@admin#12345
+
+Web giới thiệu dịch vụ nhà hàng
+/lth003-login/
+- lth003-minhanh / lth003_admin / lth003@admin#12345
