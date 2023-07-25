@@ -2,10 +2,10 @@ Web bán hàng đồ gia dụng
 /lth001-login/
 - lth001-bepeu / lth001_admin / lth001@admin#12345
 
-Web giới thiệu dịch vụ y tế
+Web giới thiệu, dịch vụ, y tế
 /lth002-login/
 - lth002-mevabe / lth002_admin / lth002@admin#12345
 
-Web giới thiệu dịch vụ nhà hàng
+Web giới thiệu, dịch vụ, nhà hàng, sự kiện
 /lth003-login/
 - lth003-minhanh / lth003_admin / lth003@admin#12345

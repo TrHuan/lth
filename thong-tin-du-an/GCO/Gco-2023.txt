@@ -77,7 +77,7 @@ gco_admin / sieutaywin@gcovn2021#
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 https://invnholdings.com/wp-admin
-admin / 123456@
+admin / 123456@invn
 FTP: gco@invnholdings.com / Ue9qdwAfL
 DB: invnholdin_db / 6DptEWlwQN
 
