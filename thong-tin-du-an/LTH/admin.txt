@@ -189,6 +189,16 @@ huanjob177@gmail.com / lth@123456789
 
 /////////////////////////////////////
 
+Rocket:
+- loại trừ js (Delay JavaScript execution)
+    /wp-includes/js/jquery/jquery.min.js?(.*)
+    /wp-content/themes/lth-theme/assets/js/wow.min.js?(.*)
+    /wp-content/themes/lth-theme/assets/js/slick.min.js?(.*)
+    /wp-content/themes/lth-theme/assets/js/effects.js?(.*)
+
+
+/////////////////////////////////////
+
 CV:
 https://drive.google.com/file/d/1XdG_P8rFkkEOM9yK5NIJC8ubu6mrXEqu/view?usp=sharing
 
@@ -247,3 +257,7 @@ FTP: ftpupload.net / epiz_34190420 / zrNj118aI5HZe
 /////////////////////////////////////
 
 Facebook: phuongmai@051094
+
+/////////////////////////////////////
+
+huanlt@invn.com.vn / lth@123454321
