@@ -1,3 +1,17 @@
-Invn Holdings
+
+https://da.gco.vn:2222/ / gcovn / 6QmtZK2fL4fZMtfW
+
+Invn Holdings (invn.com.vn)
 holdings-login
 admin / holdings@invn#12345
+
+https://invnholdings.com/holdings-login
+admin / holdings@invn#12345
+Data: invnholdin_db / HntxdTxMO
+FTP: da.gco.vn / ivnadmin@invnholdings.com / LxG8JF81Jq
+
+/////////////////////////////////////////////
+
+http://unihouz.com/unihouz-login/
+unihoz / unihouz@123454321
+FTP: da.gco.vn / admin@unihouz.com / 9yMA6qvF

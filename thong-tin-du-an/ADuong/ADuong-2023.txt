@@ -47,3 +47,10 @@ IP: 172.96.185.212
 FTP Username: huanadmin@pdent.com.vn
 FTP server: ftp.tiendatblog.net
 ELJ$2]XCvl~2
+
+//////////////////////////////////////////////////
+
+ftp.tiendatblog.net
+172.96.185.238
+huanadmin@pdent.com.vn
+q92$%MTkf48B
