@@ -1,6 +1,12 @@
 
 https://da.gco.vn:2222/ / gcovn / 6QmtZK2fL4fZMtfW
 
+IP	115.165.161.188	
+Name Server 1	ns1.gco.vn	
+Name Server 2	ns2.gco.vn
+
+/////////////////////////////////////////////
+
 Invn Holdings (invn.com.vn)
 holdings-login
 admin / holdings@invn#12345
@@ -15,3 +21,66 @@ FTP: da.gco.vn / ivnadmin@invnholdings.com / LxG8JF81Jq
 http://unihouz.com/unihouz-login/
 unihoz / unihouz@123454321
 FTP: da.gco.vn / admin@unihouz.com / 9yMA6qvF
+Data: unihouzc_gco1 / O8E53zs0
+
+https://unihouz.vn/
+unihoz / unihouz@123454321
+Data: unihouz_db / gjFwkKk5B
+FTP: da.gco.vn / unihouz / unihouz@2023#12345
+
+/////////////////////////////////////////////
+
+https://cokhitoana.vn/
+ID: Seo3
+MK: 50sTZ)Ig0g#xia*%AR(G%mWW
+
+/////////////////////////////////////////////
+
+https://login.secureweb.vn/accounts/login
+fnams145 / Admin@1234!Hongky
+
+FTP:
+Host name: cnode004.secureweb.vn
+Port: 9090
+Username: fnams145
+Password: KweeQsRoeoSX 
+
+https://trumcokhi.com.vn/
+trumcokhi / Admin@1234!Trumcokhi1
+
+/////////////////////////////////////////////
+
+https://giaiphapmarketing.vn/wp-login.php
+gp_user / Gcogiaiphapmarketing#12345
+Data: giaiphapmarketin / 6Sb4WmHGCajZMM5C
+
+/////////////////////////////////////////////
+
+https://thietbimoitruongmas.com/wp-admin
+admin / minhduong@gco2021
+
+/////////////////////////////////////////////
+
+http://svr01.linuxhosting.asia:2082
+Username: daphac51
+Password: ZywqYVa5UTQX
+
+https://daphaco.com/admincp/
+AdminDaphaco / Daphaco888!@888Daphaco
+FTP: invn_admin / 8wM4Ex7kRkW9
+
+/////////////////////////////////////////////
+
+https://pasini.vn/psn-login
+gco_admin / gco@123454321
+DB: zanilock_db / FmN5tX5M0
+
+/////////////////////////////////////////////
+
+Edubamboo (edubamboo.com)
+invn_edubamboo_admin / invn@edubamboo@12345
+
+/////////////////////////////////////////////
+
+SEO
+203.113.172.116:2083 / vtnweftuhosting / M9Ga%2BqUga15

@@ -79,6 +79,14 @@ function my_search_is_exact($search, $wp_query){
 
 /////////////////////////////////////
 
+Gmail
+
+trhuan177@gmail.com / phuongmai051094
+
+huanlt177@gmail.com / lth@123454321
+
+/////////////////////////////////////
+
 Key Wordfence free:
 trhuan177@gmail.com
 e7dfc85c7119fc6fde8203323a32dae3edae1c05e4c1db232fcc0955c0bbc5439f6fb9b994b8b4668500c103398a6e85690410e574fe1eb099a544f2c627029a
@@ -256,8 +264,9 @@ FTP: ftpupload.net / epiz_34190420 / zrNj118aI5HZe
 
 /////////////////////////////////////
 
-Facebook: phuongmai@051094
+Facebook: lth@123454321
 
 /////////////////////////////////////
 
+http://mail.invn.com.vn/webmail/login/
 huanlt@invn.com.vn / lth@123454321
