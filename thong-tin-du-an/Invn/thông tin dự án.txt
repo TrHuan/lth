@@ -18,8 +18,8 @@ FTP: da.gco.vn / ivnadmin@invnholdings.com / LxG8JF81Jq
 
 /////////////////////////////////////////////
 
-http://unihouz.com/unihouz-login/
-unihoz / unihouz@123454321
+http://unihouz.com/wp-admin/
+healer / unihouz@123454321
 FTP: da.gco.vn / admin@unihouz.com / 9yMA6qvF
 Data: unihouzc_gco1 / O8E53zs0
 
