@@ -97,3 +97,9 @@ https://invn.com.vn/invn-login
 admin / admin@invn#12345
 Data: invn_db / 4i5itK2zf
 FTP: da.gco.vn / invn / invn@2023#12345
+
+/////////////////////////////////////////////
+
+http://103.81.84.71:2222
+admin / ZWYyZjNlMmMyOGFl
+FTP: 103.81.84.71 / gco_dev@makawa.vn / O2xcV8VdQm
