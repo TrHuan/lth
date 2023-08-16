@@ -1,8 +1,0 @@
-2023-06-10T03:06:35+00:00 CRITICAL Uncaught Error: Call to undefined function acf_register_field_type() in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/includes/fields/class-acf-field-text.php:178
-Stack trace:
-#0 /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/includes/acf-utility-functions.php(156): include_once()
-#1 /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/acf.php(246): acf_include('includes/fields...')
-#2 /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/includes/api/api-helpers.php(226): ACF->init()
-#3 /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/includes/api/api-template.php(162): acf_init()
-#4 /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/includes/api/api-template.php(26): acf_maybe_get_field('other', 'opti in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/lth-cv/wp-content/themes/lth-theme/inc/plugins/acf/includes/fields/class-acf-field-text.php on line 178
-

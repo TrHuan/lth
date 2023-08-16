@@ -1,6 +1,0 @@
-2023-07-17T02:58:41+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wordpress-seo\src\integrations\admin\link-count-columns-integration.php on line 3
-
-2023-07-17T02:58:41+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\includes\admin\marketplace-suggestions\class-wc-marketplace-suggestions.php on line 11
-
-2023-07-17T06:43:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wordpress-seo\src\builders\indexable-link-builder.php on line 3
-
