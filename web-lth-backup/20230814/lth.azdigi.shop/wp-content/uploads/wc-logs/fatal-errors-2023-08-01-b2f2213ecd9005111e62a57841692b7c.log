@@ -1,0 +1,4 @@
+2023-08-01T14:12:51+00:00 CRITICAL require(): Failed opening required '/home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/FeaturedItem.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php on line 90
+
+2023-08-01T14:12:51+00:00 CRITICAL require(): Failed opening required '/home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/FeaturedItem.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php on line 90
+

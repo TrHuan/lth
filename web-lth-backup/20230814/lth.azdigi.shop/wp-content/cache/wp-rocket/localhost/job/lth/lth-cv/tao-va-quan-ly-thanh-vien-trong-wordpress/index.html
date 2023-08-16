@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.userEventHandler=this.triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e.triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick")}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+    
+    <meta name="description" content="LTH - Một trang web mới sử dụng WordPress">
+    <meta name="keywords" content="Php, HTML, CSS, JavaScript">
+    <meta name="author" content="LTH">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- <meta name="robots" content="noindex" />
+    <meta name="AdsBot-Google" content="noindex" />
+    <meta name="Googlebot" content="noindex"> -->
+
+    <link rel="icon" href="http://localhost/job/lth/lth-cv/wp-content/uploads/2022/03/logo.png" type="image/gif">
+
+                        <link rel="canonical" href="http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/" />
+            
+    
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.10 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Tạo và quản lý thành viên trong wordpress - LTH</title>
+	<meta name="description" content="Tạo và quản lý thành viên trong wordpress - LTH - Cài đặt và sử dụng Wordpress" />
+	<link rel="canonical" href="http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/" />
+	<meta property="og:locale" content="vi_VN" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Tạo và quản lý thành viên trong wordpress - LTH" />
+	<meta property="og:description" content="Tạo và quản lý thành viên trong wordpress - LTH - Cài đặt và sử dụng Wordpress" />
+	<meta property="og:url" content="http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/" />
+	<meta property="og:site_name" content="LTH" />
+	<meta property="article:published_time" content="2023-06-03T08:02:00+00:00" />
+	<meta property="article:modified_time" content="2023-07-17T03:19:46+00:00" />
+	<meta property="og:image" content="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg" />
+	<meta property="og:image:width" content="1170" />
+	<meta property="og:image:height" content="716" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="LTH" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Được viết bởi" />
+	<meta name="twitter:data1" content="LTH" />
+	<meta name="twitter:label2" content="Ước tính thời gian đọc" />
+	<meta name="twitter:data2" content="3 phút" />
+	<script type="application/ld+json" class="yoast-schema-graph">{
+	    "@context": "https://schema.org",
+	    "@graph": [
+	        {
+	            "@type": "WebPage",
+	            "@id": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/",
+	            "url": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/",
+	            "name": "Tạo và quản lý thành viên trong wordpress - LTH",
+	            "isPartOf": {
+	                "@id": "http://localhost/job/lth/lth-cv/#website"
+	            },
+	            "primaryImageOfPage": {
+	                "@id": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/#primaryimage"
+	            },
+	            "image": {
+	                "@id": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/#primaryimage"
+	            },
+	            "thumbnailUrl": "http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg",
+	            "datePublished": "2023-06-03T08:02:00+00:00",
+	            "dateModified": "2023-07-17T03:19:46+00:00",
+	            "author": {
+	                "@id": "http://localhost/job/lth/lth-cv/#/schema/person/0793b749dd1344eebb98fe4e99acd585"
+	            },
+	            "description": "Tạo và quản lý thành viên trong wordpress - LTH - Cài đặt và sử dụng Wordpress",
+	            "breadcrumb": {
+	                "@id": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/#breadcrumb"
+	            },
+	            "inLanguage": "vi",
+	            "potentialAction": [
+	                {
+	                    "@type": "ReadAction",
+	                    "target": [
+	                        "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/"
+	                    ]
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "ImageObject",
+	            "inLanguage": "vi",
+	            "@id": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/#primaryimage",
+	            "url": "http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg",
+	            "contentUrl": "http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg",
+	            "width": 1170,
+	            "height": 716
+	        },
+	        {
+	            "@type": "BreadcrumbList",
+	            "@id": "http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/#breadcrumb",
+	            "itemListElement": [
+	                {
+	                    "@type": "ListItem",
+	                    "position": 1,
+	                    "name": "Home",
+	                    "item": "http://localhost/job/lth/lth-cv/"
+	                },
+	                {
+	                    "@type": "ListItem",
+	                    "position": 2,
+	                    "name": "Tạo và quản lý thành viên trong wordpress"
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "WebSite",
+	            "@id": "http://localhost/job/lth/lth-cv/#website",
+	            "url": "http://localhost/job/lth/lth-cv/",
+	            "name": "LTH",
+	            "description": "Một trang web mới sử dụng WordPress",
+	            "potentialAction": [
+	                {
+	                    "@type": "SearchAction",
+	                    "target": {
+	                        "@type": "EntryPoint",
+	                        "urlTemplate": "http://localhost/job/lth/lth-cv/?s={search_term_string}"
+	                    },
+	                    "query-input": "required name=search_term_string"
+	                }
+	            ],
+	            "inLanguage": "vi"
+	        },
+	        {
+	            "@type": "Person",
+	            "@id": "http://localhost/job/lth/lth-cv/#/schema/person/0793b749dd1344eebb98fe4e99acd585",
+	            "name": "LTH",
+	            "image": {
+	                "@type": "ImageObject",
+	                "inLanguage": "vi",
+	                "@id": "http://localhost/job/lth/lth-cv/#/schema/person/image/",
+	                "url": "http://0.gravatar.com/avatar/fd972c131ca717b28fe9cf6f3b068fdb?s=96&d=mm&r=g",
+	                "contentUrl": "http://0.gravatar.com/avatar/fd972c131ca717b28fe9cf6f3b068fdb?s=96&d=mm&r=g",
+	                "caption": "LTH"
+	            },
+	            "sameAs": [
+	                "http://localhost/job/lth/lth-cv/"
+	            ],
+	            "url": "http://localhost/job/lth/lth-cv/author/lth_90/"
+	        }
+	    ]
+	}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="LTH &raquo; Tạo và quản lý thành viên trong wordpress Dòng phản hồi" href="http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='http://localhost/job/lth/lth-cv/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='http://localhost/job/lth/lth-cv/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='http://localhost/job/lth/lth-cv/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='http://localhost/job/lth/lth-cv/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='http://localhost/job/lth/lth-cv/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='parent-style-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/style.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme-child/style.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-wow-animate-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/wow-animate.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-slick-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/slick.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-inter-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/font-inter.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-bootstrap-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/bootstrap.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-fontawesome-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/all.fontawesome.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-main-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/main.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-product-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/css/product.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lth_theme_child-css-customs-css' href='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme-child/assets/css/customs.css?ver=1.0.0' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(http://localhost/job/lth/lth-cv/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js' defer></script>
+<link rel="https://api.w.org/" href="http://localhost/job/lth/lth-cv/wp-json/" /><link rel="alternate" type="application/json" href="http://localhost/job/lth/lth-cv/wp-json/wp/v2/posts/831" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/job/lth/lth-cv/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/job/lth/lth-cv/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<meta name="generator" content="WooCommerce 7.8.2" />
+<link rel='shortlink' href='http://localhost/job/lth/lth-cv/?p=831' />
+<link rel="alternate" type="application/json+oembed" href="http://localhost/job/lth/lth-cv/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fjob%2Flth%2Flth-cv%2Ftao-va-quan-ly-thanh-vien-trong-wordpress%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://localhost/job/lth/lth-cv/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fjob%2Flth%2Flth-cv%2Ftao-va-quan-ly-thanh-vien-trong-wordpress%2F&#038;format=xml" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style><link rel="icon" href="http://localhost/job/lth/lth-cv/wp-content/uploads/2022/03/logo.png" type="image/gif"><link rel="canonical" href="http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/" />
+
+<style type="text/css">
+	.post-single-content .content a,
+	.sidebar-box .wc-layered-nav-term a:hover ~ .count,
+	.sidebar-box .wc-layered-nav-term.chosen .count,
+	.sidebar-box .wc-layered-nav-term.chosen a,
+	.product-content-box .price .amount,
+	.product-tab-box .tab-menu .active a,
+	.post-button .btn,
+	.module_products .post-price,
+	.module_products .post-price .amount,
+	.module_products .post-button .add_to_cart_button:hover,
+	.current-menu-item>a,
+	.title-box .cat-list li a.active,
+	/* .title-box .cat-list li a:hover, */
+	.title-tab .title.active,
+	.title-tab .title:hover,
+	.back-to-top,
+	.wpcf7-submit,
+	.submit,
+	.btn,
+	.button,
+	button,
+	a:hover {
+		color: #aa0000;
+	}
+
+	.lth-blogs-cats .module_cats_list li a:hover,
+	.slick-slider .slick-arrow:hover,
+	.slick-slider .slick-dots .slick-active button,
+	.sidebar-box .price_slider_wrapper .ui-slider-handle,
+	.sidebar-box .price_slider_wrapper .ui-slider-range,
+	.paginations .page-numbers:hover,
+	.paginations .page-numbers.current,
+	.post-button .btn:hover,
+	.module_products .post-image .on-sale,
+	.module_products .post-button .add_to_cart_button,
+	.footer-fixed a:hover,
+	.back-to-top:hover,
+	.wpcf7-submit:hover,
+	.submit:hover,
+	.btn:hover,
+	.button:hover,
+	button:hover {
+		background-color: #aa0000;
+		color: #fff;
+	}
+
+	.lth-blogs-cats .module_cats_list li a:hover,
+	.slick-slider .slick-arrow:hover,
+	.slick-slider .slick-dots .slick-active button,
+	.megamenu-mobile .current-menu-item a .icon,
+	.module_products .post-button .add_to_cart_button:hover,
+	.post-button .btn,
+	.paginations .page-numbers:hover,
+	.paginations .page-numbers.current,
+	.footer-fixed a:hover,
+	.wpcf7-submit,
+	.submit,
+	.btn,
+	.button,
+	button,
+	.back-to-top {
+		border-color: #aa0000;
+	}
+</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    <!-- hook của wordpress gọi đến file inc/head.php -->
+
+    
+
+<style type="text/css">
+	.btn {
+		color: #aa0000;
+	}
+
+	.btn:hover {
+		background-color: #aa0000;
+		color: #fff;
+	}
+
+	.btn {
+		border-color: #aa0000;
+	}
+</style></head>
+
+
+<body id="body-child" class="post-template-default single single-post postid-831 single-format-standard theme-lth-theme woocommerce-no-js" >
+
+    <header class="header">
+        <div class="header-stick">
+            <!-- <div class="container"> -->
+                        <div class="lazyblock-lth-section-Z1wrO8A wp-block-lazyblock-lth-section">                    <div class="lth-section " 
+            style="margin-top: 0 !important; margin-bottom: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; 
+             ">
+                                    <div class="container">
+                                
+
+<div class="wp-block-columns is-layout-flex wp-container-3">
+<div class="wp-block-column is-layout-flow" style="flex-basis:33.33%"><div class="lazyblock-lth-logo-Z9WEJs wp-block-lazyblock-lth-logo">        <div class="lth-logo">
+                                                    <a href="http://localhost/job/lth/lth-cv" title="">
+                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%2038'%3E%3C/svg%3E" alt="LTH" width="100" height="38" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/bfi_thumb/logo-q5ygwm6a0qob3xh581k0sdmljnxymbz78t2hmpol8c.png"><noscript><img decoding="async" src="http://localhost/job/lth/lth-cv/wp-content/uploads/bfi_thumb/logo-q5ygwm6a0qob3xh581k0sdmljnxymbz78t2hmpol8c.png" alt="LTH" width="100" height="38"></noscript>
+                        </a>
+                        <a href="http://localhost/job/lth/lth-cv" title="" class="title d-none">
+                            LTH                        </a>
+                        <p class="infor d-none">Một trang web mới sử dụng WordPress</p>
+                                        </div>
+</div></div>
+
+
+
+<div class="wp-block-column is-layout-flow" style="flex-basis:66.66%"><div class="lazyblock-lth-megamenu-gxQUx wp-block-lazyblock-lth-megamenu">        <article class="lth-megamenu megamenu-desktop d-none d-xl-block ">
+            <div class="module_content">
+                <div class="menus">
+                                            <ul id="menu-megamenu" class="menu"><li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-84"><a href="http://localhost/job/lth/lth-cv/">Trang chủ</a></li>
+<li id="menu-item-214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="http://localhost/job/lth/lth-cv/gioi-thieu/">Giới thiệu</a></li>
+<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="http://localhost/job/lth/lth-cv/cua-hang/">Cửa hàng</a></li>
+<li id="menu-item-738" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-738"><a href="http://localhost/job/lth/lth-cv/du-an/">Dự án</a></li>
+<li id="menu-item-180" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-180 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/">Kiến thức <i class="far fa-angle-down icon icon"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-737" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-737 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/">WordPress <i class="far fa-angle-down icon icon"></i></a>
+	<ul class="sub-menu">
+		<li id="menu-item-755" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-755"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/cai-dat-va-su-dung-wordpress/">Cài đặt và sử dụng WordPress</a></li>
+	</ul>
+</li>
+	<li id="menu-item-736" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-736"><a href="http://localhost/job/lth/lth-cv/kien-thuc/php/">PHP</a></li>
+	<li id="menu-item-735" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-735"><a href="http://localhost/job/lth/lth-cv/kien-thuc/facebook-ads/">Facebook ADS</a></li>
+</ul>
+</li>
+<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="http://localhost/job/lth/lth-cv/lien-he/">Liên hệ</a></li>
+</ul>                                    </div>
+            </div>
+        </article>
+</div>
+
+<div class="lazyblock-lth-login-222xTt wp-block-lazyblock-lth-login">        <div class="lth-login">
+                            <div class="login-box">
+                    <ul>
+                                                    <li>
+                                <a href="http://localhost/job/lth/lth-cv/tai-khoan/">
+                                    <i class="fas fa-sign-in icon"></i>
+                                    <span>Đăng nhập / Đăng ký</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </div>
+                    </div>
+</div>
+
+<div class="lazyblock-lth-search-PJhOC wp-block-lazyblock-lth-search"><div class="lth-search lth-search-icon"> 
+    
+<div class="search-box">
+    <div class="open-box d-md-none">
+        <a href="#" title="" data_toggle="menu-content" class="menu-icon">
+            <i class="far fa-search icon"></i>
+        </a>
+    </div>
+
+    <div class="content-box">
+        <div class="search-container">
+            <div class="close-box d-md-none">
+                <a href="#" title="" data_toggle="menu-content" class="menu-icon">
+                    <i class="fal fa-times icon"></i>
+                </a>
+            </div>
+
+            <form role="search" metho="get" class="forms search-form" action="http://localhost/job/lth/lth-cv/">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="s" placeholder="Tìm kiếm..." class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-search" aria-label="Search"><i class="far fa-search icon"></i></button>
+                                                    <input type="hidden" name="post_type" value="product,post">
+                                            </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div></div>
+</div>
+
+<div class="lazyblock-lth-megamenu-mobile-1xrh1P wp-block-lazyblock-lth-megamenu-mobile">        <article class="lth-megamenu megamenu-mobile d-block d-xl-none ">
+            <div class="open-box">
+                <a href="#" title="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="module_content">
+                <div class="content-box">
+                    <div class="close-box">
+                        <a href="#" title="" data_toggle="menu-content" class="menu-icon">
+                            <i class="fal fa-times"></i>
+                        </a>
+                    </div>
+
+                    <div class="menus">
+                                                    <ul id="menu-megamenu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-84"><a href="http://localhost/job/lth/lth-cv/">Trang chủ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="http://localhost/job/lth/lth-cv/gioi-thieu/">Giới thiệu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="http://localhost/job/lth/lth-cv/cua-hang/">Cửa hàng</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-738"><a href="http://localhost/job/lth/lth-cv/du-an/">Dự án</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-180 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/">Kiến thức <i class="far fa-angle-down icon icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-737 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/">WordPress <i class="far fa-angle-down icon icon"></i></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-755"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/cai-dat-va-su-dung-wordpress/">Cài đặt và sử dụng WordPress</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-736"><a href="http://localhost/job/lth/lth-cv/kien-thuc/php/">PHP</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-735"><a href="http://localhost/job/lth/lth-cv/kien-thuc/facebook-ads/">Facebook ADS</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="http://localhost/job/lth/lth-cv/lien-he/">Liên hệ</a></li>
+</ul>                                            </div>
+                </div>
+            </div>
+        </article>
+</div></div>
+</div>
+
+                </div>
+            </div>
+        </div>            <!-- </div> -->
+        </div>
+    </header>
+<main class="main main-page main-single">
+    <section class="breadcrumbs">
+    
+<article class="breadcrumb-image">
+			<img width="800" height="490" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20490'%3E%3C/svg%3E" alt="Breadcrumb" style="width: 100%;" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke.jpg"><noscript><img width="800" height="490" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke.jpg" alt="Breadcrumb" style="width: 100%;"></noscript>
+	
+	<div class="breadcrumb-title">
+		<div class="container">
+			<div class="title-box">
+									<h2 class="title">
+						Tạo và quản lý thành viên trong wordpress					</h2>
+							</div>
+		</div>
+	</div>
+</article>
+    <article class="breadcrumb-content">
+        <div class="container">
+            
+
+	<nav class="breadcrumb"><a href="http://localhost/job/lth/lth-cv">Trang chủ</a><span style="padding: 0 5px"> / </span><a href="http://localhost/job/lth/lth-cv/kien-thuc/">Kiến thức</a><span style="padding: 0 5px"> / </span><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/">WordPress</a><span style="padding: 0 5px"> / </span><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/cai-dat-va-su-dung-wordpress/">Cài đặt và sử dụng Wordpress</a><span style="padding: 0 5px"> / </span><span>Tạo và quản lý thành viên trong wordpress</span></nav>        </div>
+    </article>
+</section>    
+    <section class="lth-blog-single">
+         <div class="container">
+            <div class="row">
+                
+                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                    <div class="module module_single post-single 
+                                        module_single_left"> 
+                        <div class="module_content">
+                            <div class="post-single-content">
+            <div class="content-image">
+            <div class="image">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20600'%3E%3C/svg%3E" width="1200" height="600" alt="Tạo và quản lý thành viên trong wordpress" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg"><noscript><img src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg" width="1200" height="600" alt="Tạo và quản lý thành viên trong wordpress"></noscript>
+            </div>
+        </div>
+    
+    <h1 class="title">
+        Tạo và quản lý thành viên trong wordpress    </h1>
+
+    <ul class="post-meta">
+        <li class="post-days">
+            <i class="fal fa-calendar-alt icon"></i>
+            <span>03 Thg 06, 2023</span>
+        </li>
+
+        <li class="post-cat">
+            Chuyên mục:             <a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/cai-dat-va-su-dung-wordpress/" title="">Cài đặt và sử dụng Wordpress</a>        </li>
+
+        <li class="post-poster">
+            <i class="far fa-user icon"></i>
+            <span>LTH</span>
+        </li>
+
+        <li class="post-eye">
+            <i class="fal fa-eye icon" aria-hidden="true"> </i>
+            7 lượt xem        </li>
+    </ul>
+
+    <div class="content-excerpt">
+        <p>Quản lý thành viên trong wordpress là những người tham gia vào việc quản trị website, khách hàng, Độc giả đều. Mặc định thì wordpress sẽ gom chung tất cả lại và quản lý cùng một chỗ. Trong bài viết này, chúng ta hãy cùng tìm hiểu về cách tạo và quản lý thành viên trong wordpress nhé!</p>
+    </div>
+
+    <div class="entry-content content">
+        <h2>Tạo thành viên mới</h2>
+<p>Để tạo thành viên mới, các bạn vào menu <strong>Thành viên </strong>&gt; <strong>Thêm mới</strong>. Sau đó điền các thông tin như:</p>
+<ul>
+<li><strong>Tên người dùng:</strong> là id dùng để đăng nhập của thành viên mới.</li>
+<li><strong>Email:</strong> địa chỉ email của thành viên</li>
+<li><strong>Mật khẩu:</strong> tự tạo hoặc bạn có thể điền mật khẩu vào.</li>
+<li><strong>Gửi thông báo đến thành viên:</strong> thông tin chí tiết tài khoản sẽ được gởi đến email dùng để đăng ký thành viên</li>
+<li><strong>Vai trò:</strong> vai trò của thành viên mới trên website sẽ là gì. Tuỳ thuộc vào công việc đảm nhiệm mà chọn vài trò phù hợp.</li>
+</ul>
+<p><img decoding="async" class="size-full wp-image-832 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201366%201230'%3E%3C/svg%3E" alt="" width="1366" height="1230" data-lazy-srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-02.png 1366w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-02-768x692.png 768w" data-lazy-sizes="(max-width: 1366px) 100vw, 1366px" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-02.png" /><noscript><img decoding="async" class="size-full wp-image-832 aligncenter" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-02.png" alt="" width="1366" height="1230" srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-02.png 1366w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-02-768x692.png 768w" sizes="(max-width: 1366px) 100vw, 1366px" /></noscript></p>
+<h2>Quản lý thành viên</h2>
+<p>Sau khi tạo thành viên mới, bạn vào menu quản trị thành viên. Bạn sẽ thấy danh sách các thành viên trên website. Đối với các thành viên là người quản lý website, bạn có thể tạo tài khoản cho họ. Tuỳ vào mục đích của website, như web bán hàng, hay website học tập online mà bạn có thể cho phép mọi người tự đăng ký thành viên. Lúc này bạn cần tạo các trang đăng ký, quản lý hồ sơ ngoài trang chủ để họ sử dụng, nhằm đảm bảo an toàn cho trang quản trị. Để làm được điều này, ngoài sử dụng code bạn có thể sử dụng plugin thay thế. Hoặc một số plugin chức năng có sẵn các trang đăng ký và quản lý tài khoản đi kèm ví dụ như plugin bán hàng Woocommerce.</p>
+<p><img decoding="async" class="size-full wp-image-833 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201343%20526'%3E%3C/svg%3E" alt="" width="1343" height="526" data-lazy-srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-03.jpg 1343w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-03-768x301.jpg 768w" data-lazy-sizes="(max-width: 1343px) 100vw, 1343px" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-03.jpg" /><noscript><img decoding="async" class="size-full wp-image-833 aligncenter" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-03.jpg" alt="" width="1343" height="526" srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-03.jpg 1343w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-03-768x301.jpg 768w" sizes="(max-width: 1343px) 100vw, 1343px" /></noscript></p>
+<h2>Quản lý hồ sơ cá nhân</h2>
+<p>Mỗi thành viên được phép đăng nhập vào trang quản trị. Họ đều có thể tự chỉnh sửa hồ sơ cá nhân cho mình bằng cách vào <strong>menu Hồ sơ</strong>. Ở đây, mọi người có thể thay đổi tông màu cho trang quản trị, thay đổi tên họ, lựa chọn tên hiển thị (hiển thị tên tác giả trong bài viết), tiểu sử, ảnh đại diện cũng như thay đổi mật khẩu.</p>
+<p><img decoding="async" class="size-full wp-image-834 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201170%20716'%3E%3C/svg%3E" alt="" width="1170" height="716" data-lazy-srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg 1170w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04-768x470.jpg 768w" data-lazy-sizes="(max-width: 1170px) 100vw, 1170px" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg" /><noscript><img decoding="async" class="size-full wp-image-834 aligncenter" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg" alt="" width="1170" height="716" srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04.jpg 1170w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/07/thanh-vien-04-768x470.jpg 768w" sizes="(max-width: 1170px) 100vw, 1170px" /></noscript></p>
+<h2>Tổng kết</h2>
+<p>WordPress có <em><strong>cách tạo và quản lý thành viên</strong></em> khá đơn giản và dễ dùng. Tuy nhiên, với những website đa chức năng, hoặc có những chức năng đặc biệt, chẳng hạn như website đào tạo online, thì cần những tính năng quản lý chi tiết hơn, phân chia rõ ràng hơn quyền hạn của từng nhóm thành viên. Lúc đó, bạn cần các plugin hỗ trợ quản trị người dùng, hoặc viết riêng tuỳ thuộc vào nhu cầu sử dụng.</p>
+    </div>
+</div>
+
+<div class="shares-box">
+    <ul class="groups-box">
+        <li class="item">
+            <a target="_blank" href="https://www.facebook.com/sharer.php?u=http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="item">
+            <a target="_blank" href="https://plus.google.com/share?url=http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/">
+                <i class="fab fa-google-plus" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="item">
+            <a target="_blank" href="https://twitter.com/share?url=http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="item">
+            <a rel="nofollow" class="in" data-ok="false" href="https://www.linkedin.com/shareArticle?url=http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/" target="_blank">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="item">
+            <a rel="nofollow" class="pi" data-ok="false" href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/" target="_blank">
+                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="post-next-prev">
+        <div class="groups-box">
+                            <div class="item">
+                    <div class="previous-post">
+                        <a href="http://localhost/job/lth/lth-cv/tim-hieu-ve-widget-va-cach-chen-widget-vao-website/" rel="prev">Tìm hiểu về widget và cách chèn widget vào website</a>                    </div>
+                </div>
+            
+                            <div class="item">
+                    <div class="next-post">
+                        <a href="http://localhost/job/lth/lth-cv/quan-ly-binh-luan-trong-wordpress/" rel="next">Quản lý bình luận trong wordpress</a> 
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+
+<div id="review_form_wrapper">
+  
+  	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Viết bình luận <small><a rel="nofollow" id="cancel-comment-reply-link" href="/job/lth/lth-cv/tao-va-quan-ly-thanh-vien-trong-wordpress/#respond" style="display:none;">Hủy</a></small></h3><form action="http://localhost/job/lth/lth-cv/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Email của bạn sẽ không được hiển thị công khai.</span> <span class="required-field-message">Các trường bắt buộc được đánh dấu <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Bình luận <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Tên <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Trang web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế tiếp của tôi.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Gửi bình luận" /> <input type='hidden' name='comment_post_ID' value='831' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	</div>                        </div>
+                    </div>
+                </div>
+
+                                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div class="sidebars">
+                            <!-- Sidebar -->
+                                                            <aside class="lth-sidebars">
+                                    <div class="sidebar-box"><h3>Chuyên mục</h3><div class="menu-chuyen-muc-container"><ul id="menu-chuyen-muc" class="menu"><li id="menu-item-753" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-753 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/">WordPress <i class="far fa-angle-down icon icon"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-754" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-754"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/cai-dat-va-su-dung-wordpress/">Cài đặt và sử dụng WordPress</a></li>
+</ul>
+</li>
+<li id="menu-item-751" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-751"><a href="http://localhost/job/lth/lth-cv/kien-thuc/php/">PHP</a></li>
+<li id="menu-item-752" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-752"><a href="http://localhost/job/lth/lth-cv/kien-thuc/facebook-ads/">Facebook ADS</a></li>
+</ul></div></div><div class="sidebar-box"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/"><img width="800" height="490" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20490'%3E%3C/svg%3E" class="image wp-image-185  attachment-full size-full" alt="" decoding="async" style="max-width: 100%; height: auto;" data-lazy-srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke.jpg 800w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke-768x470.jpg 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke.jpg" /><noscript><img width="800" height="490" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke.jpg" class="image wp-image-185  attachment-full size-full" alt="" decoding="async" style="max-width: 100%; height: auto;" srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke.jpg 800w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/wordpress-la-gi-uu-nhuoc-diem-tai-sao-nen-dung-de-thiet-ke-768x470.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript></a></div><div class="sidebar-box"><a href="http://localhost/job/lth/lth-cv/kien-thuc/php/"><img width="1500" height="750" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201500%20750'%3E%3C/svg%3E" class="image wp-image-342  attachment-full size-full" alt="" decoding="async" style="max-width: 100%; height: auto;" data-lazy-srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/php-1.jpg 1500w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/php-1-768x384.jpg 768w" data-lazy-sizes="(max-width: 1500px) 100vw, 1500px" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/php-1.jpg" /><noscript><img width="1500" height="750" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/php-1.jpg" class="image wp-image-342  attachment-full size-full" alt="" decoding="async" style="max-width: 100%; height: auto;" srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/php-1.jpg 1500w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/php-1-768x384.jpg 768w" sizes="(max-width: 1500px) 100vw, 1500px" /></noscript></a></div><div class="sidebar-box"><a href="http://localhost/job/lth/lth-cv/kien-thuc/facebook-ads/"><img width="800" height="655" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20655'%3E%3C/svg%3E" class="image wp-image-631  attachment-full size-full" alt="" decoding="async" style="max-width: 100%; height: auto;" data-lazy-srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/quang-cao-tren-facebook-ads-la-gi-cach-su-dung-va-nhung-1-1.jpg 800w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/quang-cao-tren-facebook-ads-la-gi-cach-su-dung-va-nhung-1-1-768x629.jpg 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/quang-cao-tren-facebook-ads-la-gi-cach-su-dung-va-nhung-1-1.jpg" /><noscript><img width="800" height="655" src="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/quang-cao-tren-facebook-ads-la-gi-cach-su-dung-va-nhung-1-1.jpg" class="image wp-image-631  attachment-full size-full" alt="" decoding="async" style="max-width: 100%; height: auto;" srcset="http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/quang-cao-tren-facebook-ads-la-gi-cach-su-dung-va-nhung-1-1.jpg 800w, http://localhost/job/lth/lth-cv/wp-content/uploads/2023/05/quang-cao-tren-facebook-ads-la-gi-cach-su-dung-va-nhung-1-1-768x629.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript></a></div>                                </aside>
+                                                    </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <!-- <div class="container"> -->
+    <div class="lazyblock-lth-section-Z1mDeap wp-block-lazyblock-lth-section">                    <div class="lth-section " 
+            style="margin-top: 0 !important; margin-bottom: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; 
+             ">
+                                    <div class="container">
+                                
+
+<div class="wp-block-columns is-layout-flex wp-container-7">
+<div class="wp-block-column is-layout-flow" style="flex-basis:33.34%"><div class="lazyblock-lth-logo-Z11964e wp-block-lazyblock-lth-logo">        <div class="lth-logo">
+                                                    <a href="http://localhost/job/lth/lth-cv" title="">
+                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%2038'%3E%3C/svg%3E" alt="LTH" width="100" height="38" data-lazy-src="http://localhost/job/lth/lth-cv/wp-content/uploads/bfi_thumb/logo-q5ygwm6a0qob3xh581k0sdmljnxymbz78t2hmpol8c.png"><noscript><img decoding="async" src="http://localhost/job/lth/lth-cv/wp-content/uploads/bfi_thumb/logo-q5ygwm6a0qob3xh581k0sdmljnxymbz78t2hmpol8c.png" alt="LTH" width="100" height="38"></noscript>
+                        </a>
+                        <a href="http://localhost/job/lth/lth-cv" title="" class="title d-none">
+                            LTH                        </a>
+                        <p class="infor d-none">Một trang web mới sử dụng WordPress</p>
+                                        </div>
+</div>
+
+<div class="lazyblock-lth-line-k4gIx wp-block-lazyblock-lth-line">    <div class="lth-lines" style="max-width:100%; height:20px; width:100%;
+    background-color:; margin-top: 0 !important; margin-bottom: 0 !important;">
+            </div>
+
+</div>
+
+<div class="lazyblock-lth-socials-Zu8Vnf wp-block-lazyblock-lth-socials"><div class="lth-socials"> 
+    <div class="module__content socials-box">
+        <ul>
+             
+                                
+                  <li class="">
+                      <a href="https://www.facebook.com/profile.php?id=100070052642414" title="" target="_blank" rel="noopener">
+                                                        <span class="icon">
+                                                                        <i class="fab fa-facebook"></i>
+                                                                </span>
+                          
+                                                </a>
+                  </li>
+                                </ul>
+    </div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-column is-layout-flow" style="flex-basis:33.34%"><div class="lazyblock-lth-menu-11JxRI wp-block-lazyblock-lth-menu">        <article class="lth-menu ">
+                            <div class="module_header title-box title-align-left">
+                                            <h2 class="title">
+                                                    <p>Menu</p>
+                                                            
+                                                    </h2>
+                    
+                                    </div>
+            
+            <div class="module_content " >
+                <div class="menus">
+                                            <ul id="menu-megamenu-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-84"><a href="http://localhost/job/lth/lth-cv/">Trang chủ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="http://localhost/job/lth/lth-cv/gioi-thieu/">Giới thiệu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="http://localhost/job/lth/lth-cv/cua-hang/">Cửa hàng</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-738"><a href="http://localhost/job/lth/lth-cv/du-an/">Dự án</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-180 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/">Kiến thức <i class="far fa-angle-down icon icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-737 menu-item-icon"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/">WordPress <i class="far fa-angle-down icon icon"></i></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-755"><a href="http://localhost/job/lth/lth-cv/kien-thuc/wordpress/cai-dat-va-su-dung-wordpress/">Cài đặt và sử dụng WordPress</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-736"><a href="http://localhost/job/lth/lth-cv/kien-thuc/php/">PHP</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-735"><a href="http://localhost/job/lth/lth-cv/kien-thuc/facebook-ads/">Facebook ADS</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="http://localhost/job/lth/lth-cv/lien-he/">Liên hệ</a></li>
+</ul>                                    </div>
+            </div>
+        </article>
+</div></div>
+
+
+
+<div class="wp-block-column is-layout-flow" style="flex-basis:33.33%"><div class="lazyblock-lth-classic-Z293Y6i wp-block-lazyblock-lth-classic">
+    <div class="entry-content lth-classic">
+        <p><iframe loading="lazy" style="border: none; overflow: hidden;" title="FanPage" src="about:blank" width="340" height="195" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100070052642414&#038;tabs=timeline&#038;width=340&#038;height=195&#038;small_header=true&#038;adapt_container_width=true&#038;hide_cover=false&#038;show_facepile=true&#038;appId=897190940472200"></iframe><noscript><iframe style="border: none; overflow: hidden;" title="FanPage" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100070052642414&amp;tabs=timeline&amp;width=340&amp;height=195&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=897190940472200" width="340" height="195" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></noscript></p>    </div>
+
+</div></div>
+</div>
+
+                </div>
+            </div>
+        </div>    <!-- </div> -->
+</footer>
+
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript" charset="UTF-8">window.addEventListener('DOMContentLoaded', function() {
+        jQuery(function($) {
+
+            $('form.cart').on('submit', function(e) {
+                e.preventDefault();
+
+                var form = $(this);
+                form.block({
+                    message: null,
+                    overlayCSS: {
+                        background: '#fff',
+                        opacity: 0.6
+                    }
+                });
+
+                var formData = new FormData(form[0]);
+                formData.append('add-to-cart', form.find('[name=add-to-cart]').val());
+
+                // Ajax action.
+                $.ajax({
+                    url: wc_add_to_cart_params.wc_ajax_url.toString().replace('%%endpoint%%', 'lth_add_to_cart'),
+                    data: formData,
+                    type: 'POST',
+                    processData: false,
+                    contentType: false,
+                    complete: function(response) {
+                        response = response.responseJSON;
+
+                        if (!response) {
+                            return;
+                        }
+
+                        if (response.error && response.product_url) {
+                            window.location = response.product_url;
+                            return;
+                        }
+
+                        // Redirect to cart option
+                        if (wc_add_to_cart_params.cart_redirect_after_add === 'yes') {
+                            window.location = wc_add_to_cart_params.cart_url;
+                            return;
+                        }
+
+                        var $thisbutton = form.find('.single_add_to_cart_button'); //
+                        // var $thisbutton = null; // uncomment this if you don't want the 'View cart' button
+
+                        // Trigger event so themes can refresh other areas.
+                        $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $thisbutton]);
+
+                        // Remove existing notices
+                        $('.woocommerce-error, .woocommerce-message, .woocommerce-info').remove();
+
+                        // Add new notices
+                        form.closest('.product').before(response.fragments.notices_html)
+
+                        form.unblock();
+                    }
+                });
+            });
+        });
+    });</script>
+
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<style>body div .wpcf7-form .fit-the-fullspace{position:absolute;margin-left:-999em;}</style><style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-3.wp-container-3,.wp-container-7.wp-container-7{flex-wrap:nowrap;}
+</style>
+<script type='text/javascript' id='eio-lazy-load-js-before'>
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0};
+</script>
+<script type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=710' id='eio-lazy-load-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/cache/min/1/job/lth/lth-cv/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=1689309353' id='swv-js' defer></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"http:\/\/localhost\/job\/lth\/lth-cv\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/cache/min/1/job/lth/lth-cv/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1689309353' id='contact-form-7-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.8.2' id='jquery-blockui-js' defer></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/job\/lth\/lth-cv\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/job\/lth\/lth-cv\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Xem gi\u1ecf h\u00e0ng","cart_url":"http:\/\/localhost\/job\/lth\/lth-cv\/gio-hang\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.8.2' id='wc-add-to-cart-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/job\/lth\/lth-cv(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/thanh-toan\/|\/gio-hang\/|\/tai-khoan\/|\/wc-api\/v(.*)|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"http:\/\/localhost\/job\/lth\/lth-cv","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/js/wow.min.js?ver=6.2.2' id='lth_theme_child-wow-js' defer></script>
+<script type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/js/slick.min.js?ver=6.2.2' id='lth_theme_child-slick-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme/assets/js/jquery.countdown.min.js?ver=6.2.2' id='lth_theme_child-countdown-js' defer></script>
+<script data-minify="1" type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/cache/min/1/job/lth/lth-cv/wp-content/themes/lth-theme/assets/js/effects.js?ver=1689309353' id='lth_theme_child-effects-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/cache/min/1/job/lth/lth-cv/wp-content/themes/lth-theme/assets/js/main.js?ver=1689309353' id='lth_theme_child-main-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/themes/lth-theme-child/assets/js/customs.js?ver=1.0.0' id='lth_theme_child-js-customs-js' defer></script>
+<script type='text/javascript' id='cf7-antispam-js-extra'>
+/* <![CDATA[ */
+var cf7a_settings = {"prefix":"_cf7a_","disableReload":"1","version":"ULwGxz+p8iMCwniIgQ0zHA=="};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://localhost/job/lth/lth-cv/wp-content/cache/min/1/job/lth/lth-cv/wp-content/plugins/cf7-antispam/includes/dist/script.js?ver=1689309353' id='cf7-antispam-js' defer></script>
+    <!-- button show popup lấy theo id của popup -->
+    
+    <div class="footer-fixed">
+        
+        <ul>
+            
+                            <li class="chat-box chat-phone-box">
+                    <a href="tel:0963182419" target="_blank" title="">
+                        <span class="icon-phone">
+                            <i class="fas fa-phone-alt icon"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+                            <li class="chat-box chat-email-box">
+                    <a href="mailto:trhuan177@gmail.com" target="_blank" title="">
+                        <span class="icon-email">
+                            <i class="fas fa-envelope icon"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            <li>
+                <div class="back-to-top">
+                    <i class="far fa-chevron-up icon" aria-hidden="true"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+            <div class="notification-product">
+            <span class="remove-product">Xóa sản phẩm thành công.</span>
+            <span class="add-product">Thêm vào giỏ hàng thành công.</span>
+        </div>
+    
+    <script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="http://localhost/job/lth/lth-cv/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+</body>
+
+</html> 
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1689565802 -->
