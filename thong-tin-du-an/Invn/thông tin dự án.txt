@@ -100,6 +100,13 @@ FTP: da.gco.vn / invn / invn@2023#12345
 
 /////////////////////////////////////////////
 
+makawa.vn
+
 http://103.81.84.71:2222
 admin / ZWYyZjNlMmMyOGFl
 FTP: 103.81.84.71 / gco_dev@makawa.vn / O2xcV8VdQm
+
+/////////////////////////////////////////////
+
+https://blueeyes-tek.com/
+gco_admin / 1a2s3d4f5g6h
