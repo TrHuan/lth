@@ -7,6 +7,8 @@ Name Server 2	ns2.gco.vn
 
 /////////////////////////////////////////////
 
+26/7 - 28/7/2023
+
 Invn Holdings (invn.com.vn)
 holdings-login
 admin / holdings@invn#12345
@@ -110,3 +112,12 @@ FTP: 103.81.84.71 / gco_dev@makawa.vn / O2xcV8VdQm
 
 https://blueeyes-tek.com/
 gco_admin / 1a2s3d4f5g6h
+
+/////////////////////////////////////////////
+
+http://116.118.48.23:8998/948663fd
+username: ztndjt2f
+password: 8252bbe43163
+
+https://seoplus.com.vn/seoplus
+gco_admin / Admin@1234!Seoplus.com.vn@1241
