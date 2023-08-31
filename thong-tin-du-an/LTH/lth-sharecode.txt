@@ -31,15 +31,15 @@ Wordpress
 
 Web bán hàng đồ gia dụng
 /lth001-login/
-- lth001-bepeu / lth001_admin / lth001@admin#12345
+- lth90.rf.gd/lth001-bepeu / lth001_admin / lth001@admin#12345
 https://drive.google.com/file/d/1sv9qg2iNdVhlOv665lxoXzwqUMx_iQVW/view?usp=sharing
 
 Web giới thiệu, dịch vụ, y tế
 /lth002-login/
-- lth002-mevabe / lth002_admin / lth002@admin#12345
+- lth90.rf.gd/lth002-mevabe / lth002_admin / lth002@admin#12345
 https://drive.google.com/file/d/1eaE_S70RV6NQcrU2scoSoOe8rzBwWRFd/view?usp=sharing
 
 Web giới thiệu, dịch vụ, nhà hàng, sự kiện
 /lth003-login/
-- lth003-minhanh / lth003_admin / lth003@admin#12345
+- lth90.rf.gd/lth003-minhanh / lth003_admin / lth003@admin#12345
 https://drive.google.com/file/d/17gdb67GrBCS49ULN8slReA9eZcN7EWgA/view?usp=sharing

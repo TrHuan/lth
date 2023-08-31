@@ -278,7 +278,7 @@ CLIENT ID: AUo0tSoz0GRMElWHNc9No6nPODoaxmoZ7LFNCEIHvnM2ppjYs80CSWlunGqA2G5hpsYCh
         document.oncontextmenu = new Function("return false")
     </script>
     <script type='text/javascript'>
-        checkCtrl = false $('*').keydown(function(e) {
+        checkCtrl = false jQuery('*').keydown(function(e) {
             if (e.keyCode == '17') {
                 checkCtrl = false
             }
