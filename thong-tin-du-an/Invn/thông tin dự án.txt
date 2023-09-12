@@ -121,3 +121,18 @@ password: 8252bbe43163
 
 https://seoplus.com.vn/seoplus
 gco_admin / Admin@1234!Seoplus.com.vn@1241
+
+/////////////////////////////////////////////
+
+https://toansodo.vn/wp-admin/
+admin / MMA10trieudo$
+
+/////////////////////////////////////////////
+
+https://diemdentre.vn/
+admin / Admin@1234!Gcoads123
+
+/////////////////////////////////////////////
+
+Invn Tools
+admin / invn@tools#123454321
