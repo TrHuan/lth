@@ -129,13 +129,25 @@ admin / MMA10trieudo$
 
 /////////////////////////////////////////////
 
+12/09/2023
 https://diemdentre.vn/
 admin / Admin@1234!Gcoads123
 
 /////////////////////////////////////////////
 
+15/09/2023
 https://drvoduyanh.com/wp-admin
 drvoduyanh / $P$BlZI86PfLxpp67XLu9pPrfnv86cbME/
+
+/////////////////////////////////////////////
+
+20/09/2023
+http://103.162.31.90:1891
+username: admin
+password: UhqZ7vG-7.7t6K
+
+batdongsancongnghiep.vn
+bdsadmin / bdscn@admin#123
 
 /////////////////////////////////////////////
 
