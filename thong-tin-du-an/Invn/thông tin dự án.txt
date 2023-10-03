@@ -80,6 +80,7 @@ FTP: invn_admin / 8wM4Ex7kRkW9
 https://pasini.vn/psn-login
 gco_admin / gco@123454321
 DB: zanilock_db / FmN5tX5M0
+FTP: da.gco.vn / gco@pasini.vn / zCrQ2KMe
 
 /////////////////////////////////////////////
 
@@ -154,6 +155,17 @@ bdsadmin / bdscn@admin#123
 21/09/2023
 https://thanhnienvietnam.edu.vn/
 helios / Admin@1234!Gcoads123
+
+/////////////////////////////////////////////
+
+26/09/2023
+http://103.124.93.188:2222
+Username: admin
+Password: H9tsGYeq5y87jEP9
+
+https://maltco.asia/wp-admin
+ktaitech300@gmail.com / upIT9YzBnSSZXbs0iuW!(jHB
+FTP: invn@maltco.asia / JQdhZ6H36
 
 /////////////////////////////////////////////
 
