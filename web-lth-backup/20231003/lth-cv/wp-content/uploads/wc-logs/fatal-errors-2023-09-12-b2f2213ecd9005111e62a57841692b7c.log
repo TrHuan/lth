@@ -1,0 +1,10 @@
+2023-09-12T04:45:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/ewww-image-optimizer/classes/class-local.php on line 913
+
+2023-09-12T04:52:18+00:00 CRITICAL Cannot redeclare acf_settings_url() (previously declared in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/quan-ly-du-an/plugins/acf/acf.php:21) in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/themes/lth-theme/inc/plugins/acf/acf.php on line 20
+
+2023-09-12T04:52:19+00:00 CRITICAL Cannot redeclare acf_settings_url() (previously declared in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/quan-ly-du-an/plugins/acf/acf.php:21) in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/themes/lth-theme/inc/plugins/acf/acf.php on line 20
+
+2023-09-12T04:52:28+00:00 CRITICAL Cannot redeclare acf_settings_url() (previously declared in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/quan-ly-du-an/plugins/acf/acf.php:21) in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/themes/lth-theme/inc/plugins/acf/acf.php on line 20
+
+2023-09-12T04:53:02+00:00 CRITICAL Cannot redeclare acf_settings_url() (previously declared in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/quan-ly-du-an/plugins/acf/acf.php:21) in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/themes/lth-theme/inc/plugins/acf/acf.php on line 20
+
