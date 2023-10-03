@@ -1,2 +1,119 @@
 2023-10-03T00:52:03+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\src\Admin\Notes\DataStore.php on line 6
 
+2023-10-03T01:45:44+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php:103
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include()
+#1 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#3 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 103
+
+2023-10-03T01:46:15+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php:103
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include()
+#1 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#3 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 103
+
+2023-10-03T01:46:44+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php:103
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include()
+#1 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#3 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 103
+
+2023-10-03T01:47:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function lth_custom_cat_img(), 3 passed in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 103 and exactly 4 expected in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:66
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(103): lth_custom_cat_img('full', 420, 280)
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 66
+
+2023-10-03T01:48:40+00:00 CRITICAL syntax error, unexpected '$', expecting variable (T_VARIABLE) in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 66
+
+2023-10-03T01:48:44+00:00 CRITICAL syntax error, unexpected '$', expecting variable (T_VARIABLE) in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 66
+
+2023-10-03T01:48:52+00:00 CRITICAL syntax error, unexpected '$', expecting variable (T_VARIABLE) in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 66
+
+2023-10-03T01:49:29+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php:82
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include()
+#1 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#3 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 82
+
+2023-10-03T01:52:22+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php:88
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include()
+#1 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#3 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 88
+
+2023-10-03T01:52:57+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php:88
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include()
+#1 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#3 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php on line 88
+
+2023-10-03T01:54:14+00:00 CRITICAL Uncaught Error: Call to undefined function get_fget_field() in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:70
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(88): lth_custom_cat_img('full', 420, 280)
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 70
+
+2023-10-03T01:55:17+00:00 CRITICAL Uncaught Error: Call to undefined function get_fget_field() in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:70
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(88): lth_custom_cat_img('full', 420, 280)
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 70
+
+2023-10-03T01:55:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_fget_field() in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:70
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(88): lth_custom_cat_img('full', 420, 280, Object(WP_Term))
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 70
+
+2023-10-03T01:55:54+00:00 CRITICAL Uncaught Error: Call to undefined function get_fget_field() in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:70
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(88): lth_custom_cat_img('full', 420, 280, Object(WP_Term))
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 70
+
+2023-10-03T01:56:16+00:00 CRITICAL Uncaught Error: Call to undefined function get_fget_field() in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:69
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(88): lth_custom_cat_img('full', 420, 280, 'term_id')
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 69
+
+2023-10-03T01:56:58+00:00 CRITICAL Uncaught Error: Call to undefined function get_fget_field() in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php:69
+Stack trace:
+#0 D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\archive.php(88): lth_custom_cat_img('full', 420, 280, 23)
+#1 D:\wamp64\www\job\lth\lth-cv\wp-includes\template-loader.php(106): include('D:\\wamp64\\www\\j...')
+#2 D:\wamp64\www\job\lth\lth-cv\wp-blog-header.php(19): require_once('D:\\wamp64\\www\\j...')
+#3 D:\wamp64\www\job\lth\lth-cv\index.php(18): require('D:\\wamp64\\www\\j...')
+#4 {main}
+  thrown in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\setting.php on line 69
+

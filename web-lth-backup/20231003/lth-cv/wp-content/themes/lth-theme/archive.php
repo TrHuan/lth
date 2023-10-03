@@ -53,102 +53,169 @@ $cat_id = get_queried_object_id(); // ID của chuyên mục ?>
         'parent' => $cat_id,
     ));
     if ($child_categories) { ?>
-    <section class="lth-blogs-cats">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="module module_cats_list">
-                        <ul>
-                            <?php // Hiển thị tên và liên kết của các chuyên mục con
-                            foreach ($child_categories as $category) {
-                                echo '<li>';
-                                echo '<a href="' . esc_url(get_category_link($category->term_id)) . '">' . $category->name . '</a>';
-                                echo '</li>';
-                            } ?>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <?php } ?>
+        <section class="lth-blogs">
+            <div class="container">
+                <div class="row">
+                    <?php if ($sidebar == 'left') { ?>
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                            <div class="sidebars">
+                                <!-- Sidebar -->
+                                <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                    <aside class="lth-sidebars">
+                                        <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                    </aside>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    <?php } ?>
 
+                    <?php if ($sidebar == 'no') { ?>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <?php } else { ?>
+                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                            <?php } ?>
+                            <div class="module module_posts posts-list module_blogs">
+                                <div class="module_content">
+                                    <div class="groups-box">
+                                        <?php // Hiển thị tên và liên kết của các chuyên mục con
+                                        foreach ($child_categories as $category) {
+                                            $term = $category->term_id; ?>
+                                            <div class="item">
+                                                <div class="post-box">
+                                                    <div class="post-header">
+                                                        <div class="post-image">
+                                                            <a href="<?php echo esc_url(get_category_link($term)); ?>" class="image">
+                                                                <picture>
+                                                                    <source media="(min-width:1200px)" srcset="<?php echo lth_custom_cat_img('full', 420, 280, $term); ?>">
+                                                                    <source media="(min-width:768px)" srcset="<?php echo lth_custom_cat_img('full', 330, 220, $term); ?>">
+                                                                    <source media="(min-width:576px)" srcset="<?php echo lth_custom_cat_img('full', 240, 160, $term); ?>">
+                                                                    <img src="<?php echo lth_custom_cat_img('full', 420, 280, $term); ?>" width="420" height="280" alt="<?php echo $category->name; ?>">
+                                                                </picture>
+                                                            </a>
+                                                        </div>
 
-    <section class="lth-blogs">
-        <div class="container">
-            <div class="row">
-                <?php if ($sidebar == 'left') { ?>
-                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div class="sidebars">
-                            <!-- Sidebar -->
-                            <?php if (is_active_sidebar('sidebar_blogs')) { ?>
-                                <aside class="lth-sidebars">
-                                    <?php dynamic_sidebar('sidebar_blogs'); ?>
-                                </aside>
+                                                        <div class="post-content">
+                                                            <h3 class="post-name">
+                                                                <a href="<?php echo esc_url(get_category_link($term)); ?>">
+                                                                    <?php echo $category->name; ?>
+                                                                </a>
+                                                            </h3>
+
+                                                            <?php if ($category->description) { ?>
+                                                                <div class="post-excerpt">
+                                                                    <?php echo $category->description; ?>
+                                                                </div>
+                                                            <?php } ?>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- <div class="post-footer">
+                                                        <div class="post-button">
+                                                            <a href="<?php //echo esc_url(get_category_link($term)); ?>" title="" class="btn">
+                                                                <?php //echo __('Xem thêm'); ?>
+                                                            </a>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    </div>          
+                                </div>                                
+                            </div>
+                            </div>
+
+                            <?php if ($sidebar == 'right') { ?>
+                                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                                    <div class="sidebars">
+                                        <!-- Sidebar -->
+                                        <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                            <aside class="lth-sidebars">
+                                                <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                            </aside>
+                                        <?php } ?>
+                                    </div>
+                                </div>
                             <?php } ?>
                         </div>
-                    </div>
-                <?php } ?>
-
-                <?php if ($sidebar == 'no') { ?>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <?php } else { ?>
-                        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                        <?php } ?>
-                        <div class="module module_posts posts-list module_blogs">
-                            <!-- <div class="module_title">
-                                <h2 class="title">
-                                    <?php
-                                    // if (is_category()) {
-                                    //     single_cat_title();  //Category
-                                    // } elseif (is_author()) {
-                                    //     the_post();
-                                    //     echo ('Archives by author: ' . get_the_author());  //Tác giả
-                                    //     rewind_posts();
-                                    // } else {
-                                    //     echo _('Archives');
-                                    // }
-                                    ?>
-                                </h2>
-                            </div> -->
-
-                            <div class="module_content">
-                                <?php
-                                if (have_posts()) { ?>
-
-                                    <div class="groups-box">
-
-                                        <?php while (have_posts()) {
-                                            the_post();
-                                            get_template_part('template-parts/post/content', '');
-                                        } ?>
-
-                                    </div>
-
-                                <?php require_once(LIBS_DIR . '/pagination.php');
-                                } else {
-                                    get_template_part('template-parts/content', 'none');
-                                }
-                                ?>
+                </div>
+        </section>
+    <?php } else { ?>
+        <section class="lth-blogs">
+            <div class="container">
+                <div class="row">
+                    <?php if ($sidebar == 'left') { ?>
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                            <div class="sidebars">
+                                <!-- Sidebar -->
+                                <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                    <aside class="lth-sidebars">
+                                        <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                    </aside>
+                                <?php } ?>
                             </div>
                         </div>
-                        </div>
+                    <?php } ?>
 
-                        <?php if ($sidebar == 'right') { ?>
-                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                                <div class="sidebars">
-                                    <!-- Sidebar -->
-                                    <?php if (is_active_sidebar('sidebar_blogs')) { ?>
-                                        <aside class="lth-sidebars">
-                                            <?php dynamic_sidebar('sidebar_blogs'); ?>
-                                        </aside>
-                                    <?php } ?>
+                    <?php if ($sidebar == 'no') { ?>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <?php } else { ?>
+                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                            <?php } ?>
+                            <div class="module module_posts posts-list module_blogs">
+                                <!-- <div class="module_title">
+                                    <h2 class="title">
+                                        <?php
+                                        // if (is_category()) {
+                                        //     single_cat_title();  //Category
+                                        // } elseif (is_author()) {
+                                        //     the_post();
+                                        //     echo ('Archives by author: ' . get_the_author());  //Tác giả
+                                        //     rewind_posts();
+                                        // } else {
+                                        //     echo _('Archives');
+                                        // }
+                                        ?>
+                                    </h2>
+                                </div> -->
+
+                                <div class="module_content">
+                                    <?php
+                                    if (have_posts()) { ?>
+
+                                        <div class="groups-box">
+
+                                            <?php while (have_posts()) {
+                                                the_post();
+                                                get_template_part('template-parts/post/content', '');
+                                            } ?>
+
+                                        </div>
+
+                                    <?php require_once(LIBS_DIR . '/pagination.php');
+                                    } else {
+                                        get_template_part('template-parts/content', 'none');
+                                    }
+                                    ?>
                                 </div>
                             </div>
-                        <?php } ?>
-                    </div>
-            </div>
-    </section>
+                            </div>
+
+                            <?php if ($sidebar == 'right') { ?>
+                                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                                    <div class="sidebars">
+                                        <!-- Sidebar -->
+                                        <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                            <aside class="lth-sidebars">
+                                                <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                            </aside>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                </div>
+        </section>
+    <?php } ?>
 
     <?php if ($banner) {
         $args = array(

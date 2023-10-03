@@ -62,6 +62,15 @@ function lth_custom_imgs_single_product( $thumb_size, $image_width, $image_heigh
     }
 }
 
+// Tạo custom cat img bằng bfi_thumb
+function lth_custom_cat_img( $thumb_size, $image_width, $image_height, $term ) {
+    global $post;
+    $params = array( 'width' => $image_width, 'height' => $image_height, 'crop' => true );
+    $imgsrc = get_field('image', 'category_' . $term);
+    $custom_img_src = bfi_thumb( $imgsrc, $params );
+    return $custom_img_src;
+}
+
 // Tạo custom imgs breadcrumb bằng bfi_thumb
 function lth_custom_breadcrumb( $thumb_size, $image_width, $image_height ) {
     global $post;
