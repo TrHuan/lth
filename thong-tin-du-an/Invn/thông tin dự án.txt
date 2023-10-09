@@ -169,5 +169,17 @@ FTP: invn@maltco.asia / JQdhZ6H36
 
 /////////////////////////////////////////////
 
+http://116.118.48.23:8998/948663fd
+username: ztndjt2f
+password: 8252bbe43163
+
+https://seoplus.com.vn/seoplus
+gco_admin / Admin@1234!Seoplus.com.vn@1241
+
+07/10/2023
+- thêm khối đối tác trên trang chủ
+
+/////////////////////////////////////////////
+
 Invn Tools
 admin / invn@tools#123454321
