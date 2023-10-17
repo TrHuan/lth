@@ -131,18 +131,21 @@ admin / MMA10trieudo$
 /////////////////////////////////////////////
 
 12/09/2023
+
 https://diemdentre.vn/
 admin / Admin@1234!Gcoads123
 
 /////////////////////////////////////////////
 
 15/09/2023
+
 https://drvoduyanh.com/wp-admin
 drvoduyanh / $P$BlZI86PfLxpp67XLu9pPrfnv86cbME/
 
 /////////////////////////////////////////////
 
 20/09/2023
+
 http://103.162.31.90:1891
 username: admin
 password: UhqZ7vG-7.7t6K
@@ -153,12 +156,14 @@ bdsadmin / bdscn@admin#123
 /////////////////////////////////////////////
 
 21/09/2023
+
 https://thanhnienvietnam.edu.vn/
 helios / Admin@1234!Gcoads123
 
 /////////////////////////////////////////////
 
 26/09/2023
+
 http://103.124.93.188:2222
 Username: admin
 Password: H9tsGYeq5y87jEP9
@@ -169,6 +174,8 @@ FTP: invn@maltco.asia / JQdhZ6H36
 
 /////////////////////////////////////////////
 
+07/10/2023
+
 http://116.118.48.23:8998/948663fd
 username: ztndjt2f
 password: 8252bbe43163
@@ -176,8 +183,62 @@ password: 8252bbe43163
 https://seoplus.com.vn/seoplus
 gco_admin / Admin@1234!Seoplus.com.vn@1241
 
-07/10/2023
 - thêm khối đối tác trên trang chủ
+
+/////////////////////////////////////////////
+
+09/10/2023
+
+https://portal.vietnix.vn/index.php?rp=/login
+nhanguyen1818@gmail.com	/ Julia2022
+
+https://drvoduyanh.com/wp-admin
+drvoduyanh / $P$BlZI86PfLxpp67XLu9pPrfnv86cbME/
+FTP: invn@drvoduyanh.com / l,2esFfdEX1l
+
+/////////////////////////////////////////////
+
+11/10/2023
+
+https://yourphone.vn/wp-admin/
+yourphoneyps / nfWzXUAbXDo&XY)o(o6pHsLJ
+admin_dev / admin_dev@123454321
+FTP: invn@yourphone.vn / St1XWXt3
+
+Website quản trị: http://www.yourphone.vn:1905  hoặc  http://171.244.17.104:1905
+Username: yourphone
+Password: 9FBhhQxPh
+
+///////////////////////
+
+UN: https://203.205.6.117:8090
+UN: daphacocom919
+PW: 5b*wkzsa!ke#u+i%
+
+https://daphaco.com/admincp/
+AdminDaphaco / Daphaco888!@888Daphaco
+
+FTP: 203.205.6.117 / daphacocom919_invn / ^wIHf#I3p2kECjNk
+
+/////////////////////////////////////////////
+
+12/10/2023
+
+https://www.techbond.com.vn/techbond
+invn2023 / invn#2023
+
+https://maltco.asia/
+ktaitech300@gmail.com / upIT9YzBnSSZXbs0iuW!(jHB
+Địa chỉ host: http://103.124.93.188:2222
+Username: admin
+Password: H9tsGYeq5y87jEP9
+
+/////////////////////////////////////////////
+
+16/10/2023
+
+https://phukienonginox.vn/login
+admin / GBAqQ7KxA(52$m9Aax*6t*tY
 
 /////////////////////////////////////////////
 

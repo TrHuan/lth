@@ -1,0 +1,4 @@
+2023-10-09T00:55:28+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\ClassicTemplate.php on line 2
+
+2023-10-09T00:55:49+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\ewww-image-optimizer\classes\class-ewwwio-imagick-editor.php on line 9
+
