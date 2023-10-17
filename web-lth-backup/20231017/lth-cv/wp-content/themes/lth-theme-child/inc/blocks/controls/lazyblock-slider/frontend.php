@@ -32,24 +32,9 @@ if (!function_exists('lth_slider_output_fe')) :
                     data-arrows="<?php echo $attributes['item_arrows']; ?>" 
                     data-vertical="<?php echo $attributes['item_vertical']; ?>"
                     data-autoplay="<?php echo $attributes['item_autoplay']; ?>">
-                    <?php foreach( $attributes['items'] as $inner ): ?>
-                        <div class="swiper-slide item">
-                            <div class="content" style="position: relative;">
-                                <div class="content-image">
-                                    <a href="<?php echo esc_url( $inner['image_url'] ); ?>" class="image">
-                                        <img src="<?php echo esc_url( $inner['item_image']['url'] ); ?>" alt="Slide" width="<?php echo $attributes['width_image']; ?>" height="<?php echo $attributes['height_image']; ?>">  
-                                    </a>
-                                </div>
-                                <?php if ($inner['text']) { ?>
-                                    <div class="content-text" style="position: absolute; top: <?php echo $inner['text_top']; ?>; bottom: <?php echo $inner['text_bottom']; ?>; left: <?php echo $inner['text_left']; ?>; right: <?php echo $inner['text_right']; ?>; transform: translate(<?php echo $inner['text_translate']; ?>);">
-                                        <a href="<?php echo esc_url( $inner['image_url'] ); ?>" title="" class="text">
-                                            <?php echo $inner['text']; ?>
-                                        </a>
-                                    </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+
+                    <?php echo $attributes['slider']; ?>
+                    
                 </div> 
             </div>
         </div>
