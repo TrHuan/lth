@@ -1,0 +1,16 @@
+2023-09-20T01:00:46+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/Requests/src/Transport/Curl.php on line 205
+
+2023-09-20T04:48:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/Requests/src/Transport/Curl.php on line 205
+
+2023-09-20T06:56:43+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/l10n.php on line 1456
+
+2023-09-20T07:11:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/Api.php on line 73
+
+2023-09-20T07:15:47+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/ewww-image-optimizer/classes/class-ewwwio-imagick-editor.php on line 9
+
+2023-09-20T07:18:42+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/Requests/src/Transport/Curl.php on line 205
+
+2023-09-20T08:36:44+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/Api.php on line 73
+
+2023-09-20T08:46:41+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/l10n.php on line 1250
+

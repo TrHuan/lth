@@ -1,0 +1,2 @@
+2023-10-16T00:55:03+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Payments/Integrations/Cheque.php on line 12
+

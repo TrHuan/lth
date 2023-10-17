@@ -1,0 +1,6 @@
+2023-09-18T01:00:25+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/src/Utilities/OrderUtil.php on line 189
+
+2023-09-18T07:04:56+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/wp-rocket/inc/deprecated/Engine/Optimization/QueryString/RemoveSubscriber.php on line 15
+
+2023-09-18T21:18:36+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/wp-rocket/inc/classes/subscriber/Optimization/class-buffer-subscriber.php on line 13
+

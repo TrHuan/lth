@@ -1,0 +1,4 @@
+2023-09-26T00:12:01+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/Api.php on line 73
+
+2023-09-26T00:51:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/Requests/src/Autoload.php on line 149
+

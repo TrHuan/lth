@@ -1,0 +1,6 @@
+2023-09-25T02:58:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/Requests/src/Transport/Curl.php on line 510
+
+2023-09-25T04:38:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/blocks.php on line 384
+
+2023-09-25T04:38:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-includes/blocks.php on line 113
+
