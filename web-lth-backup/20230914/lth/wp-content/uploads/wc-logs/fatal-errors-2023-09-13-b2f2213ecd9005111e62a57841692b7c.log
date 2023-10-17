@@ -1,4 +1,0 @@
-2023-09-13T07:18:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-admin/includes/class-wp-site-health-auto-updates.php on line 364
-
-2023-09-13T17:51:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/ngjynjcv/domains/lth.azdigi.shop/public_html/wp-content/plugins/wordfence/lib/wfFileUtils.php on line 81
-
