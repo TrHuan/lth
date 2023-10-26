@@ -1,2 +1,0 @@
-2023-09-16T06:31:28+00:00 CRITICAL Out of memory (allocated 41943040) (tried to allocate 16384 bytes) in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\deprecated\vendors\classes\class-minify-html.php on line 98
-
