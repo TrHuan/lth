@@ -1,8 +1,0 @@
-2023-10-16T00:55:19+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wordfence\lib\wfUtils.php on line 998
-
-2023-10-16T00:55:21+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\Dependencies\League\Container\Container.php on line 15
-
-2023-10-16T00:55:31+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\Plugin.php on line 305
-
-2023-10-16T00:55:31+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\classes\event-management\subscriber-interface.php on line 33
-
