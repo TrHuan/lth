@@ -67,13 +67,18 @@ admin / minhduong@gco2021
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-http://svr01.linuxhosting.asia:2082
-Username: daphac51
-Password: ZywqYVa5UTQX
+Thông tin host:
+UN: https://203.205.6.117:8090
+UN: daphacocom919
+PW: 5b*wkzsa!ke#u+i%
 
 https://daphaco.com/admincp/
 AdminDaphaco / Daphaco888!@888Daphaco
-FTP: invn_admin / 8wM4Ex7kRkW9
+FTP: 203.205.6.117 / daphacocom919_invn / yNpGIBGA^zsbuo%3
+
+http://116.118.48.23:8998/948663fd
+
+info@daphaco.com / ggaldasjdntxuglu
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -315,6 +320,8 @@ FTP: invn_admin / 8wM4Ex7kRkW9
 https://meyhomescapital.vn/wp-admin/
 Haininh / ninhvanhai12
 
+FTP: admin_invn / 7o0Bl@GMxeE4a3*e
+
 Thông tin CyberPanel Url : https://45.117.171.183:8090
 User : admin / Pass : s5G4xZxpAr2Z
 
@@ -336,3 +343,10 @@ maltcovietnam@gmail.com, sale@maltco.vn, dailq@maltco.vn, giavuweb@gmail.com
 
 Invn Tools
 admin / invn@tools#123454321
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+02/11/2023
+
+Bệnh viện Bắc Hà
+admin_benhvienbacha / benhvienbacha@123454321

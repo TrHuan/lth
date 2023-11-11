@@ -30,7 +30,7 @@ vanchuyenviettrung / https://drive.google.com/file/d/1aKMU3vvg179d2JyNNSl2MN9x-x
 Wordpress
 
 Web bán hàng đồ gia dụng
-/lth001-login/
+/bp-login/
 - lth90.rf.gd/lth001-bepeu / lth001_admin / lth001@admin#12345
 https://drive.google.com/file/d/1sv9qg2iNdVhlOv665lxoXzwqUMx_iQVW/view?usp=sharing
 
