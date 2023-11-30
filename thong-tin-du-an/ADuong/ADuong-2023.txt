@@ -44,6 +44,6 @@ nhakhoa_admin / 4bCybxFNcA5ul7EWdaDh*L)D
 pdent.com.vn
 
 ftp.tiendatblog.net
-172.96.185.238
-huanadmin@pdent.com.vn
-q92$%MTkf48B
+Host: 172.96.185.238
+User: huanadmin@pdent.com.vn
+Pass: cTkyJCVNVGtmNDhC
