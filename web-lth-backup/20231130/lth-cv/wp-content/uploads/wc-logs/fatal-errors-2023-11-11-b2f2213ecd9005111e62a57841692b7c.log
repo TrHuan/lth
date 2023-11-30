@@ -1,0 +1,8 @@
+2023-11-11T00:58:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-includes\functions.php on line 4593
+
+2023-11-11T00:58:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\CheckoutExpressPaymentBlock.php on line 2
+
+2023-11-11T00:58:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\CheckoutExpressPaymentBlock.php on line 2
+
+2023-11-11T07:19:06+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme-child\inc\blocks\controls\lazyblock-menu\frontend.php on line 78
+

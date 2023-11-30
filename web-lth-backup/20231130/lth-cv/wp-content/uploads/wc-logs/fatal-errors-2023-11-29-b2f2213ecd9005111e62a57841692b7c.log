@@ -1,0 +1,6 @@
+2023-11-29T02:18:17+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-includes\class-wp-image-editor-imagick.php on line 1047
+
+2023-11-29T02:18:17+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\plugins\class-tgm-plugin-activation.php on line 35
+
+2023-11-29T10:09:53+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-admin\includes\class-wp-comments-list-table.php on line 19
+

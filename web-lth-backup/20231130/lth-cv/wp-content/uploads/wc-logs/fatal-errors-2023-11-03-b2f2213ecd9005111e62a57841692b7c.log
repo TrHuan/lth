@@ -1,0 +1,4 @@
+2023-11-03T00:51:42+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-addons.php on line 9
+
+2023-11-03T15:37:08+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\plugins\lazy-blocks\classes\class-blocks.php on line 1000
+

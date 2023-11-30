@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: none
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Fill in variables
+version=$(git describe --dirty)
+version=${version##*v}
+readme_date=$(git --no-pager log -1 --format=%ad --date=format:%d.%m.%Y -- "doc/Readme.rst")
+
+# Create snapshot
+mkdir b8-$version
+git archive HEAD | tar -xC b8-$version
+
+# >>> Get in the released sources
+cd b8-$version
+
+# Update the readme's last changed date
+sed -i -e "s/@LASTCHANGE@/$readme_date/" doc/Readme.rst
+
+# Compile the readme
+rst2html5.py doc/Readme.rst doc/Readme.htm
+
+# Remove the release script
+rm make_release
+
+# <<< Get out of the released sources
+cd ..
+
+# Create the release tarball
+tar -cJf b8-$version.tar.xz b8-$version
+rm -r b8-$version

@@ -1,0 +1,4 @@
+2023-11-04T15:37:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\BFI_Thumb\BFI_Thumb.php on line 648
+
+2023-11-04T15:37:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\src\Admin\API\Reports\Variations\Stats\Controller.php on line 8
+

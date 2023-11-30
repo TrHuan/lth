@@ -1,0 +1,8 @@
+2023-11-15T06:45:04+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\admin\upgrader.php on line 4
+
+2023-11-15T06:45:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\admin\ui\notices.php on line 3
+
+2023-11-15T06:45:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\plugins\acf\acf.php on line 14
+
+2023-11-15T06:45:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\wp-rocket\inc\3rd-party\plugins\nginx-helper.php on line 3
+
