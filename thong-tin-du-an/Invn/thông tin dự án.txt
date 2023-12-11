@@ -353,7 +353,7 @@ admin_benhvienbacha / benhvienbacha@123454321
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-11/11/2023
+11/11/2023 / 04/12/2023 (10 ngày)
 
 Seoulspa
 admin_seoulspa / seoulspa@123454321
@@ -406,10 +406,6 @@ FTP: 45.252.249.139 / invn_dev / zSANaEjB3Gm4PZyk
 
 20/11/2023 - 21/11/2023 (8h)
 
-https://103.184.125.34:8083/
-kenhktedu
-qhAmNQUZsN
-
 https://kenhkienthuc.edu.vn/wp-admin
 invn_admin / invn@kenhkienthuc#123454321
 DB: kenhkienthuceduvn_db / kenhkienthuceduvn_db / K7ci66wMEJf4x5Nf
@@ -439,5 +435,32 @@ maytracd
 https://maytracdiasaoviet.vn/
 tracdiasaoviet_admin / Saoviettracdia#*@20232024
 
-73992044
-58335
+//////////////////////////////////////////////////////////////////////////////////////////
+
+04/10/2023
+
+nadudesign
+admin_nadudesign / nadudesign@123454321
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+06/12/2023
+
+https://sv02.hilab.cloud:2222/
+zanilock / 41awW#Kp9Ld8!F
+
+Mới:
+https://116.118.48.69:7800/
+dwhwzfxc / d162afcb
+FTP: 116.118.48.69 / ftp_pasini_vn / nFbTbCF7RSP4FCkN
+
+https://pasini.vn/
+Admin_Zani / Admin_Zani@2023#123454321
+SQL: sql_pasini_vn / sql_pasini_vn / nGKJ544YXtjA3F8Y
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+08/12/2023
+
+https://code.webhth.com/ruouvang/wp-admin/
+ruouvang / ruouvang@222#444!
