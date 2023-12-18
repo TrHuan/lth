@@ -85,6 +85,10 @@ trhuan177@gmail.com / phuongmai051094
 
 huanlt177@gmail.com / lth@123454321
 
+huanltInvn@gmail.com / huan@invn#123454321
+
+gttrhuan@gmail.com / giaitri@12345
+
 /////////////////////////////////////
 
 Key Wordfence free:
@@ -265,3 +269,9 @@ huanlt@invn.com.vn / lth@123454321
 
 Lark
 huanlt@seoplus.com.vn / lth@123454321
+
+/////////////////////////////////////
+
+Shortcode trang giỏ hàng, thanh toán:
+Giỏ hàng: [woocommerce_cart]
+Thanh toán: [woocommerce_checkout]
