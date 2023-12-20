@@ -450,13 +450,14 @@ https://sv02.hilab.cloud:2222/
 zanilock / 41awW#Kp9Ld8!F
 
 Mới:
-https://116.118.48.69:7800/
+https://116.118.48.69:7800/58ca0998
 dwhwzfxc / d162afcb
 FTP: 116.118.48.69 / ftp_pasini_vn / nFbTbCF7RSP4FCkN
 
 https://pasini.vn/wp-admin
 Admin_Zani / Admin_Zani@2023#123454321
 SQL: sql_pasini_vn / sql_pasini_vn / nGKJ544YXtjA3F8Y
+    db_pasini / db_pasini / Y2CJTDSyLYayhXtC
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
