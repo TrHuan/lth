@@ -17,29 +17,22 @@ Html, css, js
 
 alice / https://drive.google.com/file/d/1AEM0vHSDe0ej7n8mr-wWL9wQ2MSkvSaH/view?usp=share_link
 
-candyshop / https://drive.google.com/file/d/1QqCF9GoWWPiiqaIIhtPqPaIYCM8fbMpl/view?usp=share_link - loại
-
-ashop / https://drive.google.com/file/d/1c7Yu88oNcgKgOnLA1co-iZfpXi4VUgMJ/view?usp=share_link - loại
-
-asam-shop / https://drive.google.com/file/d/1KApvU9J5TMc1YO_dHkzHx-0onhJLDTX8/view?usp=share_link - loại
-
-vanchuyenviettrung / https://drive.google.com/file/d/1aKMU3vvg179d2JyNNSl2MN9x-xCJj9xo/view?usp=sharing - loại
-
 //////////////////////////////////////////////////
 
 Wordpress
 
-Web bán hàng đồ gia dụng
-/bp-login/
+Web bán hàng đồ gia dụng - Mã code 36511
 - lth90.rf.gd/lth001-bepeu / lth001_admin / lth001@admin#12345
 https://drive.google.com/file/d/1sv9qg2iNdVhlOv665lxoXzwqUMx_iQVW/view?usp=sharing
 
-Web giới thiệu, dịch vụ, y tế
-/lth002-login/
+Web giới thiệu, dịch vụ, y tế - Mã code 36523
 - lth90.rf.gd/lth002-mevabe / lth002_admin / lth002@admin#12345
 https://drive.google.com/file/d/1eaE_S70RV6NQcrU2scoSoOe8rzBwWRFd/view?usp=sharing
 
-Web giới thiệu, dịch vụ, nhà hàng, sự kiện
-/lth003-login/
+Web giới thiệu, dịch vụ, nhà hàng, sự kiện - Mã code 36539
 - lth90.rf.gd/lth003-minhanh / lth003_admin / lth003@admin#12345
 https://drive.google.com/file/d/17gdb67GrBCS49ULN8slReA9eZcN7EWgA/view?usp=sharing
+
+Mã Nguồn Code Website Wordpress Giao Diện Mẫu Bệnh Viện Bắc Hà - Mã code 37693
+- lth90.rf.gd/lth004-benhvienbacha / lth004_benhvienbacha / lth004@admin#12345
+https://drive.google.com/file/d/1CiXDDOO2PJ5W9zLK59uUVxoIYxyoJVXP/view?usp=sharing

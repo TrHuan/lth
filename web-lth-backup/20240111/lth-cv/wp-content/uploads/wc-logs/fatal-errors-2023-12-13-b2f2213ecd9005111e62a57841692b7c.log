@@ -1,0 +1,4 @@
+2023-12-13T00:54:23+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\seo-by-rank-math\includes\opengraph\class-facebook.php on line 11
+
+2023-12-13T00:54:23+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-includes\Requests\src\Transport\Curl.php on line 205
+

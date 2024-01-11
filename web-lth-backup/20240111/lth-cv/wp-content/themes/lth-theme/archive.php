@@ -1,0 +1,278 @@
+<?php
+
+/**
+ * The template for displaying archive pages
+ * 
+ * @author LTH
+ * @since 2020
+ */
+get_header();
+$blogs = get_field('blogs', 'option');
+$sidebar = $blogs['sidebar'];
+$banner = $blogs['banner'];
+$term = get_queried_object();
+$cat_id = get_queried_object_id(); // ID của chuyên mục ?>
+
+<main class="main main-page main-blogs">
+    <?php require_once(LIBS_DIR . '/breadcrumbs.php'); ?>
+
+    <?php $category_description = category_description($cat_id);
+    // Kiểm tra và hiển thị mô tả ngắn
+    if (!empty($category_description)) { ?>
+        <section class="lth-cat-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="module module_cat_description">
+                            <?php echo $category_description; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php } ?>
+
+    <?php $cat_content = get_field('cat_content', $term);
+    if ($cat_content) {
+        $args = array(
+            'post_type' => 'html-blocks',
+            'p' => $cat_content,
+        );
+        $loop = new WP_Query($args);
+        while ($loop->have_posts()) :
+            $loop->the_post();
+            global $post;
+            the_content();
+        endwhile;
+        // reset post data
+        wp_reset_postdata();
+    } else { ?>
+        <?php // Lấy danh sách các chuyên mục con của chuyên mục cha
+        $child_categories = get_categories(array(
+            'parent' => $cat_id,
+        ));
+        if ($child_categories) { ?>
+            <section class="lth-blogs sidebar-<?php echo $sidebar; ?>">
+                <div class="container">
+                    <div class="row">
+                        <?php if ($sidebar == 'left') { ?>
+                            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class="sidebars">
+                                    <!-- Sidebar -->
+                                    <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                        <aside class="lth-sidebars">
+                                            <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                        </aside>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        <?php } ?>
+
+                        <?php if ($sidebar == 'no') { ?>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <?php } else { ?>
+                                <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12">
+                                <?php } ?>
+                                    <div class="module module_posts posts-list module_blogs module_style_<?php echo get_field('select_style', $term); ?>">
+                                        <div class="module_content">
+                                            <div class="groups-box">
+                                                <?php // Hiển thị tên và liên kết của các chuyên mục con
+                                                foreach ($child_categories as $category) {
+                                                    $term = $category->term_id; ?>
+                                                    <div class="item">
+                                                        <div class="post-box">
+                                                            <div class="post-header">
+                                                                <div class="post-image">
+                                                                    <a href="<?php echo esc_url(get_category_link($term)); ?>" class="image">
+                                                                        <?php if (get_field('image', 'category_' . $term)) { ?>
+                                                                            <picture>
+                                                                                <source media="(min-width:1200px)" srcset="<?php echo lth_custom_cat_img('full', 420, 280, $term); ?>">
+                                                                                <source media="(min-width:768px)" srcset="<?php echo lth_custom_cat_img('full', 330, 220, $term); ?>">
+                                                                                <source media="(min-width:320px)" srcset="<?php echo lth_custom_cat_img('full', 240, 160, $term); ?>">
+                                                                                <img src="<?php echo lth_custom_cat_img('full', 420, 280, $term); ?>" width="420" height="280" alt="<?php echo $category->name; ?>">
+                                                                            </picture>
+                                                                        <?php } else { ?>
+                                                                            <picture>
+                                                                                <source media="(min-width:1200px)" srcset="<?php echo lth_custom_logo('full', 420, 280); ?>">
+                                                                                <source media="(min-width:768px)" srcset="<?php echo lth_custom_logo('full', 330, 220); ?>">
+                                                                                <source media="(min-width:320px)" srcset="<?php echo lth_custom_logo('full', 240, 160); ?>">
+                                                                                <img src="<?php echo lth_custom_logo('full', 420, 280); ?>" width="420" height="280" alt="<?php the_title(); ?>">
+                                                                            </picture>
+                                                                        <?php } ?>
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="post-content">
+                                                                    <h3 class="post-name">
+                                                                        <a href="<?php echo esc_url(get_category_link($term)); ?>">
+                                                                            <?php echo $category->name; ?>
+                                                                        </a>
+                                                                    </h3>
+
+                                                                    <?php if ($category->description) { ?>
+                                                                        <div class="post-excerpt">
+                                                                            <?php echo $category->description; ?>
+                                                                        </div>
+                                                                    <?php } ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <?php } ?>
+                                            </div>          
+                                        </div>                                
+                                    </div>
+
+                                    <?php 
+                                    $term = get_queried_object();
+                                    $child_categories = get_categories(array('child_of' => $cat_id));
+
+                                    $exclude_categories = array();
+                                    foreach ($child_categories as $child_category) {
+                                        $exclude_categories[] = $child_category->term_id;
+                                    }
+
+                                    $args = [
+                                        'post_type' => 'post',
+                                        'post_status' => 'publish',
+                                        'cat' => $cat_id,
+                                        'category__not_in' => $exclude_categories,
+                                        'paged' => $paged,
+                                        'posts_per_page' => $posts_per_page,
+                                    ];
+                                    $wp_query = new WP_Query($args);
+                                    if ($wp_query->have_posts()) { ?>
+                                        <div class="module module_posts posts-list module_blogs module_style_<?php echo get_field('select_style', $term); ?>" style="margin-top: 45px;">
+                                            <div class="module_header title-box" style="margin-bottom: 20px;">
+                                                <h2 class="title">
+                                                    <?php single_cat_title(); ?>
+                                                </h2>
+                                            </div>
+
+                                            <div class="module_content">
+                                                <div class="groups-box">
+                                                    <?php while ($wp_query->have_posts()) {
+                                                        $wp_query->the_post(); ?>
+                                                        <?php //load file tương ứng với post format
+                                                        get_template_part('template-parts/post/content', '');
+                                                        ?>
+                                                    <?php } ?>
+                                                </div>
+
+                                                <?php require_once(LIBS_DIR . '/pagination.php'); ?>  
+                                            </div>
+                                        </div>                     
+                                    <?php } wp_reset_postdata(); ?>
+                                </div>
+
+                                <?php if ($sidebar == 'right') { ?>
+                                    <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
+                                        <div class="sidebars">
+                                            <!-- Sidebar -->
+                                            <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                                <aside class="lth-sidebars">
+                                                    <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                                </aside>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                    </div>
+            </section>
+        <?php } else { ?>
+            <section class="lth-blogs sidebar-<?php echo $sidebar; ?>">
+                <div class="container">
+                    <div class="row">
+                        <?php if ($sidebar == 'left') { ?>
+                            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class="sidebars">
+                                    <!-- Sidebar -->
+                                    <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                        <aside class="lth-sidebars">
+                                            <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                        </aside>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        <?php } ?>
+
+                        <?php if ($sidebar == 'no') { ?>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <?php } else { ?>
+                                <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12">
+                                <?php } ?>
+                                <div class="module module_posts posts-list module_blogs module_style_<?php echo get_field('select_style', $term); ?>">
+                                    <!-- <div class="module_title">
+                                        <h2 class="title">
+                                            <?php
+                                            // if (is_category()) {
+                                            //     single_cat_title();  //Category
+                                            // } elseif (is_author()) {
+                                            //     the_post();
+                                            //     echo ('Archives by author: ' . get_the_author());  //Tác giả
+                                            //     rewind_posts();
+                                            // } else {
+                                            //     echo _('Archives');
+                                            // }
+                                            ?>
+                                        </h2>
+                                    </div> -->
+
+                                    <div class="module_content">
+                                        <?php
+                                        if (have_posts()) { ?>
+
+                                            <div class="groups-box">
+
+                                                <?php while (have_posts()) {
+                                                    the_post();
+                                                    get_template_part('template-parts/post/content', '');
+                                                } ?>
+
+                                            </div>
+
+                                        <?php require_once(LIBS_DIR . '/pagination.php');
+                                        } else {
+                                            get_template_part('template-parts/content', 'none');
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <?php if ($sidebar == 'right') { ?>
+                                    <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
+                                        <div class="sidebars">
+                                            <!-- Sidebar -->
+                                            <?php if (is_active_sidebar('sidebar_blogs')) { ?>
+                                                <aside class="lth-sidebars">
+                                                    <?php dynamic_sidebar('sidebar_blogs'); ?>
+                                                </aside>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                    </div>
+            </section>
+        <?php } ?>
+    <?php } ?>
+
+    <?php if ($banner) {
+        $args = array(
+            'post_type' => 'html-blocks',
+            'p' => $banner,
+        );
+        $loop = new WP_Query($args);
+        while ($loop->have_posts()) :
+            $loop->the_post();
+            global $post;
+            the_content();
+        endwhile;
+        // reset post data
+        wp_reset_postdata();
+    } ?>
+</main>
+
+<?php get_footer(); ?>
