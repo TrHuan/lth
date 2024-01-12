@@ -1,8 +1,0 @@
-2023-11-08T00:49:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-includes\class-wp-theme.php on line 1295
-
-2023-11-08T00:50:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\includes\rest-api\Controllers\Version2\class-wc-rest-taxes-v2-controller.php on line 11
-
-2023-11-08T07:08:18+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-includes\plugin.php on line 173
-
-2023-11-08T07:08:18+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\setup.php on line 425
-

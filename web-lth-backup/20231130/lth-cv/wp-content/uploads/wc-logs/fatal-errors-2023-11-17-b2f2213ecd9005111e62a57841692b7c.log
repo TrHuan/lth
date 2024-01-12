@@ -1,6 +1,0 @@
-2023-11-17T01:04:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\src\Admin\API\Notes.php on line 8
-
-2023-11-17T01:04:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\themes\lth-theme\inc\plugins\lazy-blocks\classes\class-blocks.php on line 908
-
-2023-11-17T01:04:38+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\wamp64\www\job\lth\lth-cv\wp-content\plugins\woocommerce\src\Admin\Features\Navigation\Screen.php on line 8
-
